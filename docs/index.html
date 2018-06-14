@@ -15,7 +15,19 @@
       name: 'xiajia.im',
       repo: 'https://github.com/choufeng/xiajia.im',
       loadSidebar: true,
-      subMaxLevel: 3
+      subMaxLevel: 3,
+      search: {
+        noData: {
+          '/de-de/': 'Keine Ergebnisse!',
+          '/zh-cn/': '没有结果!',
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/de-de/': 'Suche',
+          '/zh-cn/': '搜索',
+          '/': 'Search'
+        }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
