@@ -1,3 +1,5 @@
-# XIAJIA.IM
+# XiaJia.IM
 
-* [Home](/)
+* [Home](README.md)
+
+* [Vue.js](vue.md)
