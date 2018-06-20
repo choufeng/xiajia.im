@@ -6,10 +6,10 @@
 
 > Links: [Ramdajs](https://ramdajs.com/docs/)  [Ramda中文](http://ramda.cn/docs/)
 
-## LIST
+## LIST 列表
 | Action | Function |
 |---|---|
-|列表转换| map|
+|列表转换| [map](http://ramda.cn/docs/#map)|
 |列表过滤：过滤出符合条件的元素|filter|
 |列表过滤：过滤出符合条件的元素|reject|
 |列表折叠：从左向右对所有元素依次归约（折叠）|reduce|
@@ -96,7 +96,7 @@
 |二维列表行列式转换|transpose|
 |二维列表生成|xprod|
 
-## Object
+## OBJECT 对象
 | Action | Function |
 |---|---|
 |属性设置|assoc|
@@ -150,7 +150,7 @@
 |将对象键值对转换为元素为键值二元组的列表:包括原型链上的键|toPairsIn|
 |将二元组的列表转换为对象|fromPairs|
 
-## Function
+## FUNCTION 函数
 | Function| Action |
 |---|---|
 |函数组合：纵向，从右往左|compose|
@@ -202,4 +202,78 @@
 |输出等于输入，但产生副作用的函数，一般用于调试|tap|
 |异常捕获|tryCatch|
 
-##
+## LOGIC OPERATION 逻辑运算
+
+|Action|Function|
+|---|---|
+|判断是否满足所有条件|allPass|
+|判断是否满足任一条件|anyPass|
+|判断是否同时满足两个条件|both|
+|判断是否满足两个条件中的任意一个|either|
+|逻辑与操作|and|
+|逻辑或操作|or|
+|模式匹配，相当于多个 if/else|cond|
+|单个 if/else，cond 的特例|ifElse|
+|满足条件，则执行处理函数，否则原样返回输入值，ifElse 的特例|when|
+|不满足条件时，执行处理函数，否则原样返回输入值，ifElse 的特例|unless|
+|逻辑非操作，参数为布尔值|not|
+|对函数返回值取反|complement|
+|添加默认值|defaultTo|
+|一直计算，直到满足给定条件|until|
+|判断给定值是否为该类型的空值|isEmpty|
+|判断给定值是否为 null 或 undefined|isNil|
+|返回给定值所属类型的空值|empty|
+
+## RELATIONAL OPERATION 关系运算
+
+|Action|Function|
+|---|---|
+|等于|equals|
+|完全相等|identical|
+|通过规则判断是否相等|eqBy|
+|大于|gt|
+|大于等于|gte|
+|大于|lt|
+|小于等于|lte|
+|限定有序数据类型的范围|clamp|
+|求两个数的较大值|max|
+|按规则求两个数的较大值|maxBy|
+|求两个数的较小值|min|
+|按规则求两个数的较小值|minBy|
+|求差集：{a∣a∈xs ∩ a∉ys}|difference|
+|求差集：{a∣a∉xs ∩ a∈ys}|without|
+|求差集：根据条件计算第一个列表与第二个列表的差集|differenceWith|
+|求对称差集：{(xs ∪ ys) - (xs ∩ ys)}|symmetricDifference|
+|求对称差集：根据条件计算所有不属于两个列表交集的元素|symmetricDifferenceWith|
+|求交集：{xs ∩ ys}|intersection|
+|求交集：从 xs 中挑选出在 ys 中符合条件的元素|innerJoin|
+|求并集：{xs ∪ ys}|union|
+|求并集：根据条件判断两元素是否重复|unionWith|
+
+## COMPUTATION 数学运算
+
+|Action|Function|
+|---|---|
+|加|add|
+|减|subtract|
+|乘|multiply|
+|除|divide|
+|加1|inc|
+|减1|dec|
+|取反|negate|
+|列表累加和|sum|
+|列表累乘积|product|
+|列表平均值|mean|
+|列表平均值|median|
+|取模：算术|mathMod|
+|取模：JS|modulo|
+
+## TYPE OPERATION 类型操作
+
+|Action|Function|
+|---|---|
+|类型判断|is|
+|类型描述|type|
+|属性类型判断|propIs|
+|判断是否为 null 或 undefined|isNil|
+
