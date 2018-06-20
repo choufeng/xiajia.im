@@ -153,127 +153,127 @@
 ## FUNCTION 函数
 | Function| Action |
 |---|---|
-|函数组合：纵向，从右往左|compose|
-|函数组合：纵向，从左往右|pipe|
-|函数组合：纵向|o|
-|函数组合：横向|converge|
-|函数组合：横向|useWith|
-|Kleisili 函数组合|composeK|
-|Kleisili 函数组合|pipeK|
-|Promise 函数组合|composeP|
-|Promise 函数组合|pipeP|
-|单位函数：输出等于输入|identity|
-|函数柯里化|curry|
-|N 元函数柯里化|curryN|
-|将柯里化函数 转为 N 元函数|uncurryN|
-|柯里化函数的参数占位符|__|
-|参数部分调用：从左往右|partial|
-|参数部分调用：从右往左|partialRight|
-|函数缓存|memoize|
-|函数缓存：可以自定义缓存键值|memoizeWith|
-|只执行一次的函数|once|
-|创建返回恒定值的函数|always|
-|恒定返回 true 的函数|T|
-|恒定返回 false 的函数|F|
-|Applicative Functor 的 ap 方法，<*>|ap|
-|将函数作用于参数列表|apply|
-|将接受 单列表参数 的函数转为接受 普通参数列表 的函数|unapply|
-|将首个参数（函数）作用于其余参数|call|
-|绑定函数上下文|bind|
-|利用属性值为函数的对象生成同构对象|applySpec|
-|将函数列表作用于参数列表|juxt|
-|将给定值传给给定函数，CPS: flip($)|applyTo|
-|比较函数，一般用于排序|comparator|
-|升序比较函数|ascend|
-|降序比较函数|descend|
-|将函数封装为 N 元函数|nArg|
-|将函数封装为一元函数|unary|
-|将函数封装为二元函数|binary|
-|提取第 N 个参数|nthArg|
-|将构造函数封装为普通函数，创建实例时，不需要 new 操作符|construct|
-|将构造函数封装为 N 元普通函数，创建实例时，不需要 new 操作符|constructN|
-|通过函数名调用函数|invoker|
-|创建相应类型的空值|empty|
-|判断是否为空值|isEmpty|
-|交换函数前两个参数的位置|flip|
-|函数提升|lift|
-|N 元函数提升|liftN|
-|生成单元素列表|of|
-|输出等于输入，但产生副作用的函数，一般用于调试|tap|
-|异常捕获|tryCatch|
+|函数组合：纵向，从右往左|[compose](http://ramda.cn/docs/#compose)|
+|函数组合：纵向，从左往右|[pipe](http://ramda.cn/docs/#pipe)|
+|函数组合：纵向|[o](http://ramda.cn/docs/#o)|
+|函数组合：横向|[converge](http://ramda.cn/docs/#converge)|
+|函数组合：横向|[useWith](http://ramda.cn/docs/#useWith)|
+|Kleisili 函数组合|[composeK](http://ramda.cn/docs/#composeK)|
+|Kleisili 函数组合|[pipeK](http://ramda.cn/docs/#pipeK)|
+|Promise 函数组合|[composeP](http://ramda.cn/docs/#composeP)|
+|Promise 函数组合|[pipeP](http://ramda.cn/docs/#pipeP)|
+|单位函数：输出等于输入|[identity](http://ramda.cn/docs/#identity)|
+|函数柯里化|[curry](http://ramda.cn/docs/#curry)|
+|N 元函数柯里化|[curryN](http://ramda.cn/docs/#curryN)|
+|将柯里化函数 转为 N 元函数|[uncurryN](http://ramda.cn/docs/#uncurryN)|
+|柯里化函数的参数占位符|[__](http://ramda.cn/docs/#__)|
+|参数部分调用：从左往右|[partial](http://ramda.cn/docs/#partial)|
+|参数部分调用：从右往左|[partialRight](http://ramda.cn/docs/#partialRight)|
+|函数缓存|[memoize](http://ramda.cn/docs/#memoize)|
+|函数缓存：可以自定义缓存键值|[memoizeWith](http://ramda.cn/docs/#memoizeWith)|
+|只执行一次的函数|[once](http://ramda.cn/docs/#once)|
+|创建返回恒定值的函数|[always](http://ramda.cn/docs/#always)|
+|恒定返回 true 的函数|[T](http://ramda.cn/docs/#T)|
+|恒定返回 false 的函数|[F](http://ramda.cn/docs/#F)|
+|Applicative Functor 的 ap 方法，<*>|[ap](http://ramda.cn/docs/#ap)|
+|将函数作用于参数列表|[apply](http://ramda.cn/docs/#apply)|
+|将接受 单列表参数 的函数转为接受 普通参数列表 的函数|[unapply](http://ramda.cn/docs/#unapply)|
+|将首个参数（函数）作用于其余参数|[call](http://ramda.cn/docs/#call)|
+|绑定函数上下文|[bind](http://ramda.cn/docs/#bind)|
+|利用属性值为函数的对象生成同构对象|[applySpec](http://ramda.cn/docs/#applySpec)|
+|将函数列表作用于参数列表|[juxt](http://ramda.cn/docs/#juxt)|
+|将给定值传给给定函数，CPS: flip($)|[applyTo](http://ramda.cn/docs/#applyTo)|
+|比较函数，一般用于排序|[comparator](http://ramda.cn/docs/#comparator)|
+|升序比较函数|[ascend](http://ramda.cn/docs/#ascend)|
+|降序比较函数|[descend](http://ramda.cn/docs/#descend)|
+|将函数封装为 N 元函数|[nArg](http://ramda.cn/docs/#nArg)|
+|将函数封装为一元函数|[unary](http://ramda.cn/docs/#unary)|
+|将函数封装为二元函数|[binary](http://ramda.cn/docs/#binary)|
+|提取第 N 个参数|[nthArg](http://ramda.cn/docs/#nthArg)|
+|将构造函数封装为普通函数，创建实例时，不需要 new 操作符|[construct](http://ramda.cn/docs/#construct)|
+|将构造函数封装为 N 元普通函数，创建实例时，不需要 new 操作符|[constructN](http://ramda.cn/docs/#constructN)|
+|通过函数名调用函数|[invoker](http://ramda.cn/docs/#invoker)|
+|创建相应类型的空值|[empty](http://ramda.cn/docs/#empty)|
+|判断是否为空值|[isEmpty](http://ramda.cn/docs/#isEmpty)|
+|交换函数前两个参数的位置|[flip](http://ramda.cn/docs/#flip)|
+|函数提升|[lift](http://ramda.cn/docs/#lift)|
+|N 元函数提升|[liftN](http://ramda.cn/docs/#liftN)|
+|生成单元素列表|[of](http://ramda.cn/docs/#of)|
+|输出等于输入，但产生副作用的函数，一般用于调试|[tap](http://ramda.cn/docs/#tap)|
+|异常捕获|[tryCatch](http://ramda.cn/docs/#tryCatch)|
 
 ## LOGIC OPERATION 逻辑运算
 
 |Action|Function|
 |---|---|
-|判断是否满足所有条件|allPass|
-|判断是否满足任一条件|anyPass|
-|判断是否同时满足两个条件|both|
-|判断是否满足两个条件中的任意一个|either|
-|逻辑与操作|and|
-|逻辑或操作|or|
-|模式匹配，相当于多个 if/else|cond|
-|单个 if/else，cond 的特例|ifElse|
-|满足条件，则执行处理函数，否则原样返回输入值，ifElse 的特例|when|
-|不满足条件时，执行处理函数，否则原样返回输入值，ifElse 的特例|unless|
-|逻辑非操作，参数为布尔值|not|
-|对函数返回值取反|complement|
-|添加默认值|defaultTo|
-|一直计算，直到满足给定条件|until|
-|判断给定值是否为该类型的空值|isEmpty|
-|判断给定值是否为 null 或 undefined|isNil|
-|返回给定值所属类型的空值|empty|
+|判断是否满足所有条件|[allPass](http://ramda.cn/docs/#allPass)|
+|判断是否满足任一条件|[anyPass](http://ramda.cn/docs/#anyPass)|
+|判断是否同时满足两个条件|[both](http://ramda.cn/docs/#both)|
+|判断是否满足两个条件中的任意一个|[either](http://ramda.cn/docs/#either)|
+|逻辑与操作|[and](http://ramda.cn/docs/#and)|
+|逻辑或操作|[or](http://ramda.cn/docs/#or)|
+|模式匹配，相当于多个 if/else|[cond](http://ramda.cn/docs/#cond)|
+|单个 if/else，cond 的特例|[ifElse](http://ramda.cn/docs/#ifElse)|
+|满足条件，则执行处理函数，否则原样返回输入值，ifElse 的特例|[when](http://ramda.cn/docs/#when)|
+|不满足条件时，执行处理函数，否则原样返回输入值，ifElse 的特例|[unless](http://ramda.cn/docs/#unless)|
+|逻辑非操作，参数为布尔值|[not](http://ramda.cn/docs/#not)|
+|对函数返回值取反|[complement](http://ramda.cn/docs/#complement)|
+|添加默认值|[defaultTo](http://ramda.cn/docs/#defaultTo)|
+|一直计算，直到满足给定条件|[until](http://ramda.cn/docs/#until)|
+|判断给定值是否为该类型的空值|[isEmpty](http://ramda.cn/docs/#isEmpty)|
+|判断给定值是否为 null 或 undefined|[isNil](http://ramda.cn/docs/#isNil)|
+|返回给定值所属类型的空值|[empty](http://ramda.cn/docs/#empty)|
 
 ## RELATIONAL OPERATION 关系运算
 
 |Action|Function|
 |---|---|
-|等于|equals|
-|完全相等|identical|
-|通过规则判断是否相等|eqBy|
-|大于|gt|
-|大于等于|gte|
-|大于|lt|
-|小于等于|lte|
-|限定有序数据类型的范围|clamp|
-|求两个数的较大值|max|
-|按规则求两个数的较大值|maxBy|
-|求两个数的较小值|min|
-|按规则求两个数的较小值|minBy|
-|求差集：{a∣a∈xs ∩ a∉ys}|difference|
-|求差集：{a∣a∉xs ∩ a∈ys}|without|
-|求差集：根据条件计算第一个列表与第二个列表的差集|differenceWith|
-|求对称差集：{(xs ∪ ys) - (xs ∩ ys)}|symmetricDifference|
-|求对称差集：根据条件计算所有不属于两个列表交集的元素|symmetricDifferenceWith|
-|求交集：{xs ∩ ys}|intersection|
-|求交集：从 xs 中挑选出在 ys 中符合条件的元素|innerJoin|
-|求并集：{xs ∪ ys}|union|
-|求并集：根据条件判断两元素是否重复|unionWith|
+|等于|[equals](http://ramda.cn/docs/#equals)|
+|完全相等|[identical](http://ramda.cn/docs/#identical)|
+|通过规则判断是否相等|[eqBy](http://ramda.cn/docs/#eqBy)|
+|大于|[gt](http://ramda.cn/docs/#gt)|
+|大于等于|[gte](http://ramda.cn/docs/#gte)|
+|大于|[lt](http://ramda.cn/docs/#lt)|
+|小于等于|[lte](http://ramda.cn/docs/#lte)|
+|限定有序数据类型的范围|[clamp](http://ramda.cn/docs/#clamp)|
+|求两个数的较大值|[max](http://ramda.cn/docs/#max)|
+|按规则求两个数的较大值|[maxBy](http://ramda.cn/docs/#maxBy)|
+|求两个数的较小值|[min](http://ramda.cn/docs/#min)|
+|按规则求两个数的较小值|[minBy](http://ramda.cn/docs/#minBy)|
+|求差集：{a∣a∈xs ∩ a∉ys}|[difference](http://ramda.cn/docs/#difference)|
+|求差集：{a∣a∉xs ∩ a∈ys}|[without](http://ramda.cn/docs/#)|
+|求差集：根据条件计算第一个列表与第二个列表的差集|[differenceWith](http://ramda.cn/docs/#differenceWith)|
+|求对称差集：{(xs ∪ ys) - (xs ∩ ys)}|[symmetricDifference](http://ramda.cn/docs/#symmetricDifference)|
+|求对称差集：根据条件计算所有不属于两个列表交集的元素|[symmetricDifferenceWith](http://ramda.cn/docs/#symmetricDifferenceWith)|
+|求交集：{xs ∩ ys}|[intersection](http://ramda.cn/docs/#intersection)|
+|求交集：从 xs 中挑选出在 ys 中符合条件的元素|[innerJoin](http://ramda.cn/docs/#innerJoin)|
+|求并集：{xs ∪ ys}|[union](http://ramda.cn/docs/#union)|
+|求并集：根据条件判断两元素是否重复|[unionWith](http://ramda.cn/docs/#unionWith)|
 
 ## COMPUTATION 数学运算
 
 |Action|Function|
 |---|---|
-|加|add|
-|减|subtract|
-|乘|multiply|
-|除|divide|
-|加1|inc|
-|减1|dec|
-|取反|negate|
-|列表累加和|sum|
-|列表累乘积|product|
-|列表平均值|mean|
-|列表平均值|median|
-|取模：算术|mathMod|
-|取模：JS|modulo|
+|加|[add](http://ramda.cn/docs/#add)|
+|减|[subtract](http://ramda.cn/docs/#subtract)|
+|乘|[multiply](http://ramda.cn/docs/#multiply)|
+|除|[divide](http://ramda.cn/docs/#divide)|
+|加1|[inc](http://ramda.cn/docs/#inc)|
+|减1|[dec](http://ramda.cn/docs/#dec)|
+|取反|[negate](http://ramda.cn/docs/#negate)|
+|列表累加和|[sum](http://ramda.cn/docs/#sum)|
+|列表累乘积|[product](http://ramda.cn/docs/#product)|
+|列表平均值|[mean](http://ramda.cn/docs/#mean)|
+|列表平均值|[median](http://ramda.cn/docs/#median)|
+|取模：算术|[mathMod](http://ramda.cn/docs/#mathMod)|
+|取模：JS|[modulo](http://ramda.cn/docs/#modulo)|
 
 ## TYPE OPERATION 类型操作
 
 |Action|Function|
 |---|---|
-|类型判断|is|
-|类型描述|type|
-|属性类型判断|propIs|
-|判断是否为 null 或 undefined|isNil|
+|类型判断|[is](http://ramda.cn/docs/#is)|
+|类型描述|[type](http://ramda.cn/docs/#type)|
+|属性类型判断|[propIs](http://ramda.cn/docs/#propIs)|
+|判断是否为 null 或 undefined|[isNil](http://ramda.cn/docs/#isNil)|
 
