@@ -1,7 +1,7 @@
 # Links
 
 ## Services
-  - js.org  提供一个二级域名 比较符合js项目的使用
+  - https://js.org  提供一个二级域名 比较符合js项目的使用
   - https://cloud.mongodb.com  官方提供的云端MongoDB服务
     - https://www.mongodb.com/products/compass 官方提供的在线MongoDB管理工具
   - https://www.chuangkit.com/ 好用的图片处理工具
@@ -19,6 +19,7 @@
 ## Read
   - https://github.com/wxyyxc1992/Awesome-Coder/blob/master/Weekly/README.md 前端每周阅读清单
   - http://es6.ruanyifeng.com/ ES6手册
+  - https://vue-test-utils.vuejs.org/zh/api/ Vue Test Utils
 
 ## Some useful items
   - https://material.io/icons/ Icon查询
