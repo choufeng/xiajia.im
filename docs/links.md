@@ -14,6 +14,7 @@
 ## JavaScript
   - https://nestjs.com/  新的Node服务端框架
   - http://typeorm.io/#/ 基于TypeScript的数据库 ORM
+  - https://www.jianshu.com/p/f200a75a15d2  chai.js断言库API
 
 ## Read
   - https://github.com/wxyyxc1992/Awesome-Coder/blob/master/Weekly/README.md 前端每周阅读清单
