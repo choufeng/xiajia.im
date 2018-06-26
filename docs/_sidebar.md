@@ -4,6 +4,6 @@
 
 * [Ramda.js](ramda.md)
 
-* [Vue.js](vue.md)
+* [React.js](react.md)
 
 * [Links](links.md)
