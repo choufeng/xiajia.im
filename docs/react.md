@@ -146,4 +146,32 @@ const element = (
 ```
 ## 元素渲染
 
+> 元素是构成React应用的最小单位
+
+```
+const element = <h1>Hello, World</h1>
+```
+
+### 将元素渲染到DOM中
+
+在html页面中添加一个`id="root"`的`<div>`
+
+```
+<div id="root"></div>
+
+```
+div中的内容都将由Rect DOM管理，所以我们将其称之为 "root"节点
+
+一般只定义一个根节点。
+
+要将React元素渲染到根节点中，我们通过把它们传递给ReactDOM.render()来渲染到页面上
+
+```
+const element = <h1>Hello, World</h1>
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+)
+```
+
 
