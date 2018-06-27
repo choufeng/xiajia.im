@@ -139,6 +139,7 @@
 |透镜：读取被 lens 聚焦的属性值|[view](http://ramda.cn/docs/#view)|
 |Object 版 map，转换函数参数：(value, key, obj)|[mapObjIndexed](http://ramda.cn/docs/#mapObjIndexed)|
 |对象合并|[merge](http://ramda.cn/docs/#merge)|
+|克隆对象|[clone](http://ramda.cn/docs/#clone)|
 |对象合并：对重复的属性值按给定规则合并|[mergeWith](http://ramda.cn/docs/#mergeWith)|
 |对象合并：对重复的属性值按给定规则合并|[mergeWithKey](http://ramda.cn/docs/#mergeWithKey)|
 |对象深递归合并：以左侧对象属性为主|[mergeDeepLeft](http://ramda.cn/docs/#mergeDeepLeft)|

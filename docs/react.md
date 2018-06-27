@@ -174,4 +174,40 @@ ReactDOM.render(
 )
 ```
 
+### 更新元素渲染
 
+React 元素是`immutable`不可变的， 党员素被创建后，无法改变其内容或属性。（函数式编程的不可变性）
+
+```
+function tick () {
+  const element = (
+    <div>
+      <h1>Hello, World</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  )
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  )
+}
+
+setInterval(tick, 1000)
+```
+** React 只会更新必要的部分 **
+
+React DOM 首先会比较元素内容先后的不同， 而在渲染过程中只会更新改变了的部分。
+
+## 组件 & Props
+
+> 组件将UI拆分成独立的、可复用的部分， 这样就只需要专注每一个单独的部件。
+
+> 组件从概念上看就像函数， 接收任意的输入值， 返回一个需要在页面上展示的React元素。
+
+### 函数定义/类定义组件
+
+```
+function Welecome (props) {
+  return <h1>Hello, {props.name}</h1>
+}
+```
