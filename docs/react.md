@@ -211,3 +211,107 @@ function Welecome (props) {
   return <h1>Hello, {props.name}</h1>
 }
 ```
+他接收一个props对象并返回一个React元素， 所以称之为函数定义组件，因为它就是一个JavaScript函数。
+
+** 使用 ES6 Class 定义一个组件 **
+class Welcome extends React.Component {
+  render () {
+    return <h1>Hello, {this.props.name}</h1>
+  }
+}
+
+
+### 组件渲染
+ 
+自定义组件
+
+```
+const element = <Welcome name="Jon" />
+
+```
+ 
+> 组件名称必须大写字母开头。
+
+### 组合组件
+ 
+在组件中引用其他组件，这就可以让我们用同一组件来抽象出任意层次的细节。
+ 
+```
+function Welecome (props) {
+  return <h1>Hello, {props.name}</h1>
+}
+
+function App () {
+  return (
+    <div>
+      <Welcome name="Jon" />
+      <Welcome name="Jack" />
+      <welcome name="Chou" />
+    </div>
+  )
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+}
+
+```
+ 
+通常一个新的React一用程序顶部是一个App组件。但是如果要讲React集成到现有的应用程序中，则可以从下而上使用像Button这样的小组件开始，组件运用到视图层顶部。
+ 
+### 提取组件
+ 
+```
+function Comment (props) {
+  return (
+    <div className="Comment">
+      <div className="UserInfo">
+        <img className="Avatar" src={props.author.avatarUrl} />
+        <div className="UserInfo-name">
+           {props.author.name}
+        </div>
+      </div>
+      <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Content-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  )
+}
+```
+ 
+上面 的组件由于嵌套，变得难以被修改， 可复用的部分也难以被复用。 所以让我们从其中提取出一些小组件。
+ 
+Avatar 组件
+
+```
+function Avatar (props) {
+  return (
+    <img className="Avatar" src={props.user.avatarUrl} />
+  )
+}
+
+```
+我们建议从组件自身的角度来命名props
+ 
+依次 再提取 UserInfo, commont, 最终得到这样
+
+```
+function Comment (props) {
+  return (
+    <div className="Comment">
+      <Avatar user={props.author} />
+      <UserInfo user={props.author} />
+     </div>
+     <Comment content={props} />
+   )
+ }
+ 
+ ```
+ 
+
+  
+ 
