@@ -38,3 +38,4 @@ let r = R.reduce((a, v) => R.lte(0, R.indexOf(v, nums)) ? R.append(v, a) : a, []
 console.dir(r)
 ```
 
+> 现实很残酷，通过对运行时间的测试，map的效率惨不忍睹， for在大数据下的执行速度远远高于map
