@@ -26,6 +26,8 @@ for (let i =0; i < nums.length; i++) {
 与目标值相减后的数组与元素组对应找匹配的值
 
 ```
+var nums = [1, 3, 6, 8, 12], t = 9
+
 // 原生JS版
 let n = nums.map(i => t - i)
 var r = []
