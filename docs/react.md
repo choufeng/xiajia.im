@@ -317,7 +317,7 @@ function Comment (props) {
 组件不能修改自己的props， 这是函数式编程中“纯函数”的概念。
 
 ```
-// Right
+// Correct
 function sum (a, b)  {
   return a + b
 }
@@ -381,3 +381,123 @@ ReactDOM.render(
   document.getElementById('root)
 )
 ```
+### 添加生命周期方法
+
+在组件第一次加载时，成为`挂载`
+在组件生成的DOM被移除的事后，称为`卸载`
+
+我们可以在组件类上什么特殊的方法，当组件挂载或者卸载的事后运行
+
+```
+class Clock extends React.Component{
+  constructor (props) {
+    super(props)
+    this.state = {date: new Date()}
+  }
+
+  componentDidMount () {
+    this.timerID = serInterval(
+      () => this.tick(), 1000
+    )
+  }
+  componentWillUnmount() {
+    clearInterval(this.timerID)
+  }
+
+  render () {
+    return (
+      <div>
+        <h1>Hello, World</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+      </div>
+    )
+  }
+}
+```
+**如果你不在render()中使用某些东西，他就不应该在状态中**
+
+上面代码的调用顺序：
+1. 当 `<Clock />` 被传递给ReactDOM.render()时， React调用Clock组件的构造函数， 设定初始化`state`
+2. 然后调用 `render`方法， 了解屏幕上应该显示什么内容，并渲染输出。
+3. 当 `Clock`的输出插入到DOM中时， 调用`componentDidMount() ` 在其中设定一个计时器，每秒调用一次`tick()`
+4. 每秒掉哟那该 `tick()`时， 组件通过使用包含当前时间的对象调用 `setState()`来更新UI， 通过调用 setState(), React知道状态一件改变，再次调用`render()`方法来确定屏幕上要显示什么。 这次， render中的 this.state.date是不同的，所以渲染输出了更新的时间，更新了DOM
+5. 一旦组件被移除， `componentWillUnmount()` 将被执行。
+
+
+### 正确的使用状态
+
+```
+// Wrong
+this.state.comment = 'Hello'
+
+// Correct
+this.setstate({comment: 'Hello'})
+
+```
+
+### 更新可能是异步的
+
+React会将多个setState()调用合并成一个调用来提高性能。
+
+因为 `this.props` 和 `this.state`可能是异步更新的， 所以不应该依靠他们的值来计算下一个状态。
+
+```
+// Wrong
+this.setState({
+  counter: this.state.counter + this.props.increment
+})
+
+//Correct
+this.setState((prevState, props) => {
+  counter: prevState.counter + props.increment
+})
+```
+
+### 状态更新合并
+
+当调用`setState()`时， React会把你提供的对象合并到当前状态
+
+```
+constructor (props) {
+  super (props)
+  this.state = {
+    post: [],
+    comments: []
+  }
+}
+componentDidMount () {
+  fetchPosts().then(res => {
+    this.setState({
+      posts: res.data
+    })
+  })
+
+  fetchComments().then(res ={
+    this.setState({
+      comments: res.data
+    })
+  })
+}
+```
+这里的合并是浅合并， 即 执行 `this.setState({comments})`事完整保留了 `this.satate.posts`同时只是替换了`this.state.comments`
+
+### 数据的自顶下下流动
+
+任何组件都不知道其他组件的状态情况，也不关心其他组件是被定义为一个函数还是一个类。 
+
+这就是状态是局部特性。除了拥有并设置它的组件外， 其他组件不可访问。
+
+组件可以选择将其状态作为属性传递给子组件
+```
+<h2> It is <this.state.date.toLocaleTimeString()></h2>
+
+// or
+
+<FormattedDate date={this.state.date} />
+
+function FormattedDate (props) {
+  return <h2>It is {props.date.toLocaleTimeString()}
+}
+
+这就是 `自顶向下`的`单项数据流`。 任何状态始终由某些特定组件所有，并影响着组件树下方的组件。
+
