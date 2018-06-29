@@ -6,4 +6,6 @@
 
 * [React.js](react.md)
 
+* [Algorithm 算法学习](algorithm.md)
+
 * [Links](links.md)
