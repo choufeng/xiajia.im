@@ -194,7 +194,7 @@ function tick () {
 
 setInterval(tick, 1000)
 ```
-** React 只会更新必要的部分 **
+**React 只会更新必要的部分**
 
 React DOM 首先会比较元素内容先后的不同， 而在渲染过程中只会更新改变了的部分。
 
@@ -213,7 +213,7 @@ function Welecome (props) {
 ```
 他接收一个props对象并返回一个React元素， 所以称之为函数定义组件，因为它就是一个JavaScript函数。
 
-** 使用 ES6 Class 定义一个组件 **
+**使用 ES6 Class 定义一个组件**
 class Welcome extends React.Component {
   render () {
     return <h1>Hello, {this.props.name}</h1>
@@ -312,6 +312,72 @@ function Comment (props) {
  
  ```
  
+### Props只读性
 
-  
+组件不能修改自己的props， 这是函数式编程中“纯函数”的概念。
+
+```
+// Right
+function sum (a, b)  {
+  return a + b
+}
+
+// Wrong
+function withdrat (a, b) {
+  a = a + b
+  return a
+}
+```
+
+React是非常灵活的，但是有一个严格的规则：
+
+**所有的React组件必须像纯函数一样使用props**
+
+
+## State & 生命周期
+
+State（状态）与属性十分相似， 但state是私有的，只受控于当前组件。
+
+
+### 使用类封装组件
+
+通过类允许我们使用诸如局部状态，生命周期钩子等特性。 
+
+```
+class Clock extends React.Component {
+  render () {
+    return (
+      <div>
+        <h1>Hello, World</h1>
+        <h2> It is {this.props.date.toLocaleTimeString()}</h2>
+      </div>
+    )
+  }
+}
+
+ ```
+
+### 为类添加局部状态
+
+```
+class Clock extends React.Component {
+  constructor (props) {
+    super (props)
+    this.state = {date: new Date()}
+  }
+
+  render () {
+    return (
+      <div>
+        <h1>Hello, World</h1>
+        <h2> It is {this.state.date.toLocaleTimeString()}</h2>
+      </div>
+    )
+  }
+}
  
+ReactDOM.render(
+  <Clock />,
+  document.getElementById('root)
+)
+```
