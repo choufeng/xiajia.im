@@ -488,6 +488,8 @@ componentDidMount () {
 这就是状态是局部特性。除了拥有并设置它的组件外， 其他组件不可访问。
 
 组件可以选择将其状态作为属性传递给子组件
+
+
 ```
 <h2> It is <this.state.date.toLocaleTimeString()></h2>
 
@@ -498,6 +500,8 @@ componentDidMount () {
 function FormattedDate (props) {
   return <h2>It is {props.date.toLocaleTimeString()}
 }
+
+```
 
 这就是 `自顶向下`的`单项数据流`。 任何状态始终由某些特定组件所有，并影响着组件树下方的组件。
 
