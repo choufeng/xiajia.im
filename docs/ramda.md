@@ -24,7 +24,8 @@
 |列表长度|[length](http://ramda.cn/docs/#length)|
 |列表表头拼接元素|[prepend](http://ramda.cn/docs/#prepend)|
 |列表表尾拼接元素|[append](http://ramda.cn/docs/#append)|
-|列表表尾拼接元素|[adjust](http://ramda.cn/docs/#adjust)|
+|列表指定索引插入元素|[insert](http://ramda.cn/docs/#insert)|
+|替换指定索引处的值为经函数变换的值|[adjust](http://ramda.cn/docs/#adjust)|
 |替换指定索引处的值|[update](http://ramda.cn/docs/#update)|
 |将列表元素转换为其指定的属性值，等价于 R.map(R.prop)|[pluck](http://ramda.cn/docs/#pluck)|
 |为列表迭代函数添加两个参数：索引和整个列表|[addIndex](http://ramda.cn/docs/#addIndex)|
@@ -79,7 +80,6 @@
 |列表单层扁平化|[unnest](http://ramda.cn/docs/#unnest)|
 |先对列表内元素做 Kleisli 映射，再做扁平化，flatMap，>>=|[chain](http://ramda.cn/docs/#chain)|
 |函子间的自然变化？|[sequence](http://ramda.cn/docs/#sequence)|
-|列表插入|[insert](http://ramda.cn/docs/#insert)|
 |将子列表插入列表|[insertAll](http://ramda.cn/docs/#insertAll)|
 |在列表元素之间插入分割元素|[intersperse](http://ramda.cn/docs/#intersperse)|
 |列表转换 + 折叠？|[into](http://ramda.cn/docs/#into)|
