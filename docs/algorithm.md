@@ -27,7 +27,7 @@ for (let i =0; i < nums.length; i++) {
 
 ```
 
-// 原生JS版
+// 
 let n = nums.map(i => t - i)
 var r = []
 n.map(i => (nums.indexOf(i) > 0) && r.push(i))

@@ -6,6 +6,8 @@
 
 * [React.js](react.md)
 
+* [Functional Programming](functional.md)
+
 * [Algorithm 算法学习](algorithm.md)
 
 * [Links](links.md)
