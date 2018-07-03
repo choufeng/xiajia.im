@@ -505,3 +505,49 @@ function FormattedDate (props) {
 
 这就是 `自顶向下`的`单项数据流`。 任何状态始终由某些特定组件所有，并影响着组件树下方的组件。
 
+## 事件处理
+
+**React事件绑定采用小驼峰命名法**
+
+**如果采用JSX语法需要传入一个函数作为事件处理函数， 而不是一个字符串**
+
+**不能使用`return false`来阻止默认行为, 而是必须明确使用`preventDefault`**
+
+```
+<button onClick={activeClick}>
+Click
+</button>
+
+function activeClick (e) {
+  e.preventDefault()
+}
+```
+
+** 使用`属性初始化器（transform-class-properties）`可以简化`this`问题， 页可以在毁掉函数中使用箭头函数处理**
+
+```
+class LoginngButton extends React.Component {
+  handleClick () {
+    console.log(this)
+  }
+
+  render () {
+    return (
+      <button onClick={(e) => this.handleClick(e)}>
+        Click
+      </button>
+    )
+  }
+}
+```
+### 向事件处理程序传递参数
+
+通常我们会传递如id来确定要处理哪一行数据，传递参数的方法如下：
+
+```
+<button onClick={(e) => this.deleteRow(id, e)}> Delete </button>
+<button onClick={this.deleteRow.bind(this, id)}> Delete </button>
+```
+
+通过箭头函数， e需要被显示传递， 使用bind方式则可以把事件对象一件更多的参数隐式传递。
+
