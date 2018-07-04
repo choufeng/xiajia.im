@@ -441,7 +441,7 @@ this.setstate({comment: 'Hello'})
 
 React会将多个setState()调用合并成一个调用来提高性能。
 
-因为 `this.props` 和 `this.state`可能是异步更新的， 所以不应该依靠他们的值来计算下一个状态。
+因为 `this.props` 和 `this.state`可能是异步更新的， 所以不应该依靠他们的值来计算下一个状态。应对state的异步更新合并，使用另一个接受一个函数作为参数的setState。
 
 ```
 // Wrong
@@ -507,6 +507,63 @@ function FormattedDate (props) {
 
 这就是 `自顶向下`的`单项数据流`。 任何状态始终由某些特定组件所有，并影响着组件树下方的组件。
 
+### State 与 不可变对象
+
+1. State类型是不可变类型 （数字， 字符串， 布尔值， null, undefined）
+
+直接赋值即可
+
+```
+this.setState({
+  count: 2
+})
+```
+
+2. State类型是数组
+```
+// 方法1, 使用preState, concat创建新数组
+this.setState(preState => ({
+  books: preState.books.concat(['new one'])
+}))
+
+// 方法2， ES6 spread syntax
+this.setState(preState => ({
+  books: [...preState.books, 'new one']
+}))
+
+this.setState(preState => ({
+  books: preState.books.slice(1, 3)
+}))
+
+this.setState(preState => ({
+  books: preState.books.filter(i => i !== 'Angular')
+}))
+
+// 方法3, Ramda
+this.setState(preState => ({
+  books: R.append('new one')(preState)
+}))
+
+```
+**不要使用push, pop,shift, unshift, splice等`非纯函数`方法修改数组类型的State， 因为这些方法是在元数组基础上修改的， 而concat, slice, filter`纯函数`回返回一个新数组。
+3. State类型是普通对象(不包含字符串和数组)
+
+```
+  //1. 使用Object.assgin
+  this.setState(preState => ({
+    person: Object.assign({}, preState.person, {name: 'Jon})
+  }))
+
+  //2. 使用对象扩展语法
+  this.setState(preState => ({
+    person: {...preState.person, name: 'Jon'}
+  }))
+
+  //3. Ramda
+  this.setState(preState => ({
+    person: R.assoc('name', 'Jon', preState)
+  }))
+
 ## 事件处理
 
 **React事件绑定采用小驼峰命名法**
@@ -525,7 +582,7 @@ function activeClick (e) {
 }
 ```
 
-** 使用`属性初始化器（transform-class-properties）`可以简化`this`问题， 页可以在毁掉函数中使用箭头函数处理**
+** 使用`属性初始化器（transform-class-properties）`可以简化`this`问题， 页可以在回调函数中使用箭头函数处理**
 
 ```
 class LoginngButton extends React.Component {
