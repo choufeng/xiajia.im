@@ -520,6 +520,7 @@ this.setState({
 ```
 
 2. State类型是数组
+
 ```
 // 方法1, 使用preState, concat创建新数组
 this.setState(preState => ({
@@ -545,6 +546,7 @@ this.setState(preState => ({
 }))
 
 ```
+
 **不要使用push, pop,shift, unshift, splice等`非纯函数`方法修改数组类型的State， 因为这些方法是在元数组基础上修改的， 而concat, slice, filter`纯函数`回返回一个新数组。
 3. State类型是普通对象(不包含字符串和数组)
 
@@ -563,6 +565,7 @@ this.setState(preState => ({
   this.setState(preState => ({
     person: R.assoc('name', 'Jon', preState)
   }))
+```
 
 ## 事件处理
 
