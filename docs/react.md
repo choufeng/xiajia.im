@@ -551,3 +551,155 @@ class LoginngButton extends React.Component {
 
 通过箭头函数， e需要被显示传递， 使用bind方式则可以把事件对象一件更多的参数隐式传递。
 
+## 条件渲染
+React的条件渲染和JavaScript中的一致
+
+```
+function UserGreeting (props) {
+  return <h1>Hello Jon</h1>
+}
+
+function GuestGreeting (props) {
+  return <h1>Hello, Guest</h1>
+}
+
+function Greeting (props) {
+  const isLoggedIn = props.isLoggedIn
+  if (isLoggedIn) {
+    return <UserGreeting />
+  } else {
+    return <GuestGreetting />
+  }
+}
+
+ReactDOM.render(
+  <Greeting isLoggedIn={false}>,
+  docuemnt.getElementById('root')
+)
+```
+
+### 元素变量
+
+可以用变量来存储元素。 可以有条件的渲染组件的一部分，输出其他部分。
+
+```
+function LoginButton (props) {
+  return (
+    <button onClick={props.onClick}>Login</button>
+  )
+}
+
+function logoutButton (props) {
+  return (
+    <button onClick={props.onClick}> Logout </button>
+  )
+}
+
+class LoginControl extends React.Component {
+  constructo (props) {
+    super(props)
+    this.handleLoginClick = this.handleLoginClick.bind(this)
+    this.handleLogoutClick = this.handleLogoutClick.bind(this)
+    this.state = {isLoggedIn: false}
+  }
+
+  handleLoginClick () {
+    this.setState({isLoggedIn: true})
+  }k
+
+  handleLogoutClick () {
+    this.setState({isLoggedIn: false})
+  }
+
+  render () {
+    const isLoggedIn = this.state.isLoggedIn
+
+    let button = null
+    if (isLoggedIn) {
+      button = <logoutButton onClick={this.handleLogoutClick} />
+    } else {
+      button = <loginButton onClick={this.handleLoginClick} />
+    }
+  }
+
+  return (
+    <div>
+      <Greeting isLoggedIn={isLoggedIn} />
+      {button}
+    </div>
+  )
+}
+```
+
+### 与运算符 &&
+
+```
+function Box (props) {
+  return (
+    <div>
+      <h1>Hello</h1>
+      {
+        isLoginedIn && 
+          <h2> Jon </h2>
+      }
+  )
+}
+```
+
+### 三目运算
+
+```
+function Box (props) {
+  const isLoggedIn = false
+  return (
+    <div> Your are {isLoggedIn ? 'users' : 'guest} </div>
+    <div> {isLoggedIn ? (
+      <logoutButton />
+    ) : (
+      <loginButton />
+    )}
+  )
+}
+```
+
+### 阻止组件渲染
+
+在极少数情况下，我们希望隐藏组件，即使它被其他组件渲染。 `render`方法反回null
+
+```
+function WarningBanner (props) {
+  if (!props.warn) {
+    return null
+  }
+}
+
+class Page extends React.Component {
+  constructo (props) {
+    super(props)
+    this.state = {showWarning: true}
+    this.handleToggleClick = this.handleToggleClick.bind(this)
+  }
+
+  handleToggleClick () {
+    this.setState(prevState => ({
+      showWarning: !prevState.showWarning
+    }))
+  }
+
+  render () {
+    return (
+      <div>
+        <WarningBanner warn={this.state.showWarning} />
+        <button onClick={this.handleToggleClick}>
+          {this.state.showWarning ? 'Hide' : 'Show'}
+        </button>
+      </div>
+    )
+  }
+
+  ReactDOM.render(
+    <Page />,
+    document.getelementById('root')
+  )
+}
+```
