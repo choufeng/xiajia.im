@@ -703,3 +703,91 @@ class Page extends React.Component {
   )
 }
 ```
+
+## 列表 & keys
+
+列表的渲染通过 map()
+
+```
+const n = [1 ,2, 3, 4, 5, 6]
+const listItems = n.map(i => <li>{i}</li>)
+
+ReactDOM.render(
+  <ul>{listItems}</ul>
+)
+```
+
+### 基础列表组件
+
+```
+function NumberList (props) {
+  const n = props.n
+  const listItems = n.map(i => <li key={i.toStrin()}>{i}</li>)
+  return (
+    <ul>{listItems}</ul>
+  )
+}
+
+const n = [1, 2, 3, 4, 5]
+ReactDOM.render(
+  <NumberList n={n} />,
+  docuement.getElementById('root')
+)
+```
+### Keys
+
+上面的代码中有一个key， 它用来识别元素发生变化的情况进行。key应该是唯一的。 一般不建议用列表的顺序赋予key
+
+```
+const listItems = n.map(item, index) => <li key={index}>{item}</li>
+```
+### 用keys提取组件
+
+Key值在它和它的兄弟节点对比是有意义， 例如提取一个ListItems组件， 要确保key保存在<ListItem />上， 而不是放到ListItem中的li元素
+
+```
+// wrong
+function Listitem (props) {
+  return (
+    // 这里错了
+    <li key={i}>{li}</li>
+  )
+}
+
+const listItems = n.map(i => <listItem value={i}>)
+
+return (
+  <ul>
+    {listItems}
+  </ul>
+)
+
+// Correct
+
+function List (props) {
+  return <li>{props.i}</li>
+}
+
+// 这才正确
+const listItems = n.map(i => <ListItem key={i} value={i} />)
+```
+
+** 元素的key在它的兄弟元素之间是唯一的, 不同的数组可以相同**
+
+** key是给react用的，不能用props.key读取到， 需要的情况再增加传递 例如 props.id**
+
+### 在JSX中使用map()
+
+```
+function NumberList (props) {
+  const n = props.n
+  return (
+    <ul>
+      {
+        n.map(i => <ListItem key={i.toStrin()} value={i} />)
+      }
+    </ul>
+  )
+}
+```
+**如果一个map()嵌套了太多层级，那就是需要提取组件的时候了**
