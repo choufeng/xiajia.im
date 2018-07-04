@@ -159,5 +159,4 @@ function a (...args) {
 
 > 小知识： 用箭头函数创建的函数，不能 new , 原因是 箭头函数 不具备 `Construct` 和 `prototype`
 
-```
 
