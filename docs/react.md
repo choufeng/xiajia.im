@@ -214,12 +214,14 @@ function Welecome (props) {
 他接收一个props对象并返回一个React元素， 所以称之为函数定义组件，因为它就是一个JavaScript函数。
 
 **使用 ES6 Class 定义一个组件**
+
+```
 class Welcome extends React.Component {
   render () {
     return <h1>Hello, {this.props.name}</h1>
   }
 }
-
+```
 
 ### 组件渲染
  
@@ -772,9 +774,9 @@ function List (props) {
 const listItems = n.map(i => <ListItem key={i} value={i} />)
 ```
 
-** 元素的key在它的兄弟元素之间是唯一的, 不同的数组可以相同**
+**元素的key在它的兄弟元素之间是唯一的, 不同的数组可以相同**
 
-** key是给react用的，不能用props.key读取到， 需要的情况再增加传递 例如 props.id**
+**key是给react用的，不能用props.key读取到， 需要的情况再增加传递 例如 props.id**
 
 ### 在JSX中使用map()
 
@@ -791,3 +793,4 @@ function NumberList (props) {
 }
 ```
 **如果一个map()嵌套了太多层级，那就是需要提取组件的时候了**
+
