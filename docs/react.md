@@ -855,7 +855,7 @@ function NumberList (props) {
 ```
 **如果一个map()嵌套了太多层级，那就是需要提取组件的时候了**
 
-## 表单
+## 表单: 受控组件
 
 ### 受控组件
 
@@ -1053,7 +1053,7 @@ render() {
 <span id="fileinput"></span>
 ### 文件标签
 
-在React中，<input type="file" /> 始终是一个不受控组件，因为它的值只能有用户设置，而不是以编程方式设置。
+在React中，`<input type="file" />` 始终是一个不受控组件，因为它的值只能有用户设置，而不是以编程方式设置。
 
 你应该使用File API与文件进行交互
 
