@@ -16,6 +16,8 @@
   - http://typeorm.io/#/ 基于TypeScript的数据库 ORM
   - https://www.jianshu.com/p/f200a75a15d2  chai.js断言库API
 
+## Wechat develop
+  - https://tencent.github.io/wepy/#/ 小程序开发框架
 ## Read
   - https://github.com/wxyyxc1992/Awesome-Coder/blob/master/Weekly/README.md 前端每周阅读清单
   - http://es6.ruanyifeng.com/ ES6手册
@@ -24,4 +26,3 @@
 ## Some useful items
   - https://material.io/icons/ Icon查询
   - http://v0-14.quasar-framework.org/components/ 旧版本Quasar文档
-  

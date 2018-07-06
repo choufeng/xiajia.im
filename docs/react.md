@@ -416,7 +416,7 @@ class Clock extends React.Component{
   }
 }
 ```
-**如果你不在render()中使用某些东西，他就不应该在状态中**
+!> **如果你不在render()中使用某些东西，他就不应该在状态中**
 
 上面代码的调用顺序：
 1. 当 `<Clock />` 被传递给ReactDOM.render()时， React调用Clock组件的构造函数， 设定初始化`state`
@@ -547,7 +547,8 @@ this.setState(preState => ({
 
 ```
 
-**不要使用push, pop,shift, unshift, splice等`非纯函数`方法修改数组类型的State， 因为这些方法是在元数组基础上修改的， 而concat, slice, filter`纯函数`回返回一个新数组。
+!> **不要使用push, pop,shift, unshift, splice等`非纯函数`方法修改数组类型的State， 因为这些方法是在元数组基础上修改的， 而concat, slice, filter`纯函数`回返回一个新数组。**
+
 3. State类型是普通对象(不包含字符串和数组)
 
 ```
@@ -569,11 +570,11 @@ this.setState(preState => ({
 
 ## 事件处理
 
-**React事件绑定采用小驼峰命名法**
+!> **React事件绑定采用小驼峰命名法**
 
-**如果采用JSX语法需要传入一个函数作为事件处理函数， 而不是一个字符串**
+!> **如果采用JSX语法需要传入一个函数作为事件处理函数， 而不是一个字符串**
 
-**不能使用`return false`来阻止默认行为, 而是必须明确使用`preventDefault`**
+!> **不能使用`return false`来阻止默认行为, 而是必须明确使用`preventDefault`**
 
 ```
 <button onClick={activeClick}>
@@ -854,3 +855,224 @@ function NumberList (props) {
 ```
 **如果一个map()嵌套了太多层级，那就是需要提取组件的时候了**
 
+## 表单
+
+### 受控组件
+
+`input`, `textarea`, `select` 这类表单会维护自身状态，并根据用户输入进行更新， 但是在React中，可变状态通常保存在组件的state中， 并只能用setState更新。
+
+React将其变为以中单一数据源的状态来结合， React负责渲染表单组件， 组件空之用户输入时发生的变化。 称为“受控组件”
+
+#### input
+
+```
+class NameForm extends React.Component {
+  constructo (props) {
+    super(props)
+    this.state = {
+      value: ''
+    }
+  }
+
+  handleChange (e) {
+    this.setState({value: event.target.value})
+  }
+
+  handleSubmit (e) {
+    alert(this.state.value)
+    e.preventDefault()
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange}>
+        </label>
+      </form>
+    )
+  }
+}
+
+```
+使用受控组件，每个状态的改变都有一个和它相关的处理函数。 这样就可以直接修改或验证用户输入。 例如要显示输入全部都是大写。
+
+```
+handleChange (e) {
+  this.setState({value: e.target.value.toUpperCase()})
+}
+```
+
+#### textarea
+
+在React中用value属性来替代textarea。
+
+```
+class EasyTeatarea extends React.Component {
+  constructo(props) {
+    super(props)
+    this.state = {
+      value: 'test'
+    }
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSbumit.bind(this)
+  }
+
+  handleChange (e) {
+    this.setState({value: e.target.value})
+  }
+
+  handleSubmit (e) {
+    alert(this.state.value)
+    e.preventDefault()
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <textarea value={this.state.value} onChange={this.handleChange} />
+      </form>
+    )
+  }
+}
+```
+#### select
+
+```
+class EasySelect extends React.Component {
+  constructo(props) {
+    this.state = {value: 'planA'}
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange(e) {
+    this.setState({value: e.target.value})
+  }
+
+  render() {
+    return (
+      <form>
+        <select value={this.state.value} onChange={this.handleChange}>
+          <option value="planA">PlanA</option>
+          <option value="planB">PlanB</option>
+          <option value="planC">PlanC</option>
+        </select>
+      </form>
+    )
+  }
+}
+```
+
+#### file input
+
+请查阅 [文件输入标签](#fileinput)
+
+#### 多个输入的解决方法
+
+```
+class easyInputs  extends React.Component {
+  constructo(props) {
+    super(props)
+    this.state = {
+      a: true,
+      b: 2
+    }
+    this.handleInputChange = this.handleInputChange.bind(this)
+  }
+
+  handleInputChange (e) {
+    const target = e.target
+    const value = target.type === 'checkbox > target.checked : target.value
+    this.setState({
+      [name]: value
+    })
+  }
+
+  render () {
+    return (
+      <form>
+        <input name="a" type="checkbox" checked={this.state.a} onChange={this.handleInputChange} />
+        <input name="b" type="number" value={this.state.b} onChange={this.handleInputChange}>
+      </form>
+    )
+  }
+}
+```
+这里使用了 ES6的 [`计算属性名`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) 语法 
+
+```
+this.setState({
+  [name]: value
+})
+```
+### 受控组件的替代方法
+
+受控组件需要为数据可能发生的每一种方式都编写一个事件处理程序，并通过一个组件来管理全部状态，大多数情况下还好，但在某些情况下使用比较繁琐,可以改用 `非受控组件`技术来替代。
+
+
+## 非受控组件
+
+编写一个非受控组件， 而非为每个状态更新编写事件处理， 可以使用ref 从DOM获取表单值
+
+```
+class newForm extends React.Component {
+  constructo(props) {
+    super(props)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleSubmit(e) {
+    this.input.value
+    e.preventDefault()
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <input type="text" ref={(input) => this.input = input}>
+      </form>
+    )
+  }
+}
+```
+
+清楚俩解何时使用哪种组件（受控组件和非受控组件）， 阅读这篇文章[Controlled and uncontrolled form inputs in React don't have to be complicated](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
+
+
+### 默认值
+
+```
+render() {
+  return (
+    <input defaultValue="90" type="text" ref={(input) => this.input = input}>
+  )
+}
+```
+
+<span id="fileinput"></span>
+### 文件标签
+
+在React中，<input type="file" /> 始终是一个不受控组件，因为它的值只能有用户设置，而不是以编程方式设置。
+
+你应该使用File API与文件进行交互
+
+```
+class FileInput extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleSubmit(e) {
+    alert(this.fileInput.files[0].name)
+    e.preventDefault()
+  }
+  
+  render() {
+    return (
+      Upload file: <input type="file" ref={input => this.fileInput = input}>
+    )
+  }
+}
+```
