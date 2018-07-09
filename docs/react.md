@@ -1076,3 +1076,119 @@ class FileInput extends React.Component {
   }
 }
 ```
+## 状态提升
+
+当多个组件需要共用状态时， 把state提升到共同的父组件中进行管理。
+
+创建一个组件， 接受温度为props
+
+```
+function BoilingVerdict(props) {
+  if (props.celsius >= 100) {
+    return <p>烧开了</>
+  }
+  return <p>水没烧开</p>
+}
+```
+
+创建一个组件，渲染一个input输入温度
+
+```
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+    this.state = {temperature: ''}
+  }
+
+  handleChange(e) {
+    this.setState({temperature: e.target.value})
+  }
+  
+  render() {
+    const temperature = this.state.temperature
+    return (
+      <input value={temperature} onChange={this.handleChange} />
+      <BoilingVerdict celsius={parseFloat(temperature)}>
+    )
+  }
+}
+```
+增加一个需求， 要显示摄氏度和华氏度。 我们从Calculator中抽离出信组件
+
+```
+const scaleNames = {
+  c: 'Celsius',
+  f: 'Fahrenheit'
+}
+
+class TemperatureInput extends React.Component {
+  constructo(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+    this.state = {temperature: ''}
+  }
+  handleChange(e) {
+    this.setState({temperature: e.target.value})
+  }
+  render() {
+    const temperature = this.state.temperature
+    const scale = this.props.scale
+    return (
+      <input value={temperature} onChange="this.handleChange}>
+    )
+  }
+}
+
+class Calculator extends React.Component {
+  render () {
+    return (
+      <div>
+        <TemperatureInput scale="c" />
+        <TemperatureInput scale="f" />
+      </div>
+    )
+  }
+}
+```
+至此， 输入狂中输入时候并没有联动更新，继续
+
+```
+function toCelsius(f) {
+  return (f - 32) * 5 / 9
+}
+
+function toFahrenheit(c) {
+  return (c * 9 / 5) + 32
+}
+
+function tryConvert(temperature, convert) {
+  const input = parseFloat(temperature)
+  if (Number.isNan(input)) {
+    return ''
+  }
+  const output = convert(input)
+  const rounded = Math.round(output * 1000) / 1000
+  return rounded.toStrin()
+}
+
+```
+先创建了互转温度的算法，再创建了非法内容输入的检查
+
+```
+render() {
+  const temperature = this.props.temperature
+}
+// 把子组件状态改为 props
+
+handleChange (e) {
+  this.props.ontemperatureChange(e.target.value)
+}
+
+// 父组件调用如下
+<Temperatureinput scale="c" temperature={celsius} onTemperatureChange={this.handleCelsiusChange}>
+
+```
+由父组件提供操作方法
+
+!> **在React中任何可变数据理应只有一个单一“数据源”， 状态都是首先添加在需要渲染的组件中， 如果另外组件也需要这些数据，则应提升到共同的父附件中， 保持`自上而下的数据流`。**
