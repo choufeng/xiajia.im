@@ -8,6 +8,8 @@
 
 * [Functional Programming](functional.md)
 
-* [Algorithm 算法学习](algorithm.md)
+* [Algorithm](algorithm.md)
+
+* [Gimp](gimp.md)
 
 * [Links](links.md)
