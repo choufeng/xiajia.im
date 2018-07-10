@@ -1192,3 +1192,114 @@ handleChange (e) {
 由父组件提供操作方法
 
 !> **在React中任何可变数据理应只有一个单一“数据源”， 状态都是首先添加在需要渲染的组件中， 如果另外组件也需要这些数据，则应提升到共同的父附件中， 保持`自上而下的数据流`。**
+
+## 组合 与 继承
+
+对于一些组件不能提前知道他们的子组件的情况， 使用`children`属性将子元素直接传递输出
+
+```
+
+function FancyBorder(props) {
+  return (
+    <div className={'cc-' + props.color}>
+      {props.children}
+    </div>
+  )
+}
+
+function WelcomeDialog() {
+  return (
+    <FancyBoarder color="blue">
+      <h1> Welecome </h1>
+      <p> Thank you</p>
+    </FancyBoarder>
+  )
+}
+
+```
+
+对于在组件中有多个入口的情况，可以使用自己约定的属性而非`children`
+
+```
+function SplitPane(props) {
+  return (
+    <div>
+      <div>
+        {props.left}
+      </div>
+      <div>
+        {props.right}
+      </div>
+    </div>
+  )
+}
+
+function App() {
+  return (
+    <SplitPane left={<Contacts />} right={<Chat />}>
+  )
+}
+```
+
+### 特殊实例
+
+当一个组件是另一个组件的特殊实例时，通过组合来实现。通过配置属性用较特殊的组件来渲染较通用的组件
+
+```
+function Dialog(props) {
+  return (
+    <FancyBorder color="blue">
+      <h1>{props.title}</h1>
+      <p>{props.message}</p>
+    </FancyBorder>
+  )
+}
+
+function WelcomeDialog() {
+  return (
+    <Dialog title="Welcome" message="Thank you" />
+  )
+}
+```
+
+Class版
+```
+function Dialog(props) {
+  return (
+    <FancyBorder color="blud">
+      <h1>{props.title}</h1>
+      <p>{props.message}</p>
+      {props.children}
+    </FancyBorder>
+  )
+}
+
+class SignUpDialog extends React.Component {
+  constructor(props) {
+    super (props)
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSignUp = this.handleSignUp.bind(this)
+    this.state = {login: ''}
+  }
+  render() {
+    return (
+      <Dialog title="Mars" message="I'm Comming">
+        <input value={this.state.login} onChange={this.handleChange} />
+        <button onClick={this.handleSignUp}>Let Go</button>
+      </Dialog>
+    )
+  }
+
+  handleChange(e) {
+    this.setState({login: e.target.value})
+  }
+
+  handleSignUp() {
+    alert(`Welcome to Mars, ${this.state.login}`)
+  }
+}
+```
+
+### 关于继承
+
+属性和组合的方式提供了清晰安全的自定义组件方式， 继承？ 不存在的。
