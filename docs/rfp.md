@@ -10,6 +10,8 @@ FRP 是一个内网穿透方案
 
 ## 创建内网web服务
 
+### 服务端
+
 1. 在服务器下载项目最新[release](https://github.com/fatedier/frp/releases)版本
 2. 配置frps.ini文件
 
@@ -18,10 +20,13 @@ FRP 是一个内网穿透方案
 bind_port = 7000
 vhost_http_port = 80
 ```
-3. 运行服务  ./frps -c frps.ini
 
-4. 在本地下载项目代码
-5. 配置frpc.ini
+### 客户端
+
+1. 运行服务  ./frps -c frps.ini
+
+2. 在本地下载项目代码
+3. 配置frpc.ini
 
 ```
 [common]
@@ -35,6 +40,7 @@ local_port = 3000
 custom_domains = xxx.com // 你的域名
 
 ```
+### 域名
 
-6. 把域名做A到xx.xx.xx.xx
+1. 把域名做A到xx.xx.xx.xx
 
