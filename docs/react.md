@@ -144,6 +144,51 @@ const element = (
   </div>
 )
 ```
+
+### 深入JSX
+
+!> **本质上RSX只是`React.createElement`的语法糖**
+
+如果没有子代码， 可以自闭和
+
+```
+<God />
+```
+### 指定React元素类型
+
+大写开头的JSX标签表示一个React组件， 编译为同名变量
+
+!> **React必须声明**
+
+```
+import CustomButton from './CustomButton'
+
+function show () {
+  return <CustomButton />
+}
+```
+### 点表示法
+
+可以使用JSX中的点表示React组件. 在JSX中使用组件
+
+```
+import React from 'react'
+const MyCom = {
+  DatePicker: function DatePicker(props) {
+    return <div>oooooo</div>
+  }
+}
+
+function BlueDaePicker () {
+  return <MyCom.DatePicker />
+}
+
+### 首字母大写
+
+元素类型以小写字母开头， 表示一个内置的组件
+应该以大写开头命名组件。
+
+
 ## 元素渲染
 
 > 元素是构成React应用的最小单位
@@ -1303,3 +1348,5 @@ class SignUpDialog extends React.Component {
 ### 关于继承
 
 属性和组合的方式提供了清晰安全的自定义组件方式， 继承？ 不存在的。
+
+## 

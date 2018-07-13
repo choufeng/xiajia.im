@@ -12,4 +12,6 @@
 
 * [Gimp](gimp.md)
 
+* [RFP](rfp.md)
+
 * [Links](links.md)
