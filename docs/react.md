@@ -1349,4 +1349,128 @@ class SignUpDialog extends React.Component {
 
 属性和组合的方式提供了清晰安全的自定义组件方式， 继承？ 不存在的。
 
-## 
+> 类型检查只在开发模式下进行
+
+## 使用prop-types进行类型检查
+
+React内置的类型检查功能是 prop-types
+
+```
+import PropTypes from 'prop-types'
+
+class Greeting extends React.Component {
+  render () {
+    return (
+      <h1>Hello, {this.props.name}</h1>
+    )
+  }
+}
+
+Greeting.propTypes = {
+  name: PropTypes.string
+}
+
+```
+
+PropTypes类型有: 
+
+```
+import PropTypes from 'prop-types'
+MyComponent.propTypes = {
+  // JS原生类型
+  optionalArray: PropTypes.array,
+  optionalBool: PropTypes.bool,
+  optionalFunc: PropTypes.func,
+  optionalNumber: PropTypes.number,
+  optionalObject: PropTypes.object,
+  optionalString: PropTypes.string,
+  optionalSymbol: PropTypes.symbol
+
+  // 任何可被渲染的元素(数字，字符串，子元素， 数组)
+  optionalNode: PropTypes.node,
+
+  // React元素
+  optionalElement: PropTypes.element,
+
+  // 实例
+  optionalMessage: PropTypes.instanceOf(Message),
+
+  // 属性和子是某个特定值之一
+  optionalEnum: PropTypes.oneOf(['A', 'B']),
+
+  // 列觉类型之一的对象
+  optionalUnion: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.instanceOf(Message)
+  ]),
+
+  // 指定元素类型的数组
+  optionalArrayOf: PropTypes.arrayOf(PropTypes.number),
+
+  // 指定类型的对象
+  optionalObjectOf: PropTypes.objectOf(PropTypes.number),
+
+  // 指定属性，类型的对象
+  optionalObjectWithShape: PropTypes.shape({
+    color: PropTypes.string,
+    fontSize: PropTypes.number
+  })
+
+  // 在任何propTypes属性后加`.isRequired`， 父组件为提供会报错
+  requiredFunc: PropTypes.func.isRequired,
+
+  // 任意类型
+  requiredAny: PropTypes.any.isRequired,
+
+  // 可以制定一个自定义验证器， 在验证失败是返回一个Error对象（oneOfType）中不起作用
+  customProp: function(props, propName, componentName) {
+    if (!/matchme/.test(props[propName])) {
+      return new Error(
+        'error message
+      )
+    }
+  }
+
+  // 可以提供一个自定义的`arrayOf`或`objectOf`验证器， 失败时返回Error对象， 用于验证数组或者对象的每一个值。 验证器的前两个参数的第一个是数组或者对象本身的值，第二个是他们对应的键。
+
+  customArrayProp: PropTypes.arrayOf(function(propValue, key, componentName, location, propFullName) {
+    if (!/matchme/.test(propValue[key])) {
+      return new Error(
+        'some error'
+      )
+    }
+  })
+}
+
+```
+
+使用 PropTypes.element可以指定只传递一个子代
+
+```
+import PropTypes from 'prop-types'
+
+class MyCom extends React.Component {
+  render () {
+    const children = this.props.children
+    return (
+      <div>{children}</div>
+    )
+  }
+}
+
+MyCom.propTypes = {
+  children: PropTypes.element.isRequired
+}
+
+```
+
+设置默认属性值, 则父组件不一定要传入
+
+```
+Greeting.defaultProps = {
+  name: 'Jon'
+}
+```
+
+## 静态类型检查
