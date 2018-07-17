@@ -184,6 +184,7 @@ const MyCom = {
 function BlueDaePicker () {
   return <MyCom.DatePicker />
 }
+```
 
 ### 首字母大写
 
