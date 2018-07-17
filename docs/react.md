@@ -6,6 +6,8 @@
 
 React是一个采用声明式，高校且灵活的构建UI的框架。
 
+[TOC]
+
 ## 开始
 
 > 本文代码使用`ES6`规范编写
@@ -1474,3 +1476,24 @@ Greeting.defaultProps = {
 ```
 
 ## 静态类型检查
+
+Flow 是由Facebook开发的JS代码静态类型检查器， 静态类型检查可以在开发阶段尽早发现错误。
+
+```
+npm i --save-dev flow-bin
+npm run flow init
+```
+
+运行`npm run flow init`前添加flow到`package.json`
+
+```
+{
+  “scripts": {
+    "flow": "flow"
+  }
+}
+```
+
+
+!> `TODO` Flow详细使用将会单独编写
+
