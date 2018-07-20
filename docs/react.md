@@ -1496,3 +1496,262 @@ npm run flow init
 
 !> `TODO` Flow详细使用将会单独编写
 
+
+## 良好的项目结构
+
+本文开始时列除了默认的项目结构， 在小型项目上应用足够方便， 但遇到中大型项目， 单一的结构会对项目管理造成困扰，所以需要一个合理的结构设计。
+
+
+- src
+  - common
+  - features
+    - common
+    - home
+      - redux
+        - actions.js
+        - reducer.js
+        - initHomeStats.js
+        - doubleStats.js
+      - index.js
+      - routes.js
+      - styles.less
+      - HomePage.js
+      - HomePage.less
+    - hello
+  - tests
+    - features
+      - common
+      - home
+        - Home.test.js
+  - styles.less
+  - routes.js
+  - index.js
+
+上面目录结构，是以功能块为基础组织结构的， 我们将一个功能的模块（页面）内容放置到一起。相应的style 和 routes 页存放在相同目录下，便于查找。 
+
+但在src目录的routes中，我们调用所有的routes组合起来。同样在styles中组合所有的样式。
+
+tests目录保持与features目录结构一致
+
+```
+// /src/styles.less
+import 'features/home/styles.less'
+import 'features/common/styles.less'
+import 'features/hello/styles.less'
+```
+
+```
+// src/index.js
+
+```
+
+```
+// src/styles.less
+@import './features/home/styles.less'
+```
+
+```
+// features/home/index.js
+
+export { default as Home } from './Home'
+export { default as HomeHeader } from './HomeHeader'
+
+```
+
+```
+// src/common/rootreducer.js
+import { combineReducers } from 'redux
+import { routerReducer } from 'react-router-redux'
+import homeReducer from '../features/home/redux'
+
+
+const reducerMap = {
+  router: routerReducer
+}
+
+export default combineReducers(reducerMap)
+```
+
+## 组件与服务器通信
+
+组件与服务器的通信 合理的运用是在 componentDidMount 生命周期中
+
+```
+componentDidMount () {
+  axios.get('/list').then(res => {
+    this.setState({list: res.data})
+  })
+}
+```
+
+在组件更新阶段再次与服务端通讯，基于对组件生命周期的理解，componentWillReceiveProps是个合适的阶段
+
+> componentWillReceiveProps 中并不能保证props一定发生了修改, 增加判断是合理的选择
+
+```
+componentWillreceiveProps(nextProps){
+  if(nextProps.category !== this.props.category) {
+    axios.get(`list?category=${nextProps.category}`).then(res => {
+      this.setState({list: res.data})
+    })
+  }
+}
+```
+
+## 组件间通信
+
+### 父子组件通信
+
+父像子组件通信， 使用 `props`
+
+```
+
+render () {
+  return (
+    <div>
+      <ul>
+      {this.props.users.map(user => {
+        return (
+          <li key={user.id}>{user.name}</li>
+        )
+      })}
+      </ul>
+    </div>
+  )
+}
+```
+
+```
+render () {
+  return (
+    <UserList users={this.state.users} />
+  )
+}
+```
+
+子组件像父组件通信，也使用`props`
+
+```
+class UserList extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      newUser: ''
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  // 调用父组件的props方法更新
+  handleClick () {
+    if(this.state.newUser && this.state.newUser.length > 0) {
+      this.props.onAddUser(this.state.newUser)
+    }
+  }
+}
+```
+
+子组件调用了父组件的onAddUser方法增加了新用户。
+
+### 兄弟组件通信
+
+拥有相同父组件的组件间， 将共享的数据提升到父组件管理
+
+> 不需要维护自己状态的组件， 用函数组件即可。
+
+面临其中一个子节点层次过深时， 使用  context
+
+在提供context的组件内新增一个 getClildContext方法， 返回context对象， 然后在组件 childContextTypes属性上定义 context对象的属性
+
+!> 关于 context 查看 详细的Context章节
+
+
+## Refs
+
+Refs用来解决某些情况下需要在数据流外强制修改子组件.
+
+何时使用 Refs
+
+- 处理焦点，文本选择或者媒体控制
+- 除法强制动画
+- 集成第三方DOM库
+
+尽量避免使用refs
+
+在`Dialog`组件中 传递 `isOpen`属性比暴露  `open()`, `close()`方法要好。
+
+### 创建Refs
+
+```
+class MyCom extends React.Component {
+  constructor(props) {
+    super(props)
+    this.myRef = React.createRef()
+  }
+}
+```
+
+### 访问Refs
+
+当ref被传递给 render时， 使用current属性对节点引用进行访问
+
+```
+const node = this.myRef.current
+```
+
+!> 不能在函数是组件上使用 ref， 因为他们没有实例
+
+### 为类组件添加Ref
+
+```
+class MyCom extends React.Component {
+  constructor(props) {
+    super(props)
+    this.textInput = React.createRef()
+  }
+
+  componentDidMount() {
+    this.textInput.current.focusTextInput()
+  }
+
+  render () {
+    return (
+      <CustomTextInput ref={this.textInput} />
+    )
+  }
+}
+```
+
+### ref转发
+
+### 回调ref
+
+不同于传递 `createRef()`创建ref属性，你会传递一个函数。 这个函数接受React组件实例或者DOM元素作为参数，以存储并使用他们能被其他地方访问
+
+```
+class CustomTextInput extends React.Component {
+  constructor(props) {
+    super(props)
+    this.textInput = null
+    this.setTextInputRef = element => {
+      this.textInput = element
+    }
+    this.focusTextInput = () => {
+      if (this.textInput) this.textInput.focus()
+    }
+  }
+
+  componentDidMount() {
+    this.focusTextInput()
+  }
+
+  render() {
+    return (
+      <div>
+        <input type="text" ref={this.setTextInputRef} />
+        <input type="button" value="xxx" onClick={this.focusTextInput} />
+      </div>
+    )
+  }
+}
+```
+
