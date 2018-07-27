@@ -1755,3 +1755,6 @@ class CustomTextInput extends React.Component {
 }
 ```
 
+## 高阶组件
+
+
