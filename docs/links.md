@@ -17,6 +17,8 @@
   - https://nestjs.com/  新的Node服务端框架
   - http://typeorm.io/#/ 基于TypeScript的数据库 ORM
   - https://www.jianshu.com/p/f200a75a15d2  chai.js断言库API
+  - https://date-fns.org/ 优秀的基于FP的时间处理工具
+  - http://mathjs.org 丰富的数学函数库 
 
 ## Wechat develop
   - https://tencent.github.io/wepy/#/ 小程序开发框架(Vue)
