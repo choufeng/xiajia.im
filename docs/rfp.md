@@ -23,10 +23,9 @@ vhost_http_port = 80
 
 ### 客户端
 
-1. 运行服务  ./frps -c frps.ini
-
-2. 在本地下载项目代码
-3. 配置frpc.ini
+1. 在本地下载项目最新[release](https://github.com/fatedier/frp/releases)版本
+2. 配置frpc.ini
+3. 运行服务  ./frps -c frps.ini
 
 ```
 [common]
