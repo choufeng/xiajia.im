@@ -8,6 +8,8 @@
 
 * [Functional Programming](functional.md)
 
+* [Effective JavaScript](effective_javascript.md)
+
 * [Algorithm](algorithm.md)
 
 * [Gimp](gimp.md)
