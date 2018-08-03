@@ -49,7 +49,7 @@ OMZ...
 "8" | "1" // 9
 ```
 
-NaN 也会让人抓狂
+`NaN` 也会让人抓狂
 
 ```
 var x = NaN
@@ -62,4 +62,7 @@ isNaN({}) //true
 isNaN({key: 'value'}) //true
 
 ```
+
+不能用相等运算来判断一个值是否是`NaN`
+尽量使用`Number.isNaN(value)` 来替代全局函数 `isNaN(value)`。
 
