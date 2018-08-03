@@ -19,6 +19,8 @@
   - https://www.jianshu.com/p/f200a75a15d2  chai.js断言库API
   - https://date-fns.org/ 优秀的基于FP的时间处理工具
   - http://mathjs.org 丰富的数学函数库 
+  - http://rekit.js.org React项目脚手架
+  - https://blog.csdn.net/chenjunji123456/article/details/60763452 Js资源大收集
 
 ## Wechat develop
   - https://tencent.github.io/wepy/#/ 小程序开发框架(Vue)
