@@ -234,7 +234,7 @@
 |通过规则判断是否相等|[eqBy](http://ramda.cn/docs/#eqBy)|
 |大于|[gt](http://ramda.cn/docs/#gt)|
 |大于等于|[gte](http://ramda.cn/docs/#gte)|
-|大于|[lt](http://ramda.cn/docs/#lt)|
+|小于|[lt](http://ramda.cn/docs/#lt)|
 |小于等于|[lte](http://ramda.cn/docs/#lte)|
 |限定有序数据类型的范围|[clamp](http://ramda.cn/docs/#clamp)|
 |求两个数的较大值|[max](http://ramda.cn/docs/#max)|
