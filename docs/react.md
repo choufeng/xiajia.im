@@ -1418,7 +1418,7 @@ MyComponent.propTypes = {
     fontSize: PropTypes.number
   })
 
-  // 在任何propTypes属性后加`.isRequired`， 父组件为提供会报错
+  // 在任何propTypes属性后加`.isRequired`， 父组件未提供会报错
   requiredFunc: PropTypes.func.isRequired,
 
   // 任意类型
