@@ -66,3 +66,16 @@ isNaN({key: 'value'}) //true
 不能用相等运算来判断一个值是否是`NaN`
 尽量使用`Number.isNaN(value)` 来替代全局函数 `isNaN(value)`。
 
+## No.4 Prefer Primitives to Object Wrappers
+
+Js有5种原始类型: booleans, numbers, strings, null, undefined
+
+然而标准库还提供了用于将booleans, numbers, strings包装为对象的构造函数
+
+所以
+```
+let s = new String("Jon")
+s[2] // n
+
+typeof s // object
+```
