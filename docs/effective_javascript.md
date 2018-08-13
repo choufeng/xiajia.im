@@ -79,3 +79,26 @@ s[2] // n
 
 typeof s // object
 ```
+
+## No.5 Avoid using == with Mixed Types
+
+```
+1.0e0 == {valueOf: function() {return true}} // true
+```
+
+相等运算符可在不同类型中比较， 比较的不是值，而是是否指向同一个对象。
+
+盗个图：
+![](https://pic1.zhimg.com/80/41b28b0c6def1909e0ad1da86093e620_hd.png)
+
+所以谨慎分析使用`==`和`===`是很有必要的。
+`==` 隐藏的强制模式会让错误产生的几率变大
+
+`===`更容易清楚的表达程序语义，除非你要使用类型指向比较。
+
+
+
+## No.6 Learn the Limits of Semicolon Insertion
+
+分号
+
