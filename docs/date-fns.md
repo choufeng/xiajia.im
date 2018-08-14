@@ -12,25 +12,24 @@
 
 |Actions|Function|
 |---|---|
-||closestIndexTo|
-||closetTo|
-||compareAsc|
-||compareDesc|
-||distanceInWords|
-||distanceInWordsStrict|
-||distanceInWordsStrict|
-||distanceInWordsToNow|
-||format|
-||isAfter|
-||isBefore|
-||isDate|
-||isEqual|
-||isFuture|
-||isPast|
-||isValid|
-||max|
-||min|
-||parse|
+|返回与给定日期相比较的最接近日期的索引|closestIndexTo|
+|从最接近给定日期的数组返回日期|closetTo|
+|比较两个日期，如果第一个日期在第二个日期之后，则返回1;如果第一个日期在第二个日期之前，则返回-1;如果日期相等，则返回0。|compareAsc|
+|比较两个日期，如果第一个日期在第二个日期之后，则返回-1;如果第一个日期在第二个日期之前，则返回1;如果日期相等，则返回0。|compareDesc|
+|返回给定日期之间的距离|distanceInWords|
+|使用严格单位返回给定日期之间的距离。 这就像`distanceInWords`，但不使用'almost'，'over'，'less'等。|distanceInWordsStrict|
+|返回给定日期与现在之间的距离。|distanceInWordsToNow|
+|格式化时间|format|
+|第一个日期是否晚于第二个|isAfter|
+|第一个日期是否早于第二个|isBefore|
+|是否是Date实例|isDate|
+|给定的日期是否相等？|isEqual|
+|给定的日期是否是将来|isFuture|
+|给定的日期是否是过去|isPast|
+|如果参数为Invalid Date，则返回false，否则返回true。 无效日期是`Date`值为`NaN`|isValid|
+|返回给定日期的最新日期。|max|
+|返回给定日期中最早的日期。|min|
+|将给定参数转换为Date实例。|parse|
 
 ### Range Helpers
 
