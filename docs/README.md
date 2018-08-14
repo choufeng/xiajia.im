@@ -6,6 +6,8 @@
 
 ## [Ramda.js](ramda.md)
 
+## [Date-fns.js](date-fns.md)
+
 ## [Functional Programming](functional.md)
 
 ## [Algorithm](algorithm.md)
