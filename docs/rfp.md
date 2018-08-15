@@ -14,6 +14,9 @@ FRP 是一个内网穿透方案
 
 1. 在服务器下载项目最新[release](https://github.com/fatedier/frp/releases)版本
 2. 配置frps.ini文件
+3. 运行 ./frps -c frps.ini
+
+!> 注意， 绑定80端口在linux系统中需要用root账户
 
 ```
 [common]
