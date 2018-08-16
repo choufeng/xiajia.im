@@ -35,39 +35,39 @@
 
 |Actions|Function|
 |---|---|
-||areRangesOverlapping|
-||getOverlappingDasyInRanges|
-||isWithinRange|
+|给定的日期范围是否与另一个日期范围重叠？|areRangesOverlapping|
+|获取两个日期范围内重叠的天数|getOverlappingDaysInRanges|
+|给定日期是否在范围内？|isWithinRange|
 
 ### 时间戳
 
 |Actions|Function|
 |---|---|
-||getTime|
+|获取给定日期的毫秒时间戳。|getTime|
 
 ### 毫秒
 
 |Actions|Function|
 |---|---|
-||addMilliseconds|
-||differenceInMilliseconds|
-||getMilliseconds|
-||setMilliseconds|
-||subMilliseconds|
+|将指定的毫秒数添加到给定日期。|addMilliseconds|
+|获取给定日期之间的毫秒数。|differenceInMilliseconds|
+|获取给定日期的毫秒数。|getMilliseconds|
+|将毫秒数设置为给定日期。|setMilliseconds|
+|从给定日期减去指定的毫秒数。|subMilliseconds|
 
 ### 秒
 
 |Actions|Function|
 |---|---|
-||addSeconds|
-||differenceInSeconds|
-||endOfSecond|
-||getSeconds|
-||isSameSecond|
-||isThisSecond|
-||setSeconds|
-||startOfSecond|
-||subSeconds|
+|将指定的秒数添加到给定日期。|addSeconds|
+|获取给定日期之间的秒数。|differenceInSeconds|
+|返回指定日期的秒数(本地时区)。|endOfSecond|
+|获取给定日期的秒数。|getSeconds|
+|给定日期是否在同一秒内？|isSameSecond|
+|给定日期是否与当前日期相同？|isThisSecond|
+|将秒设置为给定日期。|setSeconds|
+|返回给定日期的秒数。（本地时区）|startOfSecond|
+|从给定日期减去指定的秒数。|subSeconds|
 
 ### 分钟
 
