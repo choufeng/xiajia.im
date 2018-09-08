@@ -8,6 +8,8 @@
 
 * [React.js](react.md)
 
+* [TypeORM](typeorm.md)
+
 * [Functional Programming](functional.md)
 
 * [Effective JavaScript](effective_javascript.md)
