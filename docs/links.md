@@ -21,6 +21,7 @@
   - http://mathjs.org 丰富的数学函数库 
   - http://rekit.js.org React项目脚手架
   - https://blog.csdn.net/chenjunji123456/article/details/60763452 Js资源大收集
+  - https://kamranahmed.info/driver.js/ 分布指引页面关注点
 
 ## Wechat develop
   - https://tencent.github.io/wepy/#/ 小程序开发框架(Vue)
