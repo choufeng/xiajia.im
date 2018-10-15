@@ -34,7 +34,7 @@ const manager = respository.manager;
 - clear
 
 ## TreeRepository API
-|Function| notes|
+|Function| Action |
 |---|---|
 |findTrees | 返回所有树，包括子节点，字节点的子节点..|
 |findRoots| 返回所有根节点|
