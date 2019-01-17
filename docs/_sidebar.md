@@ -19,3 +19,5 @@
 * [RFP](rfp.md)
 
 * [Links](links.md)
+
+* [解决npm 权限问题](npm-global.md)
