@@ -12,6 +12,8 @@
 
 * [Functional Programming](functional.md)
 
+* [Functional Thinking](functional_thinking.md)
+
 * [Algorithm](algorithm.md)
 
 * [Gimp](gimp.md)
