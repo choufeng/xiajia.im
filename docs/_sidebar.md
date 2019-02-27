@@ -10,6 +10,8 @@
 
 * [TypeORM](typeorm.md)
 
+* [Learn More, Study Less](learnmore_studyless.md)
+
 * [Functional Programming](functional.md)
 
 * [Functional Thinking](functional_thinking.md)
