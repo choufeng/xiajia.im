@@ -27,3 +27,5 @@
 * [解决npm 权限问题](npm-global.md)
 
 * [Javascript 测试驱动开发](unit_test.md)
+
+* [简化听书笔记](jianhua.md)
