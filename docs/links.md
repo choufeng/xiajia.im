@@ -5,6 +5,7 @@
   - https://cloud.mongodb.com  官方提供的云端MongoDB服务
     - https://www.mongodb.com/products/compass 官方提供的在线MongoDB管理工具
   - https://mongolab.com/ 免费的500M MongoDB， 临时测试或者小流量服务可用
+  - https://mlab.com 免费的MongoDB
   - https://redislabs.com/ 提供一个免费的30M Redis
   - https://www.chuangkit.com/ 好用的图片处理工具
   - https://mockplus.cn 快速原型生成工具
