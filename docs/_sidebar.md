@@ -4,6 +4,8 @@
 
 * [Ramda.js](ramda.md)
 
+* [cypress.js](cypressjs.md)
+
 * [Date-fns.js](date-fns.md)
 
 * [React.js](react.md)
