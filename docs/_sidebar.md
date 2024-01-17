@@ -2,6 +2,8 @@
 
 * [Home](README.md)
 
+* [HarmonyOS](harmony_os.md)
+
 * [Ramda.js](ramda.md)
 
 * [cypress.js](cypressjs.md)
