@@ -3,7 +3,7 @@
 也许可能成为AI全栈工程师
 
 ## 知识体系
-![](../images/structure.png)
+![](images/structure.png)
 
 ##  一些可能性
 - 智能客服
@@ -40,22 +40,22 @@
 - AI Copilot
 - AI Agent
 
-![](../images/business_arch.webp)
+![](images/business_arch.webp)
 
 ## 技术构架
 - 纯Prompt
-![](../images/prompt_arch.png)
+![](images/prompt_arch.png)
 - Agent + Function Calling
-![](../images/func_arch.png)
+![](images/func_arch.png)
 - RAG
-![](../images/embeddings_arch.png)
+![](images/embeddings_arch.png)
 - Fine-tuning
-![](../images/tech_arch.png)
+![](images/tech_arch.png)
 
 ## 技术路线选择
 
-![](../images/tech_solution.png)
+![](images/tech_solution.png)
 
 
 ## 技术选型的额外因素
-![](../images/choose.png)
+![](images/choose.png)
