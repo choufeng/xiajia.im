@@ -282,4 +282,39 @@ export default class MyAbilityStage extends AbilityStage {
 
 TitleComponent({isRefresh: $isSwitchData})
 
+# 组件
+[API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references/js-apis-overview-0000001056361791)
 
+## 基础组件
+[传送门](https://developer.huawei.com/consumer/cn/training/course/slightMooc/C101667360160710997)
+
+- Text
+- Image
+- TextInput
+- Button
+- LoadingProgress
+
+### 引用资源类型
+定义在entry/src/main/resources下的资源配置
+```
+// string.json
+{
+  "string": [
+    {
+      "name": "login_text",
+      "value": "登录"
+    }
+  ]
+} 
+
+// how to use it 
+
+Button($r('app.string.login_text))
+
+```
+## 容器组件
+
+[传送门](https://developer.huawei.com/consumer/cn/training/course/slightMooc/C101667360160710997)
+
+- [Column](https://developer.harmonyos.com/cn/docs/documentation/doc-references/ts-container-column-0000001333641085)
+- [Row](https://developer.harmonyos.com/cn/docs/documentation/doc-references/ts-container-row-0000001281480714)
