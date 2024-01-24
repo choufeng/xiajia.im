@@ -2,6 +2,8 @@
 
 * [Home](README.md)
 
+* [AI](ai.md)
+
 * [HarmonyOS](harmony_os.md)
 
 * [Ramda.js](ramda.md)
