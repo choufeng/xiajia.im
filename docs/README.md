@@ -4,7 +4,7 @@
 
 ## [AI](ai.md)
 
-## [Harmon_os](harmony_os.md)
+## [Harmony_OS](harmony_os.md)
 
 ## [React.js](react.md)
 
