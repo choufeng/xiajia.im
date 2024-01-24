@@ -276,10 +276,95 @@ export default class MyAbilityStage extends AbilityStage {
 
 
 
-### 笔记
 
-通过$操作符绑定传递state
+
+# 组件
+[API文档](https://developer.harmonyos.com/cn/docs/documentation/doc-references/js-apis-overview-0000001056361791)
+
+## 基础组件
+[传送门](https://developer.huawei.com/consumer/cn/training/course/slightMooc/C101667360160710997)
+
+- Text
+- Image
+- TextInput
+- Button
+- LoadingProgress
+
+### 引用资源类型
+定义在entry/src/main/resources下的资源配置
+```
+// string.json
+{
+  "string": [
+    {
+      "name": "login_text",
+      "value": "登录"
+    }
+  ]
+} 
+
+// how to use it 
+
+Button($r('app.string.login_text))
+
+```
+## 容器组件
+
+[传送门](https://developer.huawei.com/consumer/cn/training/course/slightMooc/C101667360160710997)
+
+- [Column](https://developer.harmonyos.com/cn/docs/documentation/doc-references/ts-container-column-0000001333641085)
+- [Row](https://developer.harmonyos.com/cn/docs/documentation/doc-references/ts-container-row-0000001281480714)
+
+## List & ListItem & ForEach
+
+入参: 
+- space, 
+- initialIndex, 
+- scroller
+
+## Grid * GridItem
+
+入参:
+- scroller
+
+属性:
+- columnsTemplate '1fr 2fr 1fr'
+- rowsTemplate
+- columnsGap
+- rowsGap
+
+### 滚动式布局
+不设定.columnsTemplate 同时设定height即可
+
+## 组件状态
+
+@Prop 同步父组件状态
+
+@Link 配合@Watch感知父组件状态变化实现
+
+```
+  // 子组件
+  @Link @Watch('onClickIndexChanged') clickIndex:number;
+
+  onClickIndexChanged(){}
+```
+#### 双向绑定 $ + Link
+通过$操作符绑定双向传递state 
 
 TitleComponent({isRefresh: $isSwitchData})
 
+
+## Video
+[传送门](https://developer.huawei.com/consumer/cn/training/course/slightMooc/C101680765314766141)
+@provide
+@Consume 
+
+## 模态弹窗
+
+- AlertDialog
+- DatePickerDialog
+- TextPickerDialog
+
+- 自定义弹窗
+@CustomDialog
 
