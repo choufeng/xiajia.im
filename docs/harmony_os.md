@@ -368,3 +368,69 @@ TitleComponent({isRefresh: $isSwitchData})
 - 自定义弹窗
 @CustomDialog
 
+## 动画
+
+为组件增加动画
+```ts
+Image()
+  .animation({
+    duration: 1000,
+    tempo: 1.0
+  })
+```
+
+## 网络获取数据
+### Web View
+Web组件实现, WebControlle实现控制和交互
+
+### Http请求
+
+```
+import http from '@ohos.net.http'
+
+let httpRequest = http.createHttp()
+
+httpRequest.on('headerReceive', (header) => {
+ //...
+})
+
+let promise = httpRequest.request(url, {
+  extraData: {},
+  connectTimeout: 60000,
+  readTimeout: 60000,
+  header: {
+    'Content-Type': 'application/json',
+  }
+});
+
+promise.then(value => {
+  // value.responseCode
+  // value.result
+  // value.header
+  // value.cookies
+})
+
+```
+
+请求某个权限是在module.json5中添加
+
+## 存储数据
+
+首选项存储，key-value形式
+[传送门](https://developer.huawei.com/consumer/cn/training/course/slightMooc/C101667367018821971)
+```
+import dataPreferences from '@ohos.data.preferences';
+
+// 在 entryAbility的onCreate获取实例
+
+onCreate(want, launchParam) {
+  PreferencesUtil.createFontPreferences(this.context);
+}
+// 非完整代码，看传送门
+```
+保存数据 put
+获取数据 get
+持久化数据 flush
+删除数据 delete
+
+
