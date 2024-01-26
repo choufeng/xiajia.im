@@ -59,3 +59,81 @@
 
 ## 技术选型的额外因素
 ![](images/choose.png)
+
+
+# Prompt
+
+简单理解可以是 搜索时代的 关键词， 会是每个要跟上时代融入 AI 交互的必备技能。
+
+Prompt门槛低，但上线非常高。
+
+## Prompt调优
+
+### 高质量的 prompt： **具体，丰富，少歧义**
+
+调优训练在日常中就是**完整说明事情的能力**的训练。
+
+## Prompt 的典型构成
+**角色**：给 AI 定义一个最匹配任务的角色，比如：「你是一位软件工程师」「你是一位小学老师」
+
+**指示**：对任务进行描述
+
+**上下文**：给出与任务相关的其它背景信息（尤其在多轮交互中）
+
+**例子**：必要时给出举例，学术中称为 one-shot learning, few-shot learning 或 in-context learning；实践证明其对输出正确性有很大帮助
+
+**输入**：任务的输入信息；在提示词中明确的标识出输入
+
+**输出**：输出的格式描述，以便后继模块自动解析模型的输出结果，比如（JSON、XML）
+
+### 大模型对 prompt 开头和结尾的内容更敏感
+
+### 「给例子」很常用，效果特别好
+
+### 一切问题先尝试用 prompt 解决，往往有四两拨千斤的效果
+
+
+向大模型发送的内容，只在推导， 无关训练。
+
+## 思维链
+
+有人在提问时以 "Let's think step by step 开头, 发现 AI 把问题拆分为多步骤推导会让结果更多精准。
+
+这个过程相当于让 AI 年成了丰富的“上文”， 从而提升了“下文”的质量。
+针对计算和逻辑推理比较有效。 
+
+## 自洽性
+
+一种对抗“幻觉”的手段： 多次演算，得到最多次出现的值。
+
+## 思维树
+
+在思维链的每一步采样多个分支
+
+## 防止Prompt攻击
+
+- 奶奶漏洞： 套路 AI
+- Prompt 注入攻击： 改变既定设定
+
+### 防范： 
+-Prompt 注入分类器：做输入内容识别安检拦截层。
+- 输入防御： 在输入中锁死回答范围。
+- Moderation API 违规过滤。
+
+## 关于 Prompt 的总结
+  1. 别急着上代码，先尝试用 prompt 解决，往往有四两拨千斤的效果
+  2. 但别迷信 prompt，合理组合传统方法提升确定性，减少幻觉
+  3. 定义角色、给例子是最常用的技巧
+  4. 用好思维链，让复杂逻辑/计算问题结果更准确
+  5. 防御 prompt 攻击非常重要
+
+## prompt 调优
+  - GPTs (https://chat.openai.com/gpts/discovery)
+  - Coze (https://www.coze.com/)
+  - Prompt tune (https://gitee.com/taliux/prompt-tune)
+
+### 额外共享
+- https://github.com/linexjlin/GPTs - 泄露出来的高级 GPTs 的 prompt
+- https://promptbase.com/
+- https://github.com/f/awesome-chatgpt-prompts
+- https://smith.langchain.com/hub
