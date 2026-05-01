@@ -58,6 +58,7 @@ export default defineConfig({
             { text: 'React.js', link: '/coding/react' },
             { text: 'Vue.js', link: '/coding/vue' },
             { text: 'HarmonyOS', link: '/coding/harmony-os' },
+            { text: 'OpenTUI', link: '/coding/opentui' },
           ],
         },
         {
