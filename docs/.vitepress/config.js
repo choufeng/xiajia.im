@@ -25,7 +25,7 @@ export default defineConfig({
       { text: '编程笔记', link: '/coding/react' },
       { text: '工具参考', link: '/reference/ramda' },
       { text: '关于', link: '/about' },
-      { text: 'PI 教程', link: '/pi-tutorials/' },
+      { text: 'PI 教程', link: '/pi-tutorials/index' },
     ],
 
     sidebar: {
@@ -81,7 +81,7 @@ export default defineConfig({
         {
           text: '快速上手',
           items: [
-            { text: '教程总览', link: '/pi-tutorials/' },
+            { text: '教程总览', link: '/pi-tutorials/index' },
             { text: '1. 安装与首次对话', link: '/pi-tutorials/01-quick-start' },
           ],
         },
