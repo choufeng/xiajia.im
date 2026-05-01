@@ -31,13 +31,20 @@ export default defineConfig({
       // AI 专区 — 未来重点发展方向
       '/ai/': [
         {
-          text: 'AI 学习',
+          text: 'AI 基础',
           items: [
             { text: '总览', link: '/ai/index' },
-            { text: 'Prompt 工程', link: '/ai/prompt' },
             { text: 'LLM 基础', link: '/ai/llm-basics' },
+            { text: 'Prompt 工程', link: '/ai/prompt' },
             { text: '技术架构', link: '/ai/architecture' },
             { text: '应用场景', link: '/ai/applications' },
+          ],
+        },
+        {
+          text: 'Agent 工程',
+          items: [
+            { text: 'Skill Graph 改造方案', link: '/ai/skill-graph-constitution' },
+            { text: 'Skill Graph 创建指南', link: '/ai/skill-graph-guide' },
           ],
         },
       ],
