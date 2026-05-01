@@ -6,11 +6,11 @@
 
 | # | 文件 | 主题 | 难度 |
 |---|------|------|------|
-| 1 | [01-quick-start.md](./01-quick-start.md) | 安装、认证、首次对话 | ⭐ |
-| 2 | [02-daily-workflow.md](./02-daily-workflow.md) | 日常使用：交互模式、会话管理、文件引用 | ⭐⭐ |
-| 3 | [03-settings-context.md](./03-settings-context.md) | 设置、AGENTS.md、上下文文件 | ⭐⭐ |
-| 4 | [04-extensions-skills.md](./04-extensions-skills.md) | 扩展（Extensions）和技能（Skills） | ⭐⭐⭐ |
-| 5 | [05-sdk-packages.md](./05-sdk-packages.md) | SDK 集成与 Pi Packages 分享 | ⭐⭐⭐⭐ |
+| 1 | [01-quick-start](./01-quick-start) | 安装、认证、首次对话 | ⭐ |
+| 2 | [02-daily-workflow](./02-daily-workflow) | 日常使用：交互模式、会话管理、文件引用 | ⭐⭐ |
+| 3 | [03-settings-context](./03-settings-context) | 设置、AGENTS.md、上下文文件 | ⭐⭐ |
+| 4 | [04-extensions-skills](./04-extensions-skills) | 扩展（Extensions）和技能（Skills） | ⭐⭐⭐ |
+| 5 | [05-sdk-packages](./05-sdk-packages) | SDK 集成与 Pi Packages 分享 | ⭐⭐⭐⭐ |
 
 ## 推荐阅读路径
 

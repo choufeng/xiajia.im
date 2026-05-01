@@ -241,4 +241,4 @@ pi --tools read,grep,find,ls -p "审查代码"
 ✅ 掌握了文件引用和编辑方式  
 ✅ 了解了会话导出和分享  
 
-**下一步 → [教程 3：设置与上下文文件](./03-settings-context.md)**
+**下一步 → [教程 3：设置与上下文文件](./03-settings-context)**

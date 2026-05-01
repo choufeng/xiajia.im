@@ -304,4 +304,4 @@ pi --append-system-prompt "始终用中文回答" "解释这个函数"
 ✅ 了解了自定义系统提示的方法  
 ✅ 配置了 Shell 和快捷键  
 
-**下一步 → [教程 4：扩展与技能](./04-extensions-skills.md)**
+**下一步 → [教程 4：扩展与技能](./04-extensions-skills)**

@@ -25,6 +25,7 @@ export default defineConfig({
       { text: '编程笔记', link: '/coding/react' },
       { text: '工具参考', link: '/reference/ramda' },
       { text: '关于', link: '/about' },
+      { text: 'PI 教程', link: '/pi-tutorials/' },
     ],
 
     sidebar: {
@@ -71,6 +72,31 @@ export default defineConfig({
           items: [
             { text: 'Effective JavaScript', link: '/coding/effective-js' },
             { text: 'Learn More Study Less', link: '/coding/learn-more' },
+          ],
+        },
+      ],
+
+      // PI 教程
+      '/pi-tutorials/': [
+        {
+          text: '快速上手',
+          items: [
+            { text: '教程总览', link: '/pi-tutorials/' },
+            { text: '1. 安装与首次对话', link: '/pi-tutorials/01-quick-start' },
+          ],
+        },
+        {
+          text: '日常工作流',
+          items: [
+            { text: '2. 会话管理与分支', link: '/pi-tutorials/02-daily-workflow' },
+            { text: '3. 设置与上下文文件', link: '/pi-tutorials/03-settings-context' },
+          ],
+        },
+        {
+          text: '深度定制',
+          items: [
+            { text: '4. 扩展与技能开发', link: '/pi-tutorials/04-extensions-skills' },
+            { text: '5. SDK 集成与包分享', link: '/pi-tutorials/05-sdk-packages' },
           ],
         },
       ],

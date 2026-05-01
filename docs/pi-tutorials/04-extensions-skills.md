@@ -471,4 +471,4 @@ description: 创建 React 组件
 ✅ 学会了创建和使用技能  
 ✅ 了解了提示模板和主题定制  
 
-**下一步 → [教程 5：SDK 集成与 Pi Packages](./05-sdk-packages.md)**
+**下一步 → [教程 5：SDK 集成与 Pi Packages](./05-sdk-packages)**
