@@ -1,9 +1,9 @@
 ---
-name: right-block
+name: write-blog
 description: 为 XiaJia.IM（VitePress 个人笔记站点）快速生成新文章，自动处理文件创建、侧边栏导航更新、git commit 与 push 完整流程。当需要在此站点中新增文章、教程或笔记时使用。
 ---
 
-# right-block — XiaJia.IM 文章生成技能
+# write-blog — XiaJia.IM 文章生成技能
 
 > 本技能用于在 XiaJia.IM 站点中快速创建新文章，并自动维护导航配置和 git 版本控制。
 
