@@ -23,5 +23,8 @@
     "vitepress": "^1.6.4",
     "vue": "^3.5.13",
     "gh-pages": "^6.3.0"
+  },
+  "overrides": {
+    "vite": "^6.4.2"
   }
 }
