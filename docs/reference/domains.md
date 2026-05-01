@@ -23,7 +23,7 @@
 
 好友申请请注明： 购买域名
 
-![](qrcode.jpg)
+![](/qrcode.jpg)
 
 ### Email
 

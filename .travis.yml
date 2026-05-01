@@ -1,2 +1,19 @@
-language: javascript
-script: true
+language: node_js
+node_js:
+  - 20
+
+cache:
+  npm: true
+
+script:
+  - npm install
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vitepress/dist
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master

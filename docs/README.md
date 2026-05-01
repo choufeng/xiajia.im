@@ -1,19 +1,15 @@
 # Hello You
 
-本站主要记录一些个人的学习收集，创作。目标集中在`Code`， `Music`，`Life`。如果对你也有益处，就是功德。
+本站主要记录一些个人的学习收集，创作。目标集中在 `Code`，`Music`，`Life`。如果对你也有益处，就是功德。
 
-## [AI](ai.md)
+## [AI 学习](/ai/)
 
-## [Harmony_OS](harmony_os.md)
+## [React.js](/coding/react)
 
-## [React.js](react.md)
+## [HarmonyOS](/coding/harmony-os)
 
-## [Ramda.js](ramda.md)
+## [函数式编程](/coding/functional)
 
-## [Date-fns.js](date-fns.md)
+## [Ramda.js](/reference/ramda)
 
-## [Functional Programming](functional.md)
-
-## [Algorithm](algorithm.md)
-
-## [Links](links.md)
+## [工具参考](/reference/ramda)

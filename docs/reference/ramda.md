@@ -44,14 +44,14 @@
 |取出末尾元素|[last](http://ramda.cn/docs/#last)|
 |取出前 length - 1 个元素（删除末尾元素）|[init](http://ramda.cn/docs/#init)|
 |取出后 length - 1 个元素（删除首个元素）|[tail](http://ramda.cn/docs/#tail)|
-|求差集：{a∣a∈xs ∩ a∉ys}|[difference](http://ramda.cn/docs/#difference)|
-|求差集：{a∣a∉xs ∩ a∈ys}|[without](http://ramda.cn/docs/#without)|
+|求差集：`{a∣a∈xs ∩ a∉ys}`|[difference](http://ramda.cn/docs/#difference)|
+|求差集：`{a∣a∉xs ∩ a∈ys}`|[without](http://ramda.cn/docs/#without)|
 |求差集：根据条件计算第一个列表与第二个列表的差集|[differenceWith](http://ramda.cn/docs/#differenceWith)|
-|求对称差集：{(xs ∪ ys) - (xs ∩ ys)}|[symmetricDifference](http://ramda.cn/docs/#symmetricDifference)|
+|求对称差集：`{(xs ∪ ys) - (xs ∩ ys)}`|[symmetricDifference](http://ramda.cn/docs/#symmetricDifference)|
 |求对称差集：根据条件计算所有不属于两个列表交集的元素|[symmetricDifferenceWith](http://ramda.cn/docs/#symmetricDifferenceWith)|
-|求交集：{xs ∩ ys}|[intersection](http://ramda.cn/docs/#intersection)|
+|求交集：`{xs ∩ ys}`|[intersection](http://ramda.cn/docs/#intersection)|
 |求交集：从 xs 中挑选出在 ys 中符合条件的元素|[innerJoin](http://ramda.cn/docs/#innerJoin)|
-|求并集：{xs ∪ ys}|[union](http://ramda.cn/docs/#union)|
+|求并集：`{xs ∪ ys}`|[union](http://ramda.cn/docs/#union)|
 |求并集：根据条件判断两元素是否重复|[unionWith](http://ramda.cn/docs/#unionWith)|
 |查找列表中首个满足条件的元素|[find](http://ramda.cn/docs/#find)|
 |查找列表中首个满足条件的元素的索引|[findIndex](http://ramda.cn/docs/#findIndex)|
@@ -241,14 +241,14 @@
 |按规则求两个数的较大值|[maxBy](http://ramda.cn/docs/#maxBy)|
 |求两个数的较小值|[min](http://ramda.cn/docs/#min)|
 |按规则求两个数的较小值|[minBy](http://ramda.cn/docs/#minBy)|
-|求差集：{a∣a∈xs ∩ a∉ys}|[difference](http://ramda.cn/docs/#difference)|
-|求差集：{a∣a∉xs ∩ a∈ys}|[without](http://ramda.cn/docs/#)|
+|求差集：`{a∣a∈xs ∩ a∉ys}`|[difference](http://ramda.cn/docs/#difference)|
+|求差集：`{a∣a∉xs ∩ a∈ys}`|[without](http://ramda.cn/docs/#)|
 |求差集：根据条件计算第一个列表与第二个列表的差集|[differenceWith](http://ramda.cn/docs/#differenceWith)|
-|求对称差集：{(xs ∪ ys) - (xs ∩ ys)}|[symmetricDifference](http://ramda.cn/docs/#symmetricDifference)|
+|求对称差集：`{(xs ∪ ys) - (xs ∩ ys)}`|[symmetricDifference](http://ramda.cn/docs/#symmetricDifference)|
 |求对称差集：根据条件计算所有不属于两个列表交集的元素|[symmetricDifferenceWith](http://ramda.cn/docs/#symmetricDifferenceWith)|
-|求交集：{xs ∩ ys}|[intersection](http://ramda.cn/docs/#intersection)|
+|求交集：`{xs ∩ ys}`|[intersection](http://ramda.cn/docs/#intersection)|
 |求交集：从 xs 中挑选出在 ys 中符合条件的元素|[innerJoin](http://ramda.cn/docs/#innerJoin)|
-|求并集：{xs ∪ ys}|[union](http://ramda.cn/docs/#union)|
+|求并集：`{xs ∪ ys}`|[union](http://ramda.cn/docs/#union)|
 |求并集：根据条件判断两元素是否重复|[unionWith](http://ramda.cn/docs/#unionWith)|
 
 ## COMPUTATION 数学运算
