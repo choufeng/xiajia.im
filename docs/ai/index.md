@@ -32,7 +32,14 @@
 
 ## 下一步探索
 
-- [Prompt 工程](/ai/prompt) — 与 AI 交互的核心技能
+### 基础知识
+
 - [LLM 基础](/ai/llm-basics) — 理解大模型的工作原理
+- [Prompt 工程](/ai/prompt) — 与 AI 交互的核心技能
 - [技术架构](/ai/architecture) — AI 系统架构与路线选择
 - [应用场景](/ai/applications) — AI 在实际业务中的落地
+
+### Agent 工程
+
+- [Skill Graph 改造方案](/ai/skill-graph-constitution) — Pi-Mono 三级架构（Compound → Molecule → Atom）设计与实现
+- [Skill Graph 创建指南](/ai/skill-graph-guide) — Skill 文件规范、三层架构、操作规程
