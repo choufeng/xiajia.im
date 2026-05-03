@@ -37,6 +37,7 @@ export default defineConfig({
             { text: '总览', link: '/ai/index' },
             { text: 'LLM 基础', link: '/ai/llm-basics' },
             { text: 'Prompt 工程', link: '/ai/prompt' },
+            { text: 'AI 精准沟通', link: '/ai/ai-communication' },
             { text: '技术架构', link: '/ai/architecture' },
             { text: '应用场景', link: '/ai/applications' },
           ],
