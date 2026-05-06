@@ -38,6 +38,7 @@ export default defineConfig({
             { text: 'LLM 基础', link: '/ai/llm-basics' },
             { text: 'Prompt 工程', link: '/ai/prompt' },
             { text: 'AI时代的精准沟通', link: '/ai/ai-communication' },
+            { text: 'GWT 需求描述法', link: '/ai/gwt-requirements' },
             { text: '技术架构', link: '/ai/architecture' },
             { text: '应用场景', link: '/ai/applications' },
           ],
