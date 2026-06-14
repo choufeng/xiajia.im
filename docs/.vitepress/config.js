@@ -49,6 +49,7 @@ export default defineConfig({
             { text: 'GenericAgent 深度分析', link: '/ai/generic-agent' },
             { text: 'Loop Engineering', link: '/ai/loop-engineering' },
             { text: 'Loop Engineering on pi', link: '/ai/loop-engineering-on-pi' },
+            { text: 'L3 Loop 设计方案', link: '/ai/loop-engineering-l3-design' },
             { text: 'Skill Graph 改造方案', link: '/ai/skill-graph-constitution' },
             { text: 'Skill Graph 创建指南', link: '/ai/skill-graph-guide' },
           ],
