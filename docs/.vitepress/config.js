@@ -50,6 +50,8 @@ export default defineConfig({
             { text: 'Loop Engineering', link: '/ai/loop-engineering' },
             { text: 'Loop Engineering on pi', link: '/ai/loop-engineering-on-pi' },
             { text: 'L3 Loop 设计方案', link: '/ai/loop-engineering-l3-design' },
+            { text: 'Loop Memory 系统', link: '/ai/loop-engineering-memory' },
+            { text: 'Multi-Loop 协调', link: '/ai/loop-engineering-multi-loop' },
             { text: 'Skill Graph 改造方案', link: '/ai/skill-graph-constitution' },
             { text: 'Skill Graph 创建指南', link: '/ai/skill-graph-guide' },
           ],
