@@ -54,6 +54,8 @@ export default defineConfig({
             { text: 'Multi-Loop 协调', link: '/ai/loop-engineering-multi-loop' },
             { text: 'Loop 网关层', link: '/ai/loop-engineering-gateway' },
             { text: 'Loop 反衰减', link: '/ai/loop-engineering-antidegradation' },
+            { text: 'Meta-Loop 自我演进', link: '/ai/loop-engineering-meta-loop' },
+            { text: 'Loop 韧性与评估', link: '/ai/loop-engineering-resilience-eval' },
             { text: 'Skill Graph 改造方案', link: '/ai/skill-graph-constitution' },
             { text: 'Skill Graph 创建指南', link: '/ai/skill-graph-guide' },
           ],
