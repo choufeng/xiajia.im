@@ -52,6 +52,23 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Harness Engineering 系列（10 篇）',
+          collapsed: true,
+          items: [
+            { text: '系列总纲', link: '/ai/harness-engineering-series' },
+            { text: '1. Harness 是什么', link: '/ai/harness-engineering' },
+            { text: '2. 工具系统与工具总线', link: '/ai/harness-engineering-tools' },
+            { text: '3. 上下文工程与 Token 预算', link: '/ai/harness-engineering-context' },
+            { text: '4. 会话与运行时生命周期', link: '/ai/harness-engineering-runtime' },
+            { text: '5. 子代理调度容器', link: '/ai/harness-engineering-subagents' },
+            { text: '6. 扩展与技能加载机制', link: '/ai/harness-engineering-extensions' },
+            { text: '7. 记忆持久化分层', link: '/ai/harness-engineering-memory' },
+            { text: '8. 沙箱、权限与安全模型', link: '/ai/harness-engineering-security' },
+            { text: '9. 可观测性与可调试性', link: '/ai/harness-engineering-observability' },
+            { text: '10. 协议层与分发', link: '/ai/harness-engineering-protocols-distribution' },
+          ],
+        },
+        {
           text: 'Loop Engineering 系列（25 篇）',
           collapsed: true,
           items: [
