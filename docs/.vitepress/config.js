@@ -24,6 +24,7 @@ export default defineConfig({
       },
       { text: '编程笔记', link: '/coding/react' },
       { text: '工具参考', link: '/reference/ramda' },
+      { text: '读书笔记', link: '/reading/index' },
       { text: '关于', link: '/about' },
       { text: 'PI 教程', link: '/pi-tutorials/index' },
     ],
@@ -98,6 +99,19 @@ export default defineConfig({
             { text: '23. 成本工程', link: '/ai/loop-engineering-cost-engineering' },
             { text: '24. 跨工具对比', link: '/ai/loop-engineering-tool-comparison' },
             { text: '25. 团队引入路线图', link: '/ai/loop-engineering-team-adoption' },
+          ],
+        },
+      ],
+
+      // 读书笔记
+      '/reading/': [
+        {
+          text: '读书笔记',
+          items: [
+            { text: '总览', link: '/reading/index' },
+            { text: '《高效能人士的七个习惯》', link: '/reading/seven-habits' },
+            { text: '《富有的习惯》', link: '/reading/rich-habits' },
+            { text: '《深度工作》', link: '/reading/deep-work' },
           ],
         },
       ],
