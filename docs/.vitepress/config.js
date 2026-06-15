@@ -53,6 +53,7 @@ export default defineConfig({
             { text: 'Loop Memory 系统', link: '/ai/loop-engineering-memory' },
             { text: 'Multi-Loop 协调', link: '/ai/loop-engineering-multi-loop' },
             { text: 'Loop 网关层', link: '/ai/loop-engineering-gateway' },
+            { text: 'Loop 反衰减', link: '/ai/loop-engineering-antidegradation' },
             { text: 'Skill Graph 改造方案', link: '/ai/skill-graph-constitution' },
             { text: 'Skill Graph 创建指南', link: '/ai/skill-graph-guide' },
           ],
