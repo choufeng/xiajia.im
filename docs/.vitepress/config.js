@@ -26,6 +26,7 @@ export default defineConfig({
       { text: '工具参考', link: '/reference/ramda' },
       { text: '读书笔记', link: '/reading/index' },
       { text: '关于', link: '/about' },
+      { text: 'Learning English', link: '/english/' },
       { text: 'PI 教程', link: '/pi-tutorials/index' },
     ],
 
@@ -243,6 +244,14 @@ export default defineConfig({
             { text: '简化听书笔记', link: '/reference/jianhua' },
             { text: '杂记', link: '/reference/somethings' },
           ],
+        },
+      ],
+
+      // Learning English
+      '/english/': [
+        {
+          text: 'Daily Vocabulary',
+          items: [],
         },
       ],
     },
