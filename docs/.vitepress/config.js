@@ -150,6 +150,23 @@ export default defineConfig({
           ],
         },
         {
+          text: '函数式编程系列（10 篇）',
+          collapsed: true,
+          items: [
+            { text: '0. 函数式思维（阅读指南）', link: '/coding/functional-intro' },
+            { text: '1. 函数式基础深化', link: '/coding/functional-essentials' },
+            { text: '2. 纯函数与副作用', link: '/coding/pure-functions' },
+            { text: '3. 不可变数据结构', link: '/coding/immutability' },
+            { text: '4. 高阶函数与组合', link: '/coding/higher-order' },
+            { text: '5. Ramda.js 实战', link: '/coding/ramda-practical' },
+            { text: '6. Effect 系统', link: '/coding/effect-system' },
+            { text: '7. 函数式状态管理', link: '/coding/state-management' },
+            { text: '8. 函数式测试', link: '/coding/testing' },
+            { text: '9. TypeScript 类型系统', link: '/coding/fp-in-typescript' },
+            { text: '10. AI 时代的函数式融合', link: '/coding/fp-in-ai-era' },
+          ],
+        },
+        {
           text: '函数式编程',
           items: [
             { text: '函数式编程', link: '/coding/functional' },
