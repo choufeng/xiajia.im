@@ -10,7 +10,7 @@ description: 为 XiaJia.IM 站点生成「每日英语」学习内容：5 个面
 ## 前置检查
 
 - 当前项目根：`/Users/jia.xia/development/xiajia.im`
-- 环境变量已设：`VOLC_SECRET_KEY`（火山豆包大模型 2.0 的 **API Key**，从「控制台 > API Key 管理」生成，作 X-Api-Key）
+- 环境变量已设：`VOLC_TTS_APP_ID` + `VOLC_TTS_ACCESS_TOKEN`（本应用为旧版控制台三件套鉴权，v3 端点用 X-Api-App-Id + X-Api-Access-Key 头，非新版 X-Api-Key）
   - 缺失则停止，提示用户配置 `~/.pi/agent/.env`
 - `ffmpeg` 已装（macOS 默认有）
 
@@ -71,8 +71,8 @@ node .pi/skills/english-daily/scripts/tts-volc.mjs \
 
 - 调用火山豆包大模型 2.0（v3 流式端点），A/B 各一音色，ffmpeg 拼接成单 MP3
 - 失败（鉴权/网络）→ 停止，**不写 MD，不回写 vocab**，清理 `/tmp/english-dialog.json`
-- 鉴权失败（401/Invalid X-Api-Key）→ 提示用户检查 `VOLC_SECRET_KEY` 是否为 v3 API Key
-- 资源未授权（403/resource not granted）→ 提示用户在控制台开通「豆包语音合成大模型 2.0」服务授权
+- 鉴权失败（401/Invalid）→ 检查 VOLC_TTS_APP_ID/VOLC_TTS_ACCESS_TOKEN 是否正确，本应用用旧版三件套鉴权
+- 资源未授权（403/resource not granted）→ 控制台开通豆包语音合成大模型 2.0 服务
 
 ### 5. 写 MD
 
