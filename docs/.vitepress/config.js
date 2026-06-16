@@ -256,14 +256,7 @@ export default defineConfig({
       },
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/choufeng/xiajia.im' },
-    ],
-
-    editLink: {
-      pattern: 'https://github.com/choufeng/xiajia.im/edit/main/docs/:path',
-      text: '在 GitHub 上编辑此页',
-    },
+    socialLinks: [],
 
     footer: {
       message: 'Released under the ISC License.',
