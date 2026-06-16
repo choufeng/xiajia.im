@@ -25,5 +25,10 @@
 | [《高效能人士的七个习惯》](./seven-habits) | 史蒂芬·柯维 | 由内而外的品格修炼 | ✓ |
 | [《富有的习惯》](./rich-habits) | 托马斯·科利 | 习惯决定财富 | ✓ |
 | [《深度工作》](./deep-work) | 卡尔·纽波特 | 注意力的稀缺与复利 | ✓ |
+| [《思考，快与慢》](./thinking-fast-slow) | 丹尼尔·卡尼曼 | 两套系统与认知偏误 | ✓ |
+| [《金钱心理学》](./psychology-of-money) | 摩根·豪泽尔 | 行为 > 智商的财富观 | ✓ |
+| [《非暴力沟通》](./nonviolent-communication) | 马歇尔·卢森堡 | 观察感受需要请求 | ✓ |
+| [《认知天性》](./make-it-stick) | 彼得·布朗等 | 学习的科学方法 | ✓ |
+| [《活出生命的意义》](./mans-search-for-meaning) | 维克多·弗兰克尔 | 最后的自由与意义 | ✓ |
 
 > 持续更新。下一本读什么，欢迎在 [GitHub](https://github.com/choufeng/xiajia.im) 留言建议。
