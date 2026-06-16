@@ -30,5 +30,6 @@
 | [《非暴力沟通》](./nonviolent-communication) | 马歇尔·卢森堡 | 观察感受需要请求 | ✓ |
 | [《认知天性》](./make-it-stick) | 彼得·布朗等 | 学习的科学方法 | ✓ |
 | [《活出生命的意义》](./mans-search-for-meaning) | 维克多·弗兰克尔 | 最后的自由与意义 | ✓ |
+| [《原子习惯》](./atomic-habits) | 詹姆斯·克利尔 | 习惯的复利公式 | ✓ |
 
 > 持续更新。下一本读什么，欢迎在 [GitHub](https://github.com/choufeng/xiajia.im) 留言建议。

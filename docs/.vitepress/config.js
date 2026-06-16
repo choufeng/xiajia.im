@@ -117,6 +117,7 @@ export default defineConfig({
             { text: '《非暴力沟通》', link: '/reading/nonviolent-communication' },
             { text: '《认知天性》', link: '/reading/make-it-stick' },
             { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
+            { text: '《原子习惯》', link: '/reading/atomic-habits' },
           ],
         },
       ],
