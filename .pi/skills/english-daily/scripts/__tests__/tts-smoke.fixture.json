@@ -1,0 +1,4 @@
+[
+  { "speaker": "A", "text": "Hey, should we refactor this module before the release?" },
+  { "speaker": "B", "text": "Yes, but let's check the test coverage first." }
+]
