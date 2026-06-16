@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "private": true,
+  "main": "index.mjs",
+  "comment": "Node v22.22.2 兼容：node --test <dir> 把目录当模块入口加载（不递归），故提供 index.mjs 聚合器让 `node --test __tests__/` 解析目录并跑全部测试。glob 形式 *.test.mjs 不匹配本文件，无重复计数。"
+}
