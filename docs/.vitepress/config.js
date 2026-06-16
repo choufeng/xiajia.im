@@ -251,7 +251,9 @@ export default defineConfig({
       '/english/': [
         {
           text: 'Daily Vocabulary',
-          items: [],
+          items: [
+            { text: 'Code Review Discussion', link: '/english/code-review-discussion' },
+          ],
         },
       ],
     },
