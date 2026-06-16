@@ -5,7 +5,7 @@
 // 用法:
 //   tts-volc.mjs --dialog <对话JSON路径> --out <MP3路径> --scene <slug>
 //
-// 凭证(环境变量): VOLC_TTS_ACCESS_TOKEN（作 X-Api-Key，v3 大模型2.0 的 API Key）
+// 凭证(环境变量): VOLC_SECRET_KEY（作 X-Api-Key，v3 大模型2.0 的 API Key，从控制台>API Key管理获取）
 //
 // 参考: https://www.volcengine.com/docs/6561/2528925
 import fs from 'node:fs';
@@ -123,7 +123,7 @@ async function* parseJsonStream(response) {
 
 /** 单段文本 → MP3 Buffer（调 v3 流式端点，收集所有 data 片段解码拼接） */
 async function synthStream(text, speaker) {
-  const apiKey = requireEnv('VOLC_TTS_ACCESS_TOKEN');
+  const apiKey = requireEnv('VOLC_SECRET_KEY');
   const reqid = randomUUID();
   const resp = await fetch(ENDPOINT, {
     method: 'POST',
@@ -219,7 +219,7 @@ function concatMp3(parts, outPath) {
 
 export async function main(argv = process.argv) {
   const args = parseArgs(argv);
-  requireEnv('VOLC_TTS_ACCESS_TOKEN'); // 提前校验，避免误打"合成"日志
+  requireEnv('VOLC_SECRET_KEY'); // 提前校验，避免误打"合成"日志
   const dialog = JSON.parse(fs.readFileSync(args.dialog, 'utf8'));
   if (!Array.isArray(dialog) || dialog.length === 0) {
     throw new Error('dialog 必须是非空数组 [{speaker,text},...]');
