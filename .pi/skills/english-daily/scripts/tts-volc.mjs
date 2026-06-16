@@ -5,7 +5,10 @@
 // 用法:
 //   tts-volc.mjs --dialog <对话JSON路径> --out <MP3路径> --scene <slug>
 //
-// 凭证(环境变量): VOLC_SECRET_KEY（作 X-Api-Key，v3 大模型2.0 的 API Key，从控制台>API Key管理获取）
+// 凭证(环境变量): 旧版控制台三件套鉴权（本应用为旧版，非新版 X-Api-Key）
+//   VOLC_TTS_APP_ID       → X-Api-App-Id
+//   VOLC_TTS_ACCESS_TOKEN → X-Api-Access-Key
+//   + X-Api-Resource-Id: seed-tts-2.0
 //
 // 参考: https://www.volcengine.com/docs/6561/2528925
 import fs from 'node:fs';
@@ -123,12 +126,15 @@ async function* parseJsonStream(response) {
 
 /** 单段文本 → MP3 Buffer（调 v3 流式端点，收集所有 data 片段解码拼接） */
 async function synthStream(text, speaker) {
-  const apiKey = requireEnv('VOLC_SECRET_KEY');
+  const appId = requireEnv('VOLC_TTS_APP_ID');
+  const accessKey = requireEnv('VOLC_TTS_ACCESS_TOKEN');
   const reqid = randomUUID();
   const resp = await fetch(ENDPOINT, {
     method: 'POST',
     headers: {
-      'X-Api-Key': apiKey,
+      // 旧版控制台三件套鉴权（非新版 X-Api-Key）
+      'X-Api-App-Id': appId,
+      'X-Api-Access-Key': accessKey,
       'X-Api-Resource-Id': RESOURCE_ID,
       'X-Api-Request-Id': reqid,
       'Content-Type': 'application/json',
@@ -144,14 +150,14 @@ async function synthStream(text, speaker) {
   }
   const chunks = [];
   for await (const obj of parseJsonStream(resp)) {
-    // 错误响应：{header:{code,message}}
-    if (obj.header && obj.header.code && obj.header.code !== 0) {
+    // 错误响应：{header:{code,message}}，code 非 0/20000000 为失败
+    if (obj.header && obj.header.code !== undefined && obj.header.code !== 0 && obj.header.code !== 20000000) {
       throw new Error(
         `TTS 失败 header.code=${obj.header.code} msg=${obj.header.message ?? ''}`,
       );
     }
-    // 成功响应：{code:0,data}
-    if (obj.code !== undefined && obj.code !== 0) {
+    // 成功码可能是 0（单段）或 20000000（流式 OK）。非 0/20000000 为失败
+    if (obj.code !== undefined && obj.code !== 0 && obj.code !== 20000000) {
       throw new Error(`TTS 失败 code=${obj.code} msg=${obj.message ?? ''}`);
     }
     if (obj.data) {
@@ -174,7 +180,7 @@ async function fetchWithRetry(text, speaker, retries = 3) {
       lastErr = e;
       // 鉴权/参数错误（非瞬时网络）不重试，直接抛
       const msg = String(e.message || e);
-      if (/HTTP 4\d\d|Invalid X-Api-Key|header.code=|缺少环境变量/.test(msg)) {
+      if (/HTTP 4\d\d|header.code=|TTS 失败 code|缺少环境变量|resource not granted/.test(msg)) {
         throw e;
       }
       if (i < retries - 1) {
@@ -219,7 +225,8 @@ function concatMp3(parts, outPath) {
 
 export async function main(argv = process.argv) {
   const args = parseArgs(argv);
-  requireEnv('VOLC_SECRET_KEY'); // 提前校验，避免误打"合成"日志
+  requireEnv('VOLC_TTS_APP_ID');     // 提前校验，避免误打"合成"日志
+  requireEnv('VOLC_TTS_ACCESS_TOKEN');
   const dialog = JSON.parse(fs.readFileSync(args.dialog, 'utf8'));
   if (!Array.isArray(dialog) || dialog.length === 0) {
     throw new Error('dialog 必须是非空数组 [{speaker,text},...]');
