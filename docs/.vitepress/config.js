@@ -134,6 +134,21 @@ export default defineConfig({
           ],
         },
         {
+          text: 'React 进阶系列（8 篇）',
+          collapsed: true,
+          items: [
+            { text: '系列总纲', link: '/coding/react-series' },
+            { text: '1. 设计哲学：为什么是声明式', link: '/coding/react-philosophy' },
+            { text: '2. JSX 与元素', link: '/coding/react-jsx' },
+            { text: '3. 渲染与 Reconciliation', link: '/coding/react-reconciliation' },
+            { text: '4. Hooks（一）：状态', link: '/coding/react-hooks-state' },
+            { text: '5. Hooks（二）：useEffect', link: '/coding/react-hooks-effects' },
+            { text: '6. Hooks（三）：记忆化', link: '/coding/react-memoization' },
+            { text: '7. 状态管理选型', link: '/coding/react-state-management' },
+            { text: '8. 性能与并发特性', link: '/coding/react-performance-concurrent' },
+          ],
+        },
+        {
           text: '函数式编程',
           items: [
             { text: '函数式编程', link: '/coding/functional' },
