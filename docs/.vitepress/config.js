@@ -277,4 +277,10 @@ export default defineConfig({
   markdown: {
     lineNumbers: false,
   },
+
+  vite: {
+    build: {
+      target: 'esnext',
+    },
+  },
 })

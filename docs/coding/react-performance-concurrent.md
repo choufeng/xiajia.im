@@ -59,7 +59,7 @@ const ExpensiveItem = React.memo(function Item({ data }: { data: Item }) {
 });
 ```
 
-**坑**：memo 只挡「props 浅比较没变」。若你每次渲染都传一个**新建的对象/函数**给子组件（如 `onClick={() => ...}` 或 `style={{ color: 'red' }}`），引用每次都变，memo 直接失效。要让 memo 真正生效，往往得配合 `useCallback`/`useMemo` 稳住那些引用。**先测量再上 memo**——它有比较成本，无脑加反而拖慢。
+**坑**：memo 只挡「props 浅比较没变」。若你每次渲染都传一个**新建的对象/函数**给子组件（如 <code v-pre>onClick={() => ...}</code> 或 <code v-pre>style={{ color: 'red' }}</code>），引用每次都变，memo 直接失效。要让 memo 真正生效，往往得配合 `useCallback`/`useMemo` 稳住那些引用。**先测量再上 memo**——它有比较成本，无脑加反而拖慢。
 
 **拆分粒度**：把「频繁变化的部分」和「稳定部分」拆成不同组件。一个会动的数字别把整张静态表都拖着重渲染。
 
