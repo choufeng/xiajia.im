@@ -15,27 +15,27 @@ scene: Debugging a Production Incident
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://dict.youdao.com/w/session" target="_blank" rel="noopener">session</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=session&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/session" target="_blank" rel="noopener">session</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=session&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>会话（客户端与服务端的一次交互状态保持）</td>
       <td>The user's session expired after 30 minutes of inactivity.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">用户会话在 30 分钟无操作后过期。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/shim" target="_blank" rel="noopener">shim</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=shim&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/shim" target="_blank" rel="noopener">shim</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=shim&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>兼容垫片（补齐旧环境缺失 API 的代码层）</td>
       <td>We added a polyfill shim to support fetch on legacy browsers.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">我们加了 polyfill 垫片以在旧浏览器上支持 fetch。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/queue" target="_blank" rel="noopener">queue</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=queue&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/queue" target="_blank" rel="noopener">queue</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=queue&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>队列（先进先出的待处理任务缓冲）</td>
       <td>Failed jobs get retried from the dead-letter queue.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">失败的任务从死信队列重试。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/throttle" target="_blank" rel="noopener">throttle</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=throttle&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/throttle" target="_blank" rel="noopener">throttle</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=throttle&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>限流（控制请求速率防过载）</td>
       <td>The API will throttle requests if you exceed 100 per second.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">如果超过每秒 100 次请求，API 会进行限流。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/mutable" target="_blank" rel="noopener">mutable</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=mutable&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/mutable" target="_blank" rel="noopener">mutable</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=mutable&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>可变的（运行时可被修改的状态）</td>
       <td>Prefer immutable data structures to avoid race conditions.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">优先用不可变数据结构以避免竞态条件。</span></td>
     </tr>

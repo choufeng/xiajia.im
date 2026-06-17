@@ -1,0 +1,22 @@
+/* 单词发音按钮 */
+.word-play-btn {
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  font-size: 1em;
+  padding: 2px 6px;
+  margin-left: 4px;
+  vertical-align: middle;
+  line-height: 1;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.word-play-btn:hover {
+  background: var(--vp-c-brand-soft);
+  border-color: var(--vp-c-brand);
+}
+
+.word-play-btn:active {
+  transform: scale(0.95);
+}

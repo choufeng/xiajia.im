@@ -99,12 +99,12 @@ scene: <场景英文标题>
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://dict.youdao.com/w/word1" target="_blank" rel="noopener">word1</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=word1&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/word1" target="_blank" rel="noopener">word1</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=word1&amp;type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>中文意思</td>
       <td>English example sentence.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">中文翻译。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/word2" target="_blank" rel="noopener">word2</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=word2&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/word2" target="_blank" rel="noopener">word2</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=word2&amp;type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>...</td>
       <td>...</td>
     </tr>
@@ -113,7 +113,7 @@ scene: <场景英文标题>
 ```
 
 - 单词全小写（URL/audio query 小写）
-- 复合词（如 transpile/stacktrace）有道无词条 → src 改用 `https://translate.google.com/translate_tts?ie=UTF-8&q=<word>&tl=en&client=tw-ob`
+- 复合词（如 transpile/stacktrace）有道无词条 → data-src 改用 `https://translate.google.com/translate_tts?ie=UTF-8&q=<word>&tl=en&client=tw-ob`
 - 中文翻译用 `var(--vp-c-text-2)` 淡色，自动适配深/浅主题
 
 ## 💬 Dialogue（在 Audio 之前）
