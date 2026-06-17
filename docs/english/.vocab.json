@@ -10,9 +10,9 @@
     },
     {
       "word": "idempotent",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "fixing-a-flaky-test"
     },
     {
       "word": "deprecated",
@@ -40,9 +40,9 @@
     },
     {
       "word": "deadlock",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "architecture-discussion"
     },
     {
       "word": "throughput",
@@ -58,9 +58,9 @@
     },
     {
       "word": "bottleneck",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "database-performance-tuning"
     },
     {
       "word": "scalable",
@@ -70,9 +70,9 @@
     },
     {
       "word": "redundancy",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "security-review"
     },
     {
       "word": "fallback",
@@ -88,21 +88,21 @@
     },
     {
       "word": "schema",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "architecture-discussion"
     },
     {
       "word": "migration",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "database-performance-tuning"
     },
     {
       "word": "transaction",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "pair-programming"
     },
     {
       "word": "rollback",
@@ -112,9 +112,9 @@
     },
     {
       "word": "commit",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "pair-programming"
     },
     {
       "word": "branch",
@@ -142,15 +142,15 @@
     },
     {
       "word": "stash",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "database-performance-tuning"
     },
     {
       "word": "artifact",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "ci-cd-pipeline-setup"
     },
     {
       "word": "pipeline",
@@ -166,9 +166,9 @@
     },
     {
       "word": "provision",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "architecture-discussion"
     },
     {
       "word": "container",
@@ -226,9 +226,9 @@
     },
     {
       "word": "authentication",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "security-review"
     },
     {
       "word": "authorization",
@@ -244,9 +244,9 @@
     },
     {
       "word": "token",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "ci-cd-pipeline-setup"
     },
     {
       "word": "session",
@@ -268,15 +268,15 @@
     },
     {
       "word": "stacktrace",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "incident-postmortem"
     },
     {
       "word": "graceful",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "security-review"
     },
     {
       "word": "retry",
@@ -334,15 +334,15 @@
     },
     {
       "word": "eviction",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "frontend-caching-strategy"
     },
     {
       "word": "invalidate",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "architecture-discussion"
     },
     {
       "word": "persist",
@@ -358,21 +358,21 @@
     },
     {
       "word": "snapshot",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "frontend-caching-strategy"
     },
     {
       "word": "replica",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "fixing-a-flaky-test"
     },
     {
       "word": "shard",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "pair-programming"
     },
     {
       "word": "partition",
@@ -388,15 +388,15 @@
     },
     {
       "word": "query",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "database-performance-tuning"
     },
     {
       "word": "optimize",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "database-performance-tuning"
     },
     {
       "word": "benchmark",
@@ -472,9 +472,9 @@
     },
     {
       "word": "extension",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "architecture-discussion"
     },
     {
       "word": "runtime",
@@ -496,9 +496,9 @@
     },
     {
       "word": "polyfill",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "frontend-caching-strategy"
     },
     {
       "word": "shim",
@@ -514,9 +514,9 @@
     },
     {
       "word": "bundling",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "frontend-caching-strategy"
     },
     {
       "word": "treeshaking",
@@ -538,21 +538,21 @@
     },
     {
       "word": "scaffold",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "ci-cd-pipeline-setup"
     },
     {
       "word": "boilerplate",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "pair-programming"
     },
     {
       "word": "template",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "fixing-a-flaky-test"
     },
     {
       "word": "lint",
@@ -586,9 +586,9 @@
     },
     {
       "word": "fixture",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "incident-postmortem"
     },
     {
       "word": "assertion",
@@ -604,45 +604,45 @@
     },
     {
       "word": "flaky",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "fixing-a-flaky-test"
     },
     {
       "word": "verbose",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "security-review"
     },
     {
       "word": "silent",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "ci-cd-pipeline-setup"
     },
     {
       "word": "obfuscate",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "incident-postmortem"
     },
     {
       "word": "checksum",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "pair-programming"
     },
     {
       "word": "hash",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "incident-postmortem"
     },
     {
       "word": "encrypt",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "frontend-caching-strategy"
     },
     {
       "word": "decrypt",
@@ -652,9 +652,9 @@
     },
     {
       "word": "cipher",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "security-review"
     },
     {
       "word": "telemetry",
@@ -670,9 +670,9 @@
     },
     {
       "word": "dashboard",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "ci-cd-pipeline-setup"
     },
     {
       "word": "alert",
@@ -682,9 +682,9 @@
     },
     {
       "word": "incident",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "incident-postmortem"
     },
     {
       "word": "postmortem",
@@ -700,9 +700,9 @@
     },
     {
       "word": "mitigate",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "fixing-a-flaky-test"
     },
     {
       "word": "escalate",
