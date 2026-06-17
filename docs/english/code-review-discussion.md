@@ -25,7 +25,7 @@ scene: Code Review Discussion
       <td>Let's partition the table by date for faster queries.</td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/transpile" target="_blank" rel="noopener">transpile</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=transpile&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/transpile" target="_blank" rel="noopener">transpile</a> <audio controls preload="none" src="https://translate.google.com/translate_tts?ie=UTF-8&q=transpile&tl=en&client=tw-ob" style="width:90px;height:24px;vertical-align:middle"></audio></td>
       <td>转译（把源码从一种语法转成另一种，如 TS→JS）</td>
       <td>Babel will transpile the modern syntax for older browsers.</td>
     </tr>

@@ -30,7 +30,7 @@ scene: Incident Postmortem
       <td>Load the fixture data before running the tests.</td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/stacktrace" target="_blank" rel="noopener">stacktrace</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=stacktrace&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/stacktrace" target="_blank" rel="noopener">stacktrace</a> <audio controls preload="none" src="https://translate.google.com/translate_tts?ie=UTF-8&q=stacktrace&tl=en&client=tw-ob" style="width:90px;height:24px;vertical-align:middle"></audio></td>
       <td>堆栈跟踪（错误调用链）</td>
       <td>The stacktrace pointed to a null reference in the handler.</td>
     </tr>
