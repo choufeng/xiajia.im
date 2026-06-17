@@ -101,7 +101,7 @@ scene: <场景英文标题>
     <tr>
       <td><a href="https://dict.youdao.com/w/word1" target="_blank" rel="noopener">word1</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=word1&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
       <td>中文意思</td>
-      <td>English example sentence.</td>
+      <td>English example sentence.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">中文翻译。</span></td>
     </tr>
     <tr>
       <td><a href="https://dict.youdao.com/w/word2" target="_blank" rel="noopener">word2</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=word2&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
@@ -112,19 +112,28 @@ scene: <场景英文标题>
 </table>
 ```
 
-- 单词全小写（URL 和 audio query 都用小写）
-- `type=2` = 美音（`type=1` = 英音）
-- audio 缩到 90×24 不撑高表格
+- 单词全小写（URL/audio query 小写）
+- 复合词（如 transpile/stacktrace）有道无词条 → src 改用 `https://translate.google.com/translate_tts?ie=UTF-8&q=<word>&tl=en&client=tw-ob`
+- 中文翻译用 `var(--vp-c-text-2)` 淡色，自动适配深/浅主题
 
-## 🎧 Audio
+## 💬 Dialogue（在 Audio 之前）
+
+每句英文后跟小字淡色中文翻译：
+
+```markdown
+**A**: English sentence.
+<span style="font-size:0.85em;color:var(--vp-c-text-2)">A：中文翻译。</span>
+
+**B**: English sentence with **target_word**.
+<span style="font-size:0.85em;color:var(--vp-c-text-2)">B：中文翻译。</span>
+```
+
+- 目标词在英文里加粗，中文翻译保留词义
+- 英文与对应中文之间不空行；两句之间空一行
+
+## 🎧 Audio（在 Dialogue 之后）
 
 <audio controls preload="none" src="/audio/<slug>.mp3"></audio>
-
-## 💬 Dialogue
-
-**A**: ...
-
-**B**: ...
 ```
 
 - 日期用当天日期（`date +%Y-%m-%d`）
