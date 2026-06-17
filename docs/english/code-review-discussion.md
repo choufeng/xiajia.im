@@ -15,27 +15,27 @@ scene: Code Review Discussion
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://dict.youdao.com/w/serialize" target="_blank" rel="noopener">serialize</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=serialize&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/serialize" target="_blank" rel="noopener">serialize</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=serialize&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>序列化（把对象转成可存储/传输的格式）</td>
       <td>We need to serialize the response before sending it over the network.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">我们需要在通过网络发送响应前对其进行序列化。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/partition" target="_blank" rel="noopener">partition</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=partition&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/partition" target="_blank" rel="noopener">partition</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=partition&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>分区/拆分（把数据分成独立区块）</td>
       <td>Let's partition the table by date for faster queries.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">我们按日期对表分区以加快查询。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/transpile" target="_blank" rel="noopener">transpile</a> <audio controls preload="none" src="https://translate.google.com/translate_tts?ie=UTF-8&q=transpile&tl=en&client=tw-ob" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/transpile" target="_blank" rel="noopener">transpile</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://translate.google.com/translate_tts?ie=UTF-8&q=transpile&tl=en&client=tw-ob" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>转译（把源码从一种语法转成另一种，如 TS→JS）</td>
       <td>Babel will transpile the modern syntax for older browsers.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">Babel 会为旧浏览器转译现代语法。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/hook" target="_blank" rel="noopener">hook</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=hook&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/hook" target="_blank" rel="noopener">hook</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=hook&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>钩子（在特定事件触发的回调函数）</td>
       <td>Add a pre-commit hook to run the linter automatically.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">加一个 pre-commit 钩子自动运行 linter。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/credential" target="_blank" rel="noopener">credential</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=credential&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/credential" target="_blank" rel="noopener">credential</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=credential&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>凭证（身份认证信息，如 token/key）</td>
       <td>Never hardcode your credentials in the source code.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">永远不要把凭证硬编码在源代码里。</span></td>
     </tr>

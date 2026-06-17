@@ -15,27 +15,27 @@ scene: Incident Postmortem
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://dict.youdao.com/w/obfuscate" target="_blank" rel="noopener">obfuscate</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=obfuscate&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/obfuscate" target="_blank" rel="noopener">obfuscate</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=obfuscate&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>混淆（使代码难以被逆向）</td>
       <td>We obfuscate the client code to deter tampering.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">我们混淆客户端代码以防篡改。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/incident" target="_blank" rel="noopener">incident</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=incident&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/incident" target="_blank" rel="noopener">incident</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=incident&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>事件（影响服务的重大故障）</td>
       <td>The incident was resolved within thirty minutes.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">这次事件在三十分钟内解决。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/fixture" target="_blank" rel="noopener">fixture</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=fixture&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/fixture" target="_blank" rel="noopener">fixture</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=fixture&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>测试夹具（固定的测试数据/环境）</td>
       <td>Load the fixture data before running the tests.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">跑测试前先加载夹具数据。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/stacktrace" target="_blank" rel="noopener">stacktrace</a> <audio controls preload="none" src="https://translate.google.com/translate_tts?ie=UTF-8&q=stacktrace&tl=en&client=tw-ob" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/stacktrace" target="_blank" rel="noopener">stacktrace</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://translate.google.com/translate_tts?ie=UTF-8&q=stacktrace&tl=en&client=tw-ob" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>堆栈跟踪（错误调用链）</td>
       <td>The stacktrace pointed to a null reference in the handler.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">堆栈跟踪指向处理器里的一个空引用。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/hash" target="_blank" rel="noopener">hash</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=hash&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td><a href="https://dict.youdao.com/w/hash" target="_blank" rel="noopener">hash</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=hash&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
       <td>哈希（单向摘要函数）</td>
       <td>Store a hash of the password, never the plain text.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">存密码的哈希，绝不存明文。</span></td>
     </tr>
