@@ -4,9 +4,9 @@
   "words": [
     {
       "word": "refactor",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "daily-standup-sync"
     },
     {
       "word": "idempotent",
@@ -16,27 +16,27 @@
     },
     {
       "word": "deprecated",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "migration-and-deprecation"
     },
     {
       "word": "asynchronous",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "concurrency-and-performance"
     },
     {
       "word": "callback",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "concurrency-and-performance"
     },
     {
       "word": "concurrency",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "concurrency-and-performance"
     },
     {
       "word": "deadlock",
@@ -46,15 +46,15 @@
     },
     {
       "word": "throughput",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "concurrency-and-performance"
     },
     {
       "word": "latency",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "concurrency-and-performance"
     },
     {
       "word": "bottleneck",
@@ -76,15 +76,15 @@
     },
     {
       "word": "fallback",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "production-rollback"
     },
     {
       "word": "middleware",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "migration-and-deprecation"
     },
     {
       "word": "schema",
@@ -106,9 +106,9 @@
     },
     {
       "word": "rollback",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "production-rollback"
     },
     {
       "word": "commit",
@@ -118,15 +118,15 @@
     },
     {
       "word": "branch",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "daily-standup-sync"
     },
     {
       "word": "merge",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "daily-standup-sync"
     },
     {
       "word": "rebase",
@@ -136,9 +136,9 @@
     },
     {
       "word": "conflict",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "daily-standup-sync"
     },
     {
       "word": "stash",
@@ -154,9 +154,9 @@
     },
     {
       "word": "pipeline",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "daily-standup-sync"
     },
     {
       "word": "deployment",
@@ -178,21 +178,21 @@
     },
     {
       "word": "orchestration",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "migration-and-deprecation"
     },
     {
       "word": "namespace",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "migration-and-deprecation"
     },
     {
       "word": "immutable",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "migration-and-deprecation"
     },
     {
       "word": "mutable",
@@ -208,21 +208,21 @@
     },
     {
       "word": "deserialize",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "api-design-discussion"
     },
     {
       "word": "payload",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "api-design-discussion"
     },
     {
       "word": "endpoint",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "api-design-discussion"
     },
     {
       "word": "authentication",
@@ -232,9 +232,9 @@
     },
     {
       "word": "authorization",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "api-design-discussion"
     },
     {
       "word": "credential",
@@ -256,9 +256,9 @@
     },
     {
       "word": "cookie",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "api-design-discussion"
     },
     {
       "word": "exception",
@@ -280,21 +280,21 @@
     },
     {
       "word": "retry",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "production-rollback"
     },
     {
       "word": "timeout",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "production-rollback"
     },
     {
       "word": "backoff",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "production-rollback"
     },
     {
       "word": "rate-limit",
