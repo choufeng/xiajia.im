@@ -196,9 +196,9 @@
     },
     {
       "word": "mutable",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "debugging-production-incident"
     },
     {
       "word": "serialize",
@@ -250,9 +250,9 @@
     },
     {
       "word": "session",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "debugging-production-incident"
     },
     {
       "word": "cookie",
@@ -304,15 +304,15 @@
     },
     {
       "word": "throttle",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "debugging-production-incident"
     },
     {
       "word": "queue",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "debugging-production-incident"
     },
     {
       "word": "batch",
@@ -502,9 +502,9 @@
     },
     {
       "word": "shim",
-      "used": false,
-      "usedDate": null,
-      "scene": null
+      "used": true,
+      "usedDate": "2026-06-17",
+      "scene": "debugging-production-incident"
     },
     {
       "word": "dependency",

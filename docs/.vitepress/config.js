@@ -253,6 +253,7 @@ export default defineConfig({
           text: 'Daily Vocabulary',
           items: [
             { text: 'Code Review Discussion', link: '/english/code-review-discussion' },
+            { text: 'Debugging a Production Incident', link: '/english/debugging-production-incident' },
           ],
         },
       ],
