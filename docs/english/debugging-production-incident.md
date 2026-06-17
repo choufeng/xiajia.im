@@ -9,13 +9,38 @@ scene: Debugging a Production Incident
 
 ## 📖 Vocabulary
 
-| Word | Meaning | Example |
-|------|---------|---------|
-| session | 会话（客户端与服务端的一次交互状态保持） | The user's session expired after 30 minutes of inactivity. |
-| shim | 兼容垫片（补齐旧环境缺失 API 的代码层） | We added a polyfill shim to support fetch on legacy browsers. |
-| queue | 队列（先进先出的待处理任务缓冲） | Failed jobs get retried from the dead-letter queue. |
-| throttle | 限流（控制请求速率防过载） | The API will throttle requests if you exceed 100 per second. |
-| mutable | 可变的（运行时可被修改的状态） | Prefer immutable data structures to avoid race conditions. |
+<table>
+  <thead>
+    <tr><th>Word</th><th>Meaning</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/session" target="_blank" rel="noopener">session</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=session&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>会话（客户端与服务端的一次交互状态保持）</td>
+      <td>The user's session expired after 30 minutes of inactivity.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/shim" target="_blank" rel="noopener">shim</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=shim&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>兼容垫片（补齐旧环境缺失 API 的代码层）</td>
+      <td>We added a polyfill shim to support fetch on legacy browsers.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/queue" target="_blank" rel="noopener">queue</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=queue&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>队列（先进先出的待处理任务缓冲）</td>
+      <td>Failed jobs get retried from the dead-letter queue.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/throttle" target="_blank" rel="noopener">throttle</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=throttle&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>限流（控制请求速率防过载）</td>
+      <td>The API will throttle requests if you exceed 100 per second.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/mutable" target="_blank" rel="noopener">mutable</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=mutable&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>可变的（运行时可被修改的状态）</td>
+      <td>Prefer immutable data structures to avoid race conditions.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 🎧 Audio
 

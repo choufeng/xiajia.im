@@ -90,10 +90,31 @@ scene: <场景英文标题>
 
 ## 📖 Vocabulary
 
-| Word | Meaning | Example |
-|------|---------|---------|
-| word1 | 中文意思 | English example sentence. |
-| word2 | ... | ... |
+用 HTML 表格（非 markdown），每个单词可点击跳有道词典 + 旁边内联🔊播放按钮（有道 dictvoice 美音 type=2）。模板：
+
+```html
+<table>
+  <thead>
+    <tr><th>Word</th><th>Meaning</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/word1" target="_blank" rel="noopener">word1</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=word1&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>中文意思</td>
+      <td>English example sentence.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/word2" target="_blank" rel="noopener">word2</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=word2&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+- 单词全小写（URL 和 audio query 都用小写）
+- `type=2` = 美音（`type=1` = 英音）
+- audio 缩到 90×24 不撑高表格
 
 ## 🎧 Audio
 
