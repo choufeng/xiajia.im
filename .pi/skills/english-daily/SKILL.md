@@ -62,6 +62,8 @@ ls docs/english/*.md 2>/dev/null
 
 ### 4. 合成 MP3
 
+> ⚠️ 脚本读 `process.env`，**不自动 load .env**。bash 工具或 subagent 调用前必须先加载：`set -a; source ~/.pi/agent/.env; set +a`，否则鉴权失败（401/Invalid）。
+
 ```bash
 node .pi/skills/english-daily/scripts/tts-volc.mjs \
   --dialog /tmp/english-dialog.json \
