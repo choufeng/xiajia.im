@@ -9,13 +9,38 @@ scene: Security Review
 
 ## 📖 Vocabulary
 
-| Word | Meaning | Example |
-|------|---------|---------|
-| authentication | 身份认证（验证用户是谁） | The authentication service validates the JWT signature. |
-| verbose | 冗长的（输出大量调试信息） | Enable verbose logging only in the staging environment. |
-| cipher | 密码算法（加密解密的数学方法） | We switched to a stronger cipher for sensitive data. |
-| redundancy | 冗余（多余备份提升可靠性） | Add redundancy across availability zones for resilience. |
-| graceful | 优雅的（出错时平稳降级） | The service shuts down gracefully on receiving SIGTERM. |
+<table>
+  <thead>
+    <tr><th>Word</th><th>Meaning</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/authentication" target="_blank" rel="noopener">authentication</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=authentication&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>身份认证（验证用户是谁）</td>
+      <td>The authentication service validates the JWT signature.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/verbose" target="_blank" rel="noopener">verbose</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=verbose&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>冗长的（输出大量调试信息）</td>
+      <td>Enable verbose logging only in the staging environment.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/cipher" target="_blank" rel="noopener">cipher</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=cipher&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>密码算法（加密解密的数学方法）</td>
+      <td>We switched to a stronger cipher for sensitive data.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/redundancy" target="_blank" rel="noopener">redundancy</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=redundancy&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>冗余（多余备份提升可靠性）</td>
+      <td>Add redundancy across availability zones for resilience.</td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/graceful" target="_blank" rel="noopener">graceful</a> <audio controls preload="none" src="https://dict.youdao.com/dictvoice?audio=graceful&type=2" style="width:90px;height:24px;vertical-align:middle"></audio></td>
+      <td>优雅的（出错时平稳降级）</td>
+      <td>The service shuts down gracefully on receiving SIGTERM.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 🎧 Audio
 
