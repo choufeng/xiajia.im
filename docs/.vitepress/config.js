@@ -180,6 +180,7 @@ export default defineConfig({
           items: [
             { text: 'Effective JavaScript', link: '/coding/effective-js' },
             { text: 'Learn More Study Less', link: '/coding/learn-more' },
+            { text: '《一人公司》读书笔记', link: '/coding/company-of-one' },
           ],
         },
       ],
