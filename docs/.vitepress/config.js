@@ -262,24 +262,39 @@ export default defineConfig({
       // Learning English
       '/english/': [
         {
-          text: 'Daily Vocabulary',
+          text: '工程实战',
           items: [
             { text: 'Code Review Discussion', link: '/english/code-review-discussion' },
-            { text: 'Online Meeting Follow-ups', link: '/english/online-meeting-follow-ups' },
             { text: 'Debugging a Production Incident', link: '/english/debugging-production-incident' },
             { text: 'Database Performance Tuning', link: '/english/database-performance-tuning' },
             { text: 'Fixing a Flaky Test', link: '/english/fixing-a-flaky-test' },
             { text: 'Security Review', link: '/english/security-review' },
-            { text: 'Pair Programming', link: '/english/pair-programming' },
             { text: 'CI/CD Pipeline Setup', link: '/english/ci-cd-pipeline-setup' },
-            { text: 'Architecture Discussion', link: '/english/architecture-discussion' },
-            { text: 'Incident Postmortem', link: '/english/incident-postmortem' },
             { text: 'Frontend Caching Strategy', link: '/english/frontend-caching-strategy' },
-            { text: 'Daily Standup Sync', link: '/english/daily-standup-sync' },
             { text: 'Production Rollback', link: '/english/production-rollback' },
-            { text: 'API Design Discussion', link: '/english/api-design-discussion' },
             { text: 'Concurrency and Performance', link: '/english/concurrency-and-performance' },
             { text: 'Migration and Deprecation', link: '/english/migration-and-deprecation' },
+          ],
+        },
+        {
+          text: '架构与设计',
+          items: [
+            { text: 'Architecture Discussion', link: '/english/architecture-discussion' },
+            { text: 'API Design Discussion', link: '/english/api-design-discussion' },
+          ],
+        },
+        {
+          text: '会议与协作',
+          items: [
+            { text: 'Daily Standup Sync', link: '/english/daily-standup-sync' },
+            { text: 'Online Meeting Follow-ups', link: '/english/online-meeting-follow-ups' },
+            { text: 'Pair Programming', link: '/english/pair-programming' },
+            { text: 'Incident Postmortem', link: '/english/incident-postmortem' },
+          ],
+        },
+        {
+          text: '沟通软技能',
+          items: [
             { text: 'Polite Interruptions', link: '/english/polite-interruptions' },
             { text: 'Diplomatic Disagreement', link: '/english/diplomatic-disagreement' },
             { text: 'Buying Time', link: '/english/buying-time' },
