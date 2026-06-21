@@ -253,6 +253,7 @@ export default defineConfig({
           text: 'Daily Vocabulary',
           items: [
             { text: 'Code Review Discussion', link: '/english/code-review-discussion' },
+            { text: 'Online Meeting Follow-ups', link: '/english/online-meeting-follow-ups' },
             { text: 'Debugging a Production Incident', link: '/english/debugging-production-incident' },
             { text: 'Database Performance Tuning', link: '/english/database-performance-tuning' },
             { text: 'Fixing a Flaky Test', link: '/english/fixing-a-flaky-test' },
