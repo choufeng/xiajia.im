@@ -25,6 +25,7 @@ export default defineConfig({
       { text: '编程笔记', link: '/coding/react' },
       { text: '工具参考', link: '/reference/ramda' },
       { text: '读书笔记', link: '/reading/index' },
+      { text: '说话', link: '/speaking/index' },
       { text: '关于', link: '/about' },
       { text: 'Learning English', link: '/english/' },
       { text: 'PI 教程', link: '/pi-tutorials/index' },
@@ -243,6 +244,17 @@ export default defineConfig({
             { text: '资源链接', link: '/reference/links' },
             { text: '简化听书笔记', link: '/reference/jianhua' },
             { text: '杂记', link: '/reference/somethings' },
+          ],
+        },
+      ],
+
+      // 说话练习
+      '/speaking/': [
+        {
+          text: '每日练习',
+          items: [
+            { text: '栏目说明', link: '/speaking/index' },
+            { text: 'Day 1 · 先练什么', link: '/speaking/01-day1-what-first' },
           ],
         },
       ],
