@@ -120,6 +120,7 @@ export default defineConfig({
             { text: '《认知天性》', link: '/reading/make-it-stick' },
             { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
             { text: '《原子习惯》', link: '/reading/atomic-habits' },
+            { text: '《一人公司》', link: '/reading/company-of-one' },
           ],
         },
       ],
@@ -180,7 +181,6 @@ export default defineConfig({
           items: [
             { text: 'Effective JavaScript', link: '/coding/effective-js' },
             { text: 'Learn More Study Less', link: '/coding/learn-more' },
-            { text: '《一人公司》读书笔记', link: '/coding/company-of-one' },
           ],
         },
       ],
