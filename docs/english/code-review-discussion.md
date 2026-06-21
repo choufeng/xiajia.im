@@ -30,9 +30,14 @@ scene: Code Review Discussion
       <td>Babel will transpile the modern syntax for older browsers.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">Babel 会为旧浏览器转译现代语法。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/hook" target="_blank" rel="noopener">hook</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=hook&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
-      <td>钩子（在特定事件触发的回调函数）</td>
-      <td>Add a pre-commit hook to run the linter automatically.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">加一个 pre-commit 钩子自动运行 linter。</span></td>
+      <td><a href="https://dict.youdao.com/w/syntax" target="_blank" rel="noopener">syntax</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=syntax&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
+      <td>语法（代码/语言的规则结构）</td>
+      <td>The optional chaining syntax needs transpiling for older runtimes.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">可选链语法在旧运行时需要转译。</span></td>
+    </tr>
+    <tr>
+      <td><a href="https://dict.youdao.com/w/legacy" target="_blank" rel="noopener">legacy</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=legacy&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
+      <td>遗留的（旧的、需继续维护的）</td>
+      <td>We must support the legacy target until Q3.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">我们必须支持遗留目标到第三季度。</span></td>
     </tr>
     <tr>
       <td><a href="https://dict.youdao.com/w/credential" target="_blank" rel="noopener">credential</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=credential&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
