@@ -126,8 +126,11 @@ scene: Online Meeting Follow-ups
 **A**: Exactly. The dashboard depends on those new endpoints anyway.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：没错。仪表盘本来就要依赖那些新接口。</span>
 
-**C**: **Building on** that, the frontend team can start mocking the API in parallel.
-<span style="font-size:0.85em;color:var(--vp-c-text-2)">C：在那基础上补充一句，前端团队可以并行先把 API mock 起来。</span>
+**B**: **Building on** that, the frontend team can start mocking the API in parallel.
+<span style="font-size:0.85em;color:var(--vp-c-text-2)">B：在那基础上补充一句，前端团队可以并行先把 API mock 起来。</span>
+
+**A**: Good thinking. Anything else before we close out?
+<span style="font-size:0.85em;color:var(--vp-c-text-2)">A：想法不错。结束之前还有别的吗？</span>
 
 **B**: Quick **clarification** — do we own the data migration, or does the platform team handle it?
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：澄清一下——数据迁移是我们做，还是平台团队负责？</span>
@@ -135,8 +138,8 @@ scene: Online Meeting Follow-ups
 **A**: Platform team owns it. Good catch.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：平台团队负责。发现得好。</span>
 
-**C**: If I could **pivot** for a second — how does this affect the mobile release?
-<span style="font-size:0.85em;color:var(--vp-c-text-2)">C：我能转个话题吗——这对移动端发布有什么影响？</span>
+**B**: If I could **pivot** for a second — how does this affect the mobile release?
+<span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我能转个话题吗——这对移动端发布有什么影响？</span>
 
 **A**: Mobile stays on the current API until Q4. I'll **hand off** to Maria now — she owns the mobile roadmap.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：移动端到第四季度前继续用当前 API。我现在把话交给 Maria——移动端路线图是她负责。</span>
