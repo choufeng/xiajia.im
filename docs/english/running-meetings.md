@@ -35,9 +35,9 @@ scene: Running Effective Meetings
       <td>Let's regroup after everyone reads the doc.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">大家读完文档我们再集合。</span></td>
     </tr>
     <tr>
-      <td><a href="https://dict.youdao.com/w/wrap up" target="_blank" rel="noopener">wrap up</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://translate.google.com/translate_tts?ie=UTF-8&q=wrap+up&tl=en&client=tw-ob" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
-      <td>收尾（结束会议/总结）</td>
-      <td>Let's wrap up with clear action items.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">用明确的待办收尾。</span></td>
+      <td><a href="https://dict.youdao.com/w/debrief" target="_blank" rel="noopener">debrief</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=debrief&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
+      <td>复盘/总结（事后回顾总结）</td>
+      <td>A quick debrief helps us improve next time.<br><span style="font-size:0.85em;color:var(--vp-c-text-2)">快速复盘能帮下次改进。</span></td>
     </tr>
     <tr>
       <td><a href="https://dict.youdao.com/w/brainstorm" target="_blank" rel="noopener">brainstorm</a> <button class="word-play-btn" onclick="new Audio(this.dataset.src).play()" data-src="https://dict.youdao.com/dictvoice?audio=brainstorm&type=2" title="Play pronunciation" aria-label="Play pronunciation">🔊</button></td>
