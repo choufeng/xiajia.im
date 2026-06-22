@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "generated": "2026-06-22T23:54:47.065291+00:00",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "chapters": [
+    {
+      "title": "《认知天性》读书笔记",
+      "start": 0.0,
+      "end": 8.64
+    },
+    {
+      "title": "关于本书",
+      "start": 8.64,
+      "end": 56.736
+    },
+    {
+      "title": "核心框架：学习的错觉",
+      "start": 56.736,
+      "end": 119.76
+    },
+    {
+      "title": "检索练习（Retrieval Practice）",
+      "start": 119.76,
+      "end": 186.48
+    },
+    {
+      "title": "间隔重复（Spaced Repetition）",
+      "start": 186.48,
+      "end": 252.168
+    },
+    {
+      "title": "穿插练习（Interleaving）",
+      "start": 252.168,
+      "end": 320.328
+    },
+    {
+      "title": "精细化（Elaboration）与反思",
+      "start": 320.328,
+      "end": 393.168
+    },
+    {
+      "title": "校准（Calibration）",
+      "start": 393.168,
+      "end": 446.784
+    },
+    {
+      "title": "反例对比表",
+      "start": 446.784,
+      "end": 474.192
+    },
+    {
+      "title": "我的思考",
+      "start": 474.192,
+      "end": 475.776
+    },
+    {
+      "title": "1. 舒服的学习是危险信号",
+      "start": 475.776,
+      "end": 508.776
+    },
+    {
+      "title": "2. 我沉迷过「看教程」的虚假进步感",
+      "start": 508.776,
+      "end": 543.408
+    },
+    {
+      "title": "3. 费曼 + 检索，是工程师学新栈的黄金组合",
+      "start": 543.408,
+      "end": 583.704
+    },
+    {
+      "title": "行动清单",
+      "start": 583.704,
+      "end": 629.04
+    },
+    {
+      "title": "一句话总结",
+      "start": 629.04,
+      "end": 639.768
+    },
+    {
+      "title": "延伸",
+      "start": 639.768,
+      "end": 676.992
+    }
+  ]
+}
