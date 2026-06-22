@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed, watch } from 'vue'
 import { useData } from 'vitepress'
 
 const { frontmatter, page } = useData()
@@ -184,8 +184,18 @@ function loadVoices() {
   }
 }
 
-onMounted(() => {
-  // 1. 尝试 HQ 音频探测
+// ===== 音频探测：抽取出来，onMounted 与切页 watch 共用 =====
+function detect() {
+  stop()
+  // 清空 web-speech 缓存，避免切页后播旧内容
+  chunks = []
+  curIdx.value = 0
+  total.value = 0
+  audioCurrent.value = 0
+  audioDuration.value = 0
+  mode.value = 'detecting'
+  clearTimeout(detectTimer)
+
   if (audioPath.value && typeof Audio !== 'undefined') {
     audioEl = new Audio()
     audioEl.preload = 'metadata'
@@ -208,7 +218,12 @@ onMounted(() => {
   } else {
     initWebSpeech()
   }
-})
+}
+
+// 切页（SPA 路由变化）时重置：避免播上一篇文章内容
+watch(() => page.value.relativePath, () => detect())
+
+onMounted(() => detect())
 
 function initWebSpeech() {
   clearTimeout(detectTimer)
@@ -287,6 +302,11 @@ onBeforeUnmount(() => {
   border-radius: 8px;
   background: var(--vp-c-bg-soft);
   font-size: 14px;
+
+  /* 滚出视口时浮动吸附在顶部 nav 下方，滚回顶端自动回原位 */
+  position: sticky;
+  top: var(--vp-nav-height);
+  z-index: 9;
 }
 
 .ra-btn {
