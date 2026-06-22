@@ -47,6 +47,10 @@ scene: Managing Team Conflict
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/managing-conflict.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: There's real **friction** between the two leads. I felt the **tension** today.
@@ -63,7 +67,3 @@ scene: Managing Team Conflict
 
 **A**: The goal is to **reconcile** their roadmaps before the kickoff.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：目标是启动前把他们路线图调和好。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/managing-conflict.mp3"></audio>

@@ -42,6 +42,10 @@ scene: Security Review
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/security-review.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The security audit flagged our login endpoint.
@@ -61,7 +65,3 @@ scene: Security Review
 
 **B**: Right. Never reveal whether the username exists.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。永远不要透露用户名是否存在。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/security-review.mp3"></audio>

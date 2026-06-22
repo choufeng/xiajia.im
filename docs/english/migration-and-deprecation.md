@@ -42,6 +42,10 @@ scene: Migration and Deprecation
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/migration-and-deprecation.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The v2 API has been **deprecated** for six months now.
@@ -67,7 +71,3 @@ scene: Migration and Deprecation
 
 **B**: The new scheduler does. It also retries failed tasks.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：新的调度器负责。它还会重试失败的任务。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/migration-and-deprecation.mp3"></audio>

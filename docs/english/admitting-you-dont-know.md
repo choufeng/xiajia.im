@@ -115,6 +115,10 @@ scene: Admitting You Don't Know
 
 > **例**：I can speak to the general design, but the exact latency numbers I'd need to verify.
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/admitting-you-dont-know.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: What's the latency budget for the new edge function? Is fifty milliseconds realistic?
@@ -140,7 +144,3 @@ scene: Admitting You Don't Know
 
 **B**: By tomorrow morning. I'll share the benchmark report in the channel.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：明早。我把压测报告发频道。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/admitting-you-dont-know.mp3"></audio>

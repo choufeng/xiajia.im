@@ -47,6 +47,10 @@ scene: Delegating Tasks
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/delegating-tasks.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: I'm overloaded. I need to **delegate** the reporting module.
@@ -66,7 +70,3 @@ scene: Delegating Tasks
 
 **B**: And **reassign** the blocked ones so nothing stalls.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：卡住的任务改派，别让它们停摆。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/delegating-tasks.mp3"></audio>

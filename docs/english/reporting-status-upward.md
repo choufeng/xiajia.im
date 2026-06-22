@@ -52,6 +52,10 @@ scene: Reporting Status Upward
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/reporting-status-upward.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Quick status update — where do we stand?
@@ -71,7 +75,3 @@ scene: Reporting Status Upward
 
 **B**: Yes. Overall we made good **headway**, but the release might **slip** by a few days.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。整体进展不错，但发布可能滑期几天。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/reporting-status-upward.mp3"></audio>

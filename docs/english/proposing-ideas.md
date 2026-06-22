@@ -52,6 +52,10 @@ scene: Proposing Ideas & Pitching
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/proposing-ideas.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: I want to **pitch** a new onboarding flow. Can I grab ten minutes?
@@ -71,7 +75,3 @@ scene: Proposing Ideas & Pitching
 
 **B**: Be **pragmatic** — build it small, prove it, then we scale.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：务实点——小步做，验证了再放大。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/proposing-ideas.mp3"></audio>

@@ -47,6 +47,10 @@ scene: Declining Requests Politely
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/declining-requests.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Can your team take on the reporting migration?
@@ -66,7 +70,3 @@ scene: Declining Requests Politely
 
 **B**: **Deprioritize** it, or find another owner. Happy to advise though.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：降优先级，或另找人。我可以当顾问。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/declining-requests.mp3"></audio>

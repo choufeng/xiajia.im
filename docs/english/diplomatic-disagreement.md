@@ -115,6 +115,10 @@ scene: Diplomatic Disagreement
 
 > **例**：We should validate the rollout plan with data before locking scope.
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/diplomatic-disagreement.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: I think we should just rewrite the auth service from scratch. The legacy code is a mess.
@@ -140,7 +144,3 @@ scene: Diplomatic Disagreement
 
 **B**: Great. And we should validate the rollout plan with data before locking scope.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。锁定范围前，应该用数据验证上线计划。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/diplomatic-disagreement.mp3"></audio>

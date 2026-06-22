@@ -42,6 +42,10 @@ scene: Incident Postmortem
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/incident-postmortem.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Let us write the postmortem for last night's **incident**.
@@ -61,7 +65,3 @@ scene: Incident Postmortem
 
 **B**: Good. Then **hash** the repro steps into the test suite.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。然后把复现步骤哈希进测试套件。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/incident-postmortem.mp3"></audio>

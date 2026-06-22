@@ -47,6 +47,10 @@ scene: Building Consensus
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/building-consensus.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Do we have **consensus** on the launch date?
@@ -66,7 +70,3 @@ scene: Building Consensus
 
 **B**: Then we just need the VP's **sign-off**.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：之后只要 VP 签字认可就行。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/building-consensus.mp3"></audio>

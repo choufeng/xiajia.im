@@ -47,6 +47,10 @@ scene: Clarifying Requirements
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/clarifying-requirements.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The stakeholder said "make it user-friendly." That's vague.
@@ -66,7 +70,3 @@ scene: Clarifying Requirements
 
 **B**: I'll **double-check** the numbers with data, then we're clear.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我和数据那边复核下数字，然后就清楚了。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/clarifying-requirements.mp3"></audio>

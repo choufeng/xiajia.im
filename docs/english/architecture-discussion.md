@@ -42,6 +42,10 @@ scene: Architecture Discussion
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/architecture-discussion.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: We are debating between cache aside and write through.
@@ -61,7 +65,3 @@ scene: Architecture Discussion
 
 **B**: Yes, and build it as an **extension** point for future shards.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要，而且把它做成扩展点，方便以后分片。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/architecture-discussion.mp3"></audio>
