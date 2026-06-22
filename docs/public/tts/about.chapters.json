@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "generated": "2026-06-22T22:44:04.708173+00:00",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "chapters": [
+    {
+      "title": "关于",
+      "start": 0.0,
+      "end": 1.224
+    },
+    {
+      "title": "Hello You",
+      "start": 1.224,
+      "end": 13.44
+    },
+    {
+      "title": "作者",
+      "start": 13.44,
+      "end": 17.976
+    },
+    {
+      "title": "网站结构",
+      "start": 17.976,
+      "end": 19.656
+    },
+    {
+      "title": "域名",
+      "start": 19.656,
+      "end": 23.112
+    }
+  ]
+}
