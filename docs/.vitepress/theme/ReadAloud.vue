@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount, computed, watch } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed, watch, nextTick } from 'vue'
 import { useData } from 'vitepress'
 
 const { frontmatter, page } = useData()
@@ -23,26 +23,16 @@ const voiceName = ref('')
 const audioDuration = ref(0)
 const audioCurrent = ref(0)
 
-// ===== Web Speech 内部 =====
-let chunks = []
+// ===== Web Speech / 章节 内部 =====
+let chunks = []           // 全局朗读分片（按章节顺序铺平）
+let sections = []         // [{ el, title, wsChunkStart, wsChunkEnd }]  index 0 为导言（无 el）
+const audioChapters = ref(null) // audio 模式从 chapters.json 读到的 [{title,start,end}]
 let voices = []
 const synth = typeof window !== 'undefined' ? window.speechSynthesis : null
 let audioEl = null
 let detectTimer = null
 
-// ===== 文本提取 =====
-function extractText() {
-  const doc = document.querySelector('.vp-doc')
-  if (!doc) return ''
-  const clone = doc.cloneNode(true)
-  clone.querySelectorAll(
-    'pre, code, script, style, table, .read-aloud, .vp-copy-coded, .line-numbers'
-  ).forEach(el => el.remove())
-  const nodes = clone.querySelectorAll('h1,h2,h3,h4,h5,h6,p,li,blockquote')
-  if (nodes.length === 0) return clone.textContent || ''
-  return Array.from(nodes).map(n => n.textContent).join('\n')
-}
-
+// ===== 文本分片 =====
 function splitChunks(text) {
   const MAX = 180
   const out = []
@@ -82,6 +72,78 @@ function pickVoice() {
   return voices[0]
 }
 
+// ===== 章节分节 + DOM 按钮注入 =====
+function headingText(el) {
+  const clone = el.cloneNode(true)
+  clone.querySelectorAll('.header-anchor').forEach(a => a.remove())
+  return (clone.textContent || '').trim()
+}
+
+function cleanupJumpButtons() {
+  document.querySelectorAll('.ra-jump').forEach(b => b.remove())
+}
+
+function buildSections() {
+  cleanupJumpButtons()
+  sections = []
+  chunks = []
+  total.value = 0
+  const doc = document.querySelector('.vp-doc')
+  if (!doc) return
+
+  // 导言段（第一个 h2/h3 之前的内容）
+  sections.push({ el: null, title: null, wsChunkStart: 0, wsChunkEnd: 0 })
+  let buf = []
+
+  const flush = () => {
+    const text = buf.join('\n').trim()
+    buf = []
+    if (!text) return
+    const segs = splitChunks(text)
+    const cur = sections[sections.length - 1]
+    cur.wsChunkStart = chunks.length
+    chunks.push(...segs)
+    cur.wsChunkEnd = chunks.length
+  }
+
+  for (const el of doc.children) {
+    // 跳过播放条自身
+    if (el.classList && el.classList.contains('read-aloud')) continue
+    const tag = el.tagName
+    if (tag === 'H2' || tag === 'H3') {
+      flush()
+      const sec = { el, title: headingText(el), wsChunkStart: chunks.length, wsChunkEnd: chunks.length }
+      sections.push(sec)
+      injectJumpButton(el, sections.length - 1)
+    } else if (tag === 'UL' || tag === 'OL') {
+      el.querySelectorAll(':scope > li').forEach(li => buf.push(li.textContent))
+    } else if (['P', 'BLOCKQUOTE', 'H4', 'H5', 'H6', 'LI'].includes(tag)) {
+      buf.push(el.textContent)
+    }
+    // pre/code/table/图片等忽略
+  }
+  flush()
+  // 修正导言段终点
+  if (sections[0]) sections[0].wsChunkEnd = sections[1] ? sections[1].wsChunkStart : chunks.length
+  total.value = chunks.length
+}
+
+function injectJumpButton(headingEl, sectionIdx) {
+  const btn = document.createElement('button')
+  btn.className = 'ra-jump'
+  btn.type = 'button'
+  btn.title = '从此处播放'
+  btn.setAttribute('aria-label', '从此处播放')
+  btn.textContent = '▶'
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    seekToSection(sectionIdx)
+  })
+  // 插到标题文本最前（header-anchor 之前）
+  headingEl.insertBefore(btn, headingEl.firstChild)
+}
+
 // ===== Web Speech 播放 =====
 function playFrom(index) {
   if (!synth || index >= chunks.length) { stop(); return }
@@ -102,11 +164,7 @@ function play() {
     audioEl.play()
     status.value = 'playing'
   } else if (mode.value === 'web-speech') {
-    if (chunks.length === 0 || curIdx.value >= total.value) {
-      chunks = splitChunks(extractText())
-      total.value = chunks.length
-      curIdx.value = 0
-    }
+    if (chunks.length === 0) buildSections()
     if (chunks.length === 0) return
     status.value = 'playing'
     playFrom(curIdx.value)
@@ -153,6 +211,38 @@ function changeRate(v) {
   }
 }
 
+// ===== 章节跳转：从某个 h2/h3 开始播放 =====
+function seekToSection(sectionIdx) {
+  const sec = sections[sectionIdx]
+  if (!sec) return
+
+  if (mode.value === 'audio') {
+    // audioChapters 与 sections 同构（导言在前，h2/h3 按序）
+    const ch = audioChapters.value && audioChapters.value[sectionIdx]
+    if (ch && audioEl) {
+      audioEl.currentTime = ch.start
+      audioEl.play()
+      status.value = 'playing'
+      return
+    }
+    // chapters 未就绪 → 整篇从头播（兜底）
+    play()
+    return
+  }
+
+  if (mode.value === 'web-speech') {
+    if (chunks.length === 0) buildSections()
+    if (synth) synth.cancel()
+    if (sec.wsChunkStart < chunks.length) {
+      status.value = 'playing'
+      playFrom(sec.wsChunkStart)
+    }
+    return
+  }
+
+  // detecting 等其他状态：忽略
+}
+
 // ===== 进度（两种模式统一） =====
 const progress = computed(() => {
   if (mode.value === 'audio') {
@@ -184,15 +274,31 @@ function loadVoices() {
   }
 }
 
+// chapters.json 预取（audio 模式段内跳转用；失败静默）
+async function loadChapters() {
+  if (!audioPath.value) { audioChapters.value = null; return }
+  try {
+    const url = audioPath.value.replace(/\.mp3$/, '.chapters.json')
+    const r = await fetch(url)
+    if (!r.ok) throw new Error(r.status)
+    const data = await r.json()
+    audioChapters.value = (data && data.chapters) ? data.chapters : null
+  } catch {
+    audioChapters.value = null
+  }
+}
+
 // ===== 音频探测：抽取出来，onMounted 与切页 watch 共用 =====
 function detect() {
   stop()
-  // 清空 web-speech 缓存，避免切页后播旧内容
+  // 清空 web-speech 缓存与章节，避免切页后播旧内容
   chunks = []
+  sections = []
   curIdx.value = 0
   total.value = 0
   audioCurrent.value = 0
   audioDuration.value = 0
+  audioChapters.value = null
   mode.value = 'detecting'
   clearTimeout(detectTimer)
 
@@ -218,6 +324,10 @@ function detect() {
   } else {
     initWebSpeech()
   }
+
+  // 章节按钮注入 + chapters 预取（与音频探测并行，DOM 就绪后做）
+  nextTick(() => buildSections())
+  loadChapters()
 }
 
 // 切页（SPA 路由变化）时重置：避免播上一篇文章内容
@@ -236,6 +346,7 @@ function initWebSpeech() {
 onBeforeUnmount(() => {
   stop()
   clearTimeout(detectTimer)
+  cleanupJumpButtons()
   if (audioEl) audioEl.src = ''
 })
 </script>
@@ -290,6 +401,7 @@ onBeforeUnmount(() => {
   </div>
 </template>
 
+<!-- 播放条本体（scoped） -->
 <style scoped>
 .read-aloud {
   display: flex;
@@ -396,5 +508,54 @@ onBeforeUnmount(() => {
 
 @media (max-width: 640px) {
   .ra-progress { min-width: 100%; order: 3; }
+}
+</style>
+
+<!-- 章节跳转按钮：注入到 .vp-doc 的 h2/h3 内，须用全局样式（scoped 不作用于动态 DOM） -->
+<style>
+.vp-doc h2,
+.vp-doc h3 {
+  position: relative;
+}
+.ra-jump {
+  position: absolute;
+  left: -1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.4em;
+  height: 1.4em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 50%;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-3);
+  font-size: 0.7em;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.15;
+  transition: opacity 0.2s, color 0.2s, border-color 0.2s, background 0.2s;
+  vertical-align: middle;
+}
+.ra-jump:hover {
+  opacity: 1;
+  color: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+  background: var(--vp-c-brand-dim, rgba(85, 133, 247, 0.14));
+}
+.vp-doc h2:hover .ra-jump,
+.vp-doc h3:hover .ra-jump {
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  /* 窄屏左侧无 gutter，改为标题内联首字符位置，避免溢出 */
+  .ra-jump {
+    position: static;
+    transform: none;
+    margin-right: 0.4em;
+    opacity: 0.35;
+  }
 }
 </style>
