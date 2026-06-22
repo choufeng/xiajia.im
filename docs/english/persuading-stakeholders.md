@@ -47,6 +47,10 @@ scene: Persuading Stakeholders
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/persuading-stakeholders.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: How do we **persuade** the stakeholders to fund this?
@@ -63,7 +67,3 @@ scene: Persuading Stakeholders
 
 **A**: Make sure to **drive home** the deadline — that's the pressure point.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：务必讲透截止期——那是压力点。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/persuading-stakeholders.mp3"></audio>

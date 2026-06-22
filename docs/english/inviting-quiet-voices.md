@@ -115,6 +115,10 @@ scene: Inviting Quiet Voices
 
 > **例**：We'll wait — take your time. What are your thoughts, Priya?
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/inviting-quiet-voices.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: So that's the backend plan. I think we've covered the main pieces. Thoughts, everyone?
@@ -140,7 +144,3 @@ scene: Inviting Quiet Voices
 
 **B**: Thanks. I think the main risk is the offline cache invalidation...
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：谢谢。我觉得主要风险是离线缓存失效……</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/inviting-quiet-voices.mp3"></audio>

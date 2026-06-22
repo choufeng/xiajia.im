@@ -52,6 +52,10 @@ scene: 1-on-1 & Career Growth
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/one-on-one-career.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Let's talk about your **trajectory**. Where do you want to grow?
@@ -68,7 +72,3 @@ scene: 1-on-1 & Career Growth
 
 **A**: Yes, and I can be your **sponsor** — I'll **advocate** for you in reviews.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：要，我可以做你的提携者——评审时支持你。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/one-on-one-career.mp3"></audio>

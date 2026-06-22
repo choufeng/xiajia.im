@@ -115,6 +115,10 @@ scene: Summarizing & Action Items
 
 > **例**：Anything else, or are we good to close out?
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/summarizing-action-items.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Let me **recap** before we wrap. Three decisions: the feature flag ships Tuesday, the rollback doc is due Thursday, and we skip the EU rollout for now.
@@ -140,7 +144,3 @@ scene: Summarizing & Action Items
 
 **B**: All clear on my end. Thanks, good meeting.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我这没事了。谢谢，会开得好。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/summarizing-action-items.mp3"></audio>

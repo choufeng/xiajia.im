@@ -42,6 +42,10 @@ scene: Database Performance Tuning
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/database-performance-tuning.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The dashboard **query** is taking twelve seconds to load.
@@ -61,7 +65,3 @@ scene: Database Performance Tuning
 
 **B**: Exactly. Run the query once after deploy to populate it.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没错。部署后跑一次查询把它填上。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/database-performance-tuning.mp3"></audio>

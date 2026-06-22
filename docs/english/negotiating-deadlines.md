@@ -52,6 +52,10 @@ scene: Negotiating Deadlines & Scope
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/negotiating-deadlines.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The client wants it by Friday. Can we do it?
@@ -71,7 +75,3 @@ scene: Negotiating Deadlines & Scope
 
 **B**: We have **leverage** — they launch after us. So we **defer** the nice-to-haves.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我们有筹码——他们比我们晚发布。所以把锦上添花的推迟。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/negotiating-deadlines.mp3"></audio>

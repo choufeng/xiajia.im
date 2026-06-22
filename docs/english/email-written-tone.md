@@ -47,6 +47,10 @@ scene: Email & Written Tone
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/email-written-tone.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Can you **draft** the client update?
@@ -66,7 +70,3 @@ scene: Email & Written Tone
 
 **B**: As a **courtesy**, I'll cc their account manager too.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：出于礼貌，我也抄送他们的客户经理。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/email-written-tone.mp3"></audio>

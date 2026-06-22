@@ -42,6 +42,10 @@ scene: CI/CD Pipeline Setup
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/ci-cd-pipeline-setup.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The new pipeline is missing the deploy stage.
@@ -61,7 +65,3 @@ scene: CI/CD Pipeline Setup
 
 **B**: Good catch. Add a **dashboard** so we can spot regressions.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：问得好。加个仪表盘，这样能发现回归。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/ci-cd-pipeline-setup.mp3"></audio>

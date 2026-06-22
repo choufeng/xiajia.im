@@ -47,6 +47,10 @@ scene: Code Review Discussion
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/code-review-discussion.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Hey, could you review my pull request for the API refactor before I merge it?
@@ -78,7 +82,3 @@ scene: Code Review Discussion
 
 **B**: Just add a git **hook** to run tests before each commit. Then we're good to merge.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：加个 git 钩子，每次提交前跑测试就行，然后就能合并了。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/code-review-discussion.mp3"></audio>

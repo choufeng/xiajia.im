@@ -47,6 +47,10 @@ scene: Receiving Feedback
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/receiving-feedback.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The review came back rough. How are you holding up?
@@ -63,7 +67,3 @@ scene: Receiving Feedback
 
 **A**: That's the **takeaway** worth keeping.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：那才是值得留下的收获。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/receiving-feedback.mp3"></audio>

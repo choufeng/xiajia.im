@@ -42,6 +42,10 @@ scene: Frontend Caching Strategy
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/frontend-caching-strategy.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The bundle size grew again after the upgrade.
@@ -61,7 +65,3 @@ scene: Frontend Caching Strategy
 
 **B**: Yes, especially the tokens stored in local storage.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要，尤其是存在 local storage 里的令牌。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/frontend-caching-strategy.mp3"></audio>

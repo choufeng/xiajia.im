@@ -115,6 +115,10 @@ scene: Online Meeting Follow-ups
 
 > **例**：Mobile stays on the current API until Q4. I'll hand off to Maria now — she owns the mobile roadmap.
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/online-meeting-follow-ups.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Alright, that wraps up the Q3 roadmap. Any thoughts before we move on?
@@ -143,7 +147,3 @@ scene: Online Meeting Follow-ups
 
 **A**: Mobile stays on the current API until Q4. I'll **hand off** to Maria now — she owns the mobile roadmap.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：移动端到第四季度前继续用当前 API。我现在把话交给 Maria——移动端路线图是她负责。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/online-meeting-follow-ups.mp3"></audio>

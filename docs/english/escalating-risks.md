@@ -47,6 +47,10 @@ scene: Escalating Risks & Issues
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/escalating-risks.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: I need to **flag** something — the deploy exposes a memory leak.
@@ -66,7 +70,3 @@ scene: Escalating Risks & Issues
 
 **B**: Roll back to the last green build. Document it now.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：回滚到上次成功的构建。现在就写下来。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/escalating-risks.mp3"></audio>

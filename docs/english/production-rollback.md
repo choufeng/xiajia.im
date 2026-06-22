@@ -42,6 +42,10 @@ scene: Production Rollback
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/production-rollback.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Paging you. Five hundred error rate just spiked right after the deploy. The dashboard is bleeding red.
@@ -67,7 +71,3 @@ scene: Production Rollback
 
 **B**: Error rate is dropping. Fallback is serving stale but valid data, and the timeout curve is flattening out.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：错误率在降。降级在提供陈旧但有效的数据，超时曲线正在趋平。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/production-rollback.mp3"></audio>

@@ -42,6 +42,10 @@ scene: API Design Discussion
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/api-design-discussion.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Let's finalize the API design for the new user service.
@@ -67,7 +71,3 @@ scene: API Design Discussion
 
 **B**: It parses in under a millisecond at that size, so performance is fine.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：这个体量不到 1 毫秒就能解析完，性能没问题。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/api-design-discussion.mp3"></audio>

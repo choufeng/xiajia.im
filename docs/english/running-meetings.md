@@ -47,6 +47,10 @@ scene: Running Effective Meetings
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/running-meetings.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: I'll **facilitate** today. Here's the **agenda** — three items, thirty minutes.
@@ -66,7 +70,3 @@ scene: Running Effective Meetings
 
 **B**: Good. **Debrief** with the owners and due dates.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。用负责人和截止日复盘。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/running-meetings.mp3"></audio>

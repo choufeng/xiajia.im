@@ -47,6 +47,10 @@ scene: Cross-team Collaboration
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/cross-team-collaboration.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: We have a hard **dependency** on the platform team's new API.
@@ -63,7 +67,3 @@ scene: Cross-team Collaboration
 
 **A**: Will do. We **integrate** the week after they ship.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：会的。他们发布后那周我们整合。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/cross-team-collaboration.mp3"></audio>

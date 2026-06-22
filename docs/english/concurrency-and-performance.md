@@ -42,6 +42,10 @@ scene: Concurrency and Performance
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/concurrency-and-performance.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: We have a serious **latency** problem in the checkout flow.
@@ -73,7 +77,3 @@ scene: Concurrency and Performance
 
 **B**: Let me draft the design doc and we can review it tomorrow.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我来起草设计文档，我们明天评审。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/concurrency-and-performance.mp3"></audio>

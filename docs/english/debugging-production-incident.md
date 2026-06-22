@@ -42,6 +42,10 @@ scene: Debugging a Production Incident
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/debugging-production-incident.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The dashboard is showing a spike in 500 errors. Something just broke in production.
@@ -67,7 +71,3 @@ scene: Debugging a Production Incident
 
 **B**: Only if they keep retrying. Let me deploy the rate limit first and watch the metrics.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：只有它们一直重试才需要。我先部署限流，然后盯一下指标。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/debugging-production-incident.mp3"></audio>

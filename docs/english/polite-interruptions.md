@@ -115,6 +115,10 @@ scene: Polite Interruptions
 
 > **例**：Sorry for the interruption — I'll hand it back to you for the rest of the plan.
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/polite-interruptions.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: ...and so the migration will roll out in three phases, starting with the read replicas next Monday.
@@ -140,7 +144,3 @@ scene: Polite Interruptions
 
 **B**: Exactly. Sorry for the interruption — I'll hand it back to you for the rest of the plan.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没错。抱歉打断了——剩下的计划我把话还给你。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/polite-interruptions.mp3"></audio>

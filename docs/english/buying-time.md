@@ -115,6 +115,10 @@ scene: Buying Time
 
 > **例**：I'll pull the latest report and give you a solid figure by end of day.
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/buying-time.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Quick one — how many concurrent users can the current API gateway handle before it falls over?
@@ -140,7 +144,3 @@ scene: Buying Time
 
 **B**: Sure — I'll pull the latest report and give you a solid figure by end of day.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：行——我拉最新报告，今天下班前给你准确数。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/buying-time.mp3"></audio>

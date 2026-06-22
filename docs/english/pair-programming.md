@@ -42,6 +42,10 @@ scene: Pair Programming
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/pair-programming.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Want to pair on the payment module?
@@ -61,7 +65,3 @@ scene: Pair Programming
 
 **B**: Later. First verify the **checksum** on every payload.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：等等。先校验每个负载的校验和。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/pair-programming.mp3"></audio>

@@ -42,6 +42,10 @@ scene: Fixing a Flaky Test
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/fixing-a-flaky-test.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: The build failed again on the integration suite.
@@ -61,7 +65,3 @@ scene: Fixing a Flaky Test
 
 **B**: Yes, add an explicit wait before the assertion.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要，在断言前加个显式等待。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/fixing-a-flaky-test.mp3"></audio>

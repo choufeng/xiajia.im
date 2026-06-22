@@ -115,6 +115,10 @@ scene: Keeping Discussion on Track
 
 > **例**：That's really the platform team's call — let's refocus on our decision.
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/keeping-on-track.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: ...and honestly, this reminds me of that bug we hit last summer — remember the cache layer issue? We spent two weeks on it and—
@@ -140,7 +144,3 @@ scene: Keeping Discussion on Track
 
 **B**: Then let's refocus: decision on the failover config, then we close.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：那就拉回重点：定故障转移配置，然后收尾。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/keeping-on-track.mp3"></audio>

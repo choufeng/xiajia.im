@@ -47,6 +47,10 @@ scene: Giving Constructive Feedback
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/giving-feedback.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Can I give you some **constructive** feedback on the doc?
@@ -66,7 +70,3 @@ scene: Giving Constructive Feedback
 
 **B**: Got it. I'll **polish** it after the logic is solid.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：明白。逻辑扎实后我再润色。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/giving-feedback.mp3"></audio>

@@ -42,6 +42,10 @@ scene: Daily Standup Sync
   </tbody>
 </table>
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/daily-standup-sync.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Good morning everyone. Let us start the standup.
@@ -67,7 +71,3 @@ scene: Daily Standup Sync
 
 **B**: None. I will pick up the API tests next.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没有。我接下来写 API 测试。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/daily-standup-sync.mp3"></audio>

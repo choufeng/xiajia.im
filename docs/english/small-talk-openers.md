@@ -115,6 +115,10 @@ scene: Small Talk & Openers
 
 > **例**：Before we start, anyone heard from Sam? He's usually early.
 
+## 🎧 Audio
+
+<audio controls preload="none" src="/audio/small-talk-openers.mp3"></audio>
+
 ## 💬 Dialogue
 
 **A**: Hey everyone, **how's it going**? Glad you could all make it.
@@ -140,7 +144,3 @@ scene: Small Talk & Openers
 
 **B**: Sounds good. Lead the way.
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：行。你带。</span>
-
-## 🎧 Audio
-
-<audio controls preload="none" src="/audio/small-talk-openers.mp3"></audio>
