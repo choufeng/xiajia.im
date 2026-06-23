@@ -121,6 +121,8 @@ export default defineConfig({
             { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
             { text: '《原子习惯》', link: '/reading/atomic-habits' },
             { text: '《一人公司》', link: '/reading/company-of-one' },
+            { text: '《随机漫步的傻瓜》', link: '/reading/fooled-by-randomness' },
+            { text: '《思考的辨析》', link: '/reading/critical-thinking' },
           ],
         },
       ],
