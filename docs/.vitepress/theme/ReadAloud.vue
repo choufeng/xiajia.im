@@ -156,8 +156,8 @@ function injectJumpButton(headingEl, sectionIdx) {
     e.stopPropagation()
     seekToSection(sectionIdx)
   })
-  // 插到标题文本最前（header-anchor 之前）
-  headingEl.insertBefore(btn, headingEl.firstChild)
+  // 插到标题末尾（文字之后），绝对定位浮在标题右侧
+  headingEl.appendChild(btn)
 }
 
 // ===== Web Speech 播放 =====
@@ -535,7 +535,7 @@ onBeforeUnmount(() => {
 }
 .ra-jump {
   position: absolute;
-  left: -1.5em;
+  right: -1.5em;
   top: 50%;
   transform: translateY(-50%);
   width: 1.4em;
@@ -566,11 +566,11 @@ onBeforeUnmount(() => {
   opacity: 0.6;
 }
 @media (max-width: 768px) {
-  /* 窄屏左侧无 gutter，改为标题内联首字符位置，避免溢出 */
+  /* 窄屏右侧无 gutter，改为标题内联末尾，避免溢出 */
   .ra-jump {
     position: static;
     transform: none;
-    margin-right: 0.4em;
+    margin-left: 0.4em;
     opacity: 0.35;
   }
 }
