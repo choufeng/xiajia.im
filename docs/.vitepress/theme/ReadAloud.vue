@@ -81,7 +81,11 @@ function headingText(el) {
 
 function cleanupJumpButtons() {
   document.querySelectorAll('.ra-jump').forEach(b => b.remove())
+  buildRetry = 0
 }
+
+let buildRetry = 0
+const MAX_RETRY = 5
 
 function buildSections() {
   cleanupJumpButtons()
@@ -90,6 +94,18 @@ function buildSections() {
   total.value = 0
   const doc = document.querySelector('.vp-doc')
   if (!doc) return
+
+  // VitePress 把正文包在 .vp-doc 下一层 div（Content 容器），
+  // h2/h3 是该 div 的后代，非 .vp-doc 直接子元素 → 必须进入该容器遍历
+  const root = doc.querySelector(':scope > div') || doc
+
+  // SPA 切页时 DOM 可能尚未就绪：若 content 容器里没有标题，短延迟重试
+  if (!root.querySelector('h2, h3') && buildRetry < MAX_RETRY) {
+    buildRetry++
+    setTimeout(buildSections, 80)
+    return
+  }
+  buildRetry = 0
 
   // 导言段（第一个 h2/h3 之前的内容）
   sections.push({ el: null, title: null, wsChunkStart: 0, wsChunkEnd: 0 })
@@ -106,8 +122,8 @@ function buildSections() {
     cur.wsChunkEnd = chunks.length
   }
 
-  for (const el of doc.children) {
-    // 跳过播放条自身
+  for (const el of root.children) {
+    // 跳过播放条自身（防御：doc-before slot 偶尔注入正文容器内）
     if (el.classList && el.classList.contains('read-aloud')) continue
     const tag = el.tagName
     if (tag === 'H2' || tag === 'H3') {
