@@ -25,6 +25,7 @@ export default defineConfig({
       { text: '编程笔记', link: '/coding/react' },
       { text: '工具参考', link: '/reference/ramda' },
       { text: '读书笔记', link: '/reading/index' },
+      { text: '论文研读', link: '/papers/index' },
       { text: '说话', link: '/speaking/index' },
       { text: '关于', link: '/about' },
       { text: 'Learning English', link: '/english/' },
@@ -123,6 +124,17 @@ export default defineConfig({
             { text: '《一人公司》', link: '/reading/company-of-one' },
             { text: '《随机漫步的傻瓜》', link: '/reading/fooled-by-randomness' },
             { text: '《思考的辨析》', link: '/reading/critical-thinking' },
+          ],
+        },
+      ],
+
+      // 论文研读
+      '/papers/': [
+        {
+          text: '论文研读',
+          items: [
+            { text: '栏目说明', link: '/papers/index' },
+            { text: 'CORAL：多 Agent 自主进化', link: '/papers/coral-multi-agent-evolution' },
           ],
         },
       ],
