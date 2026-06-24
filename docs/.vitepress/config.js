@@ -118,6 +118,7 @@ export default defineConfig({
             { text: '《思考，快与慢》', link: '/reading/thinking-fast-slow' },
             { text: '《金钱心理学》', link: '/reading/psychology-of-money' },
             { text: '《非暴力沟通》', link: '/reading/nonviolent-communication' },
+            { text: '《非暴力沟通实践篇》', link: '/reading/nonviolent-communication-practice' },
             { text: '《认知天性》', link: '/reading/make-it-stick' },
             { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
             { text: '《原子习惯》', link: '/reading/atomic-habits' },
