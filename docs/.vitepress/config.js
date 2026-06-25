@@ -272,6 +272,7 @@ export default defineConfig({
             { text: '栏目说明', link: '/speaking/index' },
             { text: 'Day 1 · 先练什么', link: '/speaking/01-day1-what-first' },
             { text: 'Day 2 · 卡住了怎么接', link: '/speaking/02-day2-keep-going' },
+            { text: 'Day 3 · 话多了怎么删', link: '/speaking/03-day3-cut-the-fat' },
           ],
         },
       ],
