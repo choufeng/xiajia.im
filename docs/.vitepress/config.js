@@ -136,6 +136,9 @@ export default defineConfig({
           items: [
             { text: '栏目说明', link: '/papers/index' },
             { text: 'CORAL：多 Agent 自主进化', link: '/papers/coral-multi-agent-evolution' },
+            { text: 'AOHP：Agent 原生操作系统', link: '/papers/aohp-os-agent-harness' },
+            { text: 'EDV：经验学习的写入护栏', link: '/papers/edv-experience-verify' },
+            { text: 'MemGUI：上下文即动作', link: '/papers/memgui-context-management' },
           ],
         },
       ],
