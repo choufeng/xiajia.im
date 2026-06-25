@@ -2,3 +2,9 @@ node_modules/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 .DS_Store
+
+# 临时工作文件
+progress.md
+research.md
+__pycache__/
+*.pyc
