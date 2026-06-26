@@ -22,14 +22,20 @@ export default defineConfig({
         link: '/ai/index',
         activeMatch: '^/ai/',
       },
-      { text: '编程笔记', link: '/coding/react' },
-      { text: '工具参考', link: '/reference/ramda' },
-      { text: '读书笔记', link: '/reading/index' },
-      { text: '论文研读', link: '/papers/index' },
-      { text: '说话', link: '/speaking/index' },
-      { text: '关于', link: '/about' },
-      { text: 'Learning English', link: '/english/' },
       { text: 'PI 教程', link: '/pi-tutorials/index' },
+      { text: '论文研读', link: '/papers/index' },
+      { text: '编程笔记', link: '/coding/react' },
+      { text: 'Learning English', link: '/english/' },
+      { text: '读书笔记', link: '/reading/index' },
+      {
+        text: '更多',
+        activeMatch: '^/(reference|speaking)/',
+        items: [
+          { text: '工具参考', link: '/reference/ramda' },
+          { text: '说话', link: '/speaking/index' },
+        ],
+      },
+      { text: '关于', link: '/about' },
     ],
 
     sidebar: {
