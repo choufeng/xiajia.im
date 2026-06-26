@@ -47,5 +47,6 @@ AI 论文每天几百篇，多数是噪声。本栏目只挑**最新、有热度
 | [AOHP：Agent 原生操作系统](./aohp-os-agent-harness) | OS 级 harness · agent 作为一等公民 | 2026.06 |
 | [EDV：经验学习的写入护栏](./edv-experience-verify) | 记忆工程 · 自我确认陷阱与共识验证 | 2026.06 |
 | [MemGUI：上下文即动作](./memgui-context-management) | 上下文工程 · 长程任务的主动管理 | 2026.06 |
+| [Skill-MAS：可进化的编排技能](./skill-mas-meta-skill) | MAS · 编排能力抽成可迁移 Meta-Skill | 2026.06 |
 
 > 持续更新。下一本读什么，欢迎在 [GitHub](https://github.com/choufeng/xiajia.im) 留言建议。
