@@ -133,6 +133,34 @@ export default defineConfig({
             { text: '《思考的辨析》', link: '/reading/critical-thinking' },
           ],
         },
+        {
+          text: '《论语》精读系列（7 篇）',
+          collapsed: true,
+          items: [
+            { text: '系列总纲', link: '/reading/lunyu-series' },
+            { text: '1. 学：温故知新', link: '/reading/lunyu-01-xue' },
+            { text: '2. 仁：克己复礼', link: '/reading/lunyu-02-ren' },
+            { text: '3. 君子：不器与坦荡', link: '/reading/lunyu-03-junzi' },
+            { text: '4. 礼：不学无立', link: '/reading/lunyu-04-li' },
+            { text: '5. 孝：色难与几谏', link: '/reading/lunyu-05-xiao' },
+            { text: '6. 政：为政以德', link: '/reading/lunyu-06-zheng' },
+            { text: '7. 处世交友', link: '/reading/lunyu-07-chushi' },
+          ],
+        },
+        {
+          text: '《毛选》精读系列（7 篇）',
+          collapsed: true,
+          items: [
+            { text: '系列总纲', link: '/reading/mao-series' },
+            { text: '1. 认识论：《实践论》', link: '/reading/mao-01-shijian' },
+            { text: '2. 矛盾论：主要矛盾', link: '/reading/mao-02-maodun' },
+            { text: '3. 军事战略：《论持久战》', link: '/reading/mao-03-chijiuzhan' },
+            { text: '4. 群众路线', link: '/reading/mao-04-qunzhong' },
+            { text: '5. 调查研究：《反对本本主义》', link: '/reading/mao-05-diaocha' },
+            { text: '6. 战略方法：《星星之火》', link: '/reading/mao-06-xingxinghuo' },
+            { text: '7. 作风建设', link: '/reading/mao-07-zuofeng' },
+          ],
+        },
       ],
 
       // 论文研读
