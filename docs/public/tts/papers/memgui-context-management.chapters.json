@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "generated": "2026-06-26T15:07:22.864195+00:00",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "chapters": [
+    {
+      "title": "MemGUI-Agent：把「上下文管理」变成 Agent 的一等动作",
+      "start": 0.0,
+      "end": 35.232
+    },
+    {
+      "title": "TL;DR",
+      "start": 35.232,
+      "end": 86.16
+    },
+    {
+      "title": "一、它想解决什么问题",
+      "start": 86.16,
+      "end": 160.92
+    },
+    {
+      "title": "二、核心思想：Context-as-Action（上下文即动作）",
+      "start": 160.92,
+      "end": 245.664
+    },
+    {
+      "title": "三、三个结构化上下文字段",
+      "start": 245.664,
+      "end": 282.984
+    },
+    {
+      "title": "四、让它可学习：MemGUI-3K 数据集",
+      "start": 282.984,
+      "end": 353.088
+    },
+    {
+      "title": "五、实验结果",
+      "start": 353.088,
+      "end": 383.64
+    },
+    {
+      "title": "六、工程对照：MemGUI-Agent 验证了什么",
+      "start": 383.64,
+      "end": 428.904
+    },
+    {
+      "title": "七、启发与局限",
+      "start": 428.904,
+      "end": 537.048
+    }
+  ]
+}

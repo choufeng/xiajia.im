@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generated": "2026-06-26T15:06:58.360941+00:00",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "chapters": [
+    {
+      "title": "AOHP：给 Android 装一个「Agent 原生」的操作系统层",
+      "start": 0.0,
+      "end": 35.208
+    },
+    {
+      "title": "TL;DR",
+      "start": 35.208,
+      "end": 75.336
+    },
+    {
+      "title": "一、它想解决什么问题",
+      "start": 75.336,
+      "end": 139.512
+    },
+    {
+      "title": "二、核心思想：Agent 作为 OS 一等公民",
+      "start": 139.512,
+      "end": 187.344
+    },
+    {
+      "title": "三、三大机制逐个拆",
+      "start": 187.344,
+      "end": 190.104
+    },
+    {
+      "title": "3.1 个性化服务组合（Personalized Service Composition）",
+      "start": 190.104,
+      "end": 252.456
+    },
+    {
+      "title": "3.2 高效 Agent 接口（Efficient Agent Interfaces）",
+      "start": 252.456,
+      "end": 304.296
+    },
+    {
+      "title": "3.3 安全信息流（Secure Information Flow）",
+      "start": 304.296,
+      "end": 369.84
+    },
+    {
+      "title": "四、架构一览",
+      "start": 369.84,
+      "end": 387.024
+    },
+    {
+      "title": "五、实验结果",
+      "start": 387.024,
+      "end": 424.104
+    },
+    {
+      "title": "六、工程对照：AOHP 验证了什么",
+      "start": 424.104,
+      "end": 465.84
+    },
+    {
+      "title": "七、启发与局限",
+      "start": 465.84,
+      "end": 569.256
+    }
+  ]
+}

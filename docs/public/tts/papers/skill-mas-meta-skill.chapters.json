@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "generated": "2026-06-26T15:07:40.330267+00:00",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "chapters": [
+    {
+      "title": "Skill-MAS：把「多 Agent 编排」本身变成可进化的技能",
+      "start": 0.0,
+      "end": 33.816
+    },
+    {
+      "title": "TL;DR",
+      "start": 33.816,
+      "end": 89.232
+    },
+    {
+      "title": "一、它想解决什么问题",
+      "start": 89.232,
+      "end": 179.016
+    },
+    {
+      "title": "二、核心思想：Meta-Skill——编排能力的外部化进化",
+      "start": 179.016,
+      "end": 259.968
+    },
+    {
+      "title": "三、闭环优化：两步让 Meta-Skill 进化",
+      "start": 259.968,
+      "end": 268.512
+    },
+    {
+      "title": "3.1 Multi-Trajectory Rollout：采样行为分布",
+      "start": 268.512,
+      "end": 320.016
+    },
+    {
+      "title": "3.2 Selective Reflection：选择性反思蒸馏",
+      "start": 320.016,
+      "end": 400.56
+    },
+    {
+      "title": "四、为什么这条路能跳出 dilemma",
+      "start": 400.56,
+      "end": 438.072
+    },
+    {
+      "title": "五、实验结果",
+      "start": 438.072,
+      "end": 471.384
+    },
+    {
+      "title": "六、工程对照：Skill-MAS 验证了什么",
+      "start": 471.384,
+      "end": 508.128
+    },
+    {
+      "title": "七、启发与局限",
+      "start": 508.128,
+      "end": 638.232
+    }
+  ]
+}
