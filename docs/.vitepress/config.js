@@ -139,6 +139,7 @@ export default defineConfig({
             { text: 'AOHP：Agent 原生操作系统', link: '/papers/aohp-os-agent-harness' },
             { text: 'EDV：经验学习的写入护栏', link: '/papers/edv-experience-verify' },
             { text: 'MemGUI：上下文即动作', link: '/papers/memgui-context-management' },
+            { text: 'Skill-MAS：可进化的编排技能', link: '/papers/skill-mas-meta-skill' },
           ],
         },
       ],
