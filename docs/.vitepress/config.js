@@ -311,6 +311,7 @@ export default defineConfig({
             { text: 'Day 1 · 先练什么', link: '/speaking/01-day1-what-first' },
             { text: 'Day 2 · 卡住了怎么接', link: '/speaking/02-day2-keep-going' },
             { text: 'Day 3 · 话多了怎么删', link: '/speaking/03-day3-cut-the-fat' },
+            { text: 'Day 4 · 散句怎么排', link: '/speaking/04-day4-find-the-order' },
           ],
         },
       ],
