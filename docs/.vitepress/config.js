@@ -133,6 +133,7 @@ export default defineConfig({
             { text: '《思考的辨析》', link: '/reading/critical-thinking' },
             { text: '《纳瓦尔宝典》', link: '/reading/naval-almanack' },
             { text: '《第一性原理》', link: '/reading/first-principles' },
+            { text: '《低风险创业》', link: '/reading/low-risk-entrepreneurship' },
           ],
         },
         {
