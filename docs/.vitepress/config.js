@@ -131,6 +131,7 @@ export default defineConfig({
             { text: '《一人公司》', link: '/reading/company-of-one' },
             { text: '《随机漫步的傻瓜》', link: '/reading/fooled-by-randomness' },
             { text: '《思考的辨析》', link: '/reading/critical-thinking' },
+            { text: '《纳瓦尔宝典》', link: '/reading/naval-almanack' },
           ],
         },
         {
