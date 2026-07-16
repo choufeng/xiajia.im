@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'XiaJia.IM',
   description: 'Code, Music, Life',
-  lastUpdated: true,
   ignoreDeadLinks: true,
   base: '/',
 
