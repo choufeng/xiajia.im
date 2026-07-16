@@ -164,6 +164,20 @@ export default defineConfig({
             { text: '7. 作风建设', link: '/reading/mao-07-zuofeng' },
           ],
         },
+        {
+          text: '《道德经》精读系列（7 篇）',
+          collapsed: true,
+          items: [
+            { text: '系列总纲', link: '/reading/daodejing-series' },
+            { text: '1. 道：道可道非常道', link: '/reading/daodejing-01-dao' },
+            { text: '2. 无为：无为而无不为', link: '/reading/daodejing-02-wuwei' },
+            { text: '3. 柔弱胜刚强：上善若水', link: '/reading/daodejing-03-ruo' },
+            { text: '4. 反者道之动：物极必反', link: '/reading/daodejing-04-fan' },
+            { text: '5. 知足不争：知足不辱', link: '/reading/daodejing-05-zu' },
+            { text: '6. 治国：治大国若烹小鲜', link: '/reading/daodejing-06-zhiguo' },
+            { text: '7. 致虚守静：归根复命', link: '/reading/daodejing-07-xu' },
+          ],
+        },
       ],
 
       // 论文研读
