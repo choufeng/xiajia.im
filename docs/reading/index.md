@@ -37,7 +37,7 @@
 
 ## 精读系列
 
-除了单本书的读后感，这里还有两个**按主题深读经典**的精读系列——把散落的同类思想聚到一起，看清骨架。
+除了单本书的读后感，这里还有三个**按主题深读经典**的精读系列——把散落的同类思想聚到一起，看清骨架。
 
 ### 📗《论语》精读系列（7 篇）
 
@@ -46,5 +46,9 @@
 ### 📘《毛选》精读系列（7 篇）
 
 把《毛选》当方法论富矿：[认识论](./mao-01-shijian) · [矛盾论](./mao-02-maodun) · [军事战略](./mao-03-chijiuzhan) · [群众路线](./mao-04-qunzhong) · [调查研究](./mao-05-diaocha) · [战略方法](./mao-06-xingxinghuo) · [作风建设](./mao-07-zuofeng)。认识世界，是为了改造世界。[系列总纲 →](./mao-series)
+
+### 📙《道德经》精读系列（7 篇）
+
+五千言按主题重组：[道](./daodejing-01-dao) · [无为](./daodejing-02-wuwei) · [柔弱胜刚强](./daodejing-03-ruo) · [反者道之动](./daodejing-04-fan) · [知足不争](./daodejing-05-zu) · [治国](./daodejing-06-zhiguo) · [致虚守静](./daodejing-07-xu)。八十一章的金句会散，主题不会。[系列总纲 →](./daodejing-series)
 
 > 持续更新。下一本读什么，欢迎在 [GitHub](https://github.com/choufeng/xiajia.im) 留言建议。
