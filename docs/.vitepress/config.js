@@ -190,6 +190,7 @@ export default defineConfig({
             { text: 'EDV：经验学习的写入护栏', link: '/papers/edv-experience-verify' },
             { text: 'MemGUI：上下文即动作', link: '/papers/memgui-context-management' },
             { text: 'Skill-MAS：可进化的编排技能', link: '/papers/skill-mas-meta-skill' },
+            { text: 'PolyWorkBench：多语言长程 Agent 战场', link: '/papers/polyworkbench-multilingual-agent-benchmark' },
           ],
         },
       ],
