@@ -191,6 +191,7 @@ export default defineConfig({
             { text: 'MemGUI：上下文即动作', link: '/papers/memgui-context-management' },
             { text: 'Skill-MAS：可进化的编排技能', link: '/papers/skill-mas-meta-skill' },
             { text: 'PolyWorkBench：多语言长程 Agent 战场', link: '/papers/polyworkbench-multilingual-agent-benchmark' },
+            { text: 'Good Vibrations：Vibe Coding 高手思维四件套', link: '/papers/good-vibrations-vibe-coding-expert-thinking' },
           ],
         },
       ],
