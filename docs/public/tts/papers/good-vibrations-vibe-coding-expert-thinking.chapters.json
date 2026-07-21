@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "generated": "2026-07-21T07:53:58.036863+00:00",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "chapters": [
+    {
+      "title": "Good Vibrations：Vibe Coding 高手的思维四件套",
+      "start": 0.0,
+      "end": 41.448
+    },
+    {
+      "title": "TL;DR",
+      "start": 41.448,
+      "end": 115.392
+    },
+    {
+      "title": "一、它为什么值得读：把「玩得溜」从玄学变成可研究对象",
+      "start": 115.392,
+      "end": 164.544
+    },
+    {
+      "title": "二、核心理论：Vibe Coding 的四组件",
+      "start": 164.544,
+      "end": 176.256
+    },
+    {
+      "title": "2.1 AI Interaction —— 对话范式",
+      "start": 176.256,
+      "end": 193.776
+    },
+    {
+      "title": "2.2 Co-Creation —— 委派 ↔ 共创连续体",
+      "start": 193.776,
+      "end": 216.696
+    },
+    {
+      "title": "2.3 Flow —— 心流是快速迭代的真正引擎",
+      "start": 216.696,
+      "end": 249.72
+    },
+    {
+      "title": "2.4 Trust —— 四组件的「总开关」",
+      "start": 249.72,
+      "end": 297.672
+    },
+    {
+      "title": "三、三设计轴：把「玩得溜」拆成可选择的策略",
+      "start": 297.672,
+      "end": 348.192
+    },
+    {
+      "title": "四、高手清单：四件「守护心流」的事",
+      "start": 348.192,
+      "end": 361.32
+    },
+    {
+      "title": "① Rubberducking —— 把 AI 当小黄鸭",
+      "start": 361.32,
+      "end": 396.096
+    },
+    {
+      "title": "② External Version Control + AI 自记日志",
+      "start": 396.096,
+      "end": 453.672
+    },
+    {
+      "title": "③ Planning First —— 先规划再 vibe",
+      "start": 453.672,
+      "end": 468.48
+    },
+    {
+      "title": "④ 把每个问题塞进一个 Context Window（R2）",
+      "start": 468.48,
+      "end": 507.768
+    },
+    {
+      "title": "五、新手 vs 高手：一张对照表",
+      "start": 507.768,
+      "end": 524.712
+    },
+    {
+      "title": "六、为什么它重要：与本站工程系列的对照",
+      "start": 524.712,
+      "end": 549.336
+    },
+    {
+      "title": "七、启发、局限与个人点评",
+      "start": 549.336,
+      "end": 552.912
+    },
+    {
+      "title": "启发",
+      "start": 552.912,
+      "end": 629.544
+    },
+    {
+      "title": "局限与疑问（诚实）",
+      "start": 629.544,
+      "end": 725.04
+    },
+    {
+      "title": "个人点评",
+      "start": 725.04,
+      "end": 807.096
+    },
+    {
+      "title": "附：信息源",
+      "start": 807.096,
+      "end": 871.104
+    }
+  ]
+}
