@@ -133,6 +133,8 @@ export default defineConfig({
             { text: '《纳瓦尔宝典》', link: '/reading/naval-almanack' },
             { text: '《第一性原理》', link: '/reading/first-principles' },
             { text: '《低风险创业》', link: '/reading/low-risk-entrepreneurship' },
+            { text: '《富爸爸穷爸爸》', link: '/reading/rich-dad-poor-dad' },
+            { text: '《财务自由之路》', link: '/reading/financial-freedom' },
           ],
         },
         {
