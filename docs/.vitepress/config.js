@@ -139,6 +139,16 @@ export default defineConfig({
           ],
         },
         {
+          text: '期权投资系列（4 本）',
+          collapsed: true,
+          items: [
+            { text: '《期权波动率与定价》（Natenberg）', link: '/reading/option-volatility-pricing' },
+            { text: '《期权作为战略投资》（McMillan）', link: '/reading/options-as-strategic-investment' },
+            { text: '《动态对冲》（Taleb）', link: '/reading/dynamic-hedging' },
+            { text: '《交易期权希腊字母》（Passarelli）', link: '/reading/trading-options-greeks' },
+          ],
+        },
+        {
           text: '《论语》精读系列（7 篇）',
           collapsed: true,
           items: [
