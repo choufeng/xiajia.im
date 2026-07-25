@@ -8,3 +8,7 @@ progress.md
 research.md
 __pycache__/
 *.pyc
+
+# 偏私有日历订阅（token + 内容不进公开仓库历史）
+scripts/calendar-events.json
+docs/public/cal/
