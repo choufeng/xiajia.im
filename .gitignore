@@ -9,6 +9,4 @@ research.md
 __pycache__/
 *.pyc
 
-# 偏私有日历订阅（token + 内容不进公开仓库历史）
-scripts/calendar-events.json
-docs/public/cal/
+# 偏私有日历订阅：ICS + JSON 进 git（CI 部署需要）。token 是 unlisted 防线

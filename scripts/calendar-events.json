@@ -1,0 +1,26 @@
+{
+  "token": "47565b9ec73f40f0b37cbb8cecae63cb",
+  "calendarName": "XiaJia 私人日历",
+  "events": [
+    {
+      "uid": "evt-1",
+      "summary": "妈妈生日",
+      "date": "2026-03-08",
+      "time": null,
+      "durationMin": null,
+      "rrule": "FREQ=YEARLY",
+      "location": "",
+      "description": ""
+    },
+    {
+      "uid": "evt-2",
+      "summary": "项目截止",
+      "date": "2026-08-15",
+      "time": "18:00",
+      "durationMin": 60,
+      "rrule": null,
+      "location": "",
+      "description": "V2 发布"
+    }
+  ]
+}
