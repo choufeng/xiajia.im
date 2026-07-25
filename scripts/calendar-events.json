@@ -21,6 +21,16 @@
       "rrule": null,
       "location": "",
       "description": "V2 发布"
+    },
+    {
+      "uid": "evt-3",
+      "summary": "ETH 期权滚仓（8/28 2050-C 到期）",
+      "date": "2026-08-21",
+      "time": "10:00",
+      "durationMin": 30,
+      "rrule": null,
+      "location": "",
+      "description": "ETH-260828-2050-C 到期前一周，平仓滚动，避免最后周 gamma 爆炸。wheel-strategy 铁律。"
     }
   ]
 }
