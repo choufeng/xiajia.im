@@ -566,19 +566,23 @@ onBeforeUnmount(() => {
       </div>
       <span class="ra-count">{{ progressLabel }}</span>
     </div>
-  </div>
 
-  <!-- 浮动跟随开关：仅 audio 模式播放时显示 -->
-  <button
-    v-if="mode === 'audio' && status === 'playing'"
-    class="ra-follow-fab"
-    :class="{ 'is-on': autoFollow }"
-    @click="toggleAutoFollow"
-    :title="autoFollow ? '跟随朗读中（点击暂停跟随）' : '已暂停跟随（点击恢复，跳回当前朗读处）'"
-    :aria-label="autoFollow ? '暂停跟随朗读' : '恢复跟随朗读'"
-  >
-    <span class="ra-follow-icon">{{ autoFollow ? '🎯' : '📍' }}</span>
-  </button>
+    <!-- 跟随开关：audio 播放时整合进工具条末尾 -->
+    <button
+      v-if="mode === 'audio' && status !== 'idle'"
+      class="ra-follow"
+      :class="{ 'is-on': autoFollow }"
+      @click="toggleAutoFollow"
+      :title="autoFollow ? '跟随朗读中（点击暂停跟随）' : '已暂停跟随（点击恢复，跳回当前朗读处）'"
+      :aria-label="autoFollow ? '暂停跟随朗读' : '恢复跟随朗读'"
+    >
+      <svg class="ra-follow-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="8.5" :stroke-width="autoFollow ? 2 : 1.5" :stroke-dasharray="autoFollow ? 'none' : '2.5 2'" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+      <span class="ra-follow-label">{{ autoFollow ? '跟随' : '已停' }}</span>
+    </button>
+  </div>
 </template>
 
 <!-- 播放条本体（scoped） -->
@@ -693,34 +697,38 @@ onBeforeUnmount(() => {
   .ra-progress { min-width: 100%; order: 3; }
 }
 
-/* 浮动跟随开关（脱离播放条，固定右下角） */
-.ra-follow-fab {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg-soft);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  z-index: 10;
-  display: flex;
+/* 跟随开关（整合进工具条末尾） */
+.ra-follow {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  opacity: 0.55;
-  transition: opacity 0.2s, transform 0.2s, background 0.2s, border-color 0.2s;
+  gap: 5px;
+  padding: 5px 11px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--vp-c-text-3);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  white-space: nowrap;
 }
-.ra-follow-fab:hover { opacity: 1; transform: scale(1.06); }
-.ra-follow-fab.is-on {
-  background: var(--vp-c-brand);
+.ra-follow:hover { color: var(--vp-c-text-1); border-color: var(--vp-c-text-3); }
+.ra-follow-icon {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+}
+.ra-follow-icon circle:last-child { fill: currentColor; stroke: none; }
+/* 跟随中：主题色实心瞄准点 */
+.ra-follow.is-on {
+  color: var(--vp-c-brand);
   border-color: var(--vp-c-brand);
-  opacity: 1;
+  background: var(--vp-c-brand-dim, rgba(85, 133, 247, 0.14));
 }
 @media (max-width: 640px) {
-  .ra-follow-fab { right: 14px; bottom: 14px; }
+  .ra-follow { order: 2; }
 }
 </style>
 
