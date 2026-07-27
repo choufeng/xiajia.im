@@ -23,6 +23,11 @@ const voiceName = ref('')
 const audioDuration = ref(0)
 const audioCurrent = ref(0)
 
+// ===== 自动滚动跟随（audio 模式） =====
+let lastScrollIdx = -1         // 上次滚动定位的章节，避免重复滚动
+let suppressAutoScroll = false // 用户手动滚动后短暂抑制自动跟随
+let userScrollTimer = null
+
 // ===== Web Speech / 章节 内部 =====
 let chunks = []           // 全局朗读分片（按章节顺序铺平）
 let sections = []         // [{ el, title, wsChunkStart, wsChunkEnd }]  index 0 为导言（无 el）
@@ -239,6 +244,8 @@ function seekToSection(sectionIdx) {
       audioEl.currentTime = ch.start
       audioEl.play()
       status.value = 'playing'
+      lastScrollIdx = sectionIdx
+      scrollToChapter(sectionIdx, true)
       return
     }
     // chapters 未就绪 → 整篇从头播（兜底）
@@ -257,6 +264,73 @@ function seekToSection(sectionIdx) {
   }
 
   // detecting 等其他状态：忽略
+}
+
+// ===== 音频跟随滚动 =====
+// audioChapters 与 sections 同构（导言在前，h2/h3 按序）
+function chapterIndexAt(time) {
+  const chs = audioChapters.value
+  if (!chs || !chs.length) return -1
+  let idx = 0
+  for (let i = 0; i < chs.length; i++) {
+    if (chs[i].start <= time + 0.05) idx = i
+    else break
+  }
+  return idx
+}
+
+// 把章节顶部滚到 nav + 播放条下方；force=true 时忽略用户滚动抑制
+function scrollToChapter(index, force = false) {
+  if (!force && suppressAutoScroll) return
+  const sec = sections[index]
+  if (!sec) return
+
+  const navH = parseFloat(
+    getComputedStyle(document.documentElement).getPropertyValue('--vp-nav-height')
+  ) || 0
+  const bar = document.querySelector('.read-aloud')
+  const barH = bar ? bar.offsetHeight : 0
+  const offset = navH + barH + 12
+
+  let topY
+  if (sec.el) {
+    topY = sec.el.getBoundingClientRect().top + window.scrollY - offset
+  } else {
+    // 导言段（H1 区，无 el）：滚到正文容器顶部
+    const doc = document.querySelector('.vp-doc')
+    topY = doc ? (doc.getBoundingClientRect().top + window.scrollY - offset) : 0
+  }
+  window.scrollTo({ top: Math.max(0, topY), behavior: 'smooth' })
+}
+
+// 用户手动滚动 → 短暂抑制自动跟随（避免抢回）
+function markUserScroll() {
+  if (mode.value !== 'audio' || status.value !== 'playing') return
+  suppressAutoScroll = true
+  clearTimeout(userScrollTimer)
+  userScrollTimer = setTimeout(() => { suppressAutoScroll = false }, 8000)
+}
+const _scrollKeys = new Set(['PageUp', 'PageDown', 'Home', 'End', 'ArrowUp', 'ArrowDown'])
+function onUserScrollEvent(e) {
+  if (e.type === 'keydown') {
+    if (_scrollKeys.has(e.key) || e.key === ' ') markUserScroll()
+  } else {
+    markUserScroll()
+  }
+}
+
+// 进度条点击 seek（audio 模式）
+function seekByProgress(e) {
+  if (mode.value !== 'audio' || !audioEl || !audioDuration.value) return
+  const rect = e.currentTarget.getBoundingClientRect()
+  const ratio = Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width))
+  audioEl.currentTime = ratio * audioDuration.value
+  audioCurrent.value = audioEl.currentTime
+  const idx = chapterIndexAt(audioEl.currentTime)
+  if (idx >= 0) {
+    lastScrollIdx = idx
+    scrollToChapter(idx, true)
+  }
 }
 
 // ===== 进度（两种模式统一） =====
@@ -315,6 +389,8 @@ function detect() {
   audioCurrent.value = 0
   audioDuration.value = 0
   audioChapters.value = null
+  lastScrollIdx = -1
+  suppressAutoScroll = false
   mode.value = 'detecting'
   clearTimeout(detectTimer)
 
@@ -328,7 +404,16 @@ function detect() {
       voiceName.value = 'Edge 神经音'
       clearTimeout(detectTimer)
     }
-    audioEl.ontimeupdate = () => { audioCurrent.value = audioEl.currentTime }
+    audioEl.ontimeupdate = () => {
+      audioCurrent.value = audioEl.currentTime
+      if (mode.value === 'audio' && audioChapters.value) {
+        const idx = chapterIndexAt(audioEl.currentTime)
+        if (idx >= 0 && idx !== lastScrollIdx) {
+          lastScrollIdx = idx
+          scrollToChapter(idx, false)
+        }
+      }
+    }
     audioEl.onended = () => { stop() }
     audioEl.onerror = () => {
       if (mode.value === 'detecting') initWebSpeech()
@@ -349,7 +434,12 @@ function detect() {
 // 切页（SPA 路由变化）时重置：避免播上一篇文章内容
 watch(() => page.value.relativePath, () => detect())
 
-onMounted(() => detect())
+onMounted(() => {
+  window.addEventListener('wheel', onUserScrollEvent, { passive: true })
+  window.addEventListener('touchmove', onUserScrollEvent, { passive: true })
+  window.addEventListener('keydown', onUserScrollEvent)
+  detect()
+})
 
 function initWebSpeech() {
   clearTimeout(detectTimer)
@@ -362,7 +452,11 @@ function initWebSpeech() {
 onBeforeUnmount(() => {
   stop()
   clearTimeout(detectTimer)
+  clearTimeout(userScrollTimer)
   cleanupJumpButtons()
+  window.removeEventListener('wheel', onUserScrollEvent)
+  window.removeEventListener('touchmove', onUserScrollEvent)
+  window.removeEventListener('keydown', onUserScrollEvent)
   if (audioEl) audioEl.src = ''
 })
 </script>
@@ -409,7 +503,12 @@ onBeforeUnmount(() => {
     </div>
 
     <div v-if="status !== 'idle'" class="ra-progress">
-      <div class="ra-bar">
+      <div
+        class="ra-bar"
+        :class="{ 'is-seekable': mode === 'audio' }"
+        :title="mode === 'audio' ? '点击跳转' : ''"
+        @click="seekByProgress"
+      >
         <div class="ra-fill" :style="{ width: progress + '%' }"></div>
       </div>
       <span class="ra-count">{{ progressLabel }}</span>
@@ -509,7 +608,10 @@ onBeforeUnmount(() => {
   background: var(--vp-c-divider);
   border-radius: 2px;
   overflow: hidden;
+  transition: height 0.15s;
 }
+.ra-bar.is-seekable { cursor: pointer; }
+.ra-bar.is-seekable:hover { height: 8px; }
 .ra-fill {
   height: 100%;
   background: var(--vp-c-brand);
