@@ -114,28 +114,52 @@ export default defineConfig({
       // 读书笔记
       '/reading/': [
         {
-          text: '读书笔记',
+          text: '总览',
           items: [
-            { text: '总览', link: '/reading/index' },
+            { text: '读书笔记', link: '/reading/index' },
+          ],
+        },
+        {
+          text: '心智与思维',
+          items: [
+            { text: '《思考，快与慢》', link: '/reading/thinking-fast-slow' },
+            { text: '《认知天性》', link: '/reading/make-it-stick' },
+            { text: '《刻意练习》', link: '/reading/peak' },
+            { text: '《思考的辨析》', link: '/reading/critical-thinking' },
+            { text: '《深度工作》', link: '/reading/deep-work' },
+            { text: '《第一性原理》', link: '/reading/first-principles' },
+          ],
+        },
+        {
+          text: '习惯与效能',
+          items: [
             { text: '《高效能人士的七个习惯》', link: '/reading/seven-habits' },
             { text: '《富有的习惯》', link: '/reading/rich-habits' },
-            { text: '《深度工作》', link: '/reading/deep-work' },
-            { text: '《思考，快与慢》', link: '/reading/thinking-fast-slow' },
-            { text: '《金钱心理学》', link: '/reading/psychology-of-money' },
-            { text: '《非暴力沟通》', link: '/reading/nonviolent-communication' },
-            { text: '《非暴力沟通实践篇》', link: '/reading/nonviolent-communication-practice' },
-            { text: '《认知天性》', link: '/reading/make-it-stick' },
-            { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
             { text: '《原子习惯》', link: '/reading/atomic-habits' },
-            { text: '《一人公司》', link: '/reading/company-of-one' },
-            { text: '《随机漫步的傻瓜》', link: '/reading/fooled-by-randomness' },
-            { text: '《思考的辨析》', link: '/reading/critical-thinking' },
+          ],
+        },
+        {
+          text: '财富与创业',
+          items: [
+            { text: '《金钱心理学》', link: '/reading/psychology-of-money' },
             { text: '《纳瓦尔宝典》', link: '/reading/naval-almanack' },
-            { text: '《第一性原理》', link: '/reading/first-principles' },
             { text: '《低风险创业》', link: '/reading/low-risk-entrepreneurship' },
+            { text: '《一人公司》', link: '/reading/company-of-one' },
             { text: '《富爸爸穷爸爸》', link: '/reading/rich-dad-poor-dad' },
             { text: '《财务自由之路》', link: '/reading/financial-freedom' },
             { text: '《够了》', link: '/reading/enough' },
+            { text: '《随机漫步的傻瓜》', link: '/reading/fooled-by-randomness' },
+          ],
+        },
+        {
+          text: '沟通与人文',
+          items: [
+            { text: '《非暴力沟通》', link: '/reading/nonviolent-communication' },
+            { text: '《非暴力沟通实践篇》', link: '/reading/nonviolent-communication-practice' },
+            { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
+            { text: '《禅与摩托车维修艺术》', link: '/reading/zen-motorcycle' },
+            { text: '《系统之美》', link: '/reading/thinking-in-systems' },
+            { text: '《人类简史》', link: '/reading/sapiens' },
           ],
         },
         {
