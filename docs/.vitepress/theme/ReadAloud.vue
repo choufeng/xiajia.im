@@ -23,10 +23,10 @@ const voiceName = ref('')
 const audioDuration = ref(0)
 const audioCurrent = ref(0)
 
-// ===== 自动滚动跟随（audio 模式） =====
-let lastScrollIdx = -1         // 上次滚动定位的章节，避免重复滚动
-let suppressAutoScroll = false // 用户手动滚动后短暂抑制自动跟随
-let userScrollTimer = null
+// ===== 自动跟随 + 段落高亮（audio 模式） =====
+const autoFollow = ref(true)   // 浮动开关：朗读时自动滚动跟随当前章节
+let lastScrollIdx = -1         // 上次定位的章节，避免重复滚动
+let activeIdx = -1             // 当前高亮章节索引
 
 // ===== Web Speech / 章节 内部 =====
 let chunks = []           // 全局朗读分片（按章节顺序铺平）
@@ -94,6 +94,11 @@ const MAX_RETRY = 5
 
 function buildSections() {
   cleanupJumpButtons()
+  // 清除切页前残留的高亮标记
+  document.querySelectorAll('.ra-sec').forEach(el => el.classList.remove('ra-sec', 'ra-sec-active'))
+  const docOld = document.querySelector('.vp-doc.ra-highlighting')
+  if (docOld) docOld.classList.remove('ra-highlighting')
+  activeIdx = -1
   sections = []
   chunks = []
   total.value = 0
@@ -113,7 +118,7 @@ function buildSections() {
   buildRetry = 0
 
   // 导言段（第一个 h2/h3 之前的内容）
-  sections.push({ el: null, title: null, wsChunkStart: 0, wsChunkEnd: 0 })
+  sections.push({ el: null, title: null, wsChunkStart: 0, wsChunkEnd: 0, elems: [] })
   let buf = []
 
   const flush = () => {
@@ -133,13 +138,18 @@ function buildSections() {
     const tag = el.tagName
     if (tag === 'H2' || tag === 'H3') {
       flush()
-      const sec = { el, title: headingText(el), wsChunkStart: chunks.length, wsChunkEnd: chunks.length }
+      const sec = { el, title: headingText(el), wsChunkStart: chunks.length, wsChunkEnd: chunks.length, elems: [el] }
+      el.classList.add('ra-sec')
       sections.push(sec)
       injectJumpButton(el, sections.length - 1)
     } else if (tag === 'UL' || tag === 'OL') {
       el.querySelectorAll(':scope > li').forEach(li => buf.push(li.textContent))
+      el.classList.add('ra-sec')
+      sections[sections.length - 1].elems.push(el)
     } else if (['P', 'BLOCKQUOTE', 'H4', 'H5', 'H6', 'LI'].includes(tag)) {
       buf.push(el.textContent)
+      el.classList.add('ra-sec')
+      sections[sections.length - 1].elems.push(el)
     }
     // pre/code/table/图片等忽略
   }
@@ -214,6 +224,8 @@ function stop() {
   }
   status.value = 'idle'
   curIdx.value = 0
+  autoFollow.value = true
+  clearHighlight()
 }
 
 function toggle() {
@@ -244,6 +256,7 @@ function seekToSection(sectionIdx) {
       audioEl.currentTime = ch.start
       audioEl.play()
       status.value = 'playing'
+      autoFollow.value = true
       lastScrollIdx = sectionIdx
       scrollToChapter(sectionIdx, true)
       return
@@ -279,9 +292,33 @@ function chapterIndexAt(time) {
   return idx
 }
 
-// 把章节顶部滚到 nav + 播放条下方；force=true 时忽略用户滚动抑制
+// 段落高亮：切换 .ra-sec-active 到 idx 章节
+function setActiveSection(idx) {
+  const doc = document.querySelector('.vp-doc')
+  if (doc) doc.classList.add('ra-highlighting')
+  if (idx === activeIdx) return
+  if (sections[activeIdx]) {
+    sections[activeIdx].elems.forEach(el => el.classList.remove('ra-sec-active'))
+  }
+  activeIdx = idx
+  if (sections[idx]) {
+    sections[idx].elems.forEach(el => el.classList.add('ra-sec-active'))
+  }
+}
+
+// 清除高亮（停止 / 切页用）
+function clearHighlight() {
+  const doc = document.querySelector('.vp-doc.ra-highlighting')
+  if (doc) doc.classList.remove('ra-highlighting')
+  if (sections[activeIdx]) {
+    sections[activeIdx].elems.forEach(el => el.classList.remove('ra-sec-active'))
+  }
+  activeIdx = -1
+}
+
+// 把章节顶部滚到 nav + 播放条下方；force=true 时忽略 autoFollow 开关
 function scrollToChapter(index, force = false) {
-  if (!force && suppressAutoScroll) return
+  if (!force && !autoFollow.value) return
   const sec = sections[index]
   if (!sec) return
 
@@ -303,12 +340,26 @@ function scrollToChapter(index, force = false) {
   window.scrollTo({ top: Math.max(0, topY), behavior: 'smooth' })
 }
 
-// 用户手动滚动 → 短暂抑制自动跟随（避免抢回）
+// 浮动开关：点开时跳回当前朗读处
+function toggleAutoFollow() {
+  if (autoFollow.value) {
+    autoFollow.value = false
+    return
+  }
+  autoFollow.value = true
+  if (audioEl && audioChapters.value) {
+    const idx = chapterIndexAt(audioEl.currentTime)
+    if (idx >= 0) {
+      lastScrollIdx = idx
+      scrollToChapter(idx, true)
+    }
+  }
+}
+
+// 用户手动滚动 → 关闭自动跟随
 function markUserScroll() {
   if (mode.value !== 'audio' || status.value !== 'playing') return
-  suppressAutoScroll = true
-  clearTimeout(userScrollTimer)
-  userScrollTimer = setTimeout(() => { suppressAutoScroll = false }, 8000)
+  if (autoFollow.value) autoFollow.value = false
 }
 const _scrollKeys = new Set(['PageUp', 'PageDown', 'Home', 'End', 'ArrowUp', 'ArrowDown'])
 function onUserScrollEvent(e) {
@@ -326,6 +377,7 @@ function seekByProgress(e) {
   const ratio = Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width))
   audioEl.currentTime = ratio * audioDuration.value
   audioCurrent.value = audioEl.currentTime
+  autoFollow.value = true
   const idx = chapterIndexAt(audioEl.currentTime)
   if (idx >= 0) {
     lastScrollIdx = idx
@@ -390,7 +442,8 @@ function detect() {
   audioDuration.value = 0
   audioChapters.value = null
   lastScrollIdx = -1
-  suppressAutoScroll = false
+  autoFollow.value = true
+  clearHighlight()
   mode.value = 'detecting'
   clearTimeout(detectTimer)
 
@@ -412,6 +465,7 @@ function detect() {
           lastScrollIdx = idx
           scrollToChapter(idx, false)
         }
+        if (idx >= 0) setActiveSection(idx)
       }
     }
     audioEl.onended = () => { stop() }
@@ -452,7 +506,6 @@ function initWebSpeech() {
 onBeforeUnmount(() => {
   stop()
   clearTimeout(detectTimer)
-  clearTimeout(userScrollTimer)
   cleanupJumpButtons()
   window.removeEventListener('wheel', onUserScrollEvent)
   window.removeEventListener('touchmove', onUserScrollEvent)
@@ -514,6 +567,18 @@ onBeforeUnmount(() => {
       <span class="ra-count">{{ progressLabel }}</span>
     </div>
   </div>
+
+  <!-- 浮动跟随开关：仅 audio 模式播放时显示 -->
+  <button
+    v-if="mode === 'audio' && status === 'playing'"
+    class="ra-follow-fab"
+    :class="{ 'is-on': autoFollow }"
+    @click="toggleAutoFollow"
+    :title="autoFollow ? '跟随朗读中（点击暂停跟随）' : '已暂停跟随（点击恢复，跳回当前朗读处）'"
+    :aria-label="autoFollow ? '暂停跟随朗读' : '恢复跟随朗读'"
+  >
+    <span class="ra-follow-icon">{{ autoFollow ? '🎯' : '📍' }}</span>
+  </button>
 </template>
 
 <!-- 播放条本体（scoped） -->
@@ -627,6 +692,36 @@ onBeforeUnmount(() => {
 @media (max-width: 640px) {
   .ra-progress { min-width: 100%; order: 3; }
 }
+
+/* 浮动跟随开关（脱离播放条，固定右下角） */
+.ra-follow-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  opacity: 0.55;
+  transition: opacity 0.2s, transform 0.2s, background 0.2s, border-color 0.2s;
+}
+.ra-follow-fab:hover { opacity: 1; transform: scale(1.06); }
+.ra-follow-fab.is-on {
+  background: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  .ra-follow-fab { right: 14px; bottom: 14px; }
+}
 </style>
 
 <!-- 章节跳转按钮：注入到 .vp-doc 的 h2/h3 内，须用全局样式（scoped 不作用于动态 DOM） -->
@@ -675,5 +770,21 @@ onBeforeUnmount(() => {
     margin-left: 0.4em;
     opacity: 0.35;
   }
+}
+
+/* 段落高亮：audio 模式播放时，非当前章节降低透明度，当前章节高亮 */
+.vp-doc.ra-highlighting .ra-sec {
+  opacity: 0.38;
+  transition: opacity 0.4s ease;
+}
+.vp-doc.ra-highlighting .ra-sec.ra-sec-active {
+  opacity: 1;
+}
+/* 当前章节标题左侧加一条主题色引导线 */
+.vp-doc.ra-highlighting h2.ra-sec-active,
+.vp-doc.ra-highlighting h3.ra-sec-active {
+  border-left: 3px solid var(--vp-c-brand);
+  padding-left: 0.4em;
+  margin-left: -0.55em;
 }
 </style>
