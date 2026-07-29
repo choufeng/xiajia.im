@@ -15,6 +15,8 @@
   --vp-c-text-1: #1f2329;
   --vp-c-text-2: #4e5969;
   --vp-c-text-3: #86909c;
+  /* strong 强调色：比正文更深一档，补单字重楷体合成粗体之不足 */
+  --vp-c-text-strong: #0d1117;
 }
 
 .dark {
@@ -25,6 +27,7 @@
   --vp-c-text-1: rgba(255, 255, 255, 0.92);
   --vp-c-text-2: rgba(255, 255, 255, 0.68);
   --vp-c-text-3: rgba(255, 255, 255, 0.42);
+  --vp-c-text-strong: #ffffff;
 }
 
 /* ===== 字体（系统栈 · 零加载成本 · 分层） =====
@@ -163,6 +166,13 @@ body {
 /* ===== 列表呼吸感 ===== */
 .vp-doc li + li {
   margin-top: 6px;
+}
+
+/* ===== strong/b 强调（楷体单字重补强） ===== */
+.vp-doc strong,
+.vp-doc b {
+  font-weight: 700;
+  color: var(--vp-c-text-strong);
 }
 
 /* ===== 链接 ===== */
