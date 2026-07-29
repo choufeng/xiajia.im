@@ -15,8 +15,8 @@
   --vp-c-text-1: #1f2329;
   --vp-c-text-2: #4e5969;
   --vp-c-text-3: #86909c;
-  /* strong 强调色：比正文更深一档，补单字重楷体合成粗体之不足 */
-  --vp-c-text-strong: #0d1117;
+  /* strong 强调色：纯黑，最大化与正文对比（楷体合成粗体弱，靠颜色区分） */
+  --vp-c-text-strong: #000000;
 }
 
 .dark {
