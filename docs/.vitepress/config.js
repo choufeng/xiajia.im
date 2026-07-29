@@ -234,6 +234,13 @@ export default defineConfig({
             { text: '滑坡谬误', link: '/cognition/slippery-slope-fallacy' },
           ],
         },
+        {
+          text: '风险与不确定性',
+          items: [
+            { text: '黑天鹅事件', link: '/cognition/black-swan' },
+            { text: '灰犀牛事件', link: '/cognition/grey-rhino' },
+          ],
+        },
       ],
 
       // 论文研读
