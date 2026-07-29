@@ -46,6 +46,24 @@ function setupReveal() {
 function enhance() {
   markEngineer()
   setupReveal()
+  injectReadingTime()
+}
+
+// 阅读时长徽章：中文字/分钟 + 英文词/分钟
+function injectReadingTime() {
+  const doc = document.querySelector('.vp-doc')
+  if (!doc) return
+  const h1 = doc.querySelector('h1')
+  if (!h1 || h1.querySelector('.reading-time-badge')) return
+  const text = doc.textContent || ''
+  const cjk = (text.match(/[一-鿿]/g) || []).length
+  const words = (text.match(/[a-zA-Z]+/g) || []).length
+  if (cjk + words < 200) return // 太短不显示
+  const minutes = Math.max(1, Math.round(cjk / 300 + words / 200))
+  const badge = document.createElement('span')
+  badge.className = 'reading-time-badge'
+  badge.textContent = `· 约 ${minutes} 分钟`
+  h1.appendChild(badge)
 }
 
 function onScroll() {
@@ -60,7 +78,9 @@ onMounted(() => {
   nextTick(enhance)
 })
 
-watch(() => route.path, () => nextTick(enhance))
+watch(() => route.path, () => {
+  nextTick(enhance)
+})
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
