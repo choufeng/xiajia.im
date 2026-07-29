@@ -154,8 +154,16 @@ function buildSections() {
       // 不朗读文本，但跟随聚焦明暗（朗读时表格恒亮会破坏聚焦阅读）
       el.classList.add('ra-sec')
       sections[sections.length - 1].elems.push(el)
+    } else if (tag === 'PRE') {
+      // 代码块：不朗读，但跟随聚焦明暗
+      el.classList.add('ra-sec')
+      sections[sections.length - 1].elems.push(el)
+    } else if (tag === 'P' && el.querySelector('img')) {
+      // 图片（包在 p 里）：不朗读，但跟随聚焦明暗
+      el.classList.add('ra-sec')
+      sections[sections.length - 1].elems.push(el)
     }
-    // pre/code/图片等忽略
+    // 其他忽略
   }
   flush()
   // 修正导言段终点
