@@ -27,13 +27,22 @@
   --vp-c-text-3: rgba(255, 255, 255, 0.42);
 }
 
-/* ===== 字体（系统栈 · 零加载成本 · 中英混排） ===== */
+/* ===== 字体（系统栈 · 零加载成本 · 分层） =====
+ * 分层策略（阅读优先）：
+ *   - 正文（p/blockquote/li/td）→ 衬线，长文阅读舒适
+ *   - 标题 / UI / 导航 → 无衬线，现代感、辨识度
+ *   - 代码 → 等宽
+ */
 :root {
   --vp-font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
     "Source Han Sans CN", "Noto Sans CJK SC", system-ui, sans-serif;
   --vp-font-family-mono: "JetBrains Mono", "Fira Code", ui-monospace,
     SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* 衬线正文栈：西文 Georgia（屏幕阅读经典）+ 中文系统宋体 */
+  --font-serif: Georgia, "Songti SC", "Source Han Serif CN",
+    "Noto Serif CJK SC", "SimSun", serif;
 }
 
 /* 抗锯齿 → 笔画锐利清晰 */
@@ -41,6 +50,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+/* 衬线正文下，抗锯齿改为 subpixel，宋体笔画更饱满 */
+.vp-doc p,
+.vp-doc blockquote,
+.vp-doc li,
+.vp-doc td,
+.vp-doc dd {
+  font-family: var(--font-serif);
 }
 
 /* ===== 正文排版（阅读优先） ===== */
