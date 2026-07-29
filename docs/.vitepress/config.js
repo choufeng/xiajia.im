@@ -241,6 +241,27 @@ export default defineConfig({
             { text: '灰犀牛事件', link: '/cognition/grey-rhino' },
           ],
         },
+        {
+          text: '自我认知',
+          items: [
+            { text: '达克效应', link: '/cognition/dunning-kruger-effect' },
+            { text: '幸存者偏差', link: '/cognition/survivorship-bias' },
+          ],
+        },
+        {
+          text: '决策与判断',
+          items: [
+            { text: '锚定效应', link: '/cognition/anchoring-effect' },
+            { text: '沉没成本谬误', link: '/cognition/sunk-cost-fallacy' },
+          ],
+        },
+        {
+          text: '群体与社会',
+          items: [
+            { text: '回音室效应', link: '/cognition/echo-chamber' },
+            { text: '旁观者效应', link: '/cognition/bystander-effect' },
+          ],
+        },
       ],
 
       // 论文研读
