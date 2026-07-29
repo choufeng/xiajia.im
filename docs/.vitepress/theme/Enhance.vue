@@ -54,12 +54,12 @@ function setupCardArt() {
       iconBox.innerHTML = ICON_ART[key]
       iconBox.dataset.replaced = '1'
     }
-    // 右下角彩色图案
+    // 右下角彩色图案（挂在 card 本体，与 box 平级，保证文字层在上）
     if (!card.querySelector('.art-pattern')) {
       const wrap = document.createElement('div')
       wrap.className = 'art-pattern'
       wrap.innerHTML = CARD_ART[key]
-      card.querySelector('.box')?.appendChild(wrap)
+      card.appendChild(wrap)
     }
   })
 }
