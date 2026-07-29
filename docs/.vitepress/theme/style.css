@@ -201,25 +201,71 @@ body {
   transform: scale(1);
 }
 
-/* ===== 首页卡片 hover 动效 ===== */
+/* ===== 首页卡片重设计（深色卡 + 右下角彩色几何图案） =====
+ * 参考 dribbble：深灰底卡 + 左对齐文本层级 + 右下角鲜艳渐变 SVG
+ * light 模式用柔和浅底，dark 模式贴近参考的 #1e1e1e
+ */
 .VPFeatures .VPFeature {
-  transition: transform 0.25s ease, border-color 0.25s, background-color 0.25s, box-shadow 0.25s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background-color: var(--vp-c-bg-soft);
+  border-color: var(--vp-c-divider);
+  transition: transform 0.3s ease, border-color 0.3s, box-shadow 0.3s;
+}
+
+.dark .VPFeatures .VPFeature {
+  background-color: #1e1e1e;
+  border-color: #2a2a2a;
 }
 
 .VPFeatures .VPFeature:hover {
   transform: translateY(-4px);
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 12px 24px -12px rgba(99, 102, 241, 0.28);
+  box-shadow: 0 16px 32px -16px rgba(99, 102, 241, 0.4);
 }
 
-.VPFeatures .VPFeature:hover .icon {
-  background-color: var(--vp-c-brand-soft);
-  transform: scale(1.08);
-  transition: background-color 0.25s, transform 0.25s;
+.VPFeatures .VPFeature .box {
+  position: relative;
+  z-index: 1;
+  align-items: flex-start;
+  padding: 22px;
 }
 
 .VPFeatures .VPFeature .icon {
-  transition: background-color 0.25s, transform 0.25s;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  background-color: transparent;
+  margin-bottom: 14px;
+}
+
+.VPFeatures .VPFeature .title,
+.VPFeatures .VPFeature .details {
+  text-align: left;
+}
+
+/* 右下角彩色几何图案 */
+.VPFeatures .VPFeature .art-pattern {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 115px;
+  height: 115px;
+  pointer-events: none;
+  opacity: 0.85;
+  z-index: 0;
+  transition: transform 0.4s ease, opacity 0.4s;
+}
+
+.dark .VPFeatures .VPFeature .art-pattern {
+  opacity: 1;
+}
+
+.VPFeatures .VPFeature:hover .art-pattern {
+  transform: scale(1.15) rotate(4deg);
+  opacity: 1;
 }
 
 /* ===== strong/b 强调（楷体单字重补强） ===== */

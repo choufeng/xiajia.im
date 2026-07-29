@@ -2,7 +2,7 @@
 /**
  * 阅读增强：顶部进度条 + 滚动入场动画 + 「工程师视角」callout 标记
  * 零依赖，纯 IntersectionObserver。
- * 仅作用于 .vp-doc 文档页；首页不挂载。
+ * 文档页负责正文增强，首页负责卡片几何图案注入。
  */
 import { ref, onMounted, onBeforeUnmount, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
@@ -10,6 +10,35 @@ import { useRoute } from 'vitepress'
 const route = useRoute()
 const progressEl = ref(null)
 let io = null
+
+// 首页卡片右下角彩色几何图案（8 种抽象图形 + 鲜艳渐变）
+const CARD_ART = {
+  '/reading/': `<svg viewBox="0 0 100 100" fill="none"><defs><linearGradient id="art1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><g stroke="url(#art1)" stroke-width="2.5"><circle cx="92" cy="92" r="16"/><circle cx="92" cy="92" r="30"/><circle cx="92" cy="92" r="44"/><circle cx="92" cy="92" r="58"/></g></svg>`,
+  '/ai/': `<svg viewBox="0 0 100 100"><defs><linearGradient id="art2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><g fill="url(#art2)"><circle cx="68" cy="68" r="3"/><circle cx="80" cy="68" r="4"/><circle cx="92" cy="68" r="5"/><circle cx="68" cy="80" r="4"/><circle cx="80" cy="80" r="6"/><circle cx="94" cy="82" r="8"/><circle cx="68" cy="92" r="5"/><circle cx="82" cy="94" r="7"/><circle cx="96" cy="96" r="10"/></g></svg>`,
+  '/english/': `<svg viewBox="0 0 100 100"><defs><linearGradient id="art3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><g stroke="url(#art3)" stroke-width="4"><line x1="50" y1="100" x2="100" y2="50"/><line x1="62" y1="100" x2="100" y2="62"/><line x1="74" y1="100" x2="100" y2="74"/><line x1="86" y1="100" x2="100" y2="86"/><line x1="38" y1="92" x2="92" y2="38"/></g></svg>`,
+  '/coding/': `<svg viewBox="0 0 100 100" fill="none"><defs><linearGradient id="art4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#eab308"/></linearGradient></defs><g stroke="url(#art4)" stroke-width="2"><path d="M55 55 L80 55 L80 80 L100 80 M80 55 L100 55 M55 80 L55 100 M80 80 L100 80"/><circle cx="55" cy="55" r="4" fill="url(#art4)"/><circle cx="80" cy="80" r="4" fill="url(#art4)"/><circle cx="100" cy="100" r="5" fill="url(#art4)"/></g></svg>`,
+  '/cognition/': `<svg viewBox="0 0 100 100"><defs><radialGradient id="art5"><stop offset="0" stop-color="#eab308" stop-opacity="0.9"/><stop offset="1" stop-color="#a855f7" stop-opacity="0.15"/></radialGradient></defs><circle cx="92" cy="92" r="42" fill="url(#art5)"/><g stroke="#eab308" stroke-width="2" opacity="0.7"><line x1="92" y1="92" x2="92" y2="52"/><line x1="92" y1="92" x2="68" y2="58"/><line x1="92" y1="92" x2="52" y2="74"/><line x1="92" y1="92" x2="58" y2="92"/></g></svg>`,
+  '/papers/': `<svg viewBox="0 0 100 100" fill="none"><defs><linearGradient id="art6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><g stroke="url(#art6)" stroke-width="2.5"><path d="M40 100 Q55 85 70 100 T100 100"/><path d="M40 86 Q55 71 70 86 T100 86"/><path d="M40 72 Q55 57 70 72 T100 72"/><path d="M40 58 Q55 43 70 58 T100 58"/></g></svg>`,
+  '/speaking/': `<svg viewBox="0 0 100 100"><defs><linearGradient id="art7" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#ef4444"/></linearGradient></defs><g fill="url(#art7)"><rect x="58" y="70" width="6" height="30" rx="2"/><rect x="70" y="54" width="6" height="46" rx="2"/><rect x="82" y="38" width="6" height="62" rx="2"/><rect x="94" y="60" width="6" height="40" rx="2"/></g></svg>`,
+  '/reference/': `<svg viewBox="0 0 100 100"><defs><linearGradient id="art8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#eab308"/></linearGradient></defs><g fill="url(#art8)" opacity="0.85"><rect x="58" y="58" width="18" height="18" rx="3"/><rect x="80" y="58" width="18" height="18" rx="3" opacity="0.65"/><rect x="58" y="80" width="18" height="18" rx="3" opacity="0.65"/><rect x="80" y="80" width="18" height="18" rx="3"/></g></svg>`,
+}
+
+// 首页卡片注入右下角几何图案
+function setupCardArt() {
+  document.querySelectorAll('.VPFeatures .VPFeature').forEach(card => {
+    if (card.querySelector('.art-pattern')) return
+    const href = card.getAttribute('href') || ''
+    let svg = null
+    for (const key of Object.keys(CARD_ART)) {
+      if (href.includes(key)) { svg = CARD_ART[key]; break }
+    }
+    if (!svg) return
+    const wrap = document.createElement('div')
+    wrap.className = 'art-pattern'
+    wrap.innerHTML = svg
+    card.querySelector('.box')?.appendChild(wrap)
+  })
+}
 
 // 命中「工程师视角」引用块 → 加 class（纯 CSS 选不到文本，故 JS 标记）
 function markEngineer() {
@@ -48,6 +77,7 @@ function enhance() {
   setupReveal()
   injectReadingTime()
   setupLightbox()
+  setupCardArt()
 }
 
 // 图片点击放大（lightbox）：正文内图片点击 → 全屏遮罩
