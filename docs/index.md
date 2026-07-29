@@ -4,16 +4,6 @@ hero:
   name: "XiaJia.IM"
   text: "Code, Music, Life"
   tagline: 个人的学习收集与创作笔记
-  actions:
-    - theme: brand
-      text: 📚 读书笔记
-      link: /reading/
-    - theme: alt
-      text: 🤖 AI 笔记
-      link: /ai/
-    - theme: alt
-      text: 📖 全部栏目
-      link: /about
 features:
   - icon: 📚
     title: 读书笔记
