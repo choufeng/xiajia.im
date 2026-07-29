@@ -150,8 +150,12 @@ function buildSections() {
       buf.push(el.textContent)
       el.classList.add('ra-sec')
       sections[sections.length - 1].elems.push(el)
+    } else if (tag === 'TABLE') {
+      // 不朗读文本，但跟随聚焦明暗（朗读时表格恒亮会破坏聚焦阅读）
+      el.classList.add('ra-sec')
+      sections[sections.length - 1].elems.push(el)
     }
-    // pre/code/table/图片等忽略
+    // pre/code/图片等忽略
   }
   flush()
   // 修正导言段终点

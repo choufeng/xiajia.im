@@ -1,4 +1,164 @@
-/* 单词发音按钮 */
+/**
+ * XiaJia.IM 阅读主题
+ * 定位：极简技术博客，阅读体验优先
+ */
+
+/* ===== 品牌色（靛蓝 indigo · 技术感 · 沉稳） ===== */
+:root {
+  --vp-c-brand-1: #4f46e5;
+  --vp-c-brand-2: #6366f1;
+  --vp-c-brand-3: #818cf8;
+  --vp-c-brand-soft: rgba(99, 102, 241, 0.14);
+  --vp-c-brand: var(--vp-c-brand-1);
+
+  /* 链接色随品牌 */
+  --vp-c-text-1: #1f2329;
+  --vp-c-text-2: #4e5969;
+  --vp-c-text-3: #86909c;
+}
+
+.dark {
+  --vp-c-brand-1: #818cf8;
+  --vp-c-brand-2: #a5b4fc;
+  --vp-c-brand-3: #c7d2fe;
+  --vp-c-brand-soft: rgba(129, 140, 248, 0.16);
+  --vp-c-text-1: rgba(255, 255, 255, 0.92);
+  --vp-c-text-2: rgba(255, 255, 255, 0.68);
+  --vp-c-text-3: rgba(255, 255, 255, 0.42);
+}
+
+/* ===== 字体（系统栈 · 零加载成本 · 中英混排） ===== */
+:root {
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Source Han Sans CN", "Noto Sans CJK SC", system-ui, sans-serif;
+  --vp-font-family-mono: "JetBrains Mono", "Fira Code", ui-monospace,
+    SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* ===== 正文排版（阅读优先） ===== */
+.vp-doc {
+  font-size: 16px;
+}
+
+/* 放宽正文容器，长文更舒展（默认 688px） */
+.vp-doc .content-container {
+  max-width: 760px;
+}
+
+.vp-doc p {
+  line-height: 1.8;
+  margin: 18px 0;
+}
+
+.vp-doc h1 {
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.vp-doc h2 {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--vp-c-divider);
+  letter-spacing: -0.01em;
+}
+
+.vp-doc h3 {
+  margin-top: 36px;
+}
+
+.vp-doc h4 {
+  margin-top: 28px;
+}
+
+/* 标题锚点反馈 */
+.vp-doc .header-anchor {
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.vp-doc h1:hover .header-anchor,
+.vp-doc h2:hover .header-anchor,
+.vp-doc h3:hover .header-anchor,
+.vp-doc h4:hover .header-anchor {
+  opacity: 1;
+}
+
+/* ===== 引用块（正文锚点 · 你大量使用 > 块） ===== */
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand);
+  background-color: var(--vp-c-brand-soft);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 20px;
+  margin: 22px 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.96em;
+}
+
+.vp-doc blockquote p {
+  margin: 8px 0;
+}
+
+/* 「工程师视角」特色 callout — 琥珀色，区别于品牌靛蓝 */
+.vp-doc blockquote.callout-engineer {
+  border-left-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.dark .vp-doc blockquote.callout-engineer {
+  border-left-color: #fbbf24;
+  background-color: rgba(251, 191, 36, 0.12);
+}
+
+/* ===== 代码块 ===== */
+.vp-doc div[class*="language-"] {
+  border-radius: 10px;
+  font-size: 0.88em;
+  margin: 22px 0;
+}
+
+.vp-doc code {
+  font-size: 0.88em;
+}
+
+/* 行内代码 */
+.vp-doc :not(pre) > code {
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* ===== 表格（读书笔记高频用） ===== */
+.vp-doc table {
+  display: block;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 22px 0;
+}
+
+/* ===== 列表呼吸感 ===== */
+.vp-doc li + li {
+  margin-top: 6px;
+}
+
+/* ===== 链接 ===== */
+.vp-doc a {
+  transition: color 0.15s ease;
+  text-underline-offset: 3px;
+}
+
+/* ===== 顶部阅读进度条（P1 动效配合） ===== */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  z-index: 100;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* ===== 单词发音按钮（原有功能保留） ===== */
 .word-play-btn {
   cursor: pointer;
   background: none;
@@ -19,4 +179,33 @@
 
 .word-play-btn:active {
   transform: scale(0.95);
+}
+
+/* ===== P1 入场动画（增强组件触发） ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* 朗读高亮激活时，禁用入场 transform，避免冲突 */
+.vp-doc.ra-highlighting .reveal {
+  transform: none;
+}
+
+/* ===== 尊重 prefers-reduced-motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .reading-progress {
+    transition: none;
+  }
 }
