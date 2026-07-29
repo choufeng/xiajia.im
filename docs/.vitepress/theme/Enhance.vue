@@ -11,6 +11,22 @@ const route = useRoute()
 const progressEl = ref(null)
 let io = null
 
+// 图标 SVG 生成器：统一线性语言（描边 1.8、圆角、currentColor）
+const ic = (paths) =>
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${paths}</svg>`
+
+// 左上角线性图标：白色统一描边，靠图形语义表达主题（读书=书/AI=神经网络/...）
+const ICON_ART = {
+  '/reading/':   ic('<path d="M12 7v13"/><path d="M4 5.5h5.5a2.5 2.5 0 0 1 2.5 2.5v12a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 5.5h-5.5A2.5 2.5 0 0 0 12 8v12a2.5 2.5 0 0 1 2.5-2.5H20z"/>'),
+  '/ai/':        ic('<circle cx="12" cy="12" r="2.5"/><circle cx="4.5" cy="6" r="1.5"/><circle cx="19.5" cy="6" r="1.5"/><circle cx="4.5" cy="18" r="1.5"/><circle cx="19.5" cy="18" r="1.5"/><path d="M6 7l4 3.5M18 7l-4 3.5M6 17l4-3.5M18 17l-4-3.5"/>'),
+  '/english/':   ic('<path d="M12 4L5 19"/><path d="M12 4l7 15"/><path d="M8.5 13h7"/>'),
+  '/coding/':    ic('<path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/>'),
+  '/cognition/': ic('<path d="M9.5 18h5"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.8 10.6c.8.7 1.3 1.6 1.5 2.4h4.6c.2-.8.7-1.7 1.5-2.4A6 6 0 0 0 12 3z"/>'),
+  '/papers/':    ic('<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/>'),
+  '/speaking/':  ic('<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/>'),
+  '/reference/': ic('<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/>'),
+}
+
 // 首页卡片右下角彩色几何图案（8 种抽象图形 + 鲜艳渐变）
 const CARD_ART = {
   '/reading/': `<svg viewBox="0 0 100 100" fill="none"><defs><linearGradient id="art1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><g stroke="url(#art1)" stroke-width="2.5"><circle cx="92" cy="92" r="16"/><circle cx="92" cy="92" r="30"/><circle cx="92" cy="92" r="44"/><circle cx="92" cy="92" r="58"/></g></svg>`,
@@ -23,20 +39,28 @@ const CARD_ART = {
   '/reference/': `<svg viewBox="0 0 100 100"><defs><linearGradient id="art8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#eab308"/></linearGradient></defs><g fill="url(#art8)" opacity="0.85"><rect x="58" y="58" width="18" height="18" rx="3"/><rect x="80" y="58" width="18" height="18" rx="3" opacity="0.65"/><rect x="58" y="80" width="18" height="18" rx="3" opacity="0.65"/><rect x="80" y="80" width="18" height="18" rx="3"/></g></svg>`,
 }
 
-// 首页卡片注入右下角几何图案
+// 首页卡片：替换左上 emoji 为线性图标 + 注入右下角几何图案
 function setupCardArt() {
   document.querySelectorAll('.VPFeatures .VPFeature').forEach(card => {
-    if (card.querySelector('.art-pattern')) return
     const href = card.getAttribute('href') || ''
-    let svg = null
-    for (const key of Object.keys(CARD_ART)) {
-      if (href.includes(key)) { svg = CARD_ART[key]; break }
+    let key = null
+    for (const k of Object.keys(CARD_ART)) {
+      if (href.includes(k)) { key = k; break }
     }
-    if (!svg) return
-    const wrap = document.createElement('div')
-    wrap.className = 'art-pattern'
-    wrap.innerHTML = svg
-    card.querySelector('.box')?.appendChild(wrap)
+    if (!key) return
+    // 左上图标替换（emoji → 线性 SVG）
+    const iconBox = card.querySelector('.icon')
+    if (iconBox && !iconBox.dataset.replaced) {
+      iconBox.innerHTML = ICON_ART[key]
+      iconBox.dataset.replaced = '1'
+    }
+    // 右下角彩色图案
+    if (!card.querySelector('.art-pattern')) {
+      const wrap = document.createElement('div')
+      wrap.className = 'art-pattern'
+      wrap.innerHTML = CARD_ART[key]
+      card.querySelector('.box')?.appendChild(wrap)
+    }
   })
 }
 
