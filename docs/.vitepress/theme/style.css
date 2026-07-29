@@ -40,9 +40,9 @@
   --vp-font-family-mono: "JetBrains Mono", "Fira Code", ui-monospace,
     SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 
-  /* 衬线正文栈：西文 Georgia（屏幕阅读经典）+ 中文系统宋体 */
-  --font-serif: Georgia, "Songti SC", "Source Han Serif CN",
-    "Noto Serif CJK SC", "SimSun", serif;
+  /* 衬线正文栈：思源宋体(Web,主) → Georgia(西文) → 系统宋体(fallback) */
+  --font-serif: "Noto Serif SC", Georgia, "Songti SC", "Source Han Serif CN",
+    "SimSun", serif;
 }
 
 /* 抗锯齿 → 笔画锐利清晰 */

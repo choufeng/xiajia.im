@@ -9,6 +9,9 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'author', content: 'Jon.Xia' }],
+    // 思源宋体 SC（方案B）· jsDelivr CDN · unicode-range 动态分包 · font-display:swap 不阻塞
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/noto-serif-sc/noto_serif_sc_regular/css.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/noto-serif-sc/noto_serif_sc_bold/css.css' }],
   ],
 
   themeConfig: {
