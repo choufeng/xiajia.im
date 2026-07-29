@@ -168,6 +168,60 @@ body {
   margin-top: 6px;
 }
 
+/* ===== 图片 Lightbox ===== */
+.lb-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: zoom-out;
+  padding: 32px;
+  opacity: 0;
+  transition: background 0.25s ease, opacity 0.25s ease;
+}
+
+.lb-overlay.lb-show {
+  background: rgba(0, 0, 0, 0.88);
+  opacity: 1;
+}
+
+.lb-overlay img {
+  max-width: 92%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(0.96);
+  transition: transform 0.25s ease;
+}
+
+.lb-overlay.lb-show img {
+  transform: scale(1);
+}
+
+/* ===== 首页卡片 hover 动效 ===== */
+.VPFeatures .VPFeature {
+  transition: transform 0.25s ease, border-color 0.25s, background-color 0.25s, box-shadow 0.25s;
+}
+
+.VPFeatures .VPFeature:hover {
+  transform: translateY(-4px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 12px 24px -12px rgba(99, 102, 241, 0.28);
+}
+
+.VPFeatures .VPFeature:hover .icon {
+  background-color: var(--vp-c-brand-soft);
+  transform: scale(1.08);
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+.VPFeatures .VPFeature .icon {
+  transition: background-color 0.25s, transform 0.25s;
+}
+
 /* ===== strong/b 强调（楷体单字重补强） ===== */
 .vp-doc strong,
 .vp-doc b {
@@ -185,6 +239,24 @@ body {
   margin-left: 0.5em;
   vertical-align: middle;
   letter-spacing: 0;
+}
+
+/* ===== 首页卡片悬停 ===== */
+.VPFeature {
+  transition: transform 0.25s ease;
+}
+
+.VPFeature .box {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+}
+
+.VPFeature:hover .box {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 24px var(--vp-c-brand-soft);
 }
 
 /* ===== 链接 ===== */
@@ -254,5 +326,28 @@ body {
   }
   .reading-progress {
     transition: none;
+  }
+  .VPFeatures .VPFeature:hover {
+    transform: none;
+  }
+}
+
+/* ===== 移动端优化 ===== */
+@media (max-width: 768px) {
+  /* 阅读时长徽章小屏换行问题 → 隐藏 */
+  .vp-doc h1 .reading-time-badge {
+    display: none;
+  }
+  /* 正文移动端无需固定宽度 */
+  .vp-doc .content-container {
+    max-width: 100%;
+  }
+}
+
+/* 触屏设备：关闭卡片 hover 上浮（触屏无 hover 语义） */
+@media (hover: none) {
+  .VPFeatures .VPFeature:hover {
+    transform: none;
+    box-shadow: none;
   }
 }

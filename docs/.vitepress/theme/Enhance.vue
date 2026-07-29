@@ -47,6 +47,24 @@ function enhance() {
   markEngineer()
   setupReveal()
   injectReadingTime()
+  setupLightbox()
+}
+
+// 图片点击放大（lightbox）：正文内图片点击 → 全屏遮罩
+function setupLightbox() {
+  document.querySelectorAll('.vp-doc img').forEach(img => {
+    if (img.dataset.lb) return
+    img.dataset.lb = '1'
+    img.style.cursor = 'zoom-in'
+    img.addEventListener('click', () => {
+      const overlay = document.createElement('div')
+      overlay.className = 'lb-overlay'
+      overlay.innerHTML = `<img src="${img.src}" alt="${img.alt || ''}">`
+      overlay.addEventListener('click', () => overlay.remove())
+      document.body.appendChild(overlay)
+      requestAnimationFrame(() => overlay.classList.add('lb-show'))
+    })
+  })
 }
 
 // 阅读时长徽章：中文字/分钟 + 英文词/分钟

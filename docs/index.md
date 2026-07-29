@@ -43,4 +43,8 @@ features:
     title: 说话练习
     details: 每天开口一次，记下一段练习与背后的思考，边练边想
     link: /speaking/
+  - icon: 🛠️
+    title: 工具参考
+    details: TypeORM、Cypress、Date-fns、Ramda 等实用工具库速查与总结（15 篇）
+    link: /reference/ramda
 ---
