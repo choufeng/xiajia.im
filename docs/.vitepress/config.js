@@ -26,6 +26,7 @@ export default defineConfig({
       { text: '编程笔记', link: '/coding/react' },
       { text: 'Learning English', link: '/english/' },
       { text: '读书笔记', link: '/reading/index' },
+      { text: '认知提升', link: '/cognition/index' },
       {
         text: '更多',
         activeMatch: '^/(reference|speaking)/',
@@ -212,6 +213,25 @@ export default defineConfig({
             { text: '5. 知足不争：知足不辱', link: '/reading/daodejing-05-zu' },
             { text: '6. 治国：治大国若烹小鲜', link: '/reading/daodejing-06-zhiguo' },
             { text: '7. 致虚守静：归根复命', link: '/reading/daodejing-07-xu' },
+          ],
+        },
+      ],
+
+      // 认知提升
+      '/cognition/': [
+        {
+          text: '总览',
+          items: [
+            { text: '认知提升', link: '/cognition/index' },
+          ],
+        },
+        {
+          text: '逻辑谬误',
+          items: [
+            { text: '稻草人谬误', link: '/cognition/strawman-fallacy' },
+            { text: '红鲱鱼谬误', link: '/cognition/red-herring-fallacy' },
+            { text: '归因谬误', link: '/cognition/attribution-fallacy' },
+            { text: '滑坡谬误', link: '/cognition/slippery-slope-fallacy' },
           ],
         },
       ],
