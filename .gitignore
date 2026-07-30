@@ -3,6 +3,10 @@ docs/.vitepress/cache/
 docs/.vitepress/dist/
 .DS_Store
 
+# pi 运行时产物（子代理会话、临时 skill）
+.pi-subagents/
+.pi/skills/
+
 # 临时工作文件
 progress.md
 research.md
