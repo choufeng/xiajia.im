@@ -705,8 +705,53 @@ onBeforeUnmount(() => {
   font-variant-numeric: tabular-nums;
 }
 
+/* 移动端：icon 化，严格压缩到 2 行（工具行 + 进度行） */
 @media (max-width: 640px) {
-  .ra-progress { min-width: 100%; order: 3; }
+  .read-aloud {
+    gap: 8px;
+    padding: 8px 10px;
+  }
+  /* 隐藏按钮文字 label，只留 icon */
+  .ra-label,
+  .ra-follow-label {
+    display: none;
+  }
+  .ra-btn {
+    padding: 6px 10px;
+  }
+  .ra-stop {
+    padding: 6px 9px;
+  }
+  /* 语速：去 label，缩 range */
+  .ra-rate {
+    gap: 4px;
+  }
+  .ra-rate > label {
+    display: none;
+  }
+  .ra-rate input[type="range"] {
+    width: 56px;
+  }
+  .ra-rate-val {
+    min-width: 28px;
+    font-size: 11px;
+  }
+  /* 模式标签更紧凑 */
+  .ra-mode {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+  /* 跟随 icon 化 */
+  .ra-follow {
+    padding: 5px 8px;
+    order: 2;
+  }
+  /* 进度条独占第二行 */
+  .ra-progress {
+    min-width: 100%;
+    order: 3;
+    margin-top: 2px;
+  }
 }
 
 /* 跟随开关（整合进工具条末尾） */
@@ -738,9 +783,6 @@ onBeforeUnmount(() => {
   color: var(--vp-c-brand);
   border-color: var(--vp-c-brand);
   background: var(--vp-c-brand-dim, rgba(85, 133, 247, 0.14));
-}
-@media (max-width: 640px) {
-  .ra-follow { order: 2; }
 }
 </style>
 
