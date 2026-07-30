@@ -705,7 +705,7 @@ onBeforeUnmount(() => {
   font-variant-numeric: tabular-nums;
 }
 
-/* 移动端：icon 化，严格压缩到 2 行（工具行 + 进度行） */
+/* 移动端：icon 化，压缩为严格 1 行 */
 @media (max-width: 640px) {
   .read-aloud {
     gap: 8px;
@@ -722,35 +722,26 @@ onBeforeUnmount(() => {
   .ra-stop {
     padding: 6px 9px;
   }
-  /* 语速：去 label，缩 range */
-  .ra-rate {
-    gap: 4px;
-  }
-  .ra-rate > label {
+  /* 模式标签(系统/HQ)：移动端不显示 */
+  .ra-mode {
     display: none;
   }
-  .ra-rate input[type="range"] {
-    width: 56px;
-  }
-  .ra-rate-val {
-    min-width: 28px;
-    font-size: 11px;
-  }
-  /* 模式标签更紧凑 */
-  .ra-mode {
-    font-size: 10px;
-    padding: 2px 6px;
+  /* 语速控制：移动端隐藏 */
+  .ra-rate {
+    display: none;
   }
   /* 跟随 icon 化 */
   .ra-follow {
     padding: 5px 8px;
-    order: 2;
   }
-  /* 进度条独占第二行 */
+  /* 进度条：同留一行，吃满剩余宽度 */
   .ra-progress {
-    min-width: 100%;
-    order: 3;
-    margin-top: 2px;
+    flex: 1;
+    min-width: 0;
+    gap: 6px;
+  }
+  .ra-count {
+    font-size: 11px;
   }
 }
 
