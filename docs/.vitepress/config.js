@@ -128,6 +128,7 @@ export default defineConfig({
           items: [
             { text: '《思考，快与慢》', link: '/reading/thinking-fast-slow' },
             { text: '《认知天性》', link: '/reading/make-it-stick' },
+            { text: '《费曼学习法》', link: '/reading/feynman-technique' },
             { text: '《刻意练习》', link: '/reading/peak' },
             { text: '《思考的辨析》', link: '/reading/critical-thinking' },
             { text: '《深度工作》', link: '/reading/deep-work' },
