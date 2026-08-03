@@ -150,6 +150,80 @@ function englishTextOf(el) {
   return (clone.textContent || '').replace(/\s+/g, ' ').trim()
 }
 
+// 标准化：折叠空白，标点保留——用于 diff 与对比
+function normalizeText(s) {
+  return s.replace(/\s+/g, ' ').trim()
+}
+
+// 字符级 LCS diff：三态 ops
+//   eq  = 一致；del = 原文有输入无（少输/错输）；ins = 输入有原文无（多输）
+function diffChars(original, input) {
+  // 快路径：input 是 original 的精确前缀 → 全 eq + 末尾 del
+  // 绕开 LCS 在重复字符上的回溯歧义（如 'o' 在原文出现多次时匹配错位）
+  if (input.length <= original.length && original.startsWith(input)) {
+    const ops = []
+    for (const c of input) ops.push({ t: 'eq', c })
+    for (const c of original.slice(input.length)) ops.push({ t: 'del', c })
+    return ops
+  }
+  const a = [...original]
+  const b = [...input]
+  const n = a.length, m = b.length
+  const dp = Array.from({ length: n + 1 }, () => new Int16Array(m + 1))
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= m; j++) {
+      dp[i][j] = a[i - 1] === b[j - 1]
+        ? dp[i - 1][j - 1] + 1
+        : Math.max(dp[i - 1][j], dp[i][j - 1])
+    }
+  }
+  const ops = []
+  let i = n, j = m
+  while (i > 0 && j > 0) {
+    if (a[i - 1] === b[j - 1]) { ops.push({ t: 'eq', c: a[i - 1] }); i--; j-- }
+    else if (dp[i - 1][j] >= dp[i][j - 1]) { ops.push({ t: 'del', c: a[i - 1] }); i-- }
+    else { ops.push({ t: 'ins', c: b[j - 1] }); j-- }
+  }
+  while (i > 0) { ops.push({ t: 'del', c: a[--i] }) }
+  while (j > 0) { ops.push({ t: 'ins', c: b[--j] }) }
+  ops.reverse()
+  return ops
+}
+
+// 把 diff ops 渲染成 HTML：连续同类型合并为一个 span
+// eq 正常色；del 红删除线（已输入区里输错/漏了）；ins 橙（多输）；pend 灰（原文未输入到，不标红）
+function renderDiff(ops) {
+  // 末尾连续 del = 原文还没输到的部分 → 转 pend，不标红只转灰
+  const out = ops.slice()
+  for (let k = out.length - 1; k >= 0; k--) {
+    if (out[k].t === 'del') out[k] = { t: 'pend', c: out[k].c }
+    else break
+  }
+  const esc = (ch) => ch === ' ' ? '&nbsp;' : ch.replace(/[<>&]/g, (m) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[m]))
+  let html = ''
+  let buf = ''
+  let bufType = null
+  const flush = () => {
+    if (!buf) return
+    const cls = { eq: 'td-eq', del: 'td-del', ins: 'td-ins', pend: 'td-pend' }[bufType]
+    html += `<span class="${cls}">${esc(buf)}</span>`
+    buf = ''
+  }
+  for (const op of out) {
+    if (op.t === bufType) buf += op.c
+    else { flush(); bufType = op.t; buf = op.c }
+  }
+  flush()
+  return html || '<span class="td-empty">原文在这里</span>'
+}
+
+// 统计正确率：eq 字符数 / 原文长度
+function accuracy(ops, originalLen) {
+  if (originalLen === 0) return 0
+  const eq = ops.filter(o => o.t === 'eq').reduce((s, o) => s + [...o.c].length, 0)
+  return Math.round((eq / originalLen) * 100)
+}
+
 // 判定是否「英文句子块」：剔除中文/按钮后，英文字母占比 > 60% 且够长够像句子
 function isEnglishBlock(el) {
   const text = englishTextOf(el)
@@ -186,19 +260,25 @@ function onEsc(e) {
 function openTypeTip(el) {
   closeTypeTip() // 同时只一个
   lastTarget = el
-  const original = englishTextOf(el)
+  const original = normalizeText(englishTextOf(el))
+  const originalLen = [...original].length
   const rect = el.getBoundingClientRect()
   const tip = document.createElement('div')
   tip.className = 'type-tip'
   tip.innerHTML = `
     <div class="type-tip-bar">
       <span class="type-tip-label">练一遍</span>
+      <span class="type-tip-score"></span>
       <button class="type-tip-close" aria-label="关闭">×</button>
     </div>
-    <textarea class="type-tip-input" placeholder="照着上面的句子敲一遍…"></textarea>
+    <div class="type-tip-diff"></div>
+    <textarea class="type-tip-input" placeholder="照着上面的句子敲一遍…" spellcheck="false" autocapitalize="off" autocorrect="off"></textarea>
   `
   document.body.appendChild(tip)
   currentTip = tip
+  const diffBox = tip.querySelector('.type-tip-diff')
+  const score = tip.querySelector('.type-tip-score')
+  const ta = tip.querySelector('.type-tip-input')
   // 定位：优先句子下方，下方不够则上方；左右不超出视口
   const margin = 12
   const tRect = tip.getBoundingClientRect()
@@ -211,7 +291,29 @@ function openTypeTip(el) {
   if (left < margin) left = margin
   tip.style.top = top + 'px'
   tip.style.left = left + 'px'
-  tip.querySelector('.type-tip-input').focus()
+  ta.focus()
+  // 实时对比：输入变化 → 重新 diff 渲染 + 正确率
+  // composition 防御：中文输入法期间 input 不触发/ value 不完整，用 compositionend 兑现
+  let composing = false
+  const update = () => {
+    const input = normalizeText(ta.value)
+    if (!input) {
+      diffBox.innerHTML = '<span class="td-empty">输错了会这里标出来</span>'
+      score.textContent = ''
+      return
+    }
+    const ops = diffChars(original, input)
+    diffBox.innerHTML = renderDiff(ops)
+    const acc = accuracy(ops, originalLen)
+    score.textContent = acc + '%'
+    score.className = 'type-tip-score ' + (acc === 100 ? 'perfect' : '')
+  }
+  ta.addEventListener('input', update)
+  ta.addEventListener('compositionstart', () => { composing = true })
+  ta.addEventListener('compositionend', () => { composing = false; update() })
+  // 兑底：无论何种原因 input 未及时更新，焦点/键盘交互时强制刷新一次
+  ta.addEventListener('keyup', () => { if (!composing) update() })
+  update()
   tip.querySelector('.type-tip-close').addEventListener('click', closeTypeTip)
   document.addEventListener('click', onDocClick, true)
   document.addEventListener('keydown', onEsc)

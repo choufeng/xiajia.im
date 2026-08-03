@@ -661,3 +661,65 @@ td.type-practice:hover {
 .type-tip-input::placeholder {
   color: var(--vp-c-text-3);
 }
+
+/* 对比区：放在 textarea 上方，实时显示 diff */
+.type-tip-diff {
+  font-family: var(--vp-font-family-base);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  border-radius: 6px;
+  padding: 8px 10px;
+  min-height: 38px;
+  word-break: break-word;
+}
+
+.type-tip-diff .td-empty {
+  color: var(--vp-c-text-3);
+  font-style: italic;
+}
+
+/* 三态：eq 正常 / del 红删除线 / ins 橙下划线 */
+.type-tip-diff .td-eq {
+  color: var(--vp-c-text-2);
+}
+
+.type-tip-diff .td-del {
+  color: #ef4444;
+  text-decoration: line-through;
+  text-decoration-color: rgba(239, 68, 68, 0.7);
+}
+
+.dark .type-tip-diff .td-del {
+  color: #f87171;
+}
+
+.type-tip-diff .td-ins {
+  color: #f59e0b;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(245, 158, 11, 0.7);
+}
+
+.dark .type-tip-diff .td-ins {
+  color: #fbbf24;
+}
+
+/* pend = 原文未输入到的部分，灰色显示不标红 */
+.type-tip-diff .td-pend {
+  color: var(--vp-c-text-3);
+  opacity: 0.55;
+}
+
+/* 正确率徽章 */
+.type-tip-score {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: var(--vp-c-text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.type-tip-score.perfect {
+  color: #10b981;
+}
