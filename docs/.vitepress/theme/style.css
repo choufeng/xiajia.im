@@ -568,3 +568,96 @@ body {
   color: #ec4899;
   font-weight: 600;
 }
+
+/* ===== 英文句子打字练习 tip（英语板块专用） =====
+ * 点击英文句子 → 句子下方弹 textarea，照原句敲一遍。
+ * fixed 定位不遮挡原句；关闭即销毁，不存储。
+ */
+.type-practice {
+  cursor: text;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.type-practice:hover {
+  background: var(--vp-c-brand-soft);
+}
+
+td.type-practice:hover {
+  outline: 2px solid var(--vp-c-brand-3);
+  outline-offset: -2px;
+}
+
+.type-tip {
+  position: fixed;
+  z-index: 200;
+  width: min(680px, calc(100vw - 24px));
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: type-tip-in 0.12s ease-out;
+}
+
+@keyframes type-tip-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.type-tip-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.type-tip-label {
+  font-size: 0.74em;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  letter-spacing: 0.04em;
+}
+
+.type-tip-close {
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--vp-c-text-3);
+  padding: 0 4px;
+  transition: color 0.15s ease;
+}
+
+.type-tip-close:hover {
+  color: var(--vp-c-text-1);
+}
+
+.type-tip-input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 64px;
+  resize: vertical;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-family: var(--vp-font-family-base);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.type-tip-input:focus {
+  outline: none;
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 3px var(--vp-c-brand-soft);
+}
+
+.type-tip-input::placeholder {
+  color: var(--vp-c-text-3);
+}

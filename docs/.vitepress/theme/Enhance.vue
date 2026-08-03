@@ -103,6 +103,7 @@ function enhance() {
   setupLightbox()
   setupCardArt()
   setupFeynmanBox()
+  setupTypePractice()
 }
 
 // 费曼反思框：仅 /reading/ 注入，textarea 按路由路径存 localStorage
@@ -134,6 +135,99 @@ function setupFeynmanBox() {
     count.textContent = String(ta.value.length)
   })
   if (io) io.observe(box)
+}
+
+// 英文句子打字练习 tip：仅 /english/ 生效
+// 点击英文主导的 p/li/td → 句子下方弹出 textarea，照原句敲一遍。
+// 不遮挡原句（fixed 定位在下方，空间不够放上方），关闭即销毁不存储。
+let currentTip = null
+let lastTarget = null
+
+// 取元素「纯英文文本」：剔除中文翻译 span、发音按钮、词典链接后剩的文本
+function englishTextOf(el) {
+  const clone = el.cloneNode(true)
+  clone.querySelectorAll('span[style*="color"], button, a').forEach(n => n.remove())
+  return (clone.textContent || '').replace(/\s+/g, ' ').trim()
+}
+
+// 判定是否「英文句子块」：剔除中文/按钮后，英文字母占比 > 60% 且够长够像句子
+function isEnglishBlock(el) {
+  const text = englishTextOf(el)
+  if (text.length < 15) return false
+  const letters = (text.match(/[a-zA-Z]/g) || []).length
+  const cjk = (text.match(/[一-鿿]/g) || []).length
+  const total = letters + cjk
+  if (total < 10) return false
+  if (letters / total < 0.6) return false
+  if ((text.match(/ /g) || []).length < 2) return false // 要是句子，不是单词/短语
+  return true
+}
+
+function closeTypeTip() {
+  if (!currentTip) return
+  currentTip.remove()
+  currentTip = null
+  lastTarget = null
+  document.removeEventListener('click', onDocClick, true)
+  document.removeEventListener('keydown', onEsc)
+}
+
+function onDocClick(e) {
+  if (!currentTip) return
+  if (currentTip.contains(e.target)) return
+  if (lastTarget && (e.target === lastTarget || lastTarget.contains(e.target))) return
+  closeTypeTip()
+}
+
+function onEsc(e) {
+  if (e.key === 'Escape') closeTypeTip()
+}
+
+function openTypeTip(el) {
+  closeTypeTip() // 同时只一个
+  lastTarget = el
+  const original = englishTextOf(el)
+  const rect = el.getBoundingClientRect()
+  const tip = document.createElement('div')
+  tip.className = 'type-tip'
+  tip.innerHTML = `
+    <div class="type-tip-bar">
+      <span class="type-tip-label">练一遍</span>
+      <button class="type-tip-close" aria-label="关闭">×</button>
+    </div>
+    <textarea class="type-tip-input" placeholder="照着上面的句子敲一遍…"></textarea>
+  `
+  document.body.appendChild(tip)
+  currentTip = tip
+  // 定位：优先句子下方，下方不够则上方；左右不超出视口
+  const margin = 12
+  const tRect = tip.getBoundingClientRect()
+  let top = rect.bottom + 10
+  if (top + tRect.height > window.innerHeight - margin) {
+    top = Math.max(margin, rect.top - tRect.height - 10)
+  }
+  let left = rect.left
+  if (left + tRect.width > window.innerWidth - margin) left = window.innerWidth - tRect.width - margin
+  if (left < margin) left = margin
+  tip.style.top = top + 'px'
+  tip.style.left = left + 'px'
+  tip.querySelector('.type-tip-input').focus()
+  tip.querySelector('.type-tip-close').addEventListener('click', closeTypeTip)
+  document.addEventListener('click', onDocClick, true)
+  document.addEventListener('keydown', onEsc)
+}
+
+function setupTypePractice() {
+  if (!route.path.startsWith('/english/')) return
+  const doc = document.querySelector('.vp-doc')
+  if (!doc) return
+  document.querySelectorAll('.vp-doc p, .vp-doc li, .vp-doc td').forEach(el => {
+    if (el.dataset.tp) return
+    if (!isEnglishBlock(el)) return
+    el.dataset.tp = '1'
+    el.classList.add('type-practice')
+    el.addEventListener('click', () => openTypeTip(el))
+  })
 }
 
 // 图片点击放大（lightbox）：正文内图片点击 → 全屏遮罩
@@ -183,11 +277,13 @@ onMounted(() => {
 })
 
 watch(() => route.path, () => {
+  closeTypeTip()
   nextTick(enhance)
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
+  closeTypeTip()
   if (io) io.disconnect()
 })
 </script>
