@@ -190,15 +190,54 @@
 
 博格尔把时间放在金钱之上，这一条让我重新审视日常决策。我开始主动用钱买时间：雇人做家务、买更好的工具、住得更近。**这些不是奢侈，是赎回不可再生资源。** 赎回的时间用于创造和陪伴，才是真正的复利。
 
-## 行动清单
+## 检索自测
 
-- [ ] 写下自己的「够」：年度开支 × N 倍 = 一个具体数字，写进备忘录，每季度复盘一次
-- [ ] 盘点所有投资的费率，把高费率产品逐步切换到低成本指数基金（目标综合费率 < 0.3%）
-- [ ] 把投资决策从「选什么」转向「降成本」——先做费率审计，再谈标的
-- [ ] 每笔大额消费前问一句：「这笔钱买的是时间，还是面子？」——面子消费延迟 72 小时再决定
-- [ ] 列出「我用时间在省钱」的低效事项（如折腾免费工具、比价两小时省 20 块），改为用钱解决
-- [ ] 每月一次「人生圆点」校准：回到「我到底要过什么样的人生」，对比本月实际投入
-- [ ] 把「受托人 vs 推销员」的标准用于自我审视：我做的事是为客户/用户的长期价值，还是为我的短期 KPI
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>为什么博格尔说「够」是动词，不是形容词/状态？这个判断背后的机制是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>赚到某个数字不会自动「够」——欲望会随收入膨胀，比较对象会随地位升级，「够」的阈值<strong>永远在漂移</strong>。</p>
+      <p>所以「够」是一生要练的<strong>持续动作</strong>：只有主动、反复、刻意地把阈值拉回来，才不会随波逐流；不是到达后就静止的状态。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>投机和投资的回报来源有什么本质差别？为什么博格尔说投机没有底层支撑？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>投资买入真实企业的所有权，回报来自<strong>价值创造</strong>（利润与长期增长）；投机试图预测别人以什么价格接盘，回报来自<strong>别人的错误</strong>。</p>
+      <p>投机一层套一层猜「别人觉得别人觉得它值多少」（凯恩斯选美），没有价值支撑 → 零和甚至负和（再扣费用后集体跑输）。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>长期看，为什么压低成本比挑选高收益标的更值得优化？50 年终值的巨大差额从哪来？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>收益是<strong>不确定</strong>变量；成本是<strong>确定</strong>的负收益——无论涨跌都在，且被复利放大。</p>
+      <p>所有投资者加起来 = 市场本身（零和博弈），扣掉费用后必然<strong>集体跑输市场</strong>。差额不是基金经理无能，是结构决定的必然。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>「买草垛」为什么能跑赢绝大多数主动选股者？从有效市场的角度解释。</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>长期（10 年以上）能持续跑赢大盘的主动经理<strong>统计上接近于零</strong>——「聪明」本身已反映在股价里（有效市场），选股优势被费用吃光。</p>
+      <p>指数基金买下整个市场拿到平均回报，但成本极低 → <strong>净收益反而超过绝大多数主动投资者</strong>。承认无知，是智慧的起点。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>受托人和推销员的差别在哪？为什么博格尔说「换人也救不了」，根因是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>受托人把<strong>客户利益置于自己之前</strong>；推销员把<strong>自己利润置于客户之前</strong>。</p>
+      <p>根因是<strong>结构决定行为</strong>：激励结构错了，换谁都被逼着榨取客户。Vanguard 无外部股东、持有人共有的结构，才是它能把成本做到行业最低的根本原因。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>为什么博格尔说「用时间换钱是亏本交易」？时间相对金钱的独特性是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>金钱可再生、可赚回、可复利；时间<strong>单向流逝、不可再生、不可替代</strong>。</p>
+      <p>所以优先级永远是「用钱买时间」而非「用时间换钱」——赎回的时间用于创造、陪伴、休息，这些才是真正的复利来源。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 

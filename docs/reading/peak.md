@@ -156,14 +156,54 @@
 
 我以前不太主动要反馈。写完代码就完了，没找人 review；做完项目就下一个，没复盘。没有反馈的练习，就像蒙着眼睛投篮——投一万小时也不会变准。**今后，每个产出都要有一条反馈回路。**
 
-## 行动清单
+## 检索自测
 
-- [ ] 每周至少做一个「超出当前能力」的编码任务（新语言、新范式、新领域）
-- [ ] 每次写完重要代码，必须找人 review，并记录反馈
-- [ ] 建立「学习点清单」：每周一列出这周要刻意练习的一个技术薄弱点
-- [ ] 每做完一个项目或大需求，花 30 分钟做书面复盘（什么做得好、什么可以更好）
-- [ ] 每天保证至少 1 小时**高度专注**的编码时间（断网、关通知），用于刻意练习
-- [ ] 每季度做一次技能自评：找出三个最弱的技术点，下季度刻意练习它们
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>为什么「开车 20 年的老司机」车技未必比开 3 年的人强？「执行」和「练习」差在哪？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>重复你已经会的事 = <strong>天真练习</strong>，本质是「执行」——只维持现状，到达平台期就停滞。</p>
+      <p>刻意练习 = 针对薄弱环节持续突破舒适区。多数人以为自己在「练习」，其实在「执行」——把第一年复制了 N 遍。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>「一万小时」为什么不是成为大师的门槛？总练习时间相同，为什么有人卓越、有人平庸？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>一万小时是<strong>平均值</strong>不是门槛；更关键的是练习<strong>质量</strong>。</p>
+      <p>优秀组与卓越组的总练习时间没差太多——差的是<strong>刻意练习的比例</strong>。一万小时的天真练习 = 零小时有效练习。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>心理表征为什么能让高手「一眼看出」答案？它和「记住知识」差在哪？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>心理表征 = 大脑对模式的高度结构化内在编码，是大量刻意练习<strong>反复神经激活后形成的稳定回路</strong>。</p>
+      <p>新手看到散落棋子，大师看到「龙式变例 + 中心兵结构松动」——同样输入，不同内部模型 → 不同输出质量。高手的「直觉」不是魔法，是心理表征高速运转。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>刻意练习为什么必然充满挫败感？这种「不舒服」为何反而是进步的信号？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>它要求你持续做<strong>当前做不好的事</strong>（走出舒适区）。</p>
+      <p>进步本身可以快乐，但进步过程充满挫败。舒服 = 自动巡航 = 执行 = 平台期停滞。挫败感正是大脑在建立新回路的信号。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>为什么刻意练习在「小提琴、棋类」有效，在「管理、创业」有效性大幅下降？关键变量是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>关键变量 = <strong>反馈是否即时客观</strong> + 是否有<strong>公认最佳实践</strong> + 能否反复拆解训练。</p>
+      <p>音乐 / 棋类高度结构化、有教练即时反馈、可重复；管理创业反馈滞后模糊、每次都是全新局面 → 刻意练习失效，需要混合策略。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>Focus → Feedback → Fix it 循环里，多数人卡在哪一步？为什么「没反馈的练习等于零」？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>多数人停在 Focus 或 Feedback——要么没反馈，要么知道了不改。</p>
+      <p>没反馈 = 蒙眼投篮，投一万小时也不会变准。<strong>反馈是刻意练习的燃料</strong>，只有 Fix it（修正）才闭合回路。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 
@@ -175,4 +215,4 @@
 - **[《深度工作》](./deep-work)**：刻意练习需要极度专注，深度工作是把专注力结构化的方法。
 - **[《思考，快与慢》](./thinking-fast-slow)**：系统 1 和系统 2 与心理表征高度相关——高手把慢思考「编译」成快直觉。
 - **[《掌控习惯》](./atomic-habits)**：把刻意练习嵌入习惯系统，不需要每天重新决定「要不要练」。
-- **[《心流》](/reading/flow)**（米哈里·契克森米哈赖）：刻意练习在「技能略高于挑战」的区间，恰好就是心流发生的地带。
+- **《心流》**（米哈里·契克森米哈赖）：刻意练习在「技能略高于挑战」的区间，恰好就是心流发生的地带。

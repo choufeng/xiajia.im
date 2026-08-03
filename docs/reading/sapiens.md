@@ -122,13 +122,47 @@
 
 科学革命教会我最重要的一课：承认「不知道自己不知道什么」是唯一正确的姿态。软件同理——你永远不知道哪个模块明天会挂、哪个假设后天会翻。**保持无知，才能保持警觉。**
 
-## 行动清单
+## 检索自测
 
-- [ ] 写下三个自己深信不疑但可能是「虚构故事」的信念，质疑它们
-- [ ] 下一次做架构/技术选型时，先写出「这个选择如果错了，退出成本是什么」
-- [ ] 在自己的知识盲区清单里加一条：「我完全不懂但假装懂的事」，诚实面对
-- [ ] 用赫拉利的「不可逆陷阱」审视当前所有被动维护的系统/流程，砍掉一个
-- [ ] 重读《未来简史》，对照本篇笔记的「智人终局」部分
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>认知革命的核心是「虚构的力量」——虚构为何能让智人统治地球？真实有什么做不到的？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>虚构（神话/宗教/国家/金钱）让<strong>海量陌生人基于共同想象协作</strong>。</p>
+      <p>真实只能靠血缘/熟人协作（上限约 150 人，邓巴数）；虚构突破上限，集结成千上万人。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>作者称农业革命是「史上最大骗局」——谁骗了谁？人类得到了什么又失去了什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>不是人类驯化小麦，是<strong>小麦驯化了人类</strong>。人类换来更多卡路里（养活更多人口），失去自由、健康、多元饮食。</p>
+      <p>人口膨胀成不可逆陷阱——回不去了，因为已经养不活那么多人。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>科学革命的元规则是「无知」——承认无知为何反而带来进步？前科学时代错在哪？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>前科学假设「重要的事古人都已知/神已启示」，无探索空间。承认无知 → 承认可能错 → 需要实证检验 → 知识可累积修正。</p>
+      <p><strong>无知是进步的前提，全知是停滞的牢笼。</strong></p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>资本主义的「增长信仰」为何危险？经济永远增长的假设哪里出了问题？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>信用体系基于「未来产出一定更多」的假设，增长停滞 → 债务崩塌。</p>
+      <p>但<strong>地球资源有物理边界</strong>，无限增长与有限行星冲突。增长信仰把透支当美德。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>金钱、帝国、宗教——这三种让人类融合统一的力量，底层共同机制是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>都是<strong>虚构共识</strong>：金钱是集体想象的信任，帝国是想象的秩序，宗教是想象的超然故事。</p>
+      <p>共识够广 → 全球统一；共识破裂 → 秩序瓦解。<strong>信任是黏合剂，不是金属或武力。</strong></p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 

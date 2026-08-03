@@ -102,6 +102,38 @@ function enhance() {
   injectReadingTime()
   setupLightbox()
   setupCardArt()
+  setupFeynmanBox()
+}
+
+// 费曼反思框：仅 /reading/ 注入，textarea 按路由路径存 localStorage
+// 对应《认知天性》「精细化 + 反思」——把「我的思考」还给读者自己产出
+function setupFeynmanBox() {
+  // 切页先清残留：box 是 Enhance 直接挂的游离节点，不在 Vue vdom 里，
+  // Vue patch 时不会带走它，会残留在旧位置导致错位。手动清掉再重挂。
+  document.querySelectorAll('.feynman-box').forEach(el => el.remove())
+  if (!route.path.startsWith('/reading/')) return
+  const doc = document.querySelector('.vp-doc')
+  if (!doc) return
+  const key = 'feynman:' + route.path
+  const saved = localStorage.getItem(key) || ''
+  const box = document.createElement('section')
+  box.className = 'feynman-box reveal'
+  box.innerHTML = `
+    <h2 class="fb-title">费曼反思</h2>
+    <p class="fb-hint">合上回忆——不看上面，用自己的话复述本书核心：它讲了什么？和你已知的东西有什么连接？哪里还说不清？（说不出 = 没真懂，那正是该重读的地方）</p>
+    <textarea class="fb-input" placeholder="在这里写……内容只存你本地浏览器。"></textarea>
+    <div class="fb-meta">已写 <span class="fb-count">0</span> 字 · 自动保存到本地</div>
+  `
+  doc.appendChild(box)
+  const ta = box.querySelector('.fb-input')
+  const count = box.querySelector('.fb-count')
+  ta.value = saved
+  count.textContent = String(saved.length)
+  ta.addEventListener('input', () => {
+    localStorage.setItem(key, ta.value)
+    count.textContent = String(ta.value.length)
+  })
+  if (io) io.observe(box)
 }
 
 // 图片点击放大（lightbox）：正文内图片点击 → 全屏遮罩

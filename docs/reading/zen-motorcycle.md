@@ -104,14 +104,54 @@
 
 书本、文档、论文——我把「理解」等同于「拆解」。但这本书告诉我：拆解之后还要能装回去，更重要的是，拆解之前，先「听」那个整体的声音。代码打开先别急着 grep 和跳转，先读——让它自己告诉你哪里不对劲。
 
-## 行动清单
+## 检索自测
 
-- [ ] 下次 debug 前，先做 2 分钟深呼吸——进入「内心平静」再动手
-- [ ] code review 时，不只是查 lint 和 test，先问自己「这段代码给我什么感觉」
-- [ ] 每天留 15 分钟「无目的读代码」——不为了改 bug，纯粹感受代码结构
-- [ ] 学习一项古典手艺（修自行车/焊接/木工），训练「手-物体-良质」的直接通道
-- [ ] 写技术文档时，不只写「是什么」和「怎么做」，也写「这段代码好在哪」
-- [ ] 重读一遍全书（英文原版），跟着斐德若的论证线再走一遍
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>波西格诊断现代文明的病根是「古典与浪漫的鸿沟」——这两者是什么？为什么会分裂？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>古典 = 理性、分析、拆解（看零件）；浪漫 = 感性、整体、审美（看风景）。</p>
+      <p>分裂源自理性霸权（只认古典），浪漫被贬低 → 人变成半人。<strong>两者本是一体，被人为割裂。</strong></p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>「良质」为何不能被定义，只能被感知？波西格说的「前智性认知」是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>良质 = 你认出「好」的那个瞬间，发生在理性判断<strong>之前</strong>。</p>
+      <p>前智性认知 = 理性介入前的直觉识别。一旦定义它，就把它降格成可分析的客体，良质就消失了。<strong>它先于主客二分。</strong></p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>摩托车维修为何是「良质的实验室」？它打通了什么通道？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>修车时，手-工具-机械-判断合一，<strong>理性（古典）与感知（浪漫）同时在场</strong>。</p>
+      <p>它训练「用心做事」的肌肉：你既在分析又在感受。<strong>良质在专注的手艺中现身。</strong></p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>波西格为何把「杀死良质」归罪于亚里士多德的修辞术？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>亚里士多德把「良质」从修辞学中剔除（认为它非理性、不可教），确立主客二分。</p>
+      <p><strong>理性从此垄断真理，直觉被放逐。</strong>结果是：只有可测量的才算知识，「好」变得主观随意。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>「内心平静」为何是生产力的基础设施，而非情绪装饰？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>平静 = 机械师与机器合一的状态（类似心流）。焦躁 → 手抖 → 出错 → 更焦躁。</p>
+      <p><strong>平静不是结果，是前提。</strong>没有它，再高的技术也发挥不出来。它是工作的地基。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>良质与道家的「道」如何呼应？为什么老子「道可道非常道」= 波西格的良质？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>道 = 不可言说的根本实在；良质 = 不可定义的根本价值。<strong>一旦用语言固定，就失去了它。</strong></p>
+      <p>两者都指向理性之前、统摄万物的那一层。波西格十六万字，老子一句话。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 
@@ -119,7 +159,7 @@
 
 ## 延伸
 
-- **[《道德经》—— 第一章：道可道](./daodejing-01-dao)**：波西格用十六万字讨论的问题，老子用一句话说完了。
+- **[《道德经》——第一章：道可道](./daodejing-01-dao)**：波西格用十六万字讨论的问题，老子用一句话说完了。
 - **[《心流》](https://book.douban.com/subject/1051809/)**：心理学对「物我两忘」的实证研究，波西格的哲学直觉在这里得到了实验支撑。
 - **[《思考，快与慢》](./thinking-fast-slow)**：卡尼曼的系统一（前智性、直觉、快速）≈ 波西格的良质感知。两本书从心理学和哲学两端，描述了同一件事。
 - **[《深度工作》](./deep-work)**：保护「内心平静」的操作手册——波西格告诉你为什么，纽波特告诉你怎样做到。

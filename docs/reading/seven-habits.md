@@ -145,15 +145,54 @@
 
 道理人人都懂（习惯一二），但**「要事第一」能不能做到**，决定了一个人是空想家还是实干家。我发现自己 80% 的时间在救火（Ⅰ）和被打断（Ⅲ），真正给第二象限的时间少得可怜。这是我最该改的。
 
-## 行动清单
+## 检索自测
 
-读完不行动等于没读。我的具体承诺：
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
 
-- [ ] 写一份个人使命宣言（习惯二），贴在工作区
-- [ ] 每天早起第一小时，留给第二象限（学习/规划/写作），不被消息打断
-- [ ] 每周做一次四象限复盘：上周时间花在哪、下周如何增加 Ⅱ
-- [ ] 沟通时练习「先复述对方观点再回应」，戒掉「边听边准备反驳」
-- [ ] 每周三次运动、每天阅读 30 分钟——磨锯子（习惯七）
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>柯维说成长必经「依赖→独立→互赖」三阶段，为何不能跳过独立直接追求互赖？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>没有独立（自我掌控）就互赖 = 变相依赖。互赖是两个<strong>成熟个体</strong>的协同，不是弱者抱团。</p>
+      <p>跳过独立 = 以索取姿态合作，必生怨恨。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>「积极主动」的本质是什么？为何说是七个习惯的地基？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>不是盲目乐观，是<strong>在刺激与反应之间夺回选择权</strong>（源出弗兰克尔）。被动者被环境决定，积极者主动选择回应。</p>
+      <p>其余六习惯都建立在这个自主权之上。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>「以终为始」为何是领导力习惯？它和「要事第一」（管理）的差别是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>以终为始 = 领导（做对的事，定方向）；要事第一 = 管理（把事做对，排优先级）。</p>
+      <p><strong>爬错墙，每一步都是浪费。</strong>领导先于管理，方向先于效率。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>「知彼解己」为何强调「先理解」？大多数人沟通失败在哪？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>多数人边听边准备反驳，没真正听。先理解 = 诊断先于开方。</p>
+      <p><strong>除非对方觉得被理解，否则不会开放接收你的观点。</strong>倾听是影响力的前置条件。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>「双赢思维」背后的心态假设是什么？为何匮乏心态做不到双赢？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>双赢基于<strong>丰足心态</strong>（蛋糕足够大）。匮乏心态（零和，你赢我输）→ 只能竞争或牺牲。</p>
+      <p>匮乏者把双赢当软弱，实则双赢是长期合作的唯一稳定解。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>「不断更新（磨锯子）」为何不是浪费时间？它和其他六习惯什么关系？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>磨锯子 = 维护产能（身/心/智/灵）。只产出不维护 → 产能衰退 → 产出崩塌。</p>
+      <p><strong>它是其余六习惯的再生能源</strong>，不更新 = 持续透支。短期像浪费，长期是唯一可持续。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 
@@ -163,5 +202,5 @@
 
 - **《要事第一》**（柯维）：习惯三的扩展版，时间管理深挖。
 - **《第3选择》**（柯维）：习惯六「统合综效」的专题展开。
-- **《活出生命的意义》**（弗兰克尔）：习惯一「积极主动」的思想源头——刺激与反应之间的自由。
-- **原子习惯**（James Clear）：从「习惯」角度可与之对照，柯维偏宏观品格，克利尔偏微观行为设计。
+- **[《活出生命的意义》](./mans-search-for-meaning)**（弗兰克尔）：习惯一「积极主动」的思想源头——刺激与反应之间的自由。
+- **[《原子习惯》](./atomic-habits)**（James Clear）：从「习惯」角度可与之对照——柯维偏宏观品格，克利尔偏微观行为设计。

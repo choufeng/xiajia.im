@@ -154,15 +154,54 @@ Black-Scholes 的核心假设包括：波动率恒定、价格连续变动（无
 
 期权（尤其卖出期权）有**无限亏损**可能。本书方法论需配合严格风控才有效。任何实操前：先模拟盘跑通完整流程 → 再小额试单 → 逐步加仓。**不理解希腊字母含义前，不要开真实卖方头寸。**
 
-## 行动清单
+## 检索自测
 
-- [ ] 读完本书后，用模拟账户跑通至少 3 种策略（单买、价差、备兑），记录每笔的希腊字母
-- [ ] 建立标的历史波动率（HV）和隐含波动率（IV）的日常跟踪表，训练判断 IV 偏高偏低
-- [ ] 每笔交易前写明：我承担多少 Delta / Gamma / Theta / Vega，预期从哪个维度赚钱
-- [ ] 任何卖方头寸必须配对冲或止损，禁止裸卖
-- [ ] 学完定价模型假设后，列一份「Black-Scholes 假设在什么条件下失效」清单，定期对照市场
-- [ ] 用期权做对冲时，先问「我是在降低风险还是在加杠杆」，后者立即停止
-- [ ] 读完本书接 McMillan 的策略库，把方法论翻译成具体可执行组合
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>为什么说「期权交易员真正交易的是波动率，不是方向」？当你买入或卖出一个期权时，本质上在对什么下注？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>期权价值由 5 个变量决定：行权价、到期时间、利率、标的价、<strong>波动率</strong>。前四个已知或合约固定，只有波动率未知、可交易。</p>
+      <p>方向是股票交易员的错价对象，波动率是期权交易员的错价对象。买期权 = 你判断「市场低估了未来波动幅度」；卖期权 = 「市场高估了未来波动幅度」。方向只是次要变量。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>历史波动率（HV）和隐含波动率（IV）的本质差别是什么？为什么 IV 通常系统性地高于 HV？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>HV = 标的过去实际波动幅度（已发生、可精确计算）；IV = 期权市场当下定价反推出的未来波动（未知、可交易）。</p>
+      <p>IV 系统性高于 HV = <strong>方差风险溢价</strong>：市场为「峰值恐慌」付出的溢价。这是卖出期权 + 严格风控能长期复利的数学根源，不是赌博。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>Black-Scholes 的核心假设（波动率恒定、价格连续无跳空、对冲连续无成本、对数正态分布）在现实中全部不成立，纳坦伯格为何仍花大篇幅教它？模型给交易员的真正价值是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>模型给的是「在假设下期权理论上值多少」，不是「期权真正值多少」。</p>
+      <p>价值不在输出数字，而在让你理解假设是什么、模型在做什么、<strong>何时会失效</strong>。交易员赚的是「假设与市场之间的偏差」能不能赚钱——用而不信。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>「这个期权好不好」是个含糊问题，纳坦伯格用希腊字母把它拆成了什么？成熟交易员不预测「赚不赚钱」，他们管理的是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>希腊字母把多维风险<strong>正交分解</strong>成可量化分量：Delta（方向）、Gamma（方向稳定性）、Theta（时间衰减）、Vega（波动率暴露）、Rho（利率）。</p>
+      <p>成熟交易员不问「这次对不对」，而是「我暴露在哪些风险上、各承担多少、是否被合理补偿」。盈亏是噪音，风险定价才是核心。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>同一标的、同一到期的所有行权价，理论上 IV 应该相同，现实中为何 OTM put 的 IV 系统性高于 OTM call？这条倾斜曲线在告诉你什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>市场愿付溢价买「暴跌保护」（保险需求），却不愿为「暴涨」付同样代价，于是形成倾斜。</p>
+      <p>这条曲线是<strong>整个市场对尾部风险的集体定价</strong>，无声告诉你「市场更怕跌，而且怕得有道理」。skew 极端（太陡或太平）= 交易机会。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>概率思维和边际思维要纠正新手哪两个本能错误？为什么一个「孤立看好」的交易往往是坏交易？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>概率思维：单次盈亏是噪音，只看「重复 1000 次会不会赚」。纠正新手「错一次就推翻整个方法论」。</p>
+      <p>边际思维：新增头寸要问「它改善了我整体风险组合的边际质量吗」。孤立看好却和现有头寸高度相关 = 没分散反而集中了风险 = 坏交易。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 
@@ -170,8 +209,8 @@ Black-Scholes 的核心假设包括：波动率恒定、价格连续变动（无
 
 ## 延伸
 
-- **《期权作为战略投资》**（McMillan）：站内 [./options-as-strategic-investment](./options-as-strategic-investment)——本书方法论的策略库落地，看完 Natenberg 再看它。
-- **《动态对冲》**（Taleb）：站内 [./dynamic-hedging](./dynamic-hedging)——挑战本书「定价模型」的脆弱假设，专治对模型的过度自信。
-- **《交易期权希腊字母》**（Passarelli）：站内 [./trading-options-greeks](./trading-options-greeks)——把希腊字母管理落到每日操作，本书的实操补充。
+- **[《期权作为战略投资》](./options-as-strategic-investment)**（McMillan）：本书方法论的策略库落地，看完 Natenberg 再看它。
+- **[《动态对冲》](./dynamic-hedging)**（Taleb）：挑战本书「定价模型」的脆弱假设，专治对模型的过度自信。
+- **[《交易期权希腊字母》](./trading-options-greeks)**（Passarelli）：把希腊字母管理落到每日操作，本书的实操补充。
 - **《期权、期货及其他衍生品》**（Hull）：理论圣经，想彻底搞懂 Black-Scholes 数学推导时回看。
 - **《黑天鹅》**（Taleb）：非期权书，但理解 Taleb《动态对冲》的思想源头必读。

@@ -124,14 +124,54 @@ Black-Scholes 假设收益服从对数正态分布，意味着 3 个标准差以
 
 本书是**高级**期权实务，适合在 Natenberg + McMillan 之后读。未掌握希腊字母和基础策略前读本书会事倍功半。塔勒布的核心警告——「卖方长期脆弱」——不应被理解为「永远不能做卖方」，而是「卖方必须配合严格尾部风控」。
 
-## 行动清单
+## 检索自测
 
-- [ ] 审视所有持仓的「凸性 / 凹性」属性，凹性头寸必须有硬止损
-- [ ] 长期保留少量凸性尾部保护头寸（如 OTM put 买方），把它当保险费
-- [ ] 任何对冲方案问一句「危机时这个工具还能用吗」，跨流动性来源才算真对冲
-- [ ] 用「最坏一次会亏多少」替代「平均会赚多少」作为策略评估主指标
-- [ ] 定期做极端场景压力测试（跳空 + 流动性枯竭 + 相关性飙升），看组合能否存活
-- [ ] 接受「合理的保险浪费」，把它列入必要成本，而非优化对象
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>Black-Scholes 假设「价格连续变动、可连续对冲」，塔勒布为什么说模型算出的「无风险」是幻觉？现实中连续对冲到底卡在哪？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>现实价格是<strong>离散跳空、流动性枯竭</strong>的，且每次对冲有成本，连续对冲做不到。</p>
+      <p>做不到 → 风险没被消除，只是被推迟和聚集，等跳空那天一次性爆发。理论容量 vs 实际容量的鸿沟。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>期权卖方长期「高胜率、稳赚权利金」，塔勒布却说这是「在压路机前捡硬币」。机制是什么？为什么高胜率 ≠ 正期望？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>卖方本质在为肥尾时刻未定价的<strong>尾部风险</strong>提供保险，收的保费远低于真实风险。</p>
+      <p>肥尾事件发生频率远高于正态分布预测——长期赚小钱，一次肥尾归零。胜率再高，期望仍为负。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>塔勒布为什么说「正态分布是最大的谎言」？「黑天鹅」和「肥尾」这两个词，本质差别在哪？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>正态分布严重低估极端事件概率（如 1987 黑色星期一 = <strong>20 个标准差</strong>，正态下宇宙年龄内都不会发生）。</p>
+      <p>这些不是不可预测的「黑天鹅」，而是发生频率远高于模型预测、只是模型拒绝承认的「肥尾」。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>凸性头寸与凹性头寸的本质差别是什么？为什么塔勒布断言凸性「长期会胜出」——即使你预测不对方向？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>凸性：坏时亏有限、好时赚无限；凹性反之——好时赚有限、坏时亏无限。</p>
+      <p>凸性<strong>不需要预测对方向</strong>，只需在极端事件中存活并从中获利；凹性长期必然遇到一次致命打击。肥尾世界里，凸性是免费保险，凹性是隐形炸弹。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>为什么「动态对冲」在最需要它的时刻往往失效？什么是「流动性悖论」？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>危机时 bid-ask 暴宽、市场冻结，<strong>对冲工具与被对冲资产同步失去流动性</strong>，根本无法对冲。</p>
+      <p>流动性悖论：危机中原先不相关的资产相关性飙升、一起跌，分散化在最需要它时失效。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>反脆弱和「稳健（扛得住冲击）」的差别是什么？为什么塔勒布坚持「平时接受小损失」不是浪费？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>稳健只是<strong>承受冲击而不变</strong>；反脆弱是不仅存活，还从波动中变得更强。</p>
+      <p>平时的小损失（如凸性尾部保护的小权利金）是真实保险费，是极端时刻的救命稻草——属于反脆弱投资，不是成本。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 
@@ -139,8 +179,8 @@ Black-Scholes 假设收益服从对数正态分布，意味着 3 个标准差以
 
 ## 延伸
 
-- **《期权波动率与定价》**（Natenberg）：站内 [./option-volatility-pricing](./option-volatility-pricing)——本书批判的「对面」，先建立模型再读本书拆解。
-- **《期权作为战略投资》**（McMillan）：站内 [./options-as-strategic-investment](./options-as-strategic-investment)——本书对策略库提出尾部风险警告。
-- **《交易期权希腊字母》**（Passarelli）：站内 [./trading-options-greeks](./trading-options-greeks)——希腊字母日常管理，本书警告其失效边界。
+- **[《期权波动率与定价》](./option-volatility-pricing)**（Natenberg）：本书批判的「对面」，先建立模型再读本书拆解。
+- **[《期权作为战略投资》](./options-as-strategic-investment)**（McMillan）：本书对策略库提出尾部风险警告。
+- **[《交易期权希腊字母》](./trading-options-greeks)**（Passarelli）：希腊字母日常管理，本书警告其失效边界。
 - **《黑天鹅》**（Taleb）：本书的思想母作，理解肥尾必读。
 - **《反脆弱》**（Taleb）：本书哲学层的延伸，从「凸性」推到「反脆弱」。

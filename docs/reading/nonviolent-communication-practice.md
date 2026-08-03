@@ -245,16 +245,54 @@ NVC 建议：**全然接受**——「听到你这么说，我很高兴。」让
 
 实践篇彻底打消了我对 NVC「和稀泥」的担忧。它要求你**比任何人都更清楚自己的需要**，只是不用攻击的方式表达。在守住自己需要的同时不伤害关系——这才是真正的力量。不是压服别人，是清晰和诚实赢得合作。
 
-## 行动清单
+## 检索自测
 
-- [ ] 情绪上头时先停 3 秒，找脑子里的那句「评判」
-- [ ] 把每个「他应该 / 我应该」改写成「我选择 X，是为了 Y」
-- [ ] 冲突里不当裁判，当翻译——把评判翻成需要
-- [ ] 开口前自检：我说的是观察还是评论？是请求还是命令？
-- [ ] 赞美别人用「行为 + 满足的需要 + 感受」三步法
-- [ ] 接受赞美时不否认，说「听到你这么说我很高兴」
-- [ ] 对自己出错时，用 NVC 而非自我攻击
-- [ ] 任何强制力前自问：这是保护，还是惩罚？
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>同事打断你三次，你暴怒。NVC 说「让你难受的不是他做的事」——真正制造愤怒的是什么？机制何在？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>别人做的事只是<strong>刺激</strong>，愤怒的真正制造者是你脑子里的<strong>评判</strong>（「他真没教养」「他故意让我难堪」）。</p>
+      <p>同一事件两种情绪反应，差别全在归因：评判制造愤怒，<strong>需要</strong>带来建设性能量。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>冲突里「请求」和「命令」外表几乎一样，判别标准是什么？为什么 NVC 调解坚持给双方说「不」的权利？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>判别标准：对方拒绝后你会<strong>惩罚 / 冷战</strong>吗？会 = 命令，不会 = 请求。</p>
+      <p>没有「不」的权利就没有真正合作——强制的「是」是服从，不是连接。在「不」的基础上继续找方案，才谈得上共赢。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>把「我应该减肥」改成「我选择控制饮食，是因为我需要健康」之后，行动力反而上升。背后的机制是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>每句「我应该」都是一次<strong>自我评判 / 自我暴力</strong>，把自己架在「被迫」的位置 → 怨气重、内耗大。</p>
+      <p>换成「我选择 X，是为了满足 Y 需要」= <strong>拿回选择权</strong>。从「被迫」变「主动」，负担卸下，行动力上升。不是自我欺骗，是诚实归因。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>为什么把评判「他太自私了」翻译成「你需要相互体谅和公平」之后，对立瞬间松动？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>对立来自评判，而<strong>所有人的需要都是正当的</strong>——冲突只在「策略」层面，不在「需要」层面。</p>
+      <p>评判制造敌我划分，需要打开对话空间：一旦双方看见彼此的需要，方案就有得谈。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>评价式赞美（「你真棒」）和 NVC 感激三步，结构差在哪？为什么前者养讨好型人格、后者养内在动机？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>评价式 = <strong>居高临下打分</strong>，让人依赖外部认可，却不知自己到底做对了什么。</p>
+      <p>NVC 感激三步：①对方做了什么（行为）②满足了我哪个需要 ③我此刻的感受。它平等地分享「你的行为如何丰盈了我的生命」→ 让人知道<strong>做对了什么、为什么有价值</strong> → 培养内在动机。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>保护性强制力和惩罚性强制力都在阻止对方的行为，卢森堡为何说惩罚「无法满足任何人的需要」？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>惩罚让对方学到的只是<strong>「下次别被抓到」</strong>，不是「为什么不该这样做」。</p>
+      <p>惩罚制造恐惧和敌意、埋下新冲突，它针对的是人，不解决任何需要。判断标准：你的强制力是为<strong>保护</strong>（危险解除），还是为<strong>让对方受教训</strong>（报复）？</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 

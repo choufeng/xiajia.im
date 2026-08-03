@@ -146,14 +146,54 @@ Passarelli 把 Delta 翻译成「等价股票仓位」这一招，治好了我�
 
 希腊字母是**动态的**，开仓时的 Delta/Gamma 不是持有期的 Delta/Gamma——它们随标的价格、时间、IV 变化而变化。**必须每日重新评估，不能「开完仓就忘」**。建议新手用模拟盘跑完整生命周期（开仓→每日调整→平仓），训练对希腊字母漂移的直觉后再实盘。
 
-## 行动清单
+## 检索自测
 
-- [ ] 每笔开仓前写下五个希腊字母数字，说不清就不开
-- [ ] 给组合算总 Delta，设上限（如不超过 1000 股净多），定期盯
-- [ ] 所有负 Gamma 头寸设硬止损，禁止「再等等」
-- [ ] 对每个卖方头寸算 Theta / Gamma 比，低于阈值的关闭
-- [ ] 每笔交易前明确「交易时间 / 方向 / 波动率」中的哪个，选对应到期月
-- [ ] 每日收市前花 10 分钟评估希腊字母漂移，必要时再平衡
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>为什么希腊字母是「仪表盘」而不是装饰？不用它做交易等于什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>仪表盘 = 量化每维风险敷口（方向 / 曲率 / 时间 / 波动率）。</p>
+      <p>不用 = 盲飞，只知盈亏数字不知<strong>为什么赚为什么亏</strong>，靠运气，既无法复制也无法改进。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>Delta 除了「方向」，还是什么的代理？「等价仓位」概念为何重要？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>Delta 还是<strong>仓位代理</strong>：Delta = 0.5 的期权 ≈ 0.5 股。组合总 Delta = 净股数敷口。</p>
+      <p>等价仓位让你看清：一堆期权实际等于多少裸股，<strong>统一了不同工具的风险语言。</strong></p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>Gamma 为何是「潜伏的雷」？对卖方尤其致命在哪？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>Gamma = Delta 的变化率（曲率）。价格动 → Delta 变 → 头寸性质反转。</p>
+      <p>卖方负 Gamma：市场动得越快越亏，<strong>越对冲越亏</strong>（对冲本身改变 Delta），跳空时直接穿透。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>Theta 为何对买方是敌人、对卖方是朋友？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>Theta = 时间价值每天衰减。买方付费持有时间 → 每天流失（Theta 负）；卖方收钱卖出时间 → 每天进账（Theta 正）。</p>
+      <p><strong>时间是买方的成本、卖方的收入。</strong>买方赌事件发生，不发生 = Theta 吃光权利金。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>为什么作者说 Vega 是期权交易的核心维度，比方向更重要？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>方向（Delta）众人皆知，定价已反映；<strong>波动率（Vega）是预期差最大处</strong>——市场对波动率的定价常错。</p>
+      <p>交易波动率 = 交易预期，比交易方向更有 edge，因为波动率更难被有效定价。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>为什么「交易是组合管理，不是单点决策」？五个字母如何协同？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>单笔看 Delta，组合要看五个字母的<strong>净敷口与相互对冲</strong>。</p>
+      <p>调 Delta 可能恶化 Gamma，Vega 对冲增加 Theta 成本。<strong>牵一发动全身</strong>，必须组合层面权衡，不能逐笔优化。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 
@@ -161,7 +201,7 @@ Passarelli 把 Delta 翻译成「等价股票仓位」这一招，治好了我�
 
 ## 延伸
 
-- **《期权波动率与定价》**（Natenberg）：站内 [./option-volatility-pricing](./option-volatility-pricing)——本书的理论地基，先读它建立希腊字母概念。
-- **《期权作为战略投资》**（McMillan）：站内 [./options-as-strategic-investment](./options-as-strategic-investment)——本书管理的策略来源，两本互为表里。
-- **《动态对冲》**（Taleb）：站内 [./dynamic-hedging](./dynamic-hedging)——警告本书希腊字母管理的失效边界（跳空、流动性枯竭）。
+- **[《期权波动率与定价》](./option-volatility-pricing)**（Natenberg）：本书的理论地基，先读它建立希腊字母概念。
+- **[《期权作为战略投资》](./options-as-strategic-investment)**（McMillan）：本书管理的策略来源，两本互为表里。
+- **[《动态对冲》](./dynamic-hedging)**（Taleb）：警告本书希腊字母管理的失效边界（跳空、流动性枯竭）。
 - **《期权、期货及其他衍生品》**（Hull）：希腊字母的数学推导源头，想深入理解公式回看。

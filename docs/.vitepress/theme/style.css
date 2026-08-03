@@ -407,3 +407,164 @@ body {
     box-shadow: none;
   }
 }
+
+/* ===== 检索题卡（emerald · 校准/练习意） =====
+ * 对应《认知天性》「检索练习」——答案默认折叠，逼先回忆再认答案。
+ * 零 JS，纯原生 <details>。
+ */
+.retrieval-quiz {
+  margin: 24px 0 8px;
+}
+
+.quiz-card {
+  border: 1px solid var(--vp-c-divider);
+  border-left: 3px solid #10b981;
+  border-radius: 0 10px 10px 0;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  background: var(--vp-c-bg-soft);
+  transition: border-left-color 0.2s ease;
+}
+
+.quiz-card:hover {
+  border-left-color: #059669;
+}
+
+.quiz-q {
+  font-family: var(--font-serif);
+  font-size: 1.02em;
+  line-height: 1.75;
+  color: var(--vp-c-text-1);
+}
+
+.quiz-num {
+  display: inline-block;
+  font-family: var(--vp-font-family-base);
+  font-weight: 700;
+  font-size: 0.76em;
+  letter-spacing: 0.04em;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+  vertical-align: 2px;
+}
+
+.quiz-a {
+  margin-top: 12px;
+}
+
+.quiz-a summary {
+  cursor: pointer;
+  font-family: var(--vp-font-family-base);
+  font-size: 0.86em;
+  color: var(--vp-c-text-3);
+  user-select: none;
+  list-style: none;
+  transition: color 0.15s ease;
+}
+
+.quiz-a summary::-webkit-details-marker {
+  display: none;
+}
+
+.quiz-a summary::before {
+  content: "▸ ";
+  color: #10b981;
+}
+
+.quiz-a[open] summary {
+  color: #059669;
+  margin-bottom: 6px;
+}
+
+.quiz-a[open] summary::before {
+  content: "▾ ";
+}
+
+.quiz-a p {
+  margin: 6px 0;
+  font-size: 0.94em;
+  line-height: 1.75;
+  color: var(--vp-c-text-2);
+}
+
+.dark .quiz-num {
+  background: rgba(16, 185, 129, 0.2);
+}
+
+/* ===== 费曼反思框（粉紫 · 创造/反思意） =====
+ * 对应《认知天性》「精细化 + 反思」——读者自己产出，AI 不代笔。
+ * 纯前端注入，localStorage 按路径存，零后端。
+ */
+.feynman-box {
+  margin-top: 56px;
+  padding: 24px 26px;
+  border: 1px solid var(--vp-c-divider);
+  border-left: 3px solid #ec4899;
+  border-radius: 0 12px 12px 0;
+  background: rgba(236, 72, 153, 0.05);
+}
+
+.dark .feynman-box {
+  background: rgba(236, 72, 153, 0.08);
+}
+
+.feynman-box .fb-title {
+  margin: 0 0 8px;
+  padding: 0;
+  border: none;
+  font-size: 1.3em;
+  letter-spacing: 0;
+  color: #ec4899;
+}
+
+.dark .feynman-box .fb-title {
+  color: #f472b6;
+}
+
+.feynman-box .fb-hint {
+  margin: 0 0 14px;
+  font-size: 0.9em;
+  line-height: 1.75;
+  color: var(--vp-c-text-2);
+}
+
+.feynman-box .fb-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+  resize: vertical;
+  min-height: 130px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feynman-box .fb-input:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.14);
+}
+
+.feynman-box .fb-input::placeholder {
+  color: var(--vp-c-text-3);
+}
+
+.feynman-box .fb-meta {
+  margin-top: 10px;
+  font-family: var(--vp-font-family-base);
+  font-size: 0.8em;
+  color: var(--vp-c-text-3);
+}
+
+.feynman-box .fb-count {
+  color: #ec4899;
+  font-weight: 600;
+}

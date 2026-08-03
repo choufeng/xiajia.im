@@ -159,14 +159,54 @@ McMillan 反复灌输一条元原则：**先有观点，再选策略——而不
 
 策略越复杂，越需要希腊字母管理（见 [Passarelli](./trading-options-greeks)）。**任何卖方策略（备兑、铁鹰、卖出跨式）在没理解希腊字母前不要实盘。** 复杂组合的调整比开仓更难，新手先用模拟盘跑通完整生命周期。
 
-## 行动清单
+## 检索自测
 
-- [ ] 通读前 6 章建立框架，其余策略按需查阅，不强记
-- [ ] 在核心持仓上跑通备兑看涨，记录 3 个月的现金流表现
-- [ ] 每次开仓前填写观点表（方向 / 强度 / 时间），再查 McMillan 映射选策略
-- [ ] 选 2 种价差策略（牛市价差、铁鹰），在模拟盘跑完整生命周期（开仓→调整→平仓）
-- [ ] 整理一份「我的常用策略清单」（5 个以内），重复训练到本能
-- [ ] 配合 Natenberg 的希腊字母体系，每个策略开仓前标出希腊字母暴露
+> 合上回忆，别偷看答案。「想不起来又硬想」的那一刻，才是真正在学。能流畅说出 ≠ 会，能默写才算。
+
+<div class="retrieval-quiz">
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q1</span>新手以为期权只有「买 call / 买 put」两种。McMillan 的策略地图告诉你这个认知错在哪？为什么这才是新手最大的错误？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>策略空间被压成二维，你用二维工具应对四维问题。每一类市场观点（方向 + 波动率 + 时间）都对应一个象限的最优策略。</p>
+      <p>新手最大错误不是<strong>选错策略</strong>，是<strong>不知道策略空间有多大</strong>——于是在所有场景下都用同一种工具。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q2</span>备兑看涨「不性感」（收益封顶、不暴富），McMillan 却引长期数据说它跑赢纯持有标的。它牺牲了什么、换来什么？机制是什么？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>备兑看涨 = 持有标的 + 卖虚值 call。标的涨→封顶止盈（权利金 + 资本利得）；标的平→白赚权利金（持有成本降低）；标的跌→权利金缓冲（仍亏，但少亏）。</p>
+      <p>本质是<strong>卖保险给恐慌者</strong>：牺牲暴涨的峰值可能，换更稳定的现金流与更低波动率。BXM 指数实证了长期复利优势。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q3</span>单买 call「风险有限收益无限」理论没错，McMillan 为什么推垂直价差替代它？垂直价差解决了哪个核心痛苦？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>买方的核心痛苦是<strong>Theta 慢慢吃光权利金</strong>。垂直价差 = 买入低行权 + 卖出高行权（同类型同期），卖出端抵消成本、对冲 Theta，盈亏双向封顶。</p>
+      <p>当你的观点是「会小涨到某点」而非「大涨」时，单买 call 是浪费——你付了无限上涨的溢价却用不到。价差 = <strong>只为真实区间精确付费</strong>，不为想象的极端情况过度投保。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q4</span>跨式和铁鹰都「不看方向」，但本质差别是什么？各自的盈利与亏损条件？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>跨式 = 买同行权价 call + put，赌<strong>波动率升</strong>：标的要大幅突破才赚，横盘则双份 Theta 蚕食亏损。是波动率<strong>买方</strong>。</p>
+      <p>铁鹰 = 卖两侧虚值期权 + 买保护，赌<strong>波动率降</strong>：标的在区间内震荡则权利金全收，突破任一侧才亏（封顶）。是波动率<strong>卖方 + 风险封顶</strong>。一个赌突破，一个赌区间。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q5</span>McMillan 反复灌输的元原则是什么？新手最常见的本末倒置是什么样？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>元原则：<strong>先有观点，再选策略</strong>——而不是反过来。正确动作是先写下观点（方向 + 强度 + 时间），再查「观点→策略映射表」选组合。</p>
+      <p>本末倒置：先看策略酷不酷，再倒推「我大概是这个观点吧」——把工具当目的，亏了不知道为什么。</p>
+    </details>
+  </div>
+  <div class="quiz-card">
+    <div class="quiz-q"><span class="quiz-num">Q6</span>铁鹰构造并不难，McMillan 却说真正的考验在别处。难在哪？为什么这条对工程和期权都成立？</div>
+    <details class="quiz-a"><summary>想好了，看答案</summary>
+      <p>难在<strong>运行时调整</strong>：标的接近某侧突破点时，何时滚动、何时止损、何时对冲——这些决策才是真功夫。</p>
+      <p>难点从来不是设计，是运行时的实时调整——这条对工程（容量规划 + 限流）和期权都一样。</p>
+    </details>
+  </div>
+</div>
 
 ## 一句话总结
 
@@ -174,7 +214,7 @@ McMillan 反复灌输一条元原则：**先有观点，再选策略——而不
 
 ## 延伸
 
-- **《期权波动率与定价》**（Natenberg）：站内 [./option-volatility-pricing](./option-volatility-pricing)——本书策略的方法论地基，先读它再读本书。
-- **《动态对冲》**（Taleb）：站内 [./dynamic-hedging](./dynamic-hedging)——挑战本书策略的尾部假设，专治对策略库的过度自信。
-- **《交易期权希腊字母》**（Passarelli）：站内 [./trading-options-greeks](./trading-options-greeks)——本书策略的每日管理实操。
+- **[《期权波动率与定价》](./option-volatility-pricing)**（Natenberg）——本书策略的方法论地基，先读它再读本书。
+- **[《动态对冲》](./dynamic-hedging)**（Taleb）——挑战本书策略的尾部假设，专治对策略库的过度自信。
+- **[《交易期权希腊字母》](./trading-options-greeks)**（Passarelli）——本书策略的每日管理实操。
 - **McMillan 的通讯 *The Option Strategist***：本书的实时续篇，跟踪市场实际策略调整。
