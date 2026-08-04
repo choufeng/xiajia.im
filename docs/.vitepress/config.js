@@ -32,10 +32,11 @@ export default defineConfig({
       { text: '认知提升', link: '/cognition/index' },
       {
         text: '更多',
-        activeMatch: '^/(reference|speaking)/',
+        activeMatch: '^/(reference|speaking|radio)/',
         items: [
           { text: '工具参考', link: '/reference/ramda' },
           { text: '说话', link: '/speaking/index' },
+          { text: '无线电学习', link: '/radio/index' },
         ],
       },
       { text: '关于', link: '/about' },
@@ -405,6 +406,22 @@ export default defineConfig({
             { text: '资源链接', link: '/reference/links' },
             { text: '简化听书笔记', link: '/reference/jianhua' },
             { text: '杂记', link: '/reference/somethings' },
+          ],
+        },
+      ],
+
+      // 无线电学习
+      '/radio/': [
+        {
+          text: '总览',
+          items: [
+            { text: '无线电学习', link: '/radio/index' },
+          ],
+        },
+        {
+          text: 'A 类练习',
+          items: [
+            { text: '系列 01（第 1-10 题）', link: '/radio/class-a-01' },
           ],
         },
       ],
