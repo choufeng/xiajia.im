@@ -12,7 +12,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 我国专门针对无线电管理的行政法规及其制定机构是：
 
+:::tip 正确答案
 **《中华人民共和国无线电管理条例》**<span data-tts-skip>（A）</span> · **国务院和中央军委**<span data-tts-skip>（C）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -36,7 +38,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 我国专门针对业余无线电台的管理文件及其制定机构分别是：
 
+:::tip 正确答案
 **《业余无线电台管理办法》**<span data-tts-skip>（A）</span> · **工业和信息化部**<span data-tts-skip>（C）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -60,7 +64,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 我国依法负责对业余无线电台实施监督管理的机构是：
 
+:::tip 正确答案
 **国家无线电管理机构和省、自治区、直辖市无线电管理机构**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -84,7 +90,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 我国对无线电管理术语“业余业务”、“卫星业余业务”和“业余电台”做出具体定义的法规文件是：
 
+:::tip 正确答案
 **《中华人民共和国无线电频率划分规定》**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -108,7 +116,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 最新发布的《业余无线电台管理办法》自何时开始施行：
 
+:::tip 正确答案
 **自 2024 年 3 月 1 日起施行**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -132,7 +142,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 将某个特定的频段列入频率划分表，规定该频段可在指定的条件下供一种或多种地面或空间无线电通信业务或射电天文业务使用，这个过程称为：
 
+:::tip 正确答案
 **划分**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -160,7 +172,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 将无线电频率或频道规定由一个或多个部门，在指定的区域内供地面或空间无线电通信业务在指定条件下使用，这个过程称为：
 
+:::tip 正确答案
 **分配**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -188,7 +202,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 将无线电频率或频道批准给无线电台在规定条件下使用，这个过程称为：
 
+:::tip 正确答案
 **指配**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -216,7 +232,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 在频率划分表中，一个频段被标明划分给多种业务时，这些业务被分为下述类别：
 
+:::tip 正确答案
 **主要业务和次要业务**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>
@@ -242,7 +260,9 @@ title: A 类练习 · 系列 01（第 1-10 题）
 
 辐射（radiation）是指任何源的能量流以无线电波的形式向外发出。正确的说法是：
 
+:::tip 正确答案
 **闪电产生的电磁波干扰是一种辐射**<span data-tts-skip>（A）</span>
+:::
 
 <details>
 <summary>查看全部选项</summary>

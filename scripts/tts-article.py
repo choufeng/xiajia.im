@@ -44,6 +44,8 @@ def md_to_text(md: str) -> str:
     """Markdown → 纯文本朗读稿。"""
     # 去 frontmatter
     md = re.sub(r"^---\n.*?\n---\n", "", md, count=1, flags=re.DOTALL)
+    # 去 VitePress custom container 标记行（:::tip / ::: 等），内容保留
+    md = re.sub(r"^:::.*$", "", md, flags=re.MULTILINE)
     # 去 HTML 注释
     md = re.sub(r"<!--.*?-->", "", md, flags=re.DOTALL)
     # 去 代码块（```...```）
