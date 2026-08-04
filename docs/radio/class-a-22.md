@@ -6,6 +6,8 @@ title: A 类练习 · 系列 22（第 211-220 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 211 题
 
 <span data-tts-skip><em>MC1-0217 · 单选 · 适用 A/B/C 类</em></span>
@@ -36,6 +38,8 @@ MF 的频率范围是 **300～3000 kHz**。1,800～2,000 kHz 落在其中，因�
 
 频段顺序可记：LF（低频）→ MF（中频）→ HF（高频）。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 212 题
 
 <span data-tts-skip><em>MC1-0218 · 单选 · 适用 A/B/C 类</em></span>
@@ -65,6 +69,8 @@ MF 的频率范围是 **300～3000 kHz**。1,800～2,000 kHz 落在其中，因�
 MF 的频率范围是 **300～3000 kHz**。1,800～2,000 kHz 落在其中，因此属于 MF，也称中频（中波）。
 
 频段顺序可记：LF（低频）→ MF（中频）→ HF（高频）。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 213 题
 
@@ -161,6 +167,8 @@ MF 的频率范围是 **300～3000 kHz**。1,800～2,000 kHz 落在其中，因�
 
 ✅ 最终答案：**高频（短波）**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 214 题
 
 <span data-tts-skip><em>MC1-0220 · 单选 · 适用 A/B/C 类</em></span>
@@ -186,6 +194,8 @@ MF 的频率范围是 **300～3000 kHz**。1,800～2,000 kHz 落在其中，因�
 **题解**
 
 2828咔咔就是发，发=好富HF
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 215 题
 
@@ -243,6 +253,8 @@ MF 的频率范围是 **300～3000 kHz**。1,800～2,000 kHz 落在其中，因�
 **总结**
 本题通过频段划分规则直接判断即可，无需复杂计算。重点在于熟悉我国对无线电频段的命名标准，结合频率范围逐一排除干扰选项。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 216 题
 
 <span data-tts-skip><em>MC1-0222 · 单选 · 适用 A/B/C 类</em></span>
@@ -275,6 +287,8 @@ SHF,Super,超清卫星电视看超人【厘】量。华为5G。
 
 EHF,Extremely,毫米波雷达,【极端距G】离300毫米(30厘米)碰撞,无人驾驶汽车防撞。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 217 题
 
 <span data-tts-skip><em>MC1-0223 · 单选 · 适用 A/B/C 类</em></span>
@@ -303,6 +317,8 @@ EHF,Extremely,毫米波雷达,【极端距G】离300毫米(30厘米)碰撞,无�
 
 UHF 的频率范围是 **300～3000 MHz**。2,300～2,450 MHz 落在其中，因此属于 UHF，也称特高频（分米波）。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 218 题
 
 <span data-tts-skip><em>MC1-0224 · 单选 · 适用 A/B/C 类</em></span>
@@ -328,6 +344,8 @@ UHF 的频率范围是 **300～3000 MHz**。2,300～2,450 MHz 落在其中，因
 **题解**
 
 业余无线电台可通联对象仅为其他业余无线电台
+
+<span data-tts-skip><sub>—— 题解：diziCK495（经精简整理）</sub></span>
 
 ## 第 219 题
 
@@ -356,6 +374,8 @@ UHF 的频率范围是 **300～3000 MHz**。2,300～2,450 MHz 落在其中，因
 **UHF（特高频、分米波）**
 
 UHF 的频率范围是 **300～3000 MHz**。2,300～2,450 MHz 落在其中，因此属于 UHF，也称特高频（分米波）。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 220 题
 
@@ -446,4 +466,6 @@ UHF 的频率范围是 **300～3000 MHz**。2,300～2,450 MHz 落在其中，因
 - 题目中的 5.650–5.850 GHz 波段，λ≈5.2 cm，属于 SHF（厘米波）。  
 
 ✅ 最终答案：**超高频（厘米波）**
+
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
 

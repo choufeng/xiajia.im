@@ -6,6 +6,8 @@ title: A 类练习 · 系列 34（第 331-340 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 331 题
 
 <span data-tts-skip><em>MC1-0392 · 单选 · 适用 A/B/C 类</em></span>
@@ -39,6 +41,8 @@ title: A 类练习 · 系列 34（第 331-340 题）
 
 因此题目中的“早晨好”对应 **GM**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 332 题
 
 <span data-tts-skip><em>MC1-0393 · 单选 · 适用 A/B/C 类</em></span>
@@ -64,6 +68,8 @@ title: A 类练习 · 系列 34（第 331-340 题）
 **题解**
 
 格林威治时间（Greenwich Mean Time）
+
+<span data-tts-skip><sub>—— 题解：jun（经精简整理）</sub></span>
 
 ## 第 333 题
 
@@ -118,6 +124,8 @@ title: A 类练习 · 系列 34（第 331-340 题）
 ****结论****
 **GN**在业余无线电通信中代表“晚安”，用于结束通信时的礼貌用语。其他选项（早晨好、好运气、高兴）均不符合缩略语的命名规则和实际使用场景。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 334 题
 
 <span data-tts-skip><em>MC1-0395 · 单选 · 适用 A/B/C 类</em></span>
@@ -166,6 +174,8 @@ title: A 类练习 · 系列 34（第 331-340 题）
 **总结**
 本题考察业余无线电通信中基础缩略语的含义。掌握常见技术术语的缩写规则（如GND=Ground）是解题关键，同时需区分技术性术语与非正式表达的场景差异。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 335 题
 
 <span data-tts-skip><em>MC1-0396 · 单选 · 适用 A/B/C 类</em></span>
@@ -208,6 +218,8 @@ title: A 类练习 · 系列 34（第 331-340 题）
 - **圣诞快乐**：缩写应为MX，排除。  
 
 **最终答案**：**新年快乐**
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 336 题
 
@@ -273,6 +285,8 @@ CW 中如果涉及“抄收”，多用“COPY”来表达，有时缩略为“C
 **正确答案：**  
 **希望去做某件事**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 337 题
 
 <span data-tts-skip><em>MC1-0398 · 单选 · 适用 A/B/C 类</em></span>
@@ -318,6 +332,8 @@ CW 中如果涉及“抄收”，多用“COPY”来表达，有时缩略为“C
 **引用知识库**
 《业余无线电爱好者守则》二.9.28.常用 CW缩略语中明确列出了常见缩略语的定义，例如`HR`表示“这里”，`CPY`表示“抄收”，而`HPY`对应“幸福”。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 338 题
 
 <span data-tts-skip><em>MC1-0399 · 单选 · 适用 A/B/C 类</em></span>
@@ -343,6 +359,8 @@ CW 中如果涉及“抄收”，多用“COPY”来表达，有时缩略为“C
 **题解**
 
 hst，前两个是high speed，高速
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 339 题
 
@@ -376,6 +394,8 @@ hst，前两个是high speed，高速
 
 本题强调“守听任意电台”，所以使用 **K**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 340 题
 
 <span data-tts-skip><em>MC1-0401 · 单选 · 适用 A/B/C 类</em></span>
@@ -401,4 +421,6 @@ hst，前两个是high speed，高速
 **题解**
 
 K是完成并守听，N是你，守听你
+
+<span data-tts-skip><sub>—— 题解：ba4tlc（经精简整理）</sub></span>
 

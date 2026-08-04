@@ -6,6 +6,8 @@ title: A 类练习 · 系列 51（第 501-510 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 501 题
 
 <span data-tts-skip><em>MC1-0704 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 51（第 501-510 题）
 **题解**
 
 前面是顺时针旋转，后面看就是逆时针旋转
+
+<span data-tts-skip><sub>—— 题解：浩克（经精简整理）</sub></span>
 
 ## 第 502 题
 
@@ -58,6 +62,8 @@ title: A 类练习 · 系列 51（第 501-510 题）
 
 卫星旋转会使线极化方向不断变化；地面台应使用指向卫星的右旋或左旋圆极化天线，避免因极化失配中断接收。
 
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
+
 ## 第 503 题
 
 <span data-tts-skip><em>MC1-0706 · 单选 · 适用 A/B/C 类</em></span>
@@ -83,6 +89,8 @@ title: A 类练习 · 系列 51（第 501-510 题）
 **题解**
 
 半波垂直偶极天线的增益是0dBd，转换成dBi是2.15dBi。这是当前通联是的功率。换成了8.15dBi的八木天线，那么功率增加了8.15-2.15=6dB （记住：dBm，dBd，想加减，结果是dB。为什么？因为loga+logb=log（ab），loga-logb=log（a/b））。因此，功率增加了一档，从S4到S5。
+
+<span data-tts-skip><sub>—— 题解：foureyes（经精简整理）</sub></span>
 
 ## 第 504 题
 
@@ -137,6 +145,8 @@ $ S_{\text{新}} = S4 + 2\ \text{档} = S6 $
 
 **最终答案：S6**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 505 题
 
 <span data-tts-skip><em>MC1-0708 · 单选 · 适用 A/B/C 类</em></span>
@@ -183,6 +193,8 @@ $ S_{\text{新}} = S4 + 2\ \text{档} = S6 $
 
 **最终答案**
 **S6**（信号强度变为S6）。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 506 题
 
@@ -240,6 +252,8 @@ $ S_{\text{新}} = S4 + 2\ \text{档} = S6 $
 **最终答案**
 **来自直射和地面反射等多个路径的无线电波相互干涉，相消或相长（多径效应）**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 507 题
 
 <span data-tts-skip><em>MC1-0710 · 单选 · 适用 A/B/C 类</em></span>
@@ -291,6 +305,8 @@ $ S_{\text{新}} = S4 + 2\ \text{档} = S6 $
 - **知识库引用**：  
   - ITU 无线电规则（2024年版）卷2附录27中提到多径效应和干涉现象（关键词：多径传播、相位差、幅度差）。  
   - No-Nonsense Technician Class License Study Guide 提到VHF/UHF频段的多径传播现象（如“sporadic E”传播）。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 508 题
 
@@ -344,6 +360,8 @@ $ S_{\text{新}} = S4 + 2\ \text{档} = S6 $
 **正确答案**：**可能使误码率上升**  
 多径传播通过引入ISI和信号衰落直接导致误码率升高，而其他选项均无法准确反映其本质影响。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 509 题
 
 <span data-tts-skip><em>MC2-0712 · 多选 · 适用 A/B/C 类</em></span>
@@ -369,6 +387,8 @@ $ S_{\text{新}} = S4 + 2\ \text{档} = S6 $
 **题解**
 
 造影 = 造成重影
+
+<span data-tts-skip><sub>—— 题解：azard（经精简整理）</sub></span>
 
 ## 第 510 题
 
@@ -423,4 +443,6 @@ $d \approx 4.12 \left( \sqrt{h_1} + \sqrt{h_2} \right) \quad \text{（单位：�
 - **距海平面的绝对高度**：若天线位于高海拔地区（如山顶），绝对高度较高，但视距传播仍由离地高度（相对于周围地形）决定。  
 - **挂高波长比**：仅影响天线辐射效率或波束形状，与视距极限无关。  
 - **增益**：增强信号强度，但无法突破地球曲率导致的物理距离限制。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

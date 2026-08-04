@@ -6,6 +6,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 21 题
 
 <span data-tts-skip><em>MC1-0021 · 单选 · 适用 A/B/C 类</em></span>
@@ -33,6 +35,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 **记忆技巧**
 
 题目问的是协调**国际无线电管理**的综合性国际组织，而不只涉及业余无线电，因此对应**国际电信联盟（ITU）**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 22 题
 
@@ -84,6 +88,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 - 《No-Nonsense Technician Class License Study Guide》（业余无线电非商业性质）
 - 《ITU 无线电规则（2024年版）卷3：决议和建议》第673号决议（应急通信支持）
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 23 题
 
 <span data-tts-skip><em>MC1-0023 · 单选 · 适用 A/B/C 类</em></span>
@@ -111,6 +117,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 **记忆技巧**
 
 “电信”依靠有线、无线电、光或其他电磁系统传输信息；**邮政通信依靠实物寄递**，不属于这里所称的电信。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 24 题
 
@@ -184,6 +192,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 ****总结****
 本题考查无线电通信的核心定义及其与其他技术的区分。关键在于准确理解ITU规则中对无线电波、电信和非通信用途的界定，避免混淆无线电通信与其他电磁波应用（如光学通信、ISM加热）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 25 题
 
 <span data-tts-skip><em>MC1-0025 · 单选 · 适用 A/B/C 类</em></span>
@@ -214,6 +224,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 
 月面反射通信（EME）利用月球这一空间物体反射信号，属于空间无线电通信，不属于地面无线电通信。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 26 题
 
 <span data-tts-skip><em>MC1-0026 · 单选 · 适用 A/B/C 类</em></span>
@@ -241,6 +253,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 速记词： 三体空间 
 
 3T空间---->3千G 空间
+
+<span data-tts-skip><sub>—— 题解：noName（经精简整理）</sub></span>
 
 ## 第 27 题
 
@@ -277,6 +291,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 
 申请人为未成年人的，还应当提交其监护人身份证明复印件，以及申请人与监护人关系的说明材料。”
 
+<span data-tts-skip><sub>—— 题解：BD1BRB（经精简整理）</sub></span>
+
 ## 第 28 题
 
 <span data-tts-skip><em>MC3-0028 · 多选 · 适用 A/B 类</em></span>
@@ -303,6 +319,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 
 《业余无线电台管理办法》第二章 第12条
 “单位设置、使用业余无线电台的，除提交本办法第十一条第一款第一项、第三项规定的材料外，还应当提交单位营业执照等复印件，以及业余无线电台技术负责人为本单位工作人员的说明材料”
+
+<span data-tts-skip><sub>—— 题解：BD1BRB（经精简整理）</sub></span>
 
 ## 第 29 题
 
@@ -365,6 +383,8 @@ title: A 类练习 · 系列 03（第 21-30 题）
 
 （引用文档：《业余无线电台管理办法》第二章许可管理第七条、第十四条）
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 30 题
 
 <span data-tts-skip><em>MC1-0030 · 单选 · 适用 A/B 类</em></span>
@@ -392,4 +412,6 @@ title: A 类练习 · 系列 03（第 21-30 题）
 **记忆要点**
 
 无线电管理机构对自制、改装、拼装等未取得型号核准的无线电发射设备开展技术检测时，**不得收取任何费用**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

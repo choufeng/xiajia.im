@@ -6,6 +6,8 @@ title: A 类练习 · 系列 52（第 511-520 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 511 题
 
 <span data-tts-skip><em>MC1-0714 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 52（第 511-520 题）
 **题解**
 
 看到"大气波导"都是正确选项。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 512 题
 
@@ -91,6 +95,8 @@ title: A 类练习 · 系列 52（第 511-520 题）
 - **No-Nonsense Technician Class License Study Guide**. 第三章 "Interesting propagation phenomena" 章节  
   （原文：*"Sporadic E propagation makes it possible to communicate over long distances on VHF bands."*）
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 513 题
 
 <span data-tts-skip><em>MC1-0716 · 单选 · 适用 A/B/C 类</em></span>
@@ -141,6 +147,8 @@ title: A 类练习 · 系列 52（第 511-520 题）
 **4. 扩展补充（可选）**
 对流层波导传播的典型距离范围为 **300–500公里**，常见于夏季夜间或沿海地区。其数学模型中，波导损耗 $ A_{\text{duct}} $ 可由公式 $ A_{\text{duct}} = A_1 + L_5(p) $ 描述（参考知识库《ITU 无线电规则（2024年版）卷2》），其中 $ L_5(p) $ 与频率、路径长度及大气参数相关。但此类计算不涉及本题的核心判断。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 514 题
 
 <span data-tts-skip><em>MC1-0717 · 单选 · 适用 A/B/C 类</em></span>
@@ -170,6 +178,8 @@ title: A 类练习 · 系列 52（第 511-520 题）
 VHF 通常以视距传播为主；若收到上千千米外的信号，常见特殊原因是**突发 E 层（Sporadic E）**形成高电子密度区域，把较低 VHF 信号折射或反射回地面。
 
 这种传播具有突发性和季节性，在 6 米波段最常见，强烈时也可能扩展到 2 米波段。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 515 题
 
@@ -201,6 +211,8 @@ VHF/UHF 信号可被对流层中折射率不均匀的小尺度区域散射，少
 
 它常用于解释约数百千米的弱超视距信号；大气波导也能产生远距离传播，但需要更特殊的折射率结构。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 516 题
 
 <span data-tts-skip><em>MC1-0819 · 单选 · 适用 A/B/C 类</em></span>
@@ -231,6 +243,8 @@ VHF/UHF 信号可被对流层中折射率不均匀的小尺度区域散射，少
 
 合格假负载接近 $1:1$ 驻波，并把射频功率转化为热量，避免调测信号向空间辐射。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 517 题
 
 <span data-tts-skip><em>MC1-0820 · 单选 · 适用 A/B/C 类</em></span>
@@ -257,6 +271,8 @@ VHF/UHF 信号可被对流层中折射率不均匀的小尺度区域散射，少
 
 看到"原始"都是正确选项(除了原始射频信号)
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 518 题
 
 <span data-tts-skip><em>MC4-0821 · 多选 · 适用 A/B/C 类</em></span>
@@ -282,6 +298,8 @@ VHF/UHF 信号可被对流层中折射率不均匀的小尺度区域散射，少
 **题解**
 
 失真、增益、抗干扰、本机噪声都与接收效果相关
+
+<span data-tts-skip><sub>—— 题解：BD3QIG（经精简整理）</sub></span>
 
 ## 第 519 题
 
@@ -357,6 +375,8 @@ VHF/UHF 信号可被对流层中折射率不均匀的小尺度区域散射，少
 **引用材料**：  
 《ITU 无线电规则（2024年版）卷2：附录》B部分–单边带（SSB）系统 3.2节“解调器和载波采集”。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 520 题
 
 <span data-tts-skip><em>MC1-0823 · 单选 · 适用 A/B/C 类</em></span>
@@ -417,4 +437,6 @@ VHF/UHF 信号可被对流层中折射率不均匀的小尺度区域散射，少
 - 引用《ITU 无线电规则（2024年版）卷2：附录》中关于单边带（SSB）系统解调器要求：  
   - **同步解调器**需通过锁相环复现载波，确保信号保真度（见文档B部分3.2节）。  
   - 无用边带衰减需≥35 dB，防止干扰基带信号还原（见文档B部分2.8节）。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

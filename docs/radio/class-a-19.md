@@ -6,6 +6,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 181 题
 
 <span data-tts-skip><em>MC1-0187 · 单选 · 适用 A/B/C 类</em></span>
@@ -35,6 +37,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 3.9-3.5=0.4MHz=4000kHz。
 
 注意都是偶数。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 182 题
 
@@ -66,6 +70,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 
 注意都是偶数。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 183 题
 
 <span data-tts-skip><em>MC1-0189 · 单选 · 适用 A/B/C 类</em></span>
@@ -91,6 +97,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 **题解**
 
 20 米波段以 14.25 MHz 为分界：前段专用，后段主要；“20、25”助记。
+
+<span data-tts-skip><sub>—— 题解：doleo（经精简整理）</sub></span>
 
 ## 第 184 题
 
@@ -118,6 +126,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 
 两个专用，排除主要和次要，45正好可以整除15米，15米天线正合适
 
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
+
 ## 第 185 题
 
 <span data-tts-skip><em>MC1-0191 · 单选 · 适用 A/B/C 类</em></span>
@@ -143,6 +153,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 **题解**
 
 在国际电联（ITU）分配表及中国相应法规（《中华人民共和国无线电频率划分规定》）中，10 米业余波段分配为 28.000 MHz 至 29.700 MHz，且用于业余业务和业余卫星业务。
+
+<span data-tts-skip><sub>—— 题解：大浪淘金（经精简整理）</sub></span>
 
 ## 第 186 题
 
@@ -206,6 +218,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 
 掌握准确的频率分配信息对于业余无线电操作者合法合规地使用频谱资源至关重要。
 
+<span data-tts-skip><sub>—— 题解：Claude（经精简整理）</sub></span>
+
 ## 第 187 题
 
 <span data-tts-skip><em>MC1-0193 · 单选 · 适用 A/B/C 类</em></span>
@@ -231,6 +245,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 **题解**
 
 三短一长选最长！！哈哈哈哈哈哈
+
+<span data-tts-skip><sub>—— 题解：wjh888（经精简整理）</sub></span>
 
 ## 第 188 题
 
@@ -264,6 +280,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 
 相邻：430-440相邻
 
+<span data-tts-skip><sub>—— 题解：fixer（经精简整理）</sub></span>
+
 ## 第 189 题
 
 <span data-tts-skip><em>MC1-0195 · 单选 · 适用 A/B/C 类</em></span>
@@ -296,6 +314,8 @@ title: A 类练习 · 系列 19（第 181-190 题）
 - 航空无线电导航。
 
 这也是本地联络需要避让相关业务的原因。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 190 题
 
@@ -377,4 +397,6 @@ title: A 类练习 · 系列 19（第 181-190 题）
 
 **四、答案**
 正确答案是：**135.7-137.8kHz**
+
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
 

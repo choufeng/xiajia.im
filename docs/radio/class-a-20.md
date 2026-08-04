@@ -6,6 +6,8 @@ title: A 类练习 · 系列 20（第 191-200 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 191 题
 
 <span data-tts-skip><em>MC1-0197 · 单选 · 适用 A/B/C 类</em></span>
@@ -85,6 +87,8 @@ IARU信标台系统是一个全球性的传播监测网络，这些信标台在�
 
 这些信标频率是业余无线电操作中的重要参考，既要避免对其造成干扰，也可以利用其信号来判断传播条件。
 
+<span data-tts-skip><sub>—— 题解：Claude（经精简整理）</sub></span>
+
 ## 第 192 题
 
 <span data-tts-skip><em>MC1-0198 · 单选 · 适用 A/B/C 类</em></span>
@@ -111,6 +115,8 @@ IARU信标台系统是一个全球性的传播监测网络，这些信标台在�
 
 40米波段,7.050是国内SSB菜市场频道,7.023是CW频道。下限最接近且排除CW。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 193 题
 
 <span data-tts-skip><em>MC1-0199 · 单选 · 适用 A/B/C 类</em></span>
@@ -136,6 +142,8 @@ IARU信标台系统是一个全球性的传播监测网络，这些信标台在�
 **题解**
 
 20米波段,14.270是国内SSB菜市场频道,14.023是CW频道。上限最接近且下限远离CW。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 194 题
 
@@ -165,6 +173,8 @@ IARU信标台系统是一个全球性的传播监测网络，这些信标台在�
 
 FM通话是517。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 195 题
 
 <span data-tts-skip><em>MC1-0201 · 单选 · 适用 A/B/C 类</em></span>
@@ -190,6 +200,8 @@ FM通话是517。
 **题解**
 
 可以实际占用频率，全部选前面数字大的，不含特殊约定
+
+<span data-tts-skip><sub>—— 题解：bh4fdy（经精简整理）</sub></span>
 
 ## 第 196 题
 
@@ -221,6 +233,8 @@ FM通话是517。
 
 记忆下限：$24.9305\,\mathrm{MHz}$。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 197 题
 
 <span data-tts-skip><em>MC1-0203 · 单选 · 适用 A/B/C 类</em></span>
@@ -246,6 +260,8 @@ FM通话是517。
 **题解**
 
 可以实际占用频率，全部选前面数字大的
+
+<span data-tts-skip><sub>—— 题解：bh4fdy（经精简整理）</sub></span>
 
 ## 第 198 题
 
@@ -273,6 +289,8 @@ FM通话是517。
 
 可以实际占用频率，全部选前面数字大的
 
+<span data-tts-skip><sub>—— 题解：bh4fdy（经精简整理）</sub></span>
+
 ## 第 199 题
 
 <span data-tts-skip><em>MC1-0205 · 单选 · 适用 A/B/C 类</em></span>
@@ -299,6 +317,8 @@ VHF 业余无线电台在 144MHz 频段进行本地联络时应避免占用的�
 
 144MHz频段本地联络应避开频段两端：144–144.035MHz和145.8–146MHz。
 
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
+
 ## 第 200 题
 
 <span data-tts-skip><em>MC1-0206 · 单选 · 适用 A/B/C 类</em></span>
@@ -324,4 +344,6 @@ UHF 业余无线电台在 430MHz 频段进行本地联络时应避免占用的�
 **题解**
 
 本地联络应避开 431.9–432.240 MHz 和 435–438 MHz；“58 同城”只能帮助记住后一个频段。
+
+<span data-tts-skip><sub>—— 题解：BI7DIJ（经精简整理）</sub></span>
 

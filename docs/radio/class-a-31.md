@@ -6,6 +6,8 @@ title: A 类练习 · 系列 31（第 301-310 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 301 题
 
 <span data-tts-skip><em>MC1-0362 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 31（第 301-310 题）
 **题解**
 
 CK是Check，请检查原因。见[MC1-0381](https://exam.bh5hsu.com/question/MC1-0381)。
+
+<span data-tts-skip><sub>—— 题解：BD7PK（经精简整理）</sub></span>
 
 ## 第 302 题
 
@@ -61,6 +65,8 @@ Q 简语“QSK”的含义为：
 **QSK** 表示发报时能在电码间隙中听到对方电台的插入，即常说的全插入（full break-in）操作。
 
 它强调的是“边发报，边在发射间隙守听”，不要与“重复上一条消息”等其他 Q 简语混淆。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 303 题
 
@@ -125,6 +131,8 @@ Q 简语“QSK”的含义为：
 **结论**
 通联时使用“QSL？”短句请求对方确认消息收妥，符合国际通信规范和业余无线电操作惯例。其他Q简语因功能不匹配而无法满足题目需求。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 304 题
 
 <span data-tts-skip><em>MC1-0365 · 单选 · 适用 A/B/C 类</em></span>
@@ -165,6 +173,8 @@ QSL是国际通用的无线电通信Q代码之一，用于确认通信双方的�
 - **选项1**直接对应QSL的标准化定义，即通信双方确认接收无误。  
 - 其余选项均混淆了QSL的即时确认功能与后续操作（如邮寄卡片）或错误关联其他Q代码的用途。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 305 题
 
 <span data-tts-skip><em>MC1-0366 · 单选 · 适用 A/B/C 类</em></span>
@@ -191,6 +201,8 @@ Q 简语“QSO”的含义为：
 
 QSO 的定义是“我能够直接或通过他台转信通联某个电台”，常指业余电台间的当前联络。
 其他选项分别对应 QSL 卡片、QSP 转信消息、QRU 无消息等概念，与 QSO 无关。
+
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
 
 ## 第 306 题
 
@@ -241,6 +253,8 @@ QSO 的定义是“我能够直接或通过他台转信通联某个电台”，�
 **最终答案**：选择 **QSP ×××？**  
 因为QSP的含义是“请求转达信息至×××电台”，符合题目中“询问对方是否可帮助转信”的需求，其余选项均不符合此场景。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 307 题
 
 <span data-tts-skip><em>MC1-0368 · 单选 · 适用 A/B/C 类</em></span>
@@ -284,6 +298,8 @@ Q简语是国际通用的无线电通信缩语，用于简化通信流程。其�
 **正确答案**：  
 **我可以将你的消息转信至某个电台；常指业余电台帮助他台中转消息的操作**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 308 题
 
 <span data-tts-skip><em>MC1-0369 · 单选 · 适用 A/B/C 类</em></span>
@@ -309,6 +325,8 @@ Q简语是国际通用的无线电通信缩语，用于简化通信流程。其�
 **题解**
 
 x一般是做记号，做记号是为了蹲守，守听  Y是移动，移动就是移动更改频率 u是呦？这就是提问语气  l是了，收到了
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 309 题
 
@@ -341,6 +359,8 @@ QSL:确认通信/电报抄收收据/交换通联卡
 QSX:在某频率发送、收听
 
 QSY:更改频率
+
+<span data-tts-skip><sub>—— 题解：mxdyzmx（经精简整理）</sub></span>
 
 ## 第 310 题
 
@@ -384,4 +404,6 @@ Q简语是无线电通信中用于简化操作的三字母代码，其中**QSY**
    - QRY用于询问当前工作频率
    - QSV用于测试信号发送
    - QRV用于确认通信准备状态
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

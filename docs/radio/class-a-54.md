@@ -6,6 +6,8 @@ title: A 类练习 · 系列 54（第 531-540 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 531 题
 
 <span data-tts-skip><em>MC1-0834 · 单选 · 适用 A/B/C 类</em></span>
@@ -36,6 +38,8 @@ AM 的信息包含在载波包络的幅度变化中，使用**检波器**可从�
 
 速记：FM 用鉴频器，AM 用检波器。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 532 题
 
 <span data-tts-skip><em>MC1-0835 · 单选 · 适用 A/B/C 类</em></span>
@@ -61,6 +65,8 @@ AM 的信息包含在载波包络的幅度变化中，使用**检波器**可从�
 **题解**
 
 am是调幅信号，解调这个信号就是检波
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 533 题
 
@@ -92,6 +98,8 @@ am是调幅信号，解调这个信号就是检波
 - 接收极弱 FSK/PSK 时，强干扰可能驱动 AGC 降低整体增益。关闭 AGC、改为手动控制，有时能改善弱信号解码。
 
 关闭 AGC 只是在特定弱信号场景下的尝试，并非所有数字通信都应关闭。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 534 题
 
@@ -145,6 +153,8 @@ am是调幅信号，解调这个信号就是检波
   - 本地振荡器需精确匹配射频频率，否则导致IQ信号失真。  
   - 需校正DC偏移（如由LO泄漏引起）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 535 题
 
 <span data-tts-skip><em>MC1-0838 · 单选 · 适用 A/B/C 类</em></span>
@@ -187,6 +197,8 @@ $$ f_{\text{out}} = |f_{\text{RF}} \pm f_{\text{LO}}| $$
 知识库中《ITU 无线电规则》及《中华人民共和国无线电频率划分规定》虽未直接定义混频器，但提及的“频率容限”“必要带宽”等概念间接说明信号处理中频率转换的重要性（如超外差接收机设计需通过混频器实现频谱搬移）。  
 
 **答案：频率变换。将信号的原始频率变换成另一个频率**
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 536 题
 
@@ -236,6 +248,8 @@ $$ f_{\text{out}} = |f_{\text{RF}} \pm f_{\text{LO}}| $$
 
 **4. 结论**
 混频器的工作方式应直接基于**中频与输入信号频率**的比较。上变频用于提升信号频率（如发射机），下变频用于降低信号频率（如接收机）。其他选项的判断依据（如本振频率）属于干扰项，需避免混淆。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 537 题
 
@@ -312,6 +326,8 @@ $$ f_{\text{out}} = |f_{\text{RF}} \pm f_{\text{LO}}| $$
 
 ✅ 本题的正确答案是：**邻近频率干扰**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 538 题
 
 <span data-tts-skip><em>MC1-0841 · 单选 · 适用 A/B/C 类</em></span>
@@ -368,6 +384,8 @@ $$
 - 根据《No-Nonsense Technician Class License Study Guide》中关于超外差接收机和混频器的描述，镜像频率抑制依赖接收机前端滤波设计。  
 - 超外差接收机的经典设计中（如ITU-R相关文献提及的接收机结构），波段预选滤波器是抑制镜像干扰的关键部件。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 539 题
 
 <span data-tts-skip><em>MC1-0842 · 单选 · 适用 A/B/C 类</em></span>
@@ -395,6 +413,8 @@ $$
 接收频率+2x第一中频,或,接收频率-2x
 
 第一中频。都选有最大数字的选项。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 540 题
 
@@ -454,4 +474,6 @@ $$
 
 **4. 结论**
 正确答案：**239.50MHz 或 50.50MHz**。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

@@ -6,6 +6,8 @@ title: A 类练习 · 系列 59（第 581-590 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 581 题
 
 <span data-tts-skip><em>MC1-0911 · 单选 · 适用 A/B/C 类</em></span>
@@ -55,6 +57,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 根据《ITU 无线电规则（2024年版）卷3：决议和建议》附件5附录3第680号决议：
 > "月球轨道与通信窗口的选择需考虑地月距离变化对传播损耗的影响，近地点时通信效率最高。太阳活动增强可能导致系统噪声温度升高，应优先选择太阳黑子数低的时段进行EME试验。"（文档名称.章节信息）
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 582 题
 
 <span data-tts-skip><em>MC1-0912 · 单选 · 适用 A/B/C 类</em></span>
@@ -80,6 +84,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 **题解**
 
 增益再高，不降低噪声还是啥都听不见
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 583 题
 
@@ -141,6 +147,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 - **系统噪声优化**：VHF/UHF需通过就近安装LNA抑制传输线噪声，而HF无法显著改善信噪比，工程上无必要。  
 - **实践验证**：月面反射（EME）等VHF/UHF微弱信号通信场景中，前置放大器安装是标准操作，而HF通信更依赖天线方向性与滤波技术。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 584 题
 
 <span data-tts-skip><em>MC1-0914 · 单选 · 适用 A/B/C 类</em></span>
@@ -190,6 +198,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 ****结论****
 **6米波段**是流星余迹散射通信的最佳选择，因其频率适中且反射效率最高。  
 **引用**：No-Nonsense Technician Class License Study Guide（流星散射传播特性）。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 585 题
 
@@ -247,6 +257,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 **4. 知识库引用**
 《No-Nonsense Technician Class License Study Guide》明确指出，WSJT-X软件支持流星散射通信，并列出FT4为其适用模式之一。其他选项（如APRS、QPSK31、MT63）未提及与流星余迹或对流层散射的关联性，进一步验证答案的合理性。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 586 题
 
 <span data-tts-skip><em>MC2-0916 · 多选 · 适用 A/B 类</em></span>
@@ -303,6 +315,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 
 **结论**：题目中正确描述为前两个选项，后两个选项存在原理性错误。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 587 题
 
 <span data-tts-skip><em>MC3-0917 · 多选 · 适用 A/B 类</em></span>
@@ -353,6 +367,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 - 石墨的导电性与其层状结构相关，而云母的绝缘性源于其稳定的晶体结构，这些内容属于材料科学基础范畴。  
 
 **结论**：本题为多选题，正确选项为前三个（霓虹灯中电离发光的气体、酸碱盐水溶液、石墨）。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 588 题
 
@@ -415,6 +431,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 ****总结****
 本题为多选题，四个选项均正确。绝缘体的特性需从微观结构（电荷束缚）、应用场景（电容器介质）、失效机制（击穿）及环境影响（温度）四个维度综合理解。实际考试中，此类题目需结合物理原理与工程应用实例进行判断。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 589 题
 
 <span data-tts-skip><em>MC3-0919 · 多选 · 适用 A/B 类</em></span>
@@ -465,6 +483,8 @@ EME（Earth-Moon-Earth）通信是通过月球表面无源反射实现的超远�
 $ \sigma \propto \exp\left(-\frac{E_g}{2kT}\right)  $  
 其中，二氧化锡（$E_g \approx 3.6 \, \text{eV}$）的导电性显著高于二氧化硅（$E_g \approx 8.9 \, \text{eV}$）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 590 题
 
 <span data-tts-skip><em>MC3-0920 · 多选 · 适用 A/B 类</em></span>
@@ -490,4 +510,6 @@ $ \sigma \propto \exp\left(-\frac{E_g}{2kT}\right)  $
 **题解**
 
 卤钨灯 是 钨丝电阻发热发光，是正常导电
+
+<span data-tts-skip><sub>—— 题解：DarthVaderAnni（经精简整理）</sub></span>
 

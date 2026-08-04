@@ -6,6 +6,8 @@ title: A 类练习 · 系列 63（第 621-630 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 621 题
 
 <span data-tts-skip><em>MC1-0951 · 单选 · 适用 A/B/C 类</em></span>
@@ -37,6 +39,8 @@ title: A 类练习 · 系列 63（第 621-630 题）
 - $\mathrm{m}$：$10^{-3}$，毫；$\mu$：$10^{-6}$，微；$\mathrm{n}$：$10^{-9}$，纳；$\mathrm{p}$：$10^{-12}$，皮。
 
 本题的 $\mu$ 对应 $10^{-6}$（微），大小写不能混用。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 622 题
 
@@ -91,6 +95,8 @@ title: A 类练习 · 系列 63（第 621-630 题）
   - **兆（M）**与**吉（G）**的数值差异（$10^6$ vs $10^9$）。  
   - **皮（p）**与**太（T）**的正负幂次差异（$10^{-12}$ vs $10^{12}$）。  
 - **实际应用**：在无线电领域，G常用于表示频率（如GHz）或功率（如GW），需熟练掌握词头的含义及换算。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 623 题
 
@@ -155,6 +161,8 @@ title: A 类练习 · 系列 63（第 621-630 题）
 - 主关键词拓展中的词头符号与中文含义（如 n → 纳，p → 皮）。  
 - ITU 无线电规则中对 **k、M、G** 词头的应用示例（如 kHz、MHz、GHz）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 624 题
 
 <span data-tts-skip><em>MC1-0954 · 单选 · 适用 A/B/C 类</em></span>
@@ -211,6 +219,8 @@ title: A 类练习 · 系列 63（第 621-630 题）
 **最终结论**
 **选项“10＾12，太”** 正确，因其严格符合国际单位制对词头 **T** 的定义。其他选项分别对应不同的词头符号（如 **p、G、n**），与 **T** 无关。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 625 题
 
 <span data-tts-skip><em>MC1-0955 · 单选 · 适用 A/B/C 类</em></span>
@@ -237,6 +247,8 @@ title: A 类练习 · 系列 63（第 621-630 题）
 
 KMGTmunp,昆明钢铁没有牛皮    
 3,6,9,12,-3,-6,-9,-12
+
+<span data-tts-skip><sub>—— 题解：BG5WEM（经精简整理）</sub></span>
 
 ## 第 626 题
 
@@ -265,6 +277,8 @@ KMGTmunp,昆明钢铁没有牛皮
 **RF**
 
 **RF** 是 **Radio Frequency（射频）**的缩写，既可泛指射频范围，也可特指无线电设备所用的某个射频频率。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 627 题
 
@@ -316,6 +330,8 @@ KMGTmunp,昆明钢铁没有牛皮
 - 该选项综合了人耳听觉的理论范围（20Hz-20kHz）及工程实践中的扩展（16Hz作为低频边缘），符合通用标准（如音频设备设计、数字采样率44.1kHz覆盖20kHz上限）。  
 - 其他选项混淆了音频与无线电频段的关系，错误地将声波频率与电磁波频段关联。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 628 题
 
 <span data-tts-skip><em>MC1-0958 · 单选 · 适用 A/B/C 类</em></span>
@@ -341,6 +357,8 @@ KMGTmunp,昆明钢铁没有牛皮
 **题解**
 
 联想记忆，矿石收音机的耳机需要高阻抗，所以耳机的阻抗得最大
+
+<span data-tts-skip><sub>—— 题解：qpwoei（经精简整理）</sub></span>
 
 ## 第 629 题
 
@@ -423,6 +441,8 @@ KMGTmunp,昆明钢铁没有牛皮
 
 **最终答案：1.805 MHz**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 630 题
 
 <span data-tts-skip><em>MC1-0960 · 单选 · 适用 A/B/C 类</em></span>
@@ -450,4 +470,6 @@ KMGTmunp,昆明钢铁没有牛皮
 **单位换算**
 
 $1\,\mathrm{GHz}=1000\,\mathrm{MHz}$，所以 $2430\,\mathrm{MHz}\div1000=2.43\,\mathrm{GHz}$。向更大的频率单位换算时数值除以 1000。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

@@ -6,6 +6,8 @@ title: A 类练习 · 系列 46（第 451-460 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 451 题
 
 <span data-tts-skip><em>MC1-0654 · 单选 · 适用 A/B/C 类</em></span>
@@ -36,6 +38,8 @@ title: A 类练习 · 系列 46（第 451-460 题）
 - $\mathrm{dBd}$：以半波长偶极天线为参考。
 
 因此 $\mathrm{dBd}$ 中的 **d** 可联想 **dipole（偶极子）**。同一天线的数值满足：$\mathrm{dBi}=\mathrm{dBd}+2.15$。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 452 题
 
@@ -69,6 +73,8 @@ $0\,\mathrm{dBd}=2.15\,\mathrm{dBi}$
 
 一般换算式为：$\mathrm{dBi}=\mathrm{dBd}+2.15$。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 453 题
 
 <span data-tts-skip><em>MC1-0656 · 单选 · 适用 A/B/C 类</em></span>
@@ -99,6 +105,8 @@ $\mathrm{dB}$ 只表示两个量的比值。天线增益若只写“若干 dB”
 
 类似地，$\mathrm{dBW}$ 和 $\mathrm{dBm}$ 分别明确以 $1\,\mathrm{W}$ 和 $1\,\mathrm{mW}$ 为功率基准。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 454 题
 
 <span data-tts-skip><em>MC1-0657 · 单选 · 适用 A/B/C 类</em></span>
@@ -128,6 +136,8 @@ $\mathrm{dB}$ 只表示两个量的比值。天线增益若只写“若干 dB”
 垂直接地天线的三维辐射图可近似想成一个横放的“甜甜圈”：绕垂直轴的各个水平方向强度大体相同，因此水平方向没有明显指向性。
 
 “全向”只指水平方位，不表示向天空、地面和所有仰角都同样辐射。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 455 题
 
@@ -230,6 +240,8 @@ $\frac{1}{4}\lambda$ 垂直接地天线具有以下重要特性：
 
 $\frac{1}{4}\lambda$ 垂直接地天线是业余无线电中的经典配置，它完美地平衡了阻抗匹配、辐射效率和方向特性的要求。这种天线不仅制作简单，而且性能优异，是移动通信和基站应用的首选方案。
 
+<span data-tts-skip><sub>—— 题解：Claude（经精简整理）</sub></span>
+
 ## 第 456 题
 
 <span data-tts-skip><em>MC2-0659 · 多选 · 适用 A/B/C 类</em></span>
@@ -319,6 +331,8 @@ $\frac{1}{4}\lambda$ 垂直接地天线是业余无线电中的经典配置，�
 
 **总结**
 1/4波长垂直接地天线具有**水平全向、垂直有向**的辐射特性，这是其在业余无线电中广泛应用的重要原因。理解这一特性对于天线的选择、安装和使用都具有重要意义。
+
+<span data-tts-skip><sub>—— 题解：Claude（经精简整理）</sub></span>
 
 ## 第 457 题
 
@@ -437,6 +451,8 @@ $$C \approx \lambda$$ （螺旋周长接近波长）
 4. **性能提升**：固定操作时可考虑外接增益更高的天线
 
 通过理解这些基本概念，能够更好地选择和使用手持电台天线系统。
+
+<span data-tts-skip><sub>—— 题解：Claude（经精简整理）</sub></span>
 
 ## 第 458 题
 
@@ -561,6 +577,8 @@ $SE = A + R + B$
 
 车内使用手持电台和柔性天线的主要问题是**车体的电磁屏蔽效应**，这会显著影响信号的发射和接收强度，是影响通信质量的根本原因。理解这一原理有助于业余无线电爱好者选择合适的操作方式和设备配置。
 
+<span data-tts-skip><sub>—— 题解：Claude（经精简整理）</sub></span>
+
 ## 第 459 题
 
 <span data-tts-skip><em>MC1-0662 · 单选 · 适用 A/B/C 类</em></span>
@@ -604,6 +622,8 @@ $SE = A + R + B$
   - **选项四**虽涉及电磁设计，但优先级低于人身和设备安全；其他选项或存在技术错误（选项三）或缺乏普适性（选项二）。  
   - 根据考试常见设计逻辑，单选场景下优先选择涉及直接安全风险的选项。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 460 题
 
 <span data-tts-skip><em>MC1-0663 · 单选 · 适用 A/B/C 类</em></span>
@@ -629,4 +649,6 @@ $SE = A + R + B$
 **题解**
 
 垂直接地天线（GP）用于手持和车台确实肯定接地不行啊，多以天然缺点就是接地的问题
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 

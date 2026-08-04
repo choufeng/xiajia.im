@@ -6,6 +6,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 41 题
 
 <span data-tts-skip><em>MC1-0041 · 单选 · 适用 A/B/C 类</em></span>
@@ -35,6 +37,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 业余无线电台执照期满后仍需继续使用的，应在期限届满 **30 个工作日前**，向原作出许可决定的无线电管理机构申请换发。
 
 注意是“工作日”，不是笼统的一个月或 30 个自然日。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 42 题
 
@@ -66,6 +70,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 即使设备型号和产品序列号未变，只要其他执照载明事项发生变化，仍应办理相应变更。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 43 题
 
 <span data-tts-skip><em>MC1-0043 · 单选 · 适用 A/B/C 类</em></span>
@@ -96,6 +102,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 口诀：**谁许可，找谁注销。**
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 44 题
 
 <span data-tts-skip><em>MC2-0044 · 多选 · 适用 A/B/C 类</em></span>
@@ -124,6 +132,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 - 及时向原作出许可决定的无线电管理机构办理执照注销；
 - 交回执照，并自注销之日起 **60 个工作日内**拆除业余无线电台及天线等附属设备，妥善处理。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 45 题
 
@@ -156,6 +166,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 因此，“接收信标信号的单发信标台”或“衰减转发并缩小通联范围的中继台”等说法都不符合定义。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 46 题
 
 <span data-tts-skip><em>MC3-0048 · 多选 · 适用 A/B/C 类</em></span>
@@ -187,6 +199,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 因此，“接收信标信号的单发信标台”或“衰减转发并缩小通联范围的中继台”等说法都不符合定义。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 47 题
 
 <span data-tts-skip><em>MC2-0049 · 多选 · 适用 A/B/C 类</em></span>
@@ -213,6 +227,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 业余无线电没有秘密，公平公开公正
 
+<span data-tts-skip><sub>—— 题解：bh4fdy（经精简整理）</sub></span>
+
 ## 第 48 题
 
 <span data-tts-skip><em>MC4-0050 · 多选 · 适用 A/B/C 类</em></span>
@@ -238,6 +254,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 **题解**
 
 业余无线电没有秘密，公平公开公正
+
+<span data-tts-skip><sub>—— 题解：bh4fdy（经精简整理）</sub></span>
 
 ## 第 49 题
 
@@ -269,6 +287,8 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 记住题目中的连接词：国家规定“**以及**”地方规定，两者都要满足。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 50 题
 
 <span data-tts-skip><em>MC1-0052 · 单选 · 适用 A/B 类</em></span>
@@ -297,4 +317,6 @@ title: A 类练习 · 系列 05（第 41-50 题）
 
 - **A 类、B 类**操作技术能力验证：国家无线电管理机构和省、自治区、直辖市无线电管理机构均可组织；
 - **C 类**操作技术能力验证：由国家无线电管理机构负责组织。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

@@ -6,6 +6,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 231 题
 
 <span data-tts-skip><em>MC1-0237 · 单选 · 适用 A/B/C 类</em></span>
@@ -32,6 +34,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 
 记住主载波范围：144.037–145.795 MHz；两端分别给带宽和频率容限留出余量。
 
+<span data-tts-skip><sub>—— 题解：01（经精简整理）</sub></span>
+
 ## 第 232 题
 
 <span data-tts-skip><em>MC1-0238 · 单选 · 适用 A/B/C 类</em></span>
@@ -57,6 +61,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 **题解**
 
 70厘米波段438,3区波段规划题目,答案中小数点后的数字都是最小和最大。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 233 题
 
@@ -144,6 +150,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 
 因此最终答案为：**从 438.002MHz 至 439.995MHz**。
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 234 题
 
 <span data-tts-skip><em>MC1-0240 · 单选 · 适用 A/B/C 类</em></span>
@@ -169,6 +177,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 **题解**
 
 10 米波段（28.0–29.7 MHz）里，29.300–29.510 MHz 是国际公认的业余卫星业务专属频段。
+
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
 
 ## 第 235 题
 
@@ -199,6 +209,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 144.035–145.8 MHz → 各种模式，含FM 话音、中继等
 145.8–146.0 MHz → 卫星业务专用
 
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
+
 ## 第 236 题
 
 <span data-tts-skip><em>MC1-0242 · 单选 · 适用 A/B/C 类</em></span>
@@ -224,6 +236,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 **题解**
 
 435–438 MHz 是卫星业余业务专用频段，地面话音及其他通信不应占用。
+
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
 
 ## 第 237 题
 
@@ -252,6 +266,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 **清晰拼读字母**
 
 通话中应使用**标准字母解释法（ITU 语音字母表）**拼读呼号或重要消息中的英语字母。标准词汇含义明确，可减少口音、噪声造成的歧义，也比临时造词更高效。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 238 题
 
@@ -314,6 +330,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 **引用文档**
 - **《ITU 无线电规则（2024年版）卷2》** 附录14（WRC-23，修订版）语音字母表和数字电码。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 239 题
 
 <span data-tts-skip><em>MC1-0248 · 单选 · 适用 A/B/C 类</em></span>
@@ -344,6 +362,8 @@ title: A 类练习 · 系列 24（第 231-240 题）
 
 **Bravo Seven Charlie Romeo Alfa**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 240 题
 
 <span data-tts-skip><em>MC1-0249 · 单选 · 适用 A/B/C 类</em></span>
@@ -373,4 +393,6 @@ title: A 类练习 · 系列 24（第 231-240 题）
 呼号 **4U1UN** 拼读为：
 
 **Four Uniform One Uniform November**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

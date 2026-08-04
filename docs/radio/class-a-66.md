@@ -6,6 +6,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 651 题
 
 <span data-tts-skip><em>MC1-1304 · 单选 · 适用 A/B/C 类</em></span>
@@ -52,6 +54,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 - **其他选项错误原因**：  
   - “影响大”与高内阻的物理效应矛盾。  
   - “过载能力”与Ω/V无关，属于仪表安全设计范畴，而非测量精度问题。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 652 题
 
@@ -145,6 +149,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 
 ✅ 所以，本题正确推论是：**音频信号上叠加有直流成分**。
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 653 题
 
 <span data-tts-skip><em>MC1-1345 · 单选 · 适用 A/B/C 类</em></span>
@@ -172,6 +178,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 频率容限是衡量发射设备是否能够在指定频率上稳定工作的重要指标
 
 杂散域发射功率是指发射设备在必要带宽之外产生的不必要发射能量
+
+<span data-tts-skip><sub>—— 题解：leera（经精简整理）</sub></span>
 
 ## 第 654 题
 
@@ -224,6 +232,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 - ITU无线电规则（2024年版）卷2附录3  
   - **表I**：业余业务（30 MHz以下）杂散发射限值为43+10 log(PEP)或50 dB，取宽松者。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 655 题
 
 <span data-tts-skip><em>MC2-1347 · 多选 · 适用 A/B/C 类</em></span>
@@ -255,6 +265,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 选项C有两个**之最**
 
 这道题很容易搞混，一旦做快就会错
+
+<span data-tts-skip><sub>—— 题解：BD7PRC（经精简整理）</sub></span>
 
 ## 第 656 题
 
@@ -301,6 +313,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 ****结论****
 频率容限的标准化单位为**百万分之几（ppm）**或**赫兹（Hz）**。其他选项因单位性质或应用场景不符被排除。
 
+<span data-tts-skip><sub>—— 题解：LSPD（经精简整理）</sub></span>
+
 ## 第 657 题
 
 <span data-tts-skip><em>MC3-1349 · 多选 · 适用 A/B/C 类</em></span>
@@ -326,6 +340,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 **题解**
 
 杂散域发射功率通常用绝对功率 dBm、低于载波发射功率的分贝值 dBc、低于 PEP（峰包功率）发射功率的相对值 dB 来表示。绝对功率 dBm 可直接表示杂散发射功率大小，dBc 用于表示杂散功率相对于载波功率的比例关系，低于 PEP 发射功率的相对值 dB 则体现了杂散功率相对于峰包功率的情况。
+
+<span data-tts-skip><sub>—— 题解：匿名（经精简整理）</sub></span>
 
 ## 第 658 题
 
@@ -353,6 +369,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 
 可以理解为带外发射是正常的冗余
 
+<span data-tts-skip><sub>—— 题解：BD7PRC（经精简整理）</sub></span>
+
 ## 第 659 题
 
 <span data-tts-skip><em>MC1-1351 · 单选 · 适用 A/B/C 类</em></span>
@@ -378,6 +396,8 @@ title: A 类练习 · 系列 66（第 651-660 题）
 **题解**
 
 C很容易选错，一定是在业余频率之内
+
+<span data-tts-skip><sub>—— 题解：BD7PRC（经精简整理）</sub></span>
 
 ## 第 660 题
 
@@ -416,4 +436,6 @@ C很容易选错，一定是在业余频率之内
 - **医用高频加热器泄漏**：高频加热器（如高频电刀、理疗仪）工作时产生的是持续的高频等幅振荡（用于能量输出），泄漏的辐射为等幅波。  
 
 因此，只有电路接触点打火会产生减幅波辐射。
+
+<span data-tts-skip><sub>—— 题解：xh_zlm（经精简整理）</sub></span>
 

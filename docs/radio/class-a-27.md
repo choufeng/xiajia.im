@@ -6,6 +6,8 @@ title: A 类练习 · 系列 27（第 261-270 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 261 题
 
 <span data-tts-skip><em>MC1-0274 · 单选 · 适用 A/B/C 类</em></span>
@@ -40,6 +42,8 @@ title: A 类练习 · 系列 27（第 261-270 题）
 - 双方信号报告（RST）。
 
 QTH（位置）、RIG（设备）和 PWR（功率）可以记录，但不是本题所列的必要基本内容。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 262 题
 
@@ -76,6 +80,8 @@ QTH（位置）、RIG（设备）和 PWR（功率）可以记录，但不是本�
 
 QTH（位置）、RIG（设备）和 PWR（功率）可以记录，但不是本题所列的必要基本内容。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 263 题
 
 <span data-tts-skip><em>MC4-0276 · 多选 · 适用 A/B/C 类</em></span>
@@ -101,6 +107,8 @@ QTH（位置）、RIG（设备）和 PWR（功率）可以记录，但不是本�
 **题解**
 
 多重意义主打一个多，那就是全部
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 264 题
 
@@ -132,6 +140,8 @@ QSL 卡片应至少涵盖哪些内容：
 - 双方信号报告和联络时间；
 - 操作方式及联络频率；
 - 操作员签章和本台通信地址。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 265 题
 
@@ -219,6 +229,8 @@ QSL 卡片应至少涵盖哪些内容：
 ✅ **解题思路**：  
 题目考察“QSL 卡片的正确规范用法”，逐一排除明显与无线电操作规范相违背的选项（如空白卡片赠送、虚假确认、不用呼号），唯一符合国际无线电礼仪与规范的说明就是第一个选项。
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 266 题
 
 <span data-tts-skip><em>MC1-0279 · 单选 · 适用 A/B/C 类</em></span>
@@ -247,6 +259,8 @@ QSL 卡片应至少涵盖哪些内容：
 
 IRC（International Reply Coupon，国际回信券）用于帮助支付国际回信邮资。收到夹带 IRC 的 QSL 来信后，应先核对电台日志确认联络真实，再尽快直接向对方地址寄出自己的 QSL 卡片。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 267 题
 
 <span data-tts-skip><em>MC1-0280 · 单选 · 适用 A/B/C 类</em></span>
@@ -274,6 +288,8 @@ IRC（International Reply Coupon，国际回信券）用于帮助支付国际回
 **SASE 的用途**
 
 SASE 是 **Self-Addressed Stamped Envelope**，即写好回邮地址并附有邮资的回邮信封。迫切需要对方回寄 QSL 卡片时，可直接向对方地址寄出卡片并附上 SASE，方便对方回复。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 268 题
 
@@ -319,6 +335,8 @@ SASE 是 **Self-Addressed Stamped Envelope**，即写好回邮地址并附有邮
   - DIY爱好者可能涉及发射设备制作与使用；  
   - 监测员的职责是技术记录而非卡片交换。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 269 题
 
 <span data-tts-skip><em>MC1-0282 · 单选 · 适用 A/B/C 类</em></span>
@@ -346,6 +364,8 @@ SASE 是 **Self-Addressed Stamped Envelope**，即写好回邮地址并附有邮
 144MHz频段（VHF）：通常采用较小的频差，常见为 0.6MHz（600kHz）。
 430MHz频段（UHF）：通常采用较大的频差，常见为 5MHz。
 
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
+
 ## 第 270 题
 
 <span data-tts-skip><em>MC1-0283 · 单选 · 适用 A/B/C 类</em></span>
@@ -371,4 +391,6 @@ SASE 是 **Self-Addressed Stamped Envelope**，即写好回邮地址并附有邮
 **题解**
 
 叫别人，不能你在那等，也不能只说要找谁而不介绍你自己，也不能只说你自己，那谁会知道你要找他
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 

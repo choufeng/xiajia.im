@@ -6,6 +6,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 481 题
 
 <span data-tts-skip><em>MC1-0684 · 单选 · 适用 A/B/C 类</em></span>
@@ -78,6 +80,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 
 **最终结论：本题正确答案是“空气介质同轴电缆需要特别措施来防止湿气渗透”。**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 482 题
 
 <span data-tts-skip><em>MC1-0685 · 单选 · 适用 A/B/C 类</em></span>
@@ -104,6 +108,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 
 短波用50-3馈线就行了，UV段最好要粗馈管天线上顶
 
+<span data-tts-skip><sub>—— 题解：bh4fdy（经精简整理）</sub></span>
+
 ## 第 483 题
 
 <span data-tts-skip><em>MC1-0686 · 单选 · 适用 A/B/C 类</em></span>
@@ -129,6 +135,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 **题解**
 
 这里的软电缆就是一般的馈线而硬电缆就是俗称的“馈管”，长距离UV有条件当然得上馈管
+
+<span data-tts-skip><sub>—— 题解：BI1QGX（经精简整理）</sub></span>
 
 ## 第 484 题
 
@@ -186,6 +194,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 - **排除其他选项**：其余选项无明确高频适配性，且DB-23型明确不适用于同轴高频传输。  
 
 **结论**：N型连接器是400MHz及以上信号传输的首选连接器，因其宽频率范围、阻抗匹配性和稳定性，其他选项均不适用于高频同轴传输场景。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 485 题
 
@@ -260,6 +270,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 正确选项是：  
 **“这种连接器广泛应用于 HF 和 VHF 通信系统”**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 486 题
 
 <span data-tts-skip><em>MC2-0689 · 多选 · 适用 A/B/C 类</em></span>
@@ -292,6 +304,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 
 因此“全向天线”主要指水平方位上的全向性。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 487 题
 
 <span data-tts-skip><em>MC2-0690 · 多选 · 适用 A/B/C 类</em></span>
@@ -318,6 +332,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 
 水平选“平行”，偶“E”（偶遇）
 
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
+
 ## 第 488 题
 
 <span data-tts-skip><em>MC1-0691 · 单选 · 适用 A/B/C 类</em></span>
@@ -343,6 +359,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 **题解**
 
 改变一方天线的信号会变差，但左旋圆改变一方后，信号强弱不变，但如果是一左一右信号也会变差，两边都改信号一定变好
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 489 题
 
@@ -374,6 +392,8 @@ title: A 类练习 · 系列 49（第 481-490 题）
 
 双方都改用垂直偶极天线后极化一致，接收耦合增强，所以通信效果变好。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 490 题
 
 <span data-tts-skip><em>MC1-0693 · 单选 · 适用 A/B/C 类</em></span>
@@ -399,4 +419,6 @@ title: A 类练习 · 系列 49（第 481-490 题）
 **题解**
 
 双方改效果就变好，单方改效果不变或变差
+
+<span data-tts-skip><sub>—— 题解：zspippen（经精简整理）</sub></span>
 

@@ -6,6 +6,8 @@ title: A 类练习 · 系列 26（第 251-260 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 251 题
 
 <span data-tts-skip><em>MC1-0264 · 单选 · 适用 A/B 类</em></span>
@@ -36,6 +38,8 @@ title: A 类练习 · 系列 26（第 251-260 题）
 
 RST 中 R 为可辨度、S 为强度、T 为音调；话音通常报 RS，CW 通常报 RST。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 252 题
 
 <span data-tts-skip><em>MC1-0265 · 单选 · 适用 A/B 类</em></span>
@@ -62,6 +66,8 @@ RST 中 R 为可辨度、S 为强度、T 为音调；话音通常报 RS，CW 通
 
 R开头可以简单对应成read，read就是读，那就是可读性（可辨度）
 
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
+
 ## 第 253 题
 
 <span data-tts-skip><em>MC1-0266 · 单选 · 适用 A/B 类</em></span>
@@ -87,6 +93,8 @@ R开头可以简单对应成read，read就是读，那就是可读性（可辨�
 **题解**
 
 CW通联使用RST报告，应报559；FM话音通联使用RS报告，应报55。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 254 题
 
@@ -118,6 +126,8 @@ CW通联使用RST报告，应报559；FM话音通联使用RS报告，应报55。
 
 由于传播差异，询问不能绝对保证听到所有使用者，但仍是合理、必要的操作程序。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 255 题
 
 <span data-tts-skip><em>MC1-0268 · 单选 · 适用 A/B/C 类</em></span>
@@ -148,6 +158,8 @@ BH1ZZZ 希望加入两个电台相互之间的联络。正确的方法是：
 
 不能靠加大功率强行插入，也不应未经确认直接开始讲话。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 256 题
 
 <span data-tts-skip><em>MC1-0269 · 单选 · 适用 A/B/C 类</em></span>
@@ -177,6 +189,8 @@ BH1ZZZ 希望加入两个电台相互之间的联络。正确的方法是：
 应立即与遇险电台确认险情并了解所需帮助；在掌握情况后再联系相关部门或其他人员协助，并尽量保持与遇险电台的通信。
 
 不要先换频、停止发射或盲目转告他人，以免延误救援。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 257 题
 
@@ -225,6 +239,8 @@ BH1ZZZ 希望加入两个电台相互之间的联络。正确的方法是：
 文档名称：ITU 无线电规则（2024年版）卷1：条款  
 引用内容：第55条（莫尔斯无线电报通信的推荐程序）及第56条（窄带直接印字电报的通信规范）中明确要求，插入通信需“采取预防措施以保证其发射不会干扰正常进行的通信”。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 258 题
 
 <span data-tts-skip><em>MC1-0271 · 单选 · 适用 A/B/C 类</em></span>
@@ -250,6 +266,8 @@ BH1ZZZ 希望加入两个电台相互之间的联络。正确的方法是：
 **题解**
 
 频率大家都在用，别占用太多频率，有事情私下说
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 259 题
 
@@ -277,6 +295,8 @@ BH1ZZZ 希望加入两个电台相互之间的联络。正确的方法是：
 
 别人干扰我，只能最怂的:不予理睬
 
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
+
 ## 第 260 题
 
 <span data-tts-skip><em>MC1-0273 · 单选 · 适用 A/B/C 类</em></span>
@@ -302,4 +322,6 @@ BH1ZZZ 希望加入两个电台相互之间的联络。正确的方法是：
 **题解**
 
 不能长时间占用无线电波段，有问题电话沟通。
+
+<span data-tts-skip><sub>—— 题解：fangzheng567@outlook.com（经精简整理）</sub></span>
 

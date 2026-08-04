@@ -6,6 +6,8 @@ title: A 类练习 · 系列 39（第 381-390 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 381 题
 
 <span data-tts-skip><em>MC1-0442 · 单选 · 适用 A/B/C 类</em></span>
@@ -75,6 +77,8 @@ title: A 类练习 · 系列 39（第 381-390 题）
 **正确答案**：  
 **2-3kHz**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 382 题
 
 <span data-tts-skip><em>MC1-0443 · 单选 · 适用 A/B/C 类</em></span>
@@ -104,6 +108,8 @@ title: A 类练习 · 系列 39（第 381-390 题）
 **SSB** 是单边带调制。它由调幅信号进一步抑制载波并去掉一个边带得到，因此仍属于调幅方式的范畴。
 
 可粗略联想为：普通 AM 的两个边带只保留其中“一边”，但这只是助记，完整过程还包括载波抑制。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 383 题
 
@@ -135,6 +141,8 @@ title: A 类练习 · 系列 39（第 381-390 题）
 
 因此“等幅”描述的是载波接通期间幅度恒定，并不是说信号始终连续发射。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 384 题
 
 <span data-tts-skip><em>MC1-0445 · 单选 · 适用 A/B/C 类</em></span>
@@ -164,6 +172,8 @@ title: A 类练习 · 系列 39（第 381-390 题）
 **CW** 通过窄带的载波通断传递电码信息，所需发射带宽很小；话音和电视图像需要传递更宽的基带信息，占用带宽通常更大。
 
 所以在所列调制方式中，**CW** 的发射带宽最窄。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 385 题
 
@@ -230,6 +240,8 @@ title: A 类练习 · 系列 39（第 381-390 题）
 ****总结****
 本题的核心在于理解“最小必要带宽”原则。调频话虽然可以传输电码，但其宽带特性与莫尔斯电码的窄带需求矛盾，违反频谱管理规定。此题强调法规与技术特性的结合应用，而非单纯技术性能比较。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 386 题
 
 <span data-tts-skip><em>MC1-0447 · 单选 · 适用 A/B/C 类</em></span>
@@ -266,6 +278,8 @@ title: A 类练习 · 系列 39（第 381-390 题）
 
 这首先是过驱导致的信号质量和频谱问题，并不等同于“功率大所以烧毁机器”。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 387 题
 
 <span data-tts-skip><em>MC3-0512 · 多选 · 适用 A/B/C 类</em></span>
@@ -291,6 +305,8 @@ Yaesu System Fusion 简称 YSF，是数字语音和数据传输相互融合的�
 **题解**
 
 YSF广泛用于业余无线电，可经中继台转发，采用C4FM调制；它不以TDMA增加带宽利用率。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 388 题
 
@@ -321,6 +337,8 @@ Icom D-STAR System 提供了一种数据通信方式，特点是：
 **D-STAR** 是 **Digital Smart Technologies for Amateur Radio** 的缩写，由日本业余无线电联盟（JARL）推动研发并在 2001 年公布规范，后来以 Icom 等厂商的设备较为常见。
 
 它支持数字语音与数据、中继和互联网互联，也能承载卫星定位与位置报告信息。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 389 题
 
@@ -393,6 +411,8 @@ FreeDV 的研发目标是为 **HF 频段** 提供窄带数字语音通信，而�
 - “为爱好者提供探索数字通信原理和语音处理技术的可能性”  
 - “在遵循开源许可协议的前提下可用来研发自己的业余无线电装备”
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 390 题
 
 <span data-tts-skip><em>MC4-0515 · 多选 · 适用 A/B/C 类</em></span>
@@ -427,4 +447,6 @@ FreeDV 的研发目标是为 **HF 频段** 提供窄带数字语音通信，而�
 - **32APSK**
 
 调制阶数越高，每个符号可承载的信息越多、频谱效率越高，但通常也需要更好的信噪比；链路较弱时往往选较低阶调制。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

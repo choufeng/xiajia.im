@@ -6,6 +6,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 171 题
 
 <span data-tts-skip><em>MC1-0177 · 单选 · 适用 A/B/C 类</em></span>
@@ -37,6 +39,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 - 可以要求保护其免受同一业务或其他次要业务电台的有害干扰。
 
 记忆：**让主要业务；同级次要业务之间仍有保护。**
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 172 题
 
@@ -70,6 +74,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 
 记忆：**让主要业务；同级次要业务之间仍有保护。**
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 173 题
 
 <span data-tts-skip><em>MC1-0179 · 单选 · 适用 A/B/C 类</em></span>
@@ -95,6 +101,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 **题解**
 
 看到业余业务和卫星业余业务专用就找头7MHz和470GHz
+
+<span data-tts-skip><sub>—— 题解：01（经精简整理）</sub></span>
 
 ## 第 174 题
 
@@ -122,6 +130,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 
 1.8(160米波段),3.5(80米波段)属于业余无线电dx频率，天线庞大。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 175 题
 
 <span data-tts-skip><em>MC1-0181 · 单选 · 适用 A/B/C 类</em></span>
@@ -147,6 +157,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 **题解**
 
 共用主要业务,VHF,6米魔术波段,2米波段（审核注：144-146MHz部分是唯一主要业务，146-148MHz为共用主要业务）。流星余迹通信。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 176 题
 
@@ -180,6 +192,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 
 次要业务,单数(1357)定位导航UHF特高频:135.7kHz,0.7(430MHz)。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 177 题
 
 <span data-tts-skip><em>MC1-0183 · 单选 · 适用 A/B/C 类</em></span>
@@ -205,6 +219,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 **题解**
 
 三长一段选最长，第一个选项最多
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 178 题
 
@@ -232,6 +248,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 
 选最大的  几十G也太小家子气了  肯定得几百G
 
+<span data-tts-skip><sub>—— 题解：arliya（经精简整理）</sub></span>
+
 ## 第 179 题
 
 <span data-tts-skip><em>MC1-0185 · 单选 · 适用 A/B/C 类</em></span>
@@ -257,6 +275,8 @@ title: A 类练习 · 系列 18（第 171-180 题）
 **题解**
 
 HF=好富，当然选18，168，咔咔就是发
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 180 题
 
@@ -290,4 +310,6 @@ HF=好富，当然选18，168，咔咔就是发
 - 使用状态：业余业务和卫星业余业务**专用**。
 
 记忆数字：**2、3、2**。此外，ITU 2 区在 7.2～7.3 MHz 使用时，不得对 ITU 1、3 区计划使用的广播业务施加约束。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

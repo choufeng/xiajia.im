@@ -6,6 +6,8 @@ title: A 类练习 · 系列 62（第 611-620 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 611 题
 
 <span data-tts-skip><em>MC1-0941 · 单选 · 适用 A/B/C 类</em></span>
@@ -63,6 +65,8 @@ title: A 类练习 · 系列 62（第 611-620 题）
 
 **答案：伏（特）**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 612 题
 
 <span data-tts-skip><em>MC1-0942 · 单选 · 适用 A/B/C 类</em></span>
@@ -103,6 +107,8 @@ title: A 类练习 · 系列 62（第 611-620 题）
 - **安（培）**：错误。用于描述电流强度，而非电压。  
 - **瓦（特）**：错误。用于描述功率，与电压无直接对应关系。  
 - **欧（姆）**：错误。用于描述电阻，与电压的单位不同。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 613 题
 
@@ -152,6 +158,8 @@ title: A 类练习 · 系列 62（第 611-620 题）
 
 安（培）
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 614 题
 
 <span data-tts-skip><em>MC1-0944 · 单选 · 适用 A/B/C 类</em></span>
@@ -200,6 +208,8 @@ title: A 类练习 · 系列 62（第 611-620 题）
 
 **4. **结论****
 电阻的单位是**欧（姆）**，其他选项均属于不同物理量的单位，与电阻无关。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 615 题
 
@@ -258,6 +268,8 @@ $$
 
 **答案：欧（姆）**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 616 题
 
 <span data-tts-skip><em>MC1-0946 · 单选 · 适用 A/B/C 类</em></span>
@@ -308,6 +320,8 @@ $ P = \frac{E}{t} $
 - **欧（姆）**：错误。欧姆是电阻单位，功率计算公式 $ P = \frac{U^2}{R} $ 或 $ P = I^2R $ 中涉及电阻，但单位本身不是功率单位。
 
 **结论**：功率的单位是**瓦（特）**。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 617 题
 
@@ -363,6 +377,8 @@ $ P = \frac{E}{t} $
 
 **结论**：赫（兹）是频率的唯一正确单位。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 618 题
 
 <span data-tts-skip><em>MC1-0948 · 单选 · 适用 A/B/C 类</em></span>
@@ -415,6 +431,8 @@ $ P = \frac{E}{t} $
 **总结**
 词头 `k` 是国际单位制（SI）中表示“千”的标准符号，对应数学值 $10^3$。其他选项中的数值与词头定义不符，因此唯一正确答案为 **$10^3$，千**。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 619 题
 
 <span data-tts-skip><em>MC1-0949 · 单选 · 适用 A/B/C 类</em></span>
@@ -441,6 +459,8 @@ $ P = \frac{E}{t} $
 
 关于无线电常用度量单位的词头:KMGTmunp 依次代表10的3、6、9、
 12、-3、-6、-9、-12次方。所以你只需要记住“昆明钢铁没有牛皮”(首字母即那8个字母)。
+
+<span data-tts-skip><sub>—— 题解：大浪淘金（经精简整理）</sub></span>
 
 ## 第 620 题
 
@@ -473,4 +493,6 @@ K M G T  m  μ  n  p
 昆明高铁 没 有牛 皮
 
 （大写字母为正 小写字母为负）
+
+<span data-tts-skip><sub>—— 题解：555555550（经精简整理）</sub></span>
 

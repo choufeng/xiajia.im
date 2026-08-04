@@ -6,6 +6,8 @@ title: A 类练习 · 系列 37（第 361-370 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 361 题
 
 <span data-tts-skip><em>MC1-0422 · 单选 · 适用 A/B/C 类</em></span>
@@ -57,6 +59,8 @@ title: A 类练习 · 系列 37（第 361-370 题）
 - **定向天线**：方向性是天线特性而非特指某类型，常用缩写为**DIR**或具体类型（如YAGI）。
 - **垂直天线**：英文"Vertical"缩写为**VERT**，与"LW"无关联。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 362 题
 
 <span data-tts-skip><em>MC1-0423 · 单选 · 适用 A/B/C 类</em></span>
@@ -83,6 +87,8 @@ title: A 类练习 · 系列 37（第 361-370 题）
 
 八木天线是由一个有源振子（一般用折合振子）、一个无源反射器和若干个无源引向器平行排列而成的端射式天线。在二十世纪20年代，由日本东北大学的八木秀次和宇田太郞两人发明了这种天线，被称为“八木宇田天线”，简称“八木天线”。
 
+<span data-tts-skip><sub>—— 题解：ll（经精简整理）</sub></span>
+
 ## 第 363 题
 
 <span data-tts-skip><em>MC1-0424 · 单选 · 适用 A/B/C 类</em></span>
@@ -108,6 +114,8 @@ title: A 类练习 · 系列 37（第 361-370 题）
 **题解**
 
 E的三个横杠都指着同样的方向，那就是定向天线
+
+<span data-tts-skip><sub>—— 题解：BA4JFT（经精简整理）</sub></span>
 
 ## 第 364 题
 
@@ -228,6 +236,8 @@ E的三个横杠都指着同样的方向，那就是定向天线
    - 业余无线电SSB语音→J3E
    - 数据传输→F1D或F2D
 
+<span data-tts-skip><sub>—— 题解：ShadowMov（经精简整理）</sub></span>
+
 ## 第 365 题
 
 <span data-tts-skip><em>MC1-0426 · 单选 · 适用 A/B/C 类</em></span>
@@ -263,6 +273,8 @@ E的三个横杠都指着同样的方向，那就是定向天线
 因此 单边带话通信 的分类为 J3E
 
 发射类别的总结和助记词可以参考 [MC1-0425](https://exam.bh5hsu.com/question/MC1-0425) 的题解
+
+<span data-tts-skip><sub>—— 题解：ShadowMov（经精简整理）</sub></span>
 
 ## 第 366 题
 
@@ -300,6 +312,8 @@ E的三个横杠都指着同样的方向，那就是定向天线
 
 发射类别的总结和助记词可以参考 [MC1-0425](https://exam.bh5hsu.com/question/MC1-0425) 的题解
 
+<span data-tts-skip><sub>—— 题解：ShadowMov（经精简整理）</sub></span>
+
 ## 第 367 题
 
 <span data-tts-skip><em>MC1-0428 · 单选 · 适用 A/B/C 类</em></span>
@@ -336,6 +350,8 @@ E的三个横杠都指着同样的方向，那就是定向天线
 
 发射类别的总结和助记词可以参考 [MC1-0425](https://exam.bh5hsu.com/question/MC1-0425) 的题解
 
+<span data-tts-skip><sub>—— 题解：ShadowMov（经精简整理）</sub></span>
+
 ## 第 368 题
 
 <span data-tts-skip><em>MC1-0429 · 单选 · 适用 A/B/C 类</em></span>
@@ -361,6 +377,8 @@ E的三个横杠都指着同样的方向，那就是定向天线
 **题解**
 
 sstv 两个一样的s, 答案也是要有两相同的字母FF
+
+<span data-tts-skip><sub>—— 题解：pomah（经精简整理）</sub></span>
 
 ## 第 369 题
 
@@ -392,6 +410,8 @@ sstv 两个一样的s, 答案也是要有两相同的字母FF
 第三位（发射信息类型）：电报听音——A，电报自动接收——B，语音/话音（例如语音通信）——E，电视/视频（例如ATV和SSTV）——F
 
 因此，例如此题，“调频”“ATV信号”，则为F3F
+
+<span data-tts-skip><sub>—— 题解：147258369（经精简整理）</sub></span>
 
 ## 第 370 题
 
@@ -448,4 +468,6 @@ sstv 两个一样的s, 答案也是要有两相同的字母FF
 **引用文档**：  
 - 《ITU 无线电规则（2024年版）卷1：条款》第1.144条  
 - 《中华人民共和国无线电频率划分规定》第1.6.8条
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

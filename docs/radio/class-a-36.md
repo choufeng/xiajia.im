@@ -6,6 +6,8 @@ title: A 类练习 · 系列 36（第 351-360 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 351 题
 
 <span data-tts-skip><em>MC1-0412 · 单选 · 适用 A/B/C 类</em></span>
@@ -36,6 +38,8 @@ title: A 类练习 · 系列 36（第 351-360 题）
 
 若要表达“非常感谢”，还可使用 **MNY TNX** 或 **MNI TNX**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 352 题
 
 <span data-tts-skip><em>MC1-0413 · 单选 · 适用 A/B/C 类</em></span>
@@ -61,6 +65,8 @@ title: A 类练习 · 系列 36（第 351-360 题）
 **题解**
 
 Thank you，只不过一头一尾缩写
+
+<span data-tts-skip><sub>—— 题解：linui（经精简整理）</sub></span>
 
 ## 第 353 题
 
@@ -99,6 +105,8 @@ Thank you，只不过一头一尾缩写
 **3. 答案分析**
 - **UR**：正确。根据ITU-R M.1171-1建议书的缩写表，`UR`定义为“你的”或“你是”。  
 - **其他选项**：`TU`（感谢）、`FB`（良好）、`US`（非标准用法）均与题意无关。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 354 题
 
@@ -146,6 +154,8 @@ Thank you，只不过一头一尾缩写
 ****结论****
 在CW通联中，缩语“WL”表示**将要**，用于表达操作员的未来动作意图。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 355 题
 
 <span data-tts-skip><em>MC1-0416 · 单选 · 适用 A/B/C 类</em></span>
@@ -171,6 +181,8 @@ Thank you，只不过一头一尾缩写
 **题解**
 
 记题技巧：XYL (小依赖=老婆)
+
+<span data-tts-skip><sub>—— 题解：广州B类（经精简整理）</sub></span>
 
 ## 第 356 题
 
@@ -198,6 +210,8 @@ Thank you，只不过一头一尾缩写
 
 记题技巧：YL = 杨澜 女士，这个是知名主持人； X Y L = 妻子 ，娶个 小杨澜 当妻子；
 
+<span data-tts-skip><sub>—— 题解：广州B类（经精简整理）</sub></span>
+
 ## 第 357 题
 
 <span data-tts-skip><em>MC1-0418 · 单选 · 适用 A/B/C 类</em></span>
@@ -223,6 +237,8 @@ Thank you，只不过一头一尾缩写
 **题解**
 
 振子英文是element  复数 elements   所以：ele，els、el
+
+<span data-tts-skip><sub>—— 题解：zather（经精简整理）</sub></span>
 
 ## 第 358 题
 
@@ -251,6 +267,8 @@ Thank you，只不过一头一尾缩写
 D=double,偶数，双倍
 
 审核注：可以这么记忆，但这里DP实际上是Dipole的缩写
+
+<span data-tts-skip><sub>—— 题解：555555550（经精简整理）</sub></span>
 
 ## 第 359 题
 
@@ -283,6 +301,8 @@ D=double,偶数，双倍
 
 因此本题中的 **GP** 对应垂直接地天线。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 360 题
 
 <span data-tts-skip><em>MC1-0421 · 单选 · 适用 A/B/C 类</em></span>
@@ -313,4 +333,6 @@ D=double,偶数，双倍
 - **GP**：Ground Plane Antenna，垂直接地天线，通常包含地网或径向导体。
 
 **GP** 可视为常见的垂直天线形式之一，但两个缩写不能直接互换。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

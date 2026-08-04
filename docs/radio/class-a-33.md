@@ -6,6 +6,8 @@ title: A 类练习 · 系列 33（第 321-330 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 321 题
 
 <span data-tts-skip><em>MC1-0382 · 单选 · 适用 A/B/C 类</em></span>
@@ -35,6 +37,8 @@ title: A 类练习 · 系列 33（第 321-330 题）
 **CQ** 表示向所有电台作广泛呼叫，相当于“有没有电台愿意与我联络？”
 
 可以借早期即时通信软件名 **OICQ** 记住 **CQ** 这个字母组合，但两者在业务含义上没有关系。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 322 题
 
@@ -66,6 +70,8 @@ title: A 类练习 · 系列 33（第 321-330 题）
 
 DX 活动促使爱好者研究电波传播，改进收发设备与天线，并尝试联络更多地区或稀有电台。由许多电台同时呼叫一个目标台形成的拥挤场面，常称为 **pileup（堆叠呼叫）**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 323 题
 
 <span data-tts-skip><em>MC1-0384 · 单选 · 适用 A/B/C 类</em></span>
@@ -95,6 +101,8 @@ DX 活动促使爱好者研究电波传播，改进收发设备与天线，并�
 "从"（对应 FROM）。
 "请等待"（对应 QRX 或 WAIT）。
 
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
+
 ## 第 324 题
 
 <span data-tts-skip><em>MC1-0385 · 单选 · 适用 A/B/C 类</em></span>
@@ -120,6 +128,8 @@ DX 活动促使爱好者研究电波传播，改进收发设备与天线，并�
 **题解**
 
 B business 记住这个就行
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 325 题
 
@@ -175,6 +185,8 @@ CW（Continuous Wave，连续波）通信是通过莫尔斯电码（Morse Code�
 
 **最终答案**：为了，对于
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 326 题
 
 <span data-tts-skip><em>MC1-0387 · 单选 · 适用 A/B/C 类</em></span>
@@ -202,6 +214,8 @@ CW（Continuous Wave，连续波）通信是通过莫尔斯电码（Morse Code�
 **速记**
 
 **FREQ** 是 **frequency（频率）**的常用缩写。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 327 题
 
@@ -232,6 +246,8 @@ Good Afternoon（GA）下午好
 Good Night（GN）晚安
 Good Evening（GE）晚上好
 
+<span data-tts-skip><sub>—— 题解：clang（经精简整理）</sub></span>
+
 ## 第 328 题
 
 <span data-tts-skip><em>MC1-0389 · 单选 · 适用 A/B/C 类</em></span>
@@ -257,6 +273,8 @@ Good Evening（GE）晚上好
 **题解**
 
 GE Good Evening，千万不要Good Night
+
+<span data-tts-skip><sub>—— 题解：无名（经精简整理）</sub></span>
 
 ## 第 329 题
 
@@ -286,6 +304,8 @@ GE Good Evening，千万不要Good Night
 
 审核注：通常“GL”并不带有“结束当前联络”的含义，一般用也是73 GL，因此题干表达有不严谨，需特别注意。
 
+<span data-tts-skip><sub>—— 题解：TaiMiao（经精简整理）</sub></span>
+
 ## 第 330 题
 
 <span data-tts-skip><em>MC1-0391 · 单选 · 适用 A/B/C 类</em></span>
@@ -311,4 +331,6 @@ GE Good Evening，千万不要Good Night
 **题解**
 
 Glad高兴
+
+<span data-tts-skip><sub>—— 题解：PNDJZ（经精简整理）</sub></span>
 

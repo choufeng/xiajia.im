@@ -6,6 +6,8 @@ title: A 类练习 · 系列 06（第 51-60 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 51 题
 
 <span data-tts-skip><em>MC1-0053 · 单选 · 适用 A/B 类</em></span>
@@ -35,6 +37,8 @@ title: A 类练习 · 系列 06（第 51-60 题）
 - **A 类、B 类**操作技术能力验证：国家和省级无线电管理机构均可组织；
 - **C 类**操作技术能力验证：由**国家无线电管理机构**负责组织。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 52 题
 
 <span data-tts-skip><em>MC1-0054 · 单选 · 适用 A/B 类</em></span>
@@ -63,6 +67,8 @@ title: A 类练习 · 系列 06（第 51-60 题）
 
 参加业余无线电台操作技术能力验证时，**不向参加验证的人员收取考试费用**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 53 题
 
 <span data-tts-skip><em>MC1-0055 · 单选 · 适用 A/B 类</em></span>
@@ -88,6 +94,8 @@ title: A 类练习 · 系列 06（第 51-60 题）
 **题解**
 
 “操作能力”证明文件，只有A答案中有“能力”二字
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 54 题
 
@@ -139,6 +147,8 @@ title: A 类练习 · 系列 06（第 51-60 题）
 **引用文档**：  
 《业余无线电台管理办法》第三章 **操作技术能力验证**（第二十五条、第二十七条）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 55 题
 
 <span data-tts-skip><em>MC3-0057 · 多选 · 适用 A/B/C 类</em></span>
@@ -168,6 +178,8 @@ A不能设置短波电台
 B短波功率限制
 
 C业余天花板
+
+<span data-tts-skip><sub>—— 题解：bh4fdy（经精简整理）</sub></span>
 
 ## 第 56 题
 
@@ -200,6 +212,8 @@ C业余天花板
 - 允许工作的**频率范围**；
 - 允许的**最大发射功率**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 57 题
 
 <span data-tts-skip><em>MC1-0059 · 单选 · 适用 A/B/C 类</em></span>
@@ -229,6 +243,8 @@ A 类业余无线电台允许工作的频率范围和最大发射功率为：
 A 类业余无线电台可在 **30～3000 MHz** 范围内划分给业余业务的频段工作，最大发射功率**不大于 25 W**。
 
 其中 30～300 MHz 属于 VHF，300～3000 MHz 属于 UHF。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 58 题
 
@@ -263,6 +279,8 @@ A 类业余无线电台可在 **30～3000 MHz** 范围内划分给业余业务�
 
 注意法规用词：30 MHz 以下是“小于 15 W”，不是“不超过 15 W”。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 59 题
 
 <span data-tts-skip><em>MC1-0061 · 单选 · 适用 A/B/C 类</em></span>
@@ -293,6 +311,8 @@ A 类业余无线电台可在 **30～3000 MHz** 范围内划分给业余业务�
 
 - 30 MHz 以下频段：发射功率**不大于 1000 W**；
 - 30 MHz 以上频段：发射功率**不大于 25 W**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 60 题
 
@@ -325,4 +345,6 @@ A 类业余无线电台可在 **30～3000 MHz** 范围内划分给业余业务�
 - **C 类**：依法取得载明 30 MHz 以下频段的业余无线电台执照 18 个月以上，并具有相应实际操作经验。
 
 题目问的是参加操作技术能力验证的条件，不要与申请设置、使用电台的年龄和频段条件混淆。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

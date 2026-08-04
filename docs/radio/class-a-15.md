@@ -6,6 +6,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 141 题
 
 <span data-tts-skip><em>MC1-0147 · 单选 · 适用 A/B/C 类</em></span>
@@ -33,6 +35,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 **法律来源**
 
 “无线电频谱资源属于国家所有”见《中华人民共和国民法典》第二百五十二条。旧题库可能引用已废止的《物权法》，现行题库应对应《民法典》。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 142 题
 
@@ -64,6 +68,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 
 记忆关键词：**特定时间 + 特定区域 + 强制管理**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 143 题
 
 <span data-tts-skip><em>MC1-0149 · 单选 · 适用 A/B/C 类</em></span>
@@ -94,6 +100,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 
 记忆关键词：**特定时间 + 特定区域 + 强制管理**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 144 题
 
 <span data-tts-skip><em>MC1-0150 · 单选 · 适用 A/B/C 类</em></span>
@@ -123,6 +131,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 实施无线电管制时，可以限制或禁止业余无线电台（站）的使用，并对特定无线电频率实施技术阻断等措施。
 
 无线电管制针对无线电波的发射、辐射和传播，不是对设备生产销售的一般限制。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 145 题
 
@@ -155,6 +165,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 
 记忆点：两级决定机关都包含相应军事机关。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 146 题
 
 <span data-tts-skip><em>MC2-0152 · 多选 · 适用 A/B/C 类</em></span>
@@ -186,6 +198,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 
 无线电协会是民间组织，不是执法机关。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 147 题
 
 <span data-tts-skip><em>MC3-0153 · 多选 · 适用 A/B/C 类</em></span>
@@ -213,6 +227,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 暴力解法（仅限“违反无线电管制命令和指令”这题）：不选“警告或罚款”。
 除了提交申请时给了虚假信息，另有警告情形。
 
+<span data-tts-skip><sub>—— 题解：崧朗（经精简整理）</sub></span>
+
 ## 第 148 题
 
 <span data-tts-skip><em>MC2-0154 · 多选 · 适用 A/B/C 类</em></span>
@@ -238,6 +254,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 **题解**
 
 除了无线电管制不罚款。黑台诈骗排除掉5万元罚款。剩下所有出现"万元"的答案都是正确选项。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 149 题
 
@@ -268,6 +286,8 @@ title: A 类练习 · 系列 15（第 141-150 题）
 - 责令改正，没收违法设备和违法所得，可以并处 **5 万元以下**罚款；
 - 拒不改正的，并处 **5 万元以上 20 万元以下**罚款。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 150 题
 
 <span data-tts-skip><em>MC1-0156 · 单选 · 适用 A/B/C 类</em></span>
@@ -293,4 +313,6 @@ title: A 类练习 · 系列 15（第 141-150 题）
 **题解**
 
 除了无线电管制不罚款,诈骗排除掉5万元罚款。剩下所有出现"万元"的答案都是正确选项。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 

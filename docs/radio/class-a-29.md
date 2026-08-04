@@ -6,6 +6,8 @@ title: A 类练习 · 系列 29（第 281-290 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 281 题
 
 <span data-tts-skip><em>MC1-0315 · 单选 · 适用 A/B/C 类</em></span>
@@ -38,6 +40,8 @@ title: A 类练习 · 系列 29（第 281-290 题）
 
 这些短句用于不同国家或地区的爱好者互致祝愿并表达再见。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 282 题
 
 <span data-tts-skip><em>MC1-0343 · 单选 · 适用 A/B/C 类</em></span>
@@ -64,6 +68,8 @@ QRP 操作时如果对方反映信号不好，我们可能会追问是否需要�
 
 QRP QRO    P是半个圆  O是整个圆，提升功率就是大口吃饱，降低功率就是小点口
 
+<span data-tts-skip><sub>—— 题解：pomah（经精简整理）</sub></span>
+
 ## 第 283 题
 
 <span data-tts-skip><em>MC1-0344 · 单选 · 适用 A/B/C 类</em></span>
@@ -89,6 +95,8 @@ QRP QRO    P是半个圆  O是整个圆，提升功率就是大口吃饱，降�
 **题解**
 
 题目说你想qrp（降低功率），那你难道不去问qrp吗
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 284 题
 
@@ -172,6 +180,8 @@ QRP QRO    P是半个圆  O是整个圆，提升功率就是大口吃饱，降�
   - QRS = 降低码速  
   - QRQ = 提高码速
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 285 题
 
 <span data-tts-skip><em>MC1-0346 · 单选 · 适用 A/B/C 类</em></span>
@@ -223,6 +233,8 @@ QRP QRO    P是半个圆  O是整个圆，提升功率就是大口吃饱，降�
 **4. 补充说明**
 在CW（摩尔斯电码）通信中，QRQ/QRS指令需配合具体数值使用（如"QRQ 25WPM"表示加快到25字/分钟），但本题仅考查基础Q简语含义。熟悉Q简语表是应对此类题目的关键。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 286 题
 
 <span data-tts-skip><em>MC1-0347 · 单选 · 适用 A/B/C 类</em></span>
@@ -255,6 +267,8 @@ QRP QRO    P是半个圆  O是整个圆，提升功率就是大口吃饱，降�
 
 句末加问号表示询问，因此 **QRQ？** 是反问对方“要我加快发报速度吗？”
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 287 题
 
 <span data-tts-skip><em>MC1-0348 · 单选 · 适用 A/B/C 类</em></span>
@@ -283,6 +297,8 @@ S = slow
 
 审核注：助记，Q简语实际上没有给出这里S代表什么。
 
+<span data-tts-skip><sub>—— 题解：azard（经精简整理）</sub></span>
+
 ## 第 288 题
 
 <span data-tts-skip><em>MC1-0349 · 单选 · 适用 A/B/C 类</em></span>
@@ -309,6 +325,8 @@ S = slow
 
 QRS-request slow
 
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
+
 ## 第 289 题
 
 <span data-tts-skip><em>MC1-0350 · 单选 · 适用 A/B/C 类</em></span>
@@ -334,6 +352,8 @@ QRS-request slow
 **题解**
 
 QRT，可以理解为打麻将“扣听”
+
+<span data-tts-skip><sub>—— 题解：浩克（经精简整理）</sub></span>
 
 ## 第 290 题
 
@@ -362,4 +382,6 @@ QRT，可以理解为打麻将“扣听”
 QRU？QRU：没了吗？没了
 
 QRL？QRL：忙吗？忙
+
+<span data-tts-skip><sub>—— 题解：BH4GSX（经精简整理）</sub></span>
 

@@ -6,6 +6,8 @@ title: A 类练习 · 系列 30（第 291-300 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 291 题
 
 <span data-tts-skip><em>MC1-0352 · 单选 · 适用 A/B/C 类</em></span>
@@ -37,6 +39,8 @@ title: A 类练习 · 系列 30（第 291-300 题）
 
 可将末尾的 **U** 联想为“有无事”，但这只是助记，不是字母的正式释义。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 292 题
 
 <span data-tts-skip><em>MC1-0353 · 单选 · 适用 A/B/C 类</em></span>
@@ -62,6 +66,8 @@ title: A 类练习 · 系列 30（第 291-300 题）
 **题解**
 
 围（V）场：参加活动用 QRV IN WAPC?
+
+<span data-tts-skip><sub>—— 题解：zhoulb（经精简整理）</sub></span>
 
 ## 第 293 题
 
@@ -89,6 +95,8 @@ Q 简语“QRV”的含义是：
 
 v当成微信，那不就是收发消息，陈述语气，那就是回答别人，准备好收了
 
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
+
 ## 第 294 题
 
 <span data-tts-skip><em>MC1-0355 · 单选 · 适用 A/B/C 类</em></span>
@@ -114,6 +122,8 @@ v当成微信，那不就是收发消息，陈述语气，那就是回答别人�
 **题解**
 
 orz是小人跪地表情包，QRZ是跪在地上，“到底是谁在叫我？”
+
+<span data-tts-skip><sub>—— 题解：qpwoei（经精简整理）</sub></span>
 
 ## 第 295 题
 
@@ -174,6 +184,8 @@ Q 简语“QRZ”的含义为：
 文档名称：ITU-R M.1171-1建议书（水上移动业务中的无线电话程序）  
 章节信息：A. 以字母顺序排列的缩写表（QRZ对应的问句与答语）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 296 题
 
 <span data-tts-skip><em>MC1-0357 · 单选 · 适用 A/B/C 类</em></span>
@@ -225,6 +237,8 @@ Q 简语“QRZ”的含义为：
 **答案：QSA**
 （选项中唯一符合"Q简语 + 5级强度报告"的代码）
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 297 题
 
 <span data-tts-skip><em>MC1-0358 · 单选 · 适用 A/B/C 类</em></span>
@@ -250,6 +264,8 @@ Q 简语“QRZ”的含义为：
 **题解**
 
 衰落就成sb了，被破坏了就成sd了
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 298 题
 
@@ -305,6 +321,8 @@ Q简语是国际通用的三字母通信缩略语，用于简化无线电通信�
 
 **最终答案**：你的信号正在衰落
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 299 题
 
 <span data-tts-skip><em>MC1-0360 · 单选 · 适用 A/B/C 类</em></span>
@@ -337,6 +355,8 @@ Q简语是国际通用的三字母通信缩略语，用于简化无线电通信�
 
 - **QSD AT Y**：你刚才发字母 **Y** 时手法不好。
 - **QSD PSE CK**：你的发报手法有毛病，请检查。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 300 题
 
@@ -377,4 +397,6 @@ C. QSU = “请在此频率（或某频率）上回复”
 D. QRH = “你的频率在漂移吗？”
 
 含义： 这是在怀疑对方的电台机器质量不好，频率像小船一样在上下晃动（不稳），而不是在批评对方的手法。
+
+<span data-tts-skip><sub>—— 题解：joycasino（经精简整理）</sub></span>
 

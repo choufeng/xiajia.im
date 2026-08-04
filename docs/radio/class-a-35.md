@@ -6,6 +6,8 @@ title: A 类练习 · 系列 35（第 341-350 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 341 题
 
 <span data-tts-skip><em>MC1-0402 · 单选 · 适用 A/B/C 类</em></span>
@@ -85,6 +87,8 @@ title: A 类练习 · 系列 35（第 341-350 题）
 **最终答案：**  
 在 CW 通联中表达“非常感谢”之意时我们发送：“MNY TNX”或“MNI TNX”。
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 342 题
 
 <span data-tts-skip><em>MC1-0403 · 单选 · 适用 A/B/C 类</em></span>
@@ -141,6 +145,8 @@ title: A 类练习 · 系列 35（第 341-350 题）
 
 **结论**：根据国际规范，“NW”在业余无线电通信中特指“现在”。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 343 题
 
 <span data-tts-skip><em>MC1-0404 · 单选 · 适用 A/B/C 类</em></span>
@@ -168,6 +174,8 @@ title: A 类练习 · 系列 35（第 341-350 题）
 **速记**
 
 **OM** 来自 **Old Man**，通联中表示亲切的“老朋友、老伙计”，与对方的实际年龄无关。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 344 题
 
@@ -214,6 +222,8 @@ title: A 类练习 · 系列 35（第 341-350 题）
 **最终答案：**  
 OP
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 345 题
 
 <span data-tts-skip><em>MC1-0406 · 单选 · 适用 A/B/C 类</em></span>
@@ -241,6 +251,8 @@ OP
 **速记**
 
 **PSE** 和 **PLS** 都是 **please（请）**的缩写；在 CW 通联中常见 **PSE**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 346 题
 
@@ -270,6 +282,8 @@ OP
 
 **R** 是 **Roger** 的缩写，表示已完整抄收对方刚才发送的消息，作用与确认收妥的 **QSL** 相近。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 347 题
 
 <span data-tts-skip><em>MC1-0408 · 单选 · 适用 A/B/C 类</em></span>
@@ -295,6 +309,8 @@ OP
 **题解**
 
 SAE（Self-Addressed Envelope）通常指写好收信人地址的信封
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 348 题
 
@@ -326,6 +342,8 @@ SASE=Self Addressed Stamped Envelope，写好地址并附上邮票的信封
 
 当然，有的HAM当地兑换IRC也不一定很方便，他们会更希望你夹寄“绿邮票”：1美元现金1-3张（视当地邮资），当然夹寄现金的行为可能会触犯一些国家或者地区的法律（这是为什么要发行IRC的原因之一），请事先确认一下您当地的情况。
 
+<span data-tts-skip><sub>—— 题解：ShadowMov（经精简整理）</sub></span>
+
 ## 第 349 题
 
 <span data-tts-skip><em>MC1-0410 · 单选 · 适用 A/B/C 类</em></span>
@@ -351,6 +369,8 @@ SASE=Self Addressed Stamped Envelope，写好地址并附上邮票的信封
 **题解**
 
 sorry简写，因为sorry读出来最后一个发音近似1（一），在英文里近似i，所以是SRI
+
+<span data-tts-skip><sub>—— 题解：clang（经精简整理）</sub></span>
 
 ## 第 350 题
 
@@ -379,4 +399,6 @@ sorry简写，因为sorry读出来最后一个发音近似1（一），在英文
 **速记**
 
 **TEMP** 是 **temperature（温度）**的常用缩写。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

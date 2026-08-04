@@ -6,6 +6,8 @@ title: A 类练习 · 系列 25（第 241-250 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 241 题
 
 <span data-tts-skip><em>MC1-0250 · 单选 · 适用 A/B/C 类</em></span>
@@ -35,6 +37,8 @@ title: A 类练习 · 系列 25（第 241-250 题）
 呼号 **VR2ZQW** 拼读为：
 
 **Victor Romeo Two Zulu Quebec Whiskey**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 242 题
 
@@ -66,6 +70,8 @@ title: A 类练习 · 系列 25（第 241-250 题）
 
 **Bravo Sierra Seven Hotel**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 243 题
 
 <span data-tts-skip><em>MC1-0252 · 单选 · 适用 A/B/C 类</em></span>
@@ -95,6 +101,8 @@ title: A 类练习 · 系列 25（第 241-250 题）
 呼号 **JA2IGY** 拼读为：
 
 **Juliett Alfa Two India Golf Yankee**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 244 题
 
@@ -128,6 +136,8 @@ title: A 类练习 · 系列 25（第 241-250 题）
 
 斜线 **/** 在这种呼号中读作 **Portable**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 245 题
 
 <span data-tts-skip><em>MC1-0254 · 单选 · 适用 A/B/C 类</em></span>
@@ -160,6 +170,8 @@ title: A 类练习 · 系列 25（第 241-250 题）
 
 斜线 **/** 读作 **Portable**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 246 题
 
 <span data-tts-skip><em>MC1-0259 · 单选 · 适用 A/B 类</em></span>
@@ -185,6 +197,8 @@ title: A 类练习 · 系列 25（第 241-250 题）
 **题解**
 
 CQ这个反正挺广泛的，谁都能回应
+
+<span data-tts-skip><sub>—— 题解：linui（经精简整理）</sub></span>
 
 ## 第 247 题
 
@@ -216,6 +230,8 @@ CQ这个反正挺广泛的，谁都能回应
 
 字母拼读针对呼号，不需要把 **CQ** 本身逐字拼读。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 248 题
 
 <span data-tts-skip><em>MC1-0261 · 单选 · 适用 A/B 类</em></span>
@@ -242,6 +258,8 @@ CQ这个反正挺广泛的，谁都能回应
 
 先给对方表达能不能听清楚，重复对方呼号是很重要的方式
 
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
+
 ## 第 249 题
 
 <span data-tts-skip><em>MC1-0262 · 单选 · 适用 A/B 类</em></span>
@@ -267,6 +285,8 @@ CQ这个反正挺广泛的，谁都能回应
 **题解**
 
 广泛呼叫是SEEK  YOU 特指呼叫SEEK 小明
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 250 题
 
@@ -301,4 +321,6 @@ CQ这个反正挺广泛的，谁都能回应
 - T（Tone）：音调。
 
 话音通信通常使用 RS 两位报告，CW 使用 RST 三位报告。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

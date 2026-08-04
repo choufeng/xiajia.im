@@ -6,6 +6,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 391 题
 
 <span data-tts-skip><em>MC1-0516 · 单选 · 适用 A/B/C 类</em></span>
@@ -65,6 +67,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 **5. **总结****
 **单边带调制**因保留基带特性、抗衰落能力强和频谱效率高，成为DSSTV通信的首选；而**调频话**的门限效应、带宽占用及破坏数字信号完整性，导致其不适用于此场景。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 392 题
 
 <span data-tts-skip><em>MC1-0565 · 单选 · 适用 A 类</em></span>
@@ -95,6 +99,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 
 名称中的“收发”不是“转发”；是否具有中继或转发功能是另一回事。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 393 题
 
 <span data-tts-skip><em>MC2-0566 · 多选 · 适用 A 类</em></span>
@@ -121,6 +127,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 
 参考矿石收音机，只需要接受和解调部分
 
+<span data-tts-skip><sub>—— 题解：y6uio（经精简整理）</sub></span>
+
 ## 第 394 题
 
 <span data-tts-skip><em>MC3-0567 · 多选 · 适用 A 类</em></span>
@@ -146,6 +154,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 **题解**
 
 没有防雷器不是不能用，只是不能被雷劈而已
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 395 题
 
@@ -176,6 +186,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 导线越长、截面积越小，电阻越大；发射时电流较大，电源线上的压降 $U=IR$ 也随之增大，可能使收发信机端电压不足。
 
 使用尽量短、尽量粗的直流电源线，可以降低线路电阻和发射时的压降。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 396 题
 
@@ -235,6 +247,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 
 **引用文档**：  
 《中华人民共和国无线电频率划分规定》1.5.10条（单工操作定义）。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 397 题
 
@@ -308,6 +322,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 - 卫星通信（跨频段同时收发）符合要求。  
 - 半双工（QSK、PTT）仅支持交替收发，不符合定义。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 398 题
 
 <span data-tts-skip><em>MC1-0571 · 单选 · 适用 A 类</em></span>
@@ -364,6 +380,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 **结论**
 半双工操作的核心是“一端单工，另一端双工”。中继台（双工）与PTT对讲机（单工）的组合完美符合这一定义，而其他选项要么是全双工或单工通信。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 399 题
 
 <span data-tts-skip><em>MC1-0572 · 单选 · 适用 A 类</em></span>
@@ -389,6 +407,8 @@ title: A 类练习 · 系列 40（第 391-400 题）
 **题解**
 
 PTT: Push-to-Talk
+
+<span data-tts-skip><sub>—— 题解：ll（经精简整理）</sub></span>
 
 ## 第 400 题
 
@@ -417,4 +437,6 @@ PTT: Push-to-Talk
 S silence
 
 审核注：实际上是 squelch，但可以用silence理解记忆
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 

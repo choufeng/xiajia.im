@@ -6,6 +6,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 601 题
 
 <span data-tts-skip><em>MC1-0931 · 单选 · 适用 A/B/C 类</em></span>
@@ -33,6 +35,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 **电压**
 
 电压是电场中两点的电势差，表示单位电荷在两点间移动时能量的变化：$U=\frac{W}{q}$。单位为伏特（V），$1\,\mathrm{V}=1\,\mathrm{J/C}$。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 602 题
 
@@ -84,6 +88,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 - 对正弦波而言，峰值与有效值的关系为 $ V_p = V_{\text{RMS}} \times \sqrt{2} $，但此关系仅适用于纯正弦波。  
 - 若波形存在失真或非对称性，需通过波形分析仪直接测量峰值。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 603 题
 
 <span data-tts-skip><em>MC1-0933 · 单选 · 适用 A/B/C 类</em></span>
@@ -112,6 +118,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 
 峰-峰值：负峰值到正峰值
 
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
+
 ## 第 604 题
 
 <span data-tts-skip><em>MC1-0934 · 单选 · 适用 A/B/C 类</em></span>
@@ -137,6 +145,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 **题解**
 
 “电压的峰值除以  2＾(1/2) ”是正弦波交流电的有效值计算方法，而非**任意**交流电
+
+<span data-tts-skip><sub>—— 题解：AlanLyu（经精简整理）</sub></span>
 
 ## 第 605 题
 
@@ -166,6 +176,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 
 电流描述电荷的定向移动速率：$I=\frac{\Delta Q}{\Delta t}$，即单位时间通过导体横截面的电荷量，单位为安培（A）。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 606 题
 
 <span data-tts-skip><em>MC1-0936 · 单选 · 适用 A/B/C 类</em></span>
@@ -193,6 +205,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 电阻是空间量,有前后两点。
 
 审核注：“空间量”是题解作者自创的便于理解的概念，不是标准的物理/数学概念。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 607 题
 
@@ -222,6 +236,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 
 功率是做功或能量转换的速率：$P=\frac{W}{t}$。单位为瓦特（W），$1\,\mathrm{W}=1\,\mathrm{J/s}$。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 608 题
 
 <span data-tts-skip><em>MC2-0938 · 多选 · 适用 A/B/C 类</em></span>
@@ -249,6 +265,8 @@ title: A 类练习 · 系列 61（第 601-610 题）
 I love U 是假的，反比
 
 U love me 是真的，正比
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 609 题
 
@@ -295,6 +313,8 @@ U love me 是真的，正比
 **4. 其他补充**
 - **超导现象**：超导体在临界温度下可实现零电阻，但此知识点超出普通业余无线电考试范围，且题目未涉及特殊条件。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 610 题
 
 <span data-tts-skip><em>MC1-0940 · 单选 · 适用 A/B/C 类</em></span>
@@ -322,4 +342,6 @@ U love me 是真的，正比
 **阻抗**
 
 阻抗是电路对交流电流阻碍作用的统称，包含电阻以及电感、电容产生的电抗；通常是具有幅值和相位的复数量，单位为欧姆（Ω）。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

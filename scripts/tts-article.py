@@ -58,8 +58,8 @@ def md_to_text(md: str) -> str:
     md = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", md)
     # 去 <details> 折叠块整块（正确答案已主体呈现，折叠选项不朗读；须在去 HTML 标签前执行）
     md = re.sub(r"<details[\s\S]*?</details>", "", md, flags=re.IGNORECASE)
-    # 去 data-tts-skip 标记的内容（页面显示但音频不读：元信息行、字母标记等）
-    md = re.sub(r"<[^>]*data-tts-skip[^>]*>[\s\S]*?</[^>]+>", "", md, flags=re.IGNORECASE)
+    # 去 data-tts-skip 标记的内容（页面显示但音频不读：元信息行、字母标记等；容器均为 span）
+    md = re.sub(r"<[^>]*data-tts-skip[^>]*>[\s\S]*?</span>", "", md, flags=re.IGNORECASE)
     # 去 HTML 标签
     md = re.sub(r"<[^>]+>", "", md)
     # 标题井号

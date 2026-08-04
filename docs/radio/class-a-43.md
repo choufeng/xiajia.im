@@ -6,6 +6,8 @@ title: A 类练习 · 系列 43（第 421-430 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 421 题
 
 <span data-tts-skip><em>MC1-0600 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 43（第 421-430 题）
 **题解**
 
 火花塞有干扰，但我的电台很牛逼NB
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 422 题
 
@@ -58,6 +62,8 @@ title: A 类练习 · 系列 43（第 421-430 题）
 
 MODE，模式，所以，纯粹的工作模式
 
+<span data-tts-skip><sub>—— 题解：linui（经精简整理）</sub></span>
+
 ## 第 423 题
 
 <span data-tts-skip><em>MC1-0602 · 单选 · 适用 A/B/C 类</em></span>
@@ -84,6 +90,8 @@ MODE，模式，所以，纯粹的工作模式
 
 Attenuation衰减，Attion注意
 
+<span data-tts-skip><sub>—— 题解：匿名（经精简整理）</sub></span>
+
 ## 第 424 题
 
 <span data-tts-skip><em>MC1-0603 · 单选 · 适用 A/B/C 类</em></span>
@@ -109,6 +117,8 @@ Attenuation衰减，Attion注意
 **题解**
 
 Automatic Gain Control
+
+<span data-tts-skip><sub>—— 题解：linui（经精简整理）</sub></span>
 
 ## 第 425 题
 
@@ -140,6 +150,8 @@ Automatic Gain Control
 
 **ATT** 位于接收前端之前，先把所有输入信号衰减，能避免前级阻塞、非线性失真和互调。因此强信号环境下仍需要独立的 ATT 开关。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 426 题
 
 <span data-tts-skip><em>MC2-0605 · 多选 · 适用 A/B/C 类</em></span>
@@ -167,6 +179,8 @@ Automatic Gain Control
 ❌ A 错误。接收机过载是指信号电平过大，而非整机电流过大；电源过载属于供电问题，与信号过载无关。
 
 ❌ B 错误。减小喇叭音量只改变音频输出幅度，对射频前端的过载状态没有任何影响；信号依然会饱和阻塞。
+
+<span data-tts-skip><sub>—— 题解：y6uio（经精简整理）</sub></span>
 
 ## 第 427 题
 
@@ -198,6 +212,8 @@ Automatic Gain Control
 
 关闭 AGC 不是普遍的默认设置，只适用于需要人工控制增益的特定强弱信号并存场景。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 428 题
 
 <span data-tts-skip><em>MC1-0607 · 单选 · 适用 A/B/C 类</em></span>
@@ -224,6 +240,8 @@ Automatic Gain Control
 
 （1）FM / FSK / PSK 模式，振幅不携带信息，依靠频率或相位携带信息，一旦电离层变化或遮挡产生快速的强度起伏，	如果选择长（慢）时间常数，当突然出现一个强干扰信号又消失后，AGC 电路需要很长时间才能恢复增益（增益回升慢）。在这段恢复时间内，这对于需要连续解调的数据链路（如 FSK/PSK 数据包）是致命的，会导致大量的掉包或错码。
 （2）SSB / AM	就不一样了，它们依靠幅度（振幅）携带信息。	需要慢AGC，原因是AGC 太快会把语音的强弱起伏“拉平”，导致声音严重失真或底噪随语间停顿剧烈起伏（泵浦效应）。
+
+<span data-tts-skip><sub>—— 题解：foureyes（经精简整理）</sub></span>
 
 ## 第 429 题
 
@@ -254,6 +272,8 @@ Automatic Gain Control
 SSB 和 AM 的正常信号包络会随语音不断变化。若 AGC 响应过快，它会追随这些正常的调制起伏，造成听感不自然或增益“抽动”。
 
 因此接收 SSB、AM 时通常选择较长、较慢的 AGC 时间常数，让 AGC 主要跟随传播衰落等较慢变化。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 430 题
 
@@ -301,4 +321,6 @@ SSB 和 AM 的正常信号包络会随语音不断变化。若 AGC 响应过快�
   - 发信自动电平控制（ALC）和语音压缩均与发射信号处理相关，与“PRE”标识无关。  
 
 **总结**：PRE功能专为接收微弱信号设计，通过前置放大提升信号强度，但需注意其对系统噪声和指标的影响。其他选项涉及发射或天线调谐，与PRE无直接关联。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

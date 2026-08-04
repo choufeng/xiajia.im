@@ -6,6 +6,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 271 题
 
 <span data-tts-skip><em>MC1-0284 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 **题解**
 
 业余电台，帮助他人是大于你霸占频率享乐的
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 272 题
 
@@ -58,6 +62,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 
 “Calling you, Roger？” 通常用于呼叫特定对象并询问对方是否收到信号，一般用于已经确定通信对象的场景，不能用于询问频率是否有人使用。而 “Is the frequency in use？”“Is any body in the frequency？”“Any body here？” 均可用于询问频率上是否有其他电台在使用，故本题选 “Calling you, Roger？”。
 
+<span data-tts-skip><sub>—— 题解：xh_zlm（经精简整理）</sub></span>
+
 ## 第 273 题
 
 <span data-tts-skip><em>MC1-0307 · 单选 · 适用 A/B/C 类</em></span>
@@ -83,6 +89,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 **题解**
 
 讲那么多cq嘴会麻，不用字母解释法鬼听清你是谁
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 274 题
 
@@ -148,6 +156,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 - 选项2、3、4均因用语不完整、冗余或不符合通信场景被排除。  
 - 业余无线电通信强调标准化和清晰性，以避免误解（如避免“Come on”或“Go ahead”等非正式指令）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 275 题
 
 <span data-tts-skip><em>MC1-0309 · 单选 · 适用 A/B/C 类</em></span>
@@ -204,6 +214,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 **4. 引用来源**
 - 《业余无线电台管理办法》第四章设置、使用要求  
 - 《中华人民共和国无线电频率划分规定》中关于无线电话呼叫的定义
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 276 题
 
@@ -314,6 +326,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 
 ✅ 此题是单选题，正确答案就是这一项。
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 277 题
 
 <span data-tts-skip><em>MC1-0311 · 单选 · 适用 A/B/C 类</em></span>
@@ -340,6 +354,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 
 57是你自己判定的，问对面对面哪里知道他信号怎么样，同时有专业用语那包用专业语的
 
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
+
 ## 第 278 题
 
 <span data-tts-skip><em>MC1-0312 · 单选 · 适用 A/B/C 类</em></span>
@@ -365,6 +381,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 **题解**
 
 “QSL” 的原意是确认/收到了，口语化时常用来代替“Do you copy?” 或 “Roger”。
+
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
 
 ## 第 279 题
 
@@ -394,6 +412,8 @@ title: A 类练习 · 系列 28（第 271-280 题）
 
 介绍自己在成都操作，可以说：**我的 QTH 是成都**。**QTH** 表示电台位置，是常见的 Q 简语。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 280 题
 
 <span data-tts-skip><em>MC1-0314 · 单选 · 适用 A/B/C 类</em></span>
@@ -422,4 +442,6 @@ QTH：表示“电台位置”或“操作地点”。
 QRT：表示“停止发送”或“结束通信”。
 QRO：表示“增加发射功率”。
 QRV：表示“准备好通信”或“电台在线”。
+
+<span data-tts-skip><sub>—— 题解：andy_antengfei（经精简整理）</sub></span>
 

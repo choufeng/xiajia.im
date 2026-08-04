@@ -6,6 +6,8 @@ title: A 类练习 · 系列 32（第 311-320 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 311 题
 
 <span data-tts-skip><em>MC1-0372 · 单选 · 适用 A/B/C 类</em></span>
@@ -39,6 +41,8 @@ Q 简语“QSY”的含义为：
 
 问号决定它是询问还是陈述。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 312 题
 
 <span data-tts-skip><em>MC1-0373 · 单选 · 适用 A/B/C 类</em></span>
@@ -68,6 +72,8 @@ QSA:信号强度如何
 QTH:地址/所在地
 
 QRA:电台何台
+
+<span data-tts-skip><sub>—— 题解：mxdyzmx（经精简整理）</sub></span>
 
 ## 第 313 题
 
@@ -99,6 +105,8 @@ QRA:电台何台
 
 它常在结束联络时使用，但含义是送上美好祝愿，并不等同于“结束联络”这个动作本身。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 314 题
 
 <span data-tts-skip><em>MC1-0375 · 单选 · 适用 A/B/C 类</em></span>
@@ -124,6 +132,8 @@ QRA:电台何台
 **题解**
 
 your（U R） address
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 315 题
 
@@ -152,6 +162,8 @@ your（U R） address
 AGN：again；
 
 没听清楚呼号之类的也可以用QRZ（谁在呼叫我）
+
+<span data-tts-skip><sub>—— 题解：匿名（经精简整理）</sub></span>
 
 ## 第 316 题
 
@@ -228,6 +240,8 @@ AGN：again；
 
 **正确答案：另一个**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 317 题
 
 <span data-tts-skip><em>MC1-0378 · 单选 · 适用 A/B/C 类</em></span>
@@ -253,6 +267,8 @@ AGN：again；
 **题解**
 
 Amateur Radio Direction Finding
+
+<span data-tts-skip><sub>—— 题解：doleo（经精简整理）</sub></span>
 
 ## 第 318 题
 
@@ -281,6 +297,8 @@ Amateur Radio Direction Finding
 BOX 箱子
 Post  Office BOX （P.O.BOX邮政邮箱）
 
+<span data-tts-skip><sub>—— 题解：BA4JBN（经精简整理）</sub></span>
+
 ## 第 319 题
 
 <span data-tts-skip><em>MC1-0380 · 单选 · 适用 A/B/C 类</em></span>
@@ -306,6 +324,8 @@ Post  Office BOX （P.O.BOX邮政邮箱）
 **题解**
 
 BURO = Bureau（管理局）
+
+<span data-tts-skip><sub>—— 题解：Guangzi（经精简整理）</sub></span>
 
 ## 第 320 题
 
@@ -359,4 +379,6 @@ BURO = Bureau（管理局）
 文档《业余无线电爱好者守则》列举了部分常用CW缩略语（如K、SK、CL），但未明确提及“CK”。因此，此答案基于实际操作中的非标准用法，而非知识库直接定义。  
 
 **最终答案**：检查
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

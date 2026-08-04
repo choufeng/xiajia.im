@@ -6,6 +6,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 161 题
 
 <span data-tts-skip><em>MC2-0167 · 多选 · 适用 A/B/C 类</em></span>
@@ -39,6 +41,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 
 记忆关键词：**治安 → 治安处罚；犯罪 → 刑事责任**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 162 题
 
 <span data-tts-skip><em>MC1-0168 · 单选 · 适用 A/B/C 类</em></span>
@@ -64,6 +68,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 **题解**
 
 虚假材料申请，你就给人拒了呗，不许可。咋还能损人设备罚人钱。
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 163 题
 
@@ -98,6 +104,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 
 本题不是一般的“警告或书面检查”。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 164 题
 
 <span data-tts-skip><em>MC1-0170 · 单选 · 适用 A/B/C 类</em></span>
@@ -130,6 +138,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 - 情节严重的，处 **10 日以上 15 日以下拘留**。
 
 记忆关键词：**治安管理处罚法 → 拘留**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 165 题
 
@@ -164,6 +174,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 - 不得编造、传播虚假信息扰乱经济和社会秩序；
 - 不得侵害他人名誉、隐私、知识产权等合法权益。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 166 题
 
 <span data-tts-skip><em>MC1-0172 · 单选 · 适用 A/B 类</em></span>
@@ -189,6 +201,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 **题解**
 
 经济基础决定上层建筑，经济是基础
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 167 题
 
@@ -225,6 +239,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 
 注意题干是《国家安全法》，不是《网络安全法》。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 168 题
 
 <span data-tts-skip><em>MC1-0174 · 单选 · 适用 A/B/C 类</em></span>
@@ -255,6 +271,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 
 带有“可无条件使用”“不受任何限制”等极端表述通常违背这一前提。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 169 题
 
 <span data-tts-skip><em>MC1-0175 · 单选 · 适用 A/B/C 类</em></span>
@@ -280,6 +298,8 @@ title: A 类练习 · 系列 17（第 161-170 题）
 **题解**
 
 注意，只有管理许可范围内才有平等
+
+<span data-tts-skip><sub>—— 题解：18820588967（经精简整理）</sub></span>
 
 ## 第 170 题
 
@@ -312,4 +332,6 @@ title: A 类练习 · 系列 17（第 161-170 题）
 - 可以要求保护其免受同一业务或其他次要业务电台的有害干扰。
 
 记忆：**让主要业务；同级次要业务之间仍有保护。**
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

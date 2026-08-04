@@ -6,6 +6,8 @@ title: A 类练习 · 系列 44（第 431-440 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 431 题
 
 <span data-tts-skip><em>MC1-0610 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 44（第 431-440 题）
 **题解**
 
 Automatic Level Control
+
+<span data-tts-skip><sub>—— 题解：linui（经精简整理）</sub></span>
 
 ## 第 432 题
 
@@ -84,6 +88,8 @@ V_{out} = G \cdot V_{in} \quad \text{（当 } V_{out} > V_{threshold} \text{ 时
 $$
 此机制直接对应“防止过驱动”的功能描述。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 433 题
 
 <span data-tts-skip><em>MC1-0612 · 单选 · 适用 A/B/C 类</em></span>
@@ -114,6 +120,8 @@ $$
 
 应先调低话筒增益；若启用了语音压缩，再降低压缩深度。目标是在保持讲话清楚的同时，不让背景噪声持续占满发射信号。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 434 题
 
 <span data-tts-skip><em>MC1-0613 · 单选 · 适用 A/B/C 类</em></span>
@@ -139,6 +147,8 @@ $$
 **题解**
 
 话筒增益过高，噪音也大了，失真
+
+<span data-tts-skip><sub>—— 题解：匿名（经精简整理）</sub></span>
 
 ## 第 435 题
 
@@ -187,6 +197,8 @@ $$
 **最终答案**
 **ALC 增加 AFSK 信号的失真，抬升误码率**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 436 题
 
 <span data-tts-skip><em>MC1-0615 · 单选 · 适用 A/B/C 类</em></span>
@@ -213,6 +225,8 @@ $$
 
 玩电台，只讲究听的清楚，提升弱信号下压强信号，不需要动态范围
 
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
+
 ## 第 437 题
 
 <span data-tts-skip><em>MC1-0616 · 单选 · 适用 A/B/C 类</em></span>
@@ -238,6 +252,8 @@ $$
 **题解**
 
 PROC processing 处理 压缩
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 438 题
 
@@ -301,6 +317,8 @@ PROC processing 处理 压缩
 
 **总结**：话音压缩的核心是控制动态范围，但过度调整会引入非线性失真，导致互调成分增加，直接影响接收方的话音辨识度。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 439 题
 
 <span data-tts-skip><em>MC1-0618 · 单选 · 适用 A/B/C 类</em></span>
@@ -331,6 +349,8 @@ PROC processing 处理 压缩
 
 因此用 SSB 收发信机发送 AFSK 时，应关闭为语音设计的压缩处理，保持基带信号原貌。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 440 题
 
 <span data-tts-skip><em>MC1-0619 · 单选 · 适用 A/B/C 类</em></span>
@@ -356,4 +376,6 @@ PROC processing 处理 压缩
 **题解**
 
 测试，不能干扰他人，移到其他频率
+
+<span data-tts-skip><sub>—— 题解：clang（经精简整理）</sub></span>
 

@@ -6,6 +6,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 91 题
 
 <span data-tts-skip><em>MC4-0093 · 多选 · 适用 A 类</em></span>
@@ -35,6 +37,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 **天津、内蒙古、河北、山西**。
 
 3 区集中在华北及内蒙古。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 92 题
 
@@ -66,6 +70,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 
 4 区可按华东沿海的“沪、鲁、苏”记忆。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 93 题
 
 <span data-tts-skip><em>MC3-0095 · 多选 · 适用 A 类</em></span>
@@ -96,6 +102,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 
 5 区为东南方向的“浙、赣、闽”。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 94 题
 
 <span data-tts-skip><em>MC3-0096 · 多选 · 适用 A 类</em></span>
@@ -125,6 +133,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 **安徽、河南、湖北**。
 
 6 区为中部相邻的“皖、豫、鄂”。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 95 题
 
@@ -161,6 +171,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 9.陕甘宁青\
 0.西藏新疆
 
+<span data-tts-skip><sub>—— 题解：Twhe0917@163.com（经精简整理）</sub></span>
+
 ## 第 96 题
 
 <span data-tts-skip><em>MC4-0098 · 多选 · 适用 A 类</em></span>
@@ -190,6 +202,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 **四川、重庆、贵州、云南**。
 
 8 区对应西南的“川、渝、贵、云”。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 97 题
 
@@ -221,6 +235,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 
 9 区对应西北的“陕、甘、宁、青”。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 98 题
 
 <span data-tts-skip><em>MC2-0100 · 多选 · 适用 A 类</em></span>
@@ -250,6 +266,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 **新疆、西藏**。
 
 0 区为新疆和西藏，可单独记忆。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 99 题
 
@@ -310,6 +328,8 @@ title: A 类练习 · 系列 10（第 91-100 题）
 **结论**
 合法设置、使用业余电台的必要步骤是 **向无线电管理机构申请并取得执照**，其他选项均为非强制性或无关要求。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 100 题
 
 <span data-tts-skip><em>MC1-0106 · 单选 · 适用 A/B/C 类</em></span>
@@ -343,4 +363,6 @@ title: A 类练习 · 系列 10（第 91-100 题）
 - 自我训练。
 
 记忆关键词：**通信、研究、训练**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

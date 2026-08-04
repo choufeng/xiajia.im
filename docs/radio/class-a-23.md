@@ -6,6 +6,8 @@ title: A 类练习 · 系列 23（第 221-230 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 221 题
 
 <span data-tts-skip><em>MC1-0227 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 23（第 221-230 题）
 **题解**
 
 3-30G “Super High Frequency”（SHF）30-300G EHF
+
+<span data-tts-skip><sub>—— 题解：sfg193@foxmail.com（经精简整理）</sub></span>
 
 ## 第 222 题
 
@@ -61,6 +65,8 @@ title: A 类练习 · 系列 23（第 221-230 题）
 SHF 的频率范围是 **3～30 GHz**。10～10.5 GHz 落在其中，因此属于 SHF，也称超高频（厘米波）。
 
 VHF、UHF、SHF、EHF 的顺序可简记为 **V-U-S-E**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 223 题
 
@@ -105,6 +111,8 @@ VHF、UHF、SHF、EHF 的顺序可简记为 **V-U-S-E**。
 **SHF**  
 （注：选项中 SHF 对应“超高频”，其频率范围为 3–30 GHz，覆盖 10–10.5 GHz。）
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 224 题
 
 <span data-tts-skip><em>MC1-0230 · 单选 · 适用 A/B/C 类</em></span>
@@ -135,6 +143,8 @@ EHF 的频率范围是 **30～300 GHz**。241～250 GHz 落在其中，因此属
 
 VHF、UHF、SHF、EHF 的顺序可简记为 **V-U-S-E**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 225 题
 
 <span data-tts-skip><em>MC1-0231 · 单选 · 适用 A/B/C 类</em></span>
@@ -160,6 +170,8 @@ VHF、UHF、SHF、EHF 的顺序可简记为 **V-U-S-E**。
 **题解**
 
 Extremely High Frequency  极高频
+
+<span data-tts-skip><sub>—— 题解：JackXiong（经精简整理）</sub></span>
 
 ## 第 226 题
 
@@ -193,6 +205,8 @@ Extremely High Frequency  极高频
 
 中国位于 **ITU 第 3 区**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 227 题
 
 <span data-tts-skip><em>MC1-0233 · 单选 · 适用 A/B/C 类</em></span>
@@ -223,6 +237,8 @@ Extremely High Frequency  极高频
 
 三区概括为：欧洲、非洲等为第 1 区；美洲为第 2 区；亚洲大部和大洋洲为第 3 区，中国位于第 3 区。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 228 题
 
 <span data-tts-skip><em>MC1-0234 · 单选 · 适用 A/B/C 类</em></span>
@@ -248,6 +264,8 @@ ITU 的区域划分有一套详尽规则。若概要描述则大致为：
 **题解**
 
 欧洲是老大（一），亚洲万年老三
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 229 题
 
@@ -278,6 +296,8 @@ ITU 的区域划分有一套详尽规则。若概要描述则大致为：
 ITU 第 3 区的 40 米业余波段为 **7.000～7.200 MHz**。
 
 对照记忆：第 1、3 区均为 7.0～7.2 MHz；第 2 区为 7.0～7.3 MHz。第 2 区使用 7.2～7.3 MHz 时，不得对第 1、3 区计划使用的广播业务施加约束。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 230 题
 
@@ -312,4 +332,6 @@ ITU 第 3 区的 40 米业余波段为 **7.000～7.200 MHz**。
 - 主载波计算：
  - 左侧：参考频率+频率容限
  - 右侧：参考频率-发射带宽-频率容限
+
+<span data-tts-skip><sub>—— 题解：fixer（经精简整理）</sub></span>
 

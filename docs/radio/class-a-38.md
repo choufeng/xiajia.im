@@ -6,6 +6,8 @@ title: A 类练习 · 系列 38（第 371-380 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 371 题
 
 <span data-tts-skip><em>MC1-0432 · 单选 · 适用 A/B/C 类</em></span>
@@ -35,6 +37,8 @@ title: A 类练习 · 系列 38（第 371-380 题）
 调频 Frequency Modulation (FM) 
 
 调相 Phase Modulation (PM)
+
+<span data-tts-skip><sub>—— 题解：ll（经精简整理）</sub></span>
 
 ## 第 372 题
 
@@ -93,6 +97,8 @@ title: A 类练习 · 系列 38（第 371-380 题）
 - **《No-Nonsense Technician Class License Study Guide》**：T8A04、T8A07部分明确说明FM在VHF/UHF语音通信中的主流应用。  
 - **ITU 无线电规则（2024年版）**：未直接提及VHF/UHF本地通联的调制选择，但支持SSB用于HF远距离通信（附录11）。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 373 题
 
 <span data-tts-skip><em>MC1-0434 · 单选 · 适用 A/B/C 类</em></span>
@@ -150,6 +156,8 @@ title: A 类练习 · 系列 38（第 371-380 题）
 **总结**
 **SSB是唯一同时满足窄带宽和高功率效率的调制方式**，特别适合VHF/UHF频段的远距离弱信号话音通联。其他选项在带宽占用或功率分配上存在明显缺陷，无法满足题干需求。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 374 题
 
 <span data-tts-skip><em>MC1-0435 · 单选 · 适用 A/B/C 类</em></span>
@@ -185,6 +193,8 @@ title: A 类练习 · 系列 38（第 371-380 题）
 
 这是长期形成的通联约定，不是由传播规律强制决定的。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 375 题
 
 <span data-tts-skip><em>MC1-0436 · 单选 · 适用 A/B/C 类</em></span>
@@ -210,6 +220,8 @@ title: A 类练习 · 系列 38（第 371-380 题）
 **题解**
 
 带宽窄、功率利用率高、远距离通信效率高。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 376 题
 
@@ -241,6 +253,8 @@ FM 具有恒包络、抗幅度噪声能力较好等优点，但同频出现多�
 
 因此题目所说的主要缺点是：**无法同时守听多个信号**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 377 题
 
 <span data-tts-skip><em>MC1-0438 · 单选 · 适用 A/B/C 类</em></span>
@@ -269,6 +283,8 @@ S=上
 
 审核注：仅供题库速记，出现关键字SSB时选上边带。实际部分SSB通联实际使用下边带（见[MC1-0440](https://exam.bh5hsu.com/question/MC1-0440)、[MC1-0441](https://exam.bh5hsu.com/question/MC1-0441)）
 
+<span data-tts-skip><sub>—— 题解：BD3QIG（经精简整理）</sub></span>
+
 ## 第 378 题
 
 <span data-tts-skip><em>MC1-0439 · 单选 · 适用 A/B/C 类</em></span>
@@ -294,6 +310,8 @@ S=上
 **题解**
 
 以上就选上边带。以下就选下边带
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 379 题
 
@@ -321,6 +339,8 @@ S=上
 
 以上就选上边带。以下就选下边带
 
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
+
 ## 第 380 题
 
 <span data-tts-skip><em>MC1-0441 · 单选 · 适用 A/B/C 类</em></span>
@@ -346,4 +366,6 @@ S=上
 **题解**
 
 10.1MHz以下通常用下边带、以上通常用上边带，这是业余无线电界长期沿用的通联习惯，并非传播特性造成。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 

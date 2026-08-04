@@ -6,6 +6,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 401 题
 
 <span data-tts-skip><em>MC1-0574 · 单选 · 适用 A 类</em></span>
@@ -64,6 +66,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 **最终答案**：  
 **在没有信号的情况下关闭音频输出，避免播放刺耳的噪声**。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 402 题
 
 <span data-tts-skip><em>MC1-0575 · 单选 · 适用 A 类</em></span>
@@ -93,6 +97,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 静噪阈值过高会把微弱但可辨认的 FM 信号连同背景噪声一起切断。接收弱信号时，应关闭静噪或把阈值调到 $0$，让音频持续输出，再由耳朵或解码软件判断。
 
 接收业余卫星的弱 FM、SSTV 信号时，这一设置尤其常用。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 403 题
 
@@ -135,6 +141,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 **3. 答案选择原因**
 - **正确答案**：**第一个选项**（此类电路根据接收机鉴频输出的高音频噪声的大小来判断信号消失与否，并据此控制音频输出。这种检测需要一定的时间才能完成，这导致短暂泄漏刺耳的噪声）。
 - **依据**：静噪电路的噪声检测存在时间延迟，导致信号结束后仍有一段短暂的噪声输出。这是FM接收机静噪功能的典型特性，符合题目描述的“嘶”或“喀拉”声。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 404 题
 
@@ -179,6 +187,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 - **VOL** 是国际通用的音量控制标识，在收发信机中直接对应接收音频输出的调节功能。  
 - 其他选项涉及的功能（如语音压缩、前置放大、自动天线调谐）均有独立且明确的术语标识，与 **VOL** 无关。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 405 题
 
 <span data-tts-skip><em>MC1-0578 · 单选 · 适用 A 类</em></span>
@@ -211,6 +221,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 
 发信语音压缩：PROC（Speech Processing，语音处理，发信语音压缩通常是语音处理的一部分）或者 COMP (Compress，压缩)
 
+<span data-tts-skip><sub>—— 题解：王爱宠从（经精简整理）</sub></span>
+
 ## 第 406 题
 
 <span data-tts-skip><em>MC1-0579 · 单选 · 适用 A 类</em></span>
@@ -241,6 +253,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 
 因此当双手正忙于记录、操作设备或其他工作时，VOX 可提供免提通联。它不是蓝牙功能，也不负责加工语音内容。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 407 题
 
 <span data-tts-skip><em>MC1-0580 · 单选 · 适用 A 类</em></span>
@@ -267,6 +281,8 @@ title: A 类练习 · 系列 41（第 401-410 题）
 
 CTCSS是Continuous Tone-Coded Squelch System，即亚音调静噪；使用约67–250.3Hz的特定亚音调作为选通信号。
 
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
+
 ## 第 408 题
 
 <span data-tts-skip><em>MC1-0581 · 单选 · 适用 A 类</em></span>
@@ -292,6 +308,8 @@ CTCSS是Continuous Tone-Coded Squelch System，即亚音调静噪；使用约67�
 **题解**
 
 dual tune multi frequency
+
+<span data-tts-skip><sub>—— 题解：1983（经精简整理）</sub></span>
 
 ## 第 409 题
 
@@ -339,6 +357,8 @@ dual tune multi frequency
 **正确答案：CTCSS、DCS**  
 亚音和数字亚音静噪技术通过**CTSS**（模拟低频信号）和**DCS**（数字编码）实现接收机静噪选通，而**DTMF**和**SQL**不直接参与该技术。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 410 题
 
 <span data-tts-skip><em>MC1-0583 · 单选 · 适用 A 类</em></span>
@@ -364,4 +384,6 @@ dual tune multi frequency
 **题解**
 
 单选题有个答案内容特别长的一般就是对的
+
+<span data-tts-skip><sub>—— 题解：3364（经精简整理）</sub></span>
 

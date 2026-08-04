@@ -6,6 +6,8 @@ title: A 类练习 · 系列 69（第 681-683 题）
 
 > 共 3 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 681 题
 
 <span data-tts-skip><em>MC1-1373 · 单选 · 适用 A/B/C 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 69（第 681-683 题）
 **题解**
 
 铅酸电池在充电后期（尤其是过充时），正极板的水会被电解，产生氢气（H₂）和氧气（O₂）（化学反应：2H₂O → 2H₂↑ + O₂↑）。氢气是易燃气体，与空气混合后浓度达到4%-75%（爆炸极限）时，遇明火、电火花或高温（如电池接头打火）可能引发爆炸。
+
+<span data-tts-skip><sub>—— 题解：LSPD（经精简整理）</sub></span>
 
 ## 第 682 题
 
@@ -72,6 +76,8 @@ title: A 类练习 · 系列 69（第 681-683 题）
 
 综上所述，铅酸蓄电池过快充放电的主要危险是过热和可能的爆炸风险。
 
+<span data-tts-skip><sub>—— 题解：ShadowMov（经精简整理）</sub></span>
+
 ## 第 683 题
 
 <span data-tts-skip><em>MC1-1375 · 单选 · 适用 A/B/C 类</em></span>
@@ -97,4 +103,6 @@ title: A 类练习 · 系列 69（第 681-683 题）
 **题解**
 
 这里呼应前面一道题不能直接用水扑灭电器着火
+
+<span data-tts-skip><sub>—— 题解：BD7PRC（经精简整理）</sub></span>
 

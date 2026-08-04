@@ -6,6 +6,8 @@ title: A 类练习 · 系列 64（第 631-640 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 631 题
 
 <span data-tts-skip><em>MC1-0961 · 单选 · 适用 A/B/C 类</em></span>
@@ -33,6 +35,8 @@ title: A 类练习 · 系列 64（第 631-640 题）
 当阻值为 1 欧的电阻与 13.8 伏电源并联时，电阻两端的电压等于电源电压，即 13.8 伏。电阻耗散的功率计算公式为 $ P = \frac{V^2}{R} = \frac{190.44}{1}=190.44W$ 
 
 A选项中的伏安（VA）是视在功率单位，通常用于交流电路
+
+<span data-tts-skip><sub>—— 题解：mxdyzmx（经精简整理）</sub></span>
 
 ## 第 632 题
 
@@ -76,6 +80,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 
 此时 36dBm 对应 4W，5W 稍微大一点点，因此在选项中最接近且符合标准计算的就是 37dBm。
 
+<span data-tts-skip><sub>—— 题解：y6uio（经精简整理）</sub></span>
+
 ## 第 633 题
 
 <span data-tts-skip><em>MC1-0963 · 单选 · 适用 A/B/C 类</em></span>
@@ -102,6 +108,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 
 10lg(0.25*1000000)
 
+<span data-tts-skip><sub>—— 题解：浩克（经精简整理）</sub></span>
+
 ## 第 634 题
 
 <span data-tts-skip><em>MC1-0964 · 单选 · 适用 A/B/C 类</em></span>
@@ -127,6 +135,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 **题解**
 
 400W=10*10*2*2W=（10+10+3+3）dbW=26dbW=(26+30)dbm=(26+30+30)dbμW=86dbμW
+
+<span data-tts-skip><sub>—— 题解：zjs_lzc@163.com（经精简整理）</sub></span>
 
 ## 第 635 题
 
@@ -213,6 +223,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 
 这是一道多选题，四个选项的表述都是正确的，它们从不同角度阐述了电源的概念、分类和应用。每个选项都准确描述了相应电源类型的基本原理和特点，符合业余无线电技术中对电源的理解要求。
 
+<span data-tts-skip><sub>—— 题解：Claude（经精简整理）</sub></span>
+
 ## 第 636 题
 
 <span data-tts-skip><em>MC1-0966 · 单选 · 适用 A/B/C 类</em></span>
@@ -264,6 +276,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 **4. 结论**
 题目考查电动势方向的基本定义，需明确区分电动势、电流方向和电压方向的不同物理意义。  
 **最终答案**：从电源的负极到正极。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 637 题
 
@@ -320,6 +334,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 - **章节信息**：Electrical principles（电学基本概念部分）  
   文档中明确指出电流方向和电压的关系，强调电池电压方向（直流电源）为正极到负极，而电动势方向与之相反。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 638 题
 
 <span data-tts-skip><em>MC3-0968 · 多选 · 适用 A/B/C 类</em></span>
@@ -351,6 +367,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 - 蓄电池：适合停电或野外使用。
 
 都应满足电台规定的电压、电流和保护要求。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 639 题
 
@@ -410,6 +428,8 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 
 **5. 总结**
 本题考查对电池分类的理解。**锂离子电池、钠离子电池、铅酸电池**均属于可充电电池，而**碱性干电池**为不可充电电池。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 640 题
 
@@ -473,4 +493,6 @@ $33\text{ dBm} + 3\text{ dB} = 36\text{ dBm} \rightarrow 2\text{ W} \times 2 = 4
 **最终答案**
 正确做法是：
 **用适当的连线将待充电蓄电池与汽车的蓄电池并联，然后发动车辆**
+
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
 

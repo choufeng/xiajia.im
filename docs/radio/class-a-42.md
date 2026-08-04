@@ -6,6 +6,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 411 题
 
 <span data-tts-skip><em>MC1-0584 · 单选 · 适用 A 类</em></span>
@@ -31,6 +33,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 **题解**
 
 举两个例子，例子一25的一半是12.5. 例子二5的一半是 2.5
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 412 题
 
@@ -111,6 +115,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 错误选项为：  
 - **电台天线承载射频功率的能力不足，需更换高级天线之后再试**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 413 题
 
 <span data-tts-skip><em>MC1-0586 · 单选 · 适用 A 类</em></span>
@@ -138,6 +144,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 **快速切换常用频率**
 
 把常用频率及其工作方式、频差、亚音等参数保存为电台的一个存储频道。以后只需切换到该频道，无须逐项重新输入频率和参数。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 414 题
 
@@ -169,6 +177,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 
 车身任意金属件、安装挂架或天线座可能因涂层、减震垫或接触不良而不能提供可靠的低阻回路，不应凭外观判断接地是否合格。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 415 题
 
 <span data-tts-skip><em>MC1-0588 · 单选 · 适用 A 类</em></span>
@@ -194,6 +204,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 **题解**
 
 发电机里边有磁体，磁生电，题目说是随引擎转速，发电机是直接接到引擎上的，火花塞和引擎转动没关系
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 416 题
 
@@ -227,6 +239,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 2. 如果已在 NFM，讲话时离话筒稍远一些或降低话筒增益。
 
 调整后请对方再次报告音质和占用带宽。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 417 题
 
@@ -262,6 +276,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 
 在确认并排除设备问题前，不应继续以相同设置发射。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 418 题
 
 <span data-tts-skip><em>MC1-0591 · 单选 · 适用 A 类</em></span>
@@ -287,6 +303,8 @@ title: A 类练习 · 系列 42（第 411-420 题）
 **题解**
 
 信号变弱是你的问题，肯定是你方向动了，与电池无关
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 419 题
 
@@ -338,6 +356,8 @@ SSB（单边带）和CW（连续波）通联时，接收端需要将接收到的
   - **视频显示器**：需配合音频设备使用，无法独立实现抄收。  
   - **吊杆话筒**：仅用于发射，与接收无关。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 420 题
 
 <span data-tts-skip><em>MC1-0599 · 单选 · 适用 A/B/C 类</em></span>
@@ -364,4 +384,6 @@ SSB（单边带）和CW（连续波）通联时，接收端需要将接收到的
 
 助记：n就是no，不要，也就是抑制；s是silent，安静，就是静噪
 （实际上NB（Noise Blanker），SQL（Squelch））
+
+<span data-tts-skip><sub>—— 题解：3364（经精简整理）</sub></span>
 

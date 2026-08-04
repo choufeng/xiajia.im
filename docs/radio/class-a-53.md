@@ -6,6 +6,8 @@ title: A 类练习 · 系列 53（第 521-530 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 521 题
 
 <span data-tts-skip><em>MC1-0824 · 单选 · 适用 A/B/C 类</em></span>
@@ -58,6 +60,8 @@ title: A 类练习 · 系列 53（第 521-530 题）
   - 16kHz-20kHz为高频超音频范围，与CTSSS无关。  
   - 220Hz-2503Hz的上限（2503Hz）远高于CTSSS上限（250.3Hz），错误明显。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 522 题
 
 <span data-tts-skip><em>MC1-0825 · 单选 · 适用 A/B/C 类</em></span>
@@ -86,6 +90,8 @@ title: A 类练习 · 系列 53（第 521-530 题）
 
 形状系数就是陡峭程度
 
+<span data-tts-skip><sub>—— 题解：BD7PRC（经精简整理）</sub></span>
+
 ## 第 523 题
 
 <span data-tts-skip><em>MC1-0826 · 单选 · 适用 A/B/C 类</em></span>
@@ -111,6 +117,8 @@ title: A 类练习 · 系列 53（第 521-530 题）
 **题解**
 
 矩形系数越小，滤波器过渡带越陡峭，带外抑制能力越强。
+
+<span data-tts-skip><sub>—— 题解：BH4GSX（经精简整理）</sub></span>
 
 ## 第 524 题
 
@@ -161,6 +169,8 @@ title: A 类练习 · 系列 53（第 521-530 题）
 **总结**
 本题考查对前置放大器核心作用的理解。通过分析噪声系数级联公式可知，前置放大器通过高增益放大信号，将后续电路的噪声影响最小化，从而提升接收机的灵敏度和信号检测能力。其他选项虽为接收机的重要性能指标，但与前置放大器的功能无直接联系。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 525 题
 
 <span data-tts-skip><em>MC1-0828 · 单选 · 适用 A/B/C 类</em></span>
@@ -186,6 +196,8 @@ title: A 类练习 · 系列 53（第 521-530 题）
 **题解**
 
 信号强度是看显示屏上面的信号格数，对面单纯说话很小声呢
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 526 题
 
@@ -213,6 +225,8 @@ title: A 类练习 · 系列 53（第 521-530 题）
 
 N-W,NEW,新的频率分量,非线性失真。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 527 题
 
 <span data-tts-skip><em>MC1-0830 · 单选 · 适用 A/B/C 类</em></span>
@@ -238,6 +252,8 @@ N-W,NEW,新的频率分量,非线性失真。
 **题解**
 
 W-N,WIDE-NARROW,由宽变窄,声音小。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 528 题
 
@@ -265,6 +281,8 @@ W-N,WIDE-NARROW,由宽变窄,声音小。
 
 问“沙沙声”，选答案中有“沙沙声”的
 
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
+
 ## 第 529 题
 
 <span data-tts-skip><em>MC1-0832 · 单选 · 适用 A/B/C 类</em></span>
@@ -291,6 +309,8 @@ W-N,WIDE-NARROW,由宽变窄,声音小。
 
 fm是调频，解调一看就和混频没关系，那就是鉴频
 
+<span data-tts-skip><sub>—— 题解：clang（经精简整理）</sub></span>
+
 ## 第 530 题
 
 <span data-tts-skip><em>MC1-0833 · 单选 · 适用 A/B/C 类</em></span>
@@ -316,4 +336,6 @@ fm是调频，解调一看就和混频没关系，那就是鉴频
 **题解**
 
 鉴频，即是鉴定信号内容，就是解调
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 

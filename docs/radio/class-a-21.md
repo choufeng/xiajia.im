@@ -6,6 +6,8 @@ title: A 类练习 · 系列 21（第 201-210 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 201 题
 
 <span data-tts-skip><em>MC1-0207 · 单选 · 适用 A/B/C 类</em></span>
@@ -39,6 +41,8 @@ f_{发信}\ge F_1+\Delta f_{下}
 $$
 
 也就是把整个已调信号都留在频段内。LSB 频谱主要位于载频下方，因此在靠近下限时尤其要为下边带预留宽度。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 202 题
 
@@ -74,6 +78,8 @@ $$
 
 也就是把整个已调信号都留在频段内。USB 频谱主要位于载频上方，因此在靠近上限时尤其要为上边带预留宽度。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 203 题
 
 <span data-tts-skip><em>MC1-0209 · 单选 · 适用 A/B/C 类</em></span>
@@ -99,6 +105,8 @@ ITU 对于 5 至 30MHz 短波频段的态度是：
 **题解**
 
 我感觉他们的意思是最好不要使用，即使使用也要尽量小的范围用
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 204 题
 
@@ -130,6 +138,8 @@ ITU 对于 5 至 30MHz 短波频段的态度是：
 
 实践中可理解为在可靠完成通信的前提下合理降低功率，但并不是机械地要求任何时候都使用绝对最小功率。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 205 题
 
 <span data-tts-skip><em>MC1-0211 · 单选 · 适用 A/B/C 类</em></span>
@@ -158,6 +168,8 @@ ITU 对于 5 至 30MHz 短波频段的态度是：
 
 依法设置、使用的业余无线电台在核准频段内享有平等的频率使用权。俱乐部约定的网络频率不能变成成员专用频率；其他业余电台按通信惯例要求加入时，应无条件欢迎。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 206 题
 
 <span data-tts-skip><em>MC1-0212 · 单选 · 适用 A/B/C 类</em></span>
@@ -183,6 +195,8 @@ ITU《无线电规则》禁止所有电台发射下列种类的电波：
 **题解**
 
 阻尼是干扰吧，发射干扰肯定不允许
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 207 题
 
@@ -217,6 +231,8 @@ ITU《无线电规则》禁止所有电台发射下列种类的电波：
 
 这些行为都直接属于无线电管理事项。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 208 题
 
 <span data-tts-skip><em>MC2-0214 · 多选 · 适用 A/B/C 类</em></span>
@@ -250,6 +266,8 @@ ITU《无线电规则》禁止所有电台发射下列种类的电波：
 
 这不改变业余无线电不得用于商业营利、不得超出执照和业余业务范围的要求。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 209 题
 
 <span data-tts-skip><em>MC1-0215 · 单选 · 适用 A/B/C 类</em></span>
@@ -280,6 +298,8 @@ ITU《无线电规则》禁止所有电台发射下列种类的电波：
 
 频率段顺序可记为：LF（低频）→ MF（中频）→ HF（高频）。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 210 题
 
 <span data-tts-skip><em>MC1-0216 · 单选 · 适用 A/B/C 类</em></span>
@@ -305,4 +325,6 @@ ITU《无线电规则》禁止所有电台发射下列种类的电波：
 **题解**
 
 LF（低频，Low Frequency）：30 kHz - 300 kHz
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 

@@ -6,6 +6,8 @@ title: A 类练习 · 系列 47（第 461-470 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 461 题
 
 <span data-tts-skip><em>MC1-0664 · 单选 · 适用 A/B/C 类</em></span>
@@ -36,6 +38,8 @@ title: A 类练习 · 系列 47（第 461-470 题）
 
 这种方法常称为加感或电感加载；它不能凭空恢复全尺寸天线的辐射效率。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 462 题
 
 <span data-tts-skip><em>MC1-0665 · 单选 · 适用 A/B/C 类</em></span>
@@ -63,6 +67,8 @@ title: A 类练习 · 系列 47（第 461-470 题）
 **题解**
 
 缩短垂直振子采用加感时，线圈越靠近振子顶部，发射效率通常越高，因此效率顺序为顶部加感C＞中部加感B＞底部加感A。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 463 题
 
@@ -96,6 +102,8 @@ title: A 类练习 · 系列 47（第 461-470 题）
 
 - 甲、乙天线增益差为 $\Delta G=6.15dBi - 3.15dBi = 3dBi$ ，代入公式可得 $3 = 10\lg\frac{P_{甲}}{P_{乙}}$ ，即 $\lg\frac{P_{甲}}{P_{乙}}=0.3$ ，则 $\frac{P_{甲}}{P_{乙}} = 10^{0.3}\approx2$ 。所以甲天线的信号功率约为乙天线的两倍，答案选A。
 
+<span data-tts-skip><sub>—— 题解：xh_zlm（经精简整理）</sub></span>
+
 ## 第 464 题
 
 <span data-tts-skip><em>MC1-0667 · 单选 · 适用 A/B/C 类</em></span>
@@ -121,6 +129,8 @@ title: A 类练习 · 系列 47（第 461-470 题）
 **题解**
 
 甲天线增益单位换算为dBi，0dBd = 2.15dBi，乙天线增益为2dBi，乙天线比甲天线略差。
+
+<span data-tts-skip><sub>—— 题解：jun（经精简整理）</sub></span>
 
 ## 第 465 题
 
@@ -150,6 +160,8 @@ dBd= dBi - 2.15
 
 dBi =dBd + 2.15
 
+<span data-tts-skip><sub>—— 题解：arditg（经精简整理）</sub></span>
+
 ## 第 466 题
 
 <span data-tts-skip><em>MC1-0669 · 单选 · 适用 A/B/C 类</em></span>
@@ -177,6 +189,8 @@ dBi =dBd + 2.15
 dBd= dBi - 2.15
 
 dBi =dBd + 2.15
+
+<span data-tts-skip><sub>—— 题解：arditg（经精简整理）</sub></span>
 
 ## 第 467 题
 
@@ -211,6 +225,8 @@ SWR 表示负载阻抗与传输线特性阻抗的匹配程度：
 - 比值越大，通常表示整体匹配越差。
 
 业余电台常用 $50\,\Omega$ 馈线，但天线系统仍需实际调整到合适阻抗。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 468 题
 
@@ -318,6 +334,8 @@ SWR 表示负载阻抗与传输线特性阻抗的匹配程度：
 **正确选项是：**  
 **“从发射机的输出端口来看，天线系统的整体匹配情况不佳”**
 
+<span data-tts-skip><sub>—— 题解：GPT-5（经精简整理）</sub></span>
+
 ## 第 469 题
 
 <span data-tts-skip><em>MC2-0672 · 多选 · 适用 A/B/C 类</em></span>
@@ -343,6 +361,8 @@ SWR 表示负载阻抗与传输线特性阻抗的匹配程度：
 **题解**
 
 问“3:1”，选答案中含“3:1”的
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 470 题
 
@@ -397,4 +417,6 @@ SWR 表示负载阻抗与传输线特性阻抗的匹配程度：
   此文档直接支持正确答案，表明保护功率半导体器件是核心原因。
 
 **最终结论**：发射机降低输出功率的核心目的是通过限制功放级的最大承受功率，防止功率半导体器件因反射功率导致的过热或电压击穿。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 

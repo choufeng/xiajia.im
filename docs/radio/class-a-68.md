@@ -6,6 +6,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 671 题
 
 <span data-tts-skip><em>MC1-1363 · 单选 · 适用 A/B/C 类</em></span>
@@ -72,6 +74,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 ****总结****
 避雷器接地需兼顾电气安全和射频性能，统一接地点和低阻抗路径是关键。自制或非标准设计可能引发不可逆的设备损坏风险。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 672 题
 
 <span data-tts-skip><em>MC1-1364 · 单选 · 适用 A/B/C 类</em></span>
@@ -97,6 +101,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 **题解**
 
 特别关注**短而粗**这个选项
+
+<span data-tts-skip><sub>—— 题解：BD7PRC（经精简整理）</sub></span>
 
 ## 第 673 题
 
@@ -131,6 +137,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 | 水中或长期浸水 | 6V | 12V |
 
 本题属于潮湿且人体紧握带电零件的情况，因此限值为交流16V、直流33V。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 674 题
 
@@ -180,6 +188,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 
 **引用文档**
 《No-Nonsense Technician Class License Study Guide》（电气原理部分）指出射频电流的皮肤效应与热效应是主要安全风险（参考文档名原文）。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 675 题
 
@@ -235,6 +245,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 - No-Nonsense Technician Class License Study Guide（关于工频电流危险性的描述）  
 
 **结论**：工频交流电因易引发心室颤动，危险性最高；HF射频次之；UHF射频因集肤效应最安全。正确选项为第一个。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 676 题
 
@@ -292,6 +304,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 **4. 结论**
 电气安全的核心是**阻断电流回路**。正确做法是：双脚绝缘（与地隔离）、单手操作（避免电流流经心脏）、另一只手远离接地金属件（防止形成回路）。其他选项均存在直接或间接导致触电的风险。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 677 题
 
 <span data-tts-skip><em>MC3-1369 · 多选 · 适用 A/B/C 类</em></span>
@@ -325,6 +339,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 自来水管可能含塑料管段、接头或被改造，导电连续性无法保证，不能作为“一劳永逸”的保护接地。
 
 来源：HAM考前练兵小程序
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 678 题
 
@@ -368,6 +384,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 **正确答案**：  
 **充满高电压的电容器可能让维修者遭遇电击风险**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 679 题
 
 <span data-tts-skip><em>MC1-1371 · 单选 · 适用 A/B/C 类</em></span>
@@ -394,6 +412,8 @@ title: A 类练习 · 系列 68（第 671-680 题）
 
 电表、电感和电容对安全没有直接作用
 
+<span data-tts-skip><sub>—— 题解：3364（经精简整理）</sub></span>
+
 ## 第 680 题
 
 <span data-tts-skip><em>MC3-1372 · 多选 · 适用 A/B/C 类</em></span>
@@ -419,4 +439,6 @@ title: A 类练习 · 系列 68（第 671-680 题）
 **题解**
 
 用电安全：电器着火不能用直接用水扑灭
+
+<span data-tts-skip><sub>—— 题解：BD7PRC（经精简整理）</sub></span>
 

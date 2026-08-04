@@ -6,6 +6,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 121 题
 
 <span data-tts-skip><em>MC1-0127 · 单选 · 适用 A/B/C 类</em></span>
@@ -34,6 +36,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 
 故意用强信号压制其他电台，或在业余频率转播音乐、广播节目，都会阻碍正常通信，属于违法行为。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 122 题
 
 <span data-tts-skip><em>MC1-0128 · 单选 · 适用 A/B/C 类</em></span>
@@ -61,6 +65,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 **责任原则**
 
 业余无线电活动会影响社会无线电通信的安全和有效，电台设置、使用人应当**加强自律**，不能认为自己对其他业务没有责任。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 123 题
 
@@ -96,6 +102,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 
 记忆关键词：**通信、研究、训练**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 124 题
 
 <span data-tts-skip><em>MC1-0130 · 单选 · 适用 A/B/C 类</em></span>
@@ -126,6 +134,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 
 记忆关键词：**有兴趣、经批准、合法使用**。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 125 题
 
 <span data-tts-skip><em>MC4-0131 · 多选 · 适用 A/B/C 类</em></span>
@@ -151,6 +161,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 **题解**
 
 禁止禁止，全都禁止！谁也别想监测。
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 126 题
 
@@ -183,6 +195,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 - 不得对依法开展的无线电业务造成有害干扰；
 - 不得利用无线电台从事违法犯罪活动。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 127 题
 
 <span data-tts-skip><em>MC3-0133 · 多选 · 适用 A/B/C 类</em></span>
@@ -212,6 +226,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 民用航空、铁路机车和渔船海事通信均不属于业余业务频段。利用业余无线电台收听这些通信，超越了只在业余业务频率范围内收发信号的规定。
 
 无意接收到相关信息时也不得传播或公布。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 
 ## 第 128 题
 
@@ -245,6 +261,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 
 “自制、改装、拼装”不能用于规避量产设备的型号核准要求。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 129 题
 
 <span data-tts-skip><em>MC4-0135 · 多选 · 适用 A/B/C 类</em></span>
@@ -276,6 +294,8 @@ title: A 类练习 · 系列 13（第 121-130 题）
 - 故意干扰、阻碍其他无线电台通信；
 - 故意收发执照载明事项之外的无线电信号。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 130 题
 
 <span data-tts-skip><em>MC4-0136 · 多选 · 适用 A/B/C 类</em></span>
@@ -306,4 +326,6 @@ title: A 类练习 · 系列 13（第 121-130 题）
 - 擅自编制、使用业余无线电台呼号；
 - 涂改、倒卖、出租或出借业余无线电台执照；
 - 向境外组织或个人提供涉及国家安全的境内电波参数资料。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

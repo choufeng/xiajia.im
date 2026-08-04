@@ -6,6 +6,8 @@ title: A 类练习 · 系列 57（第 561-570 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 561 题
 
 <span data-tts-skip><em>MC1-0870 · 单选 · 适用 A/B/C 类</em></span>
@@ -38,6 +40,8 @@ title: A 类练习 · 系列 57（第 561-570 题）
 
 依(1)山(-113)伴(0.5)水，爷(1)儿(2)们都不(dBm)去(-107)。
 
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
+
 ## 第 562 题
 
 <span data-tts-skip><em>MC1-0871 · 单选 · 适用 A/B/C 类</em></span>
@@ -64,6 +68,8 @@ title: A 类练习 · 系列 57（第 561-570 题）
 
 ①电压*2是灵敏度，则灵敏度是 2uV
 ②分贝微伏是 20*log(微伏/1uV），20*log2=6.02dBuV
+
+<span data-tts-skip><sub>—— 题解：lin（经精简整理）</sub></span>
 
 ## 第 563 题
 
@@ -125,6 +131,8 @@ title: A 类练习 · 系列 57（第 561-570 题）
 * **0.5μV** 是一个常见的误解，它是在接收机输入端实际测得的电压，而不是标准的灵敏度定义。灵敏度指的是信号源的标称电压。
 * **1μV** 是信号源的电动势，是灵敏度的正确表达。
 
+<span data-tts-skip><sub>—— 题解：匿名（经精简整理）</sub></span>
+
 ## 第 564 题
 
 <span data-tts-skip><em>MC1-0873 · 单选 · 适用 A/B/C 类</em></span>
@@ -154,6 +162,8 @@ title: A 类练习 · 系列 57（第 561-570 题）
 ②1瓦是30分贝毫瓦，瓦除以十，分贝毫瓦减十，则 10的-14次方瓦，对应-110分贝毫瓦。
 
 ③瓦翻倍，分贝毫瓦加3。瓦减半，分贝毫瓦减3，则0.5*10^-14对应 -113dBm
+
+<span data-tts-skip><sub>—— 题解：lin（经精简整理）</sub></span>
 
 ## 第 565 题
 
@@ -190,6 +200,8 @@ $$ V_{\text{dB}\mu\text{V}} = 20 \log_{10} (1) = 0 \, \text{dB}\mu\text{V} $$
 
 因此，该接收机的灵敏度用电压电平dBμV表示为0dBμV。
 
+<span data-tts-skip><sub>—— 题解：BG5FNE（经精简整理）</sub></span>
+
 ## 第 566 题
 
 <span data-tts-skip><em>MC1-0875 · 单选 · 适用 A/B/C 类</em></span>
@@ -215,6 +227,8 @@ $$ V_{\text{dB}\mu\text{V}} = 20 \log_{10} (1) = 0 \, \text{dB}\mu\text{V} $$
 **题解**
 
 记忆点：50×2 --> 100， 5+2 --> 7，最终选 -107
+
+<span data-tts-skip><sub>—— 题解：test（经精简整理）</sub></span>
 
 ## 第 567 题
 
@@ -281,6 +295,8 @@ $$L_P \approx 10 \times (0.699 - 12) = 10 \times (-11.301) \approx -113 \text{ d
 题解的关键在于理解**天线内阻和接收机输入阻抗的分压作用**。这种开路电压（EMF）和闭路电压（PD）的区别在无线电理论和设备指标测试中非常重要。很多时候，当我们看一台手台的说明书时，如果灵敏度指标标的是微伏（μV），也要注意它究竟是指 EMF 还是 PD，因为两者算出来的功率指标差了整整 6dB。
 
 **答案来自Gemini**
+
+<span data-tts-skip><sub>—— 题解：bbbkkk123（经精简整理）</sub></span>
 
 ## 第 568 题
 
@@ -349,6 +365,8 @@ $$L_P \approx 10 \times (0.699 - 12) = 10 \times (-11.301) \approx -113 \text{ d
 **总结**：  
 现代接收机的灵敏度受**机内噪声**制约，尤其是前端放大器的噪声系数。其他因素（如增益、稳定性、电源噪声）或可通过设计优化，或非核心限制条件。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 569 题
 
 <span data-tts-skip><em>MC1-0878 · 单选 · 适用 A/B/C 类</em></span>
@@ -375,6 +393,8 @@ $$L_P \approx 10 \times (0.699 - 12) = 10 \times (-11.301) \approx -113 \text{ d
 
 信噪，就是信号功率比噪声功率，没有其它杂七杂八的计算
 
+<span data-tts-skip><sub>—— 题解：3364（经精简整理）</sub></span>
+
 ## 第 570 题
 
 <span data-tts-skip><em>MC1-0879 · 单选 · 适用 A/B/C 类</em></span>
@@ -400,4 +420,6 @@ $$L_P \approx 10 \times (0.699 - 12) = 10 \times (-11.301) \approx -113 \text{ d
 **题解**
 
 NF 和 Fn 的定义都是 i i 比 o o
+
+<span data-tts-skip><sub>—— 题解：Happy_King（经精简整理）</sub></span>
 

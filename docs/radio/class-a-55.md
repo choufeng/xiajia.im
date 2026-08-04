@@ -6,6 +6,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 541 题
 
 <span data-tts-skip><em>MC1-0844 · 单选 · 适用 A/B/C 类</em></span>
@@ -66,6 +68,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 
 其他选项均不符合镜像频率的计算逻辑，因此排除。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 542 题
 
 <span data-tts-skip><em>MC1-0845 · 单选 · 适用 A/B/C 类</em></span>
@@ -91,6 +95,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 **题解**
 
 镜频与工作频率相隔两个中频：435.00MHz±2×58.525MHz，因此可能来自317.95MHz或552.05MHz。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 543 题
 
@@ -118,6 +124,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 
 效率一般指的都是有用的功率比上总功率
 
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
+
 ## 第 544 题
 
 <span data-tts-skip><em>MC1-0847 · 单选 · 适用 A/B/C 类</em></span>
@@ -143,6 +151,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 **题解**
 
 基本上说元件对电能的损耗，都是因为元件的内阻，元件工作时转化成了内能，就是换为了热量，才导致效率比1小
+
+<span data-tts-skip><sub>—— 题解：13376071586（经精简整理）</sub></span>
 
 ## 第 545 题
 
@@ -170,6 +180,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 
 题目有10,选0最多的选项。否则就选去
 掉0和小数点后,最大数字选项。
+
+<span data-tts-skip><sub>—— 题解：bh5uwl（经精简整理）</sub></span>
 
 ## 第 546 题
 
@@ -224,6 +236,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 
 **引用来源**：  
 本题计算基于基础电学公式（如功率、效率关系），未直接引用知识库中的文档内容。
+
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
 
 ## 第 547 题
 
@@ -290,6 +304,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 
 **最终答案**：**0.0000035×N（千瓦小时）**
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 548 题
 
 <span data-tts-skip><em>MC1-0851 · 单选 · 适用 A/B/C 类</em></span>
@@ -320,6 +336,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 
 它描述未承载调制信息的载波本身，不等同于有调制时的峰值包络功率或平均输出功率。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 549 题
 
 <span data-tts-skip><em>MC1-0852 · 单选 · 适用 A/B/C 类</em></span>
@@ -345,6 +363,8 @@ title: A 类练习 · 系列 55（第 541-550 题）
 **题解**
 
 无语音输入时，FM仍保持恒定载波功率，AM保留载波，SSB几乎没有射频输出，因此功率由大到小为FM、AM、SSB。
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
 ## 第 550 题
 
@@ -375,4 +395,6 @@ title: A 类练习 · 系列 55（第 541-550 题）
 中频滤波器决定接收通带宽度和边沿陡峭程度，负责让工作频率附近的目标信号通过，同时抑制邻近频道信号。
 
 因此，描述接收机抗拒邻近频率干扰能力的指标是**中频选择性**。
+
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
 

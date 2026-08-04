@@ -6,6 +6,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 
 > 共 10 题 · 数据来源：[exam.bh5hsu.com](https://exam.bh5hsu.com/practice?examType=A) · 题解为社区/AI 提交（已审核） · 全文朗读见页面顶部播放器（按题分章）
 
+<span data-tts-skip><sub>题解采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>（本站经精简整理并署原作者名）</sub></span>
+
 ## 第 151 题
 
 <span data-tts-skip><em>MC2-0157 · 多选 · 适用 A/B/C 类</em></span>
@@ -32,6 +34,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 
 电台本身不是非法的，因为已取得执照
 
+<span data-tts-skip><sub>—— 题解：BA4TJO（经精简整理）</sub></span>
+
 ## 第 152 题
 
 <span data-tts-skip><em>MC2-0158 · 多选 · 适用 A/B/C 类</em></span>
@@ -57,6 +61,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 **题解**
 
 违反规定 从不书面检讨也从不警告
+
+<span data-tts-skip><sub>—— 题解：广州B类（经精简整理）</sub></span>
 
 ## 第 153 题
 
@@ -120,6 +126,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 ****总结****
 本题考查对擅自编制、使用业余无线电台呼号处罚措施的掌握，需精准区分不同违法行为对应的法律条款。答题时应直接引用《无线电管理条例》第七十二条，排除混淆选项。
 
+<span data-tts-skip><sub>—— 题解：通义千问（经精简整理）</sub></span>
+
 ## 第 154 题
 
 <span data-tts-skip><em>MC1-0160 · 单选 · 适用 A/B/C 类</em></span>
@@ -152,6 +160,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 - 并处 **5 万元以上 20 万元以下**罚款；
 - 吊销无线电台执照。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 155 题
 
 <span data-tts-skip><em>MC1-0161 · 单选 · 适用 A/B/C 类</em></span>
@@ -179,6 +189,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 问处罚的都不会有警告和书面检查。
 
 审核注：例外 MC1-0168
+
+<span data-tts-skip><sub>—— 题解：MisakaMikoto（经精简整理）</sub></span>
 
 ## 第 156 题
 
@@ -209,6 +221,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 - 责令改正；拒不改正的，没收违法设备，并处 **3 万元以上 10 万元以下**罚款；
 - 造成严重后果的，并处 **10 万元以上 30 万元以下**罚款。
 
+<span data-tts-skip><sub>—— 题解：济南黄河（经精简整理）</sub></span>
+
 ## 第 157 题
 
 <span data-tts-skip><em>MC2-0163 · 多选 · 适用 A/B/C 类</em></span>
@@ -235,6 +249,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 
 不警告、不劝告，不书面检查，直接就是罚款
 
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
+
 ## 第 158 题
 
 <span data-tts-skip><em>MC2-0164 · 多选 · 适用 A/B/C 类</em></span>
@@ -260,6 +276,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 **题解**
 
 题目中的行为没有设置电台，所以处罚中包含非法电台的选项都是错的
+
+<span data-tts-skip><sub>—— 题解：给你生猴子（经精简整理）</sub></span>
 
 ## 第 159 题
 
@@ -289,6 +307,8 @@ title: A 类练习 · 系列 16（第 151-160 题）
 
 审核注：例外 MC1-0168
 
+<span data-tts-skip><sub>—— 题解：MisakaMikoto（经精简整理）</sub></span>
+
 ## 第 160 题
 
 <span data-tts-skip><em>MC2-0166 · 多选 · 适用 A/B/C 类</em></span>
@@ -314,4 +334,6 @@ title: A 类练习 · 系列 16（第 151-160 题）
 **题解**
 
 只是销售，并没有设台也没有使用
+
+<span data-tts-skip><sub>—— 题解：lingdu1（经精简整理）</sub></span>
 
