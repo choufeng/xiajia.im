@@ -168,11 +168,11 @@ sidebar: {
 
 ### 步骤 5：生成朗读 MP3
 
-文章写完后，用 `scripts/tts-article.py` 生成朗读音频（Edge 神经音，免费无 key）。**站点每篇文章都配朗读，此步不可省。**
+文章写完后，用 `scripts/tts-article.mjs` 生成朗读音频（火山豆包语音合成大模型 2.0，女声池随机 13 选 1）。**站点每篇文章都配朗读，此步不可省。**
 
 ```bash
 cd /Users/jia.xia/development/xiajia.im
-~/.local/pipx/venvs/edge-tts/bin/python scripts/tts-article.py docs/{板块}/{文件名}.md --chapters
+node scripts/tts-article.mjs docs/{板块}/{文件名}.md
 ```
 
 生成后上传 COS（幂等，仅传新增文件）：
@@ -184,7 +184,8 @@ node .pi/skills/english-daily/scripts/cos-audio.mjs docs/public/tts tts
 
 > **无需手动 source**：`cos-audio.mjs` 启动时自动加载 `~/.pi/agent/.env` 里的 `COS_*` 凭证（不覆盖已有环境变量）。fish / bash / zsh 任一 shell 直接跑即可，密钥不进 shell 全局。若 HEAD 全 FAIL，查该 .env 是否存在且含 5 个 `COS_` 键。
 
-- `--chapters`：按 h2/h3 分段生成 + 章节时间戳，与站点其他文章一致（强烈推荐，缺失会导致段内跳转失效）
+- 默认按 h2/h3 分段生成 + 章节时间戳 chapters.json（前端段内跳转用，无需 flag）
+- `--voice <id>`：指定音色；不传则从 13 个中文女声池随机选一（同篇固定不跳变）；`--force` 覆盖重建
 - 输出：`docs/public/tts/{板块}/{文件名}.mp3` + `docs/public/tts/{板块}/{文件名}.chapters.json`（本地中间产物，不入库，需上传 COS `xiajia.im/tts/...`）
 - 前端 `ReadAloud.vue` 按页面路径拼 COS 公网 URL `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/tts/{rel}.mp3`，无需改代码
 - 已存在不覆盖；需重建加 `--force`
@@ -192,14 +193,15 @@ node .pi/skills/english-daily/scripts/cos-audio.mjs docs/public/tts tts
 
 #### 依赖
 
-- `edge-tts`（pipx 已装）：解释器位于 `~/.local/pipx/venvs/edge-tts/bin/python`
-- `ffprobe`（随 ffmpeg，系统已装）：`--chapters` 读段落时长用
+- `node`（系统已装）：跑 `scripts/tts-article.mjs`（复用 `.pi/skills/english-daily/scripts/tts-volc.mjs` 的合成核心）
+- `ffmpeg` / `ffprobe`（系统已装）：分段时长 + 拼接
+- 火山豆包凭证：`~/.pi/agent/.env` 含 `VOLC_TTS_APP_ID` / `VOLC_TTS_ACCESS_TOKEN`
 
 #### 故障排查
 
-- `ModuleNotFoundError: edge_tts` → 没用 pipx 的 python，改用上面那条命令的完整路径
-- 某段超长 → 脚本已并发各段，单篇 ~5–15 分钟正常
-- 网络抖动重试 → 重跑同一命令，加 `--force`
+- `缺 VOLC_TTS_APP_ID` → 查 `~/.pi/agent/.env` 是否含两个 `VOLC_TTS_` 键
+- 429 限流 → 脚本已批并发 4 + 自动退避；仍失败重跑加 `--force`
+- 想固定某音色 → `--voice zh_female_vv_uranus_bigtts`；不传则随机
 
 ### 步骤 6：Git Commit & Push
 

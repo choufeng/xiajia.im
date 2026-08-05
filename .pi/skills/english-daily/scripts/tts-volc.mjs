@@ -25,7 +25,7 @@ const RESOURCE_ID = 'seed-tts-2.0'; // 豆包语音合成大模型 2.0
 const VOICE_A = 'en_male_tim_uranus_bigtts'; // Tim 男
 // 女声池：每次生成整篇随机选一个（同篇不跳变，避免对话内声音切换）
 // ponytail: 整篇单一随机；想句级切换或加权再改这里
-const VOICE_B_POOL = [
+export const VOICE_B_POOL = [
   'zh_female_vv_uranus_bigtts',          // Vivi
   'zh_female_xiaohe_uranus_bigtts',
   'zh_female_tiexinnvsheng_uranus_bigtts',
@@ -142,7 +142,7 @@ async function* parseJsonStream(response) {
 }
 
 /** 单段文本 → MP3 Buffer（调 v3 流式端点，收集所有 data 片段解码拼接） */
-async function synthStream(text, speaker) {
+export async function synthStream(text, speaker) {
   const appId = requireEnv('VOLC_TTS_APP_ID');
   const accessKey = requireEnv('VOLC_TTS_ACCESS_TOKEN');
   const reqid = randomUUID();
@@ -188,7 +188,7 @@ async function synthStream(text, speaker) {
 }
 
 /** 失败重试：429 限流长退避（3s/6s/12s）；网络瞬时错误短退避（500/1s/2s）；鉴权/参数 4xx 不重试 */
-async function fetchWithRetry(text, speaker, retries = 3) {
+export async function fetchWithRetry(text, speaker, retries = 3) {
   let lastErr;
   for (let i = 0; i < retries; i++) {
     try {
@@ -223,7 +223,7 @@ async function fetchWithRetry(text, speaker, retries = 3) {
 }
 
 /** ffmpeg concat demuxer 拼接多段 MP3 → 单文件 */
-function concatMp3(parts, outPath) {
+export function concatMp3(parts, outPath) {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tts-parts-'));
   try {
     const files = parts.map((buf, i) => {
