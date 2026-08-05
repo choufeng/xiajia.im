@@ -7,11 +7,13 @@ const { frontmatter, page } = useData()
 // ===== 模式：detecting | audio | web-speech =====
 const mode = ref('detecting')
 
-// ===== 推断 mp3 路径：reading/company-of-one.md → /tts/reading/company-of-one.mp3 =====
+// ===== 推断 mp3 路径：reading/company-of-one.md → xiajia.im/tts/reading/company-of-one.mp3 =====
+// 音频存腾讯云 COS（不进仓库），这里拼完整公网 URL
+const COS_BASE = 'https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im'
 const audioPath = computed(() => {
   const rel = page.value.relativePath // 如 "reading/company-of-one.md" 或 "index.md"
   if (!rel || rel === 'index.md') return null
-  return `/tts/${rel.replace(/\.md$/, '.mp3')}`
+  return `${COS_BASE}/tts/${rel.replace(/\.md$/, '.mp3')}`
 })
 
 // 英语学习板块自带分句音频 + 页内整段条，隐藏全局朗读条

@@ -176,8 +176,8 @@ c /Users/jia.xia/development/xiajia.im
 ```
 
 - `--chapters`：按 h2/h3 分段生成 + 章节时间戳，与站点其他文章一致（强烈推荐，缺失会导致段内跳转失效）
-- 输出：`docs/public/tts/{板块}/{文件名}.mp3` + `docs/public/tts/{板块}/{文件名}.chapters.json`
-- 前端 `ReadAloud.vue` 按页面路径自动探测 `/tts/{rel}.mp3`，无需改代码
+- 输出：`docs/public/tts/{板块}/{文件名}.mp3` + `docs/public/tts/{板块}/{文件名}.chapters.json`（本地中间产物，不入库，需上传 COS `xiajia.im/tts/...`）
+- 前端 `ReadAloud.vue` 按页面路径拼 COS 公网 URL `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/tts/{rel}.mp3`，无需改代码
 - 已存在不覆盖；需重建加 `--force`
 - 仅内文含表格/代码块时音频会跳过这些段（脚本已处理）
 
