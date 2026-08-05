@@ -134,6 +134,7 @@ export default defineConfig({
             { text: '《思考的辨析》', link: '/reading/critical-thinking' },
             { text: '《深度工作》', link: '/reading/deep-work' },
             { text: '《第一性原理》', link: '/reading/first-principles' },
+            { text: '《乌合之众》', link: '/reading/the-crowd' },
           ],
         },
         {
