@@ -1,0 +1,150 @@
+0000000000000000000000000000000000000000 3be9e34e2168d35ddd85ea81c6d1361c9ba0c11b Jia Xia <xiajia@vip.qq.com> 1777620714 +0800	clone: from github.com:choufeng/xiajia.im.git
+3be9e34e2168d35ddd85ea81c6d1361c9ba0c11b 12ee4f427b18afb949a64af4e879fdfedbdf570f Jia Xia <xiajia@vip.qq.com> 1777624176 +0800	commit: refactor: migrate from Docsify to VitePress, reorganize content structure
+12ee4f427b18afb949a64af4e879fdfedbdf570f 11c2ed8bfc38e364e2e6db0d6bccbde45f9081de Jia Xia <xiajia@vip.qq.com> 1777624558 +0800	commit: fix: resolve vite security vulnerability via npm overrides
+11c2ed8bfc38e364e2e6db0d6bccbde45f9081de c2f6e852b8edcac2f91e512f2450ccaea0cde26b Jia Xia <xiajia@vip.qq.com> 1777625100 +0800	commit: feat: add Skill Graph documentation to AI section
+c2f6e852b8edcac2f91e512f2450ccaea0cde26b 0140d4669b2f76d84a8b8f6b9bac927d9e5884c7 Jia Xia <xiajia@vip.qq.com> 1777625145 +0800	commit: docs: rewrite README.md to match new site structure
+0140d4669b2f76d84a8b8f6b9bac927d9e5884c7 e9c9884f0a6e4836a6c15870dc6c0ed9b038ecc4 Jia Xia <xiajia@vip.qq.com> 1777625308 +0800	commit: docs: simplify README.md to brief site introduction
+e9c9884f0a6e4836a6c15870dc6c0ed9b038ecc4 cc9648d47f3a3c5d458deb089e247b04b0825e3a Jia Xia <xiajia@vip.qq.com> 1777626293 +0800	commit: docs: add PI tutorials series for personal developers
+cc9648d47f3a3c5d458deb089e247b04b0825e3a bfb1d1e786419feaca18b4ebce9c59251f3befb0 Jia Xia <xiajia@vip.qq.com> 1777626598 +0800	commit: docs: integrate PI tutorials into VitePress site navigation
+bfb1d1e786419feaca18b4ebce9c59251f3befb0 47b3e845542ac25f5ba501d062354afbc1f6699f Jia Xia <xiajia@vip.qq.com> 1777627321 +0800	commit: feat: 新增 right-block skill — XiaJia.IM 文章快速生成技能
+47b3e845542ac25f5ba501d062354afbc1f6699f 9560d6dd90168a9410fa5cad89cb6992e4c95dbd Jia Xia <xiajia@vip.qq.com> 1777627447 +0800	commit: fix: rename skill right-block → write-blog
+9560d6dd90168a9410fa5cad89cb6992e4c95dbd 030442e0da9c421d1e6102fa4ffae19b0c43b897 Jia Xia <xiajia@vip.qq.com> 1777627558 +0800	commit: chore: 将 write-blog skill 移至全局技能目录 ~/.pi/agent/skills/
+030442e0da9c421d1e6102fa4ffae19b0c43b897 36464f08f67f926addd6ea709c729ae43f66cfe5 Jia Xia <xiajia@vip.qq.com> 1777627861 +0800	commit: fix: 修复 PI 教程板块 404
+36464f08f67f926addd6ea709c729ae43f66cfe5 37a715474eb6d2a00841ab79889428155eb9bbf6 Jia Xia <xiajia@vip.qq.com> 1777628232 +0800	commit: docs: 新增文章 — OpenTUI 使用指南
+37a715474eb6d2a00841ab79889428155eb9bbf6 6e9621534d58e0f3f8a33249c448a54e147118c0 Jia Xia <xiajia@vip.qq.com> 1777631423 +0800	commit: docs: 新增文章 — SolidJS 使用指南
+6e9621534d58e0f3f8a33249c448a54e147118c0 43fbf85403d8e327f27994c6416cd18c3f5dabc6 Jia Xia <xiajia@vip.qq.com> 1777810419 +0800	commit: docs: 新增文章 — AI 时代的精准沟通方法论与实战技巧
+43fbf85403d8e327f27994c6416cd18c3f5dabc6 8ef78cf47e3dc9e312917fb4bb9b6783f97068b6 Jia Xia <xiajia@vip.qq.com> 1777811988 +0800	commit: docs: 修改文章标题 — AI时代的精准沟通——约束,约束,还是TMD约束
+8ef78cf47e3dc9e312917fb4bb9b6783f97068b6 92686e154c9ca1f2e49e9851b6614e09cfcb6777 Jia Xia <xiajia@vip.qq.com> 1777812212 +0800	commit: docs: 侧边栏标题简化 — 仅保留前半段
+92686e154c9ca1f2e49e9851b6614e09cfcb6777 ce682dccc6fd4e6cdcda45229b5ec0b19236f9bf Jia Xia <xiajia@vip.qq.com> 1778055725 +0800	merge docs/gwt-requirements: Fast-forward
+ce682dccc6fd4e6cdcda45229b5ec0b19236f9bf 41725140095e6cc3b81c48171f143967c2688d07 Jia Xia <xiajia@vip.qq.com> 1779066059 +0800	pull: Fast-forward
+41725140095e6cc3b81c48171f143967c2688d07 ba8082c2c7e1e96f6e83b092197ca7cadc4673c1 Jia Xia <xiajia@vip.qq.com> 1781416615 +0800	commit: docs: 新增文章 — Loop Engineering：设计替你 Prompt Agent 的系统
+ba8082c2c7e1e96f6e83b092197ca7cadc4673c1 f743217892d26077d5b545c11a52c010f6fc750a Jia Xia <xiajia@vip.qq.com> 1781417332 +0800	commit: docs: 新增文章 — Loop Engineering 的 pi 落地：Daily Triage Loop 实战
+f743217892d26077d5b545c11a52c010f6fc750a 9ea14c783e00f9f984d052fb97f923c714e72909 Jia Xia <xiajia@vip.qq.com> 1781418408 +0800	commit: docs: 新增文章 — L3 Loop 设计方案（无人值守自治的工程化，CI Sweeper 完整实现）
+9ea14c783e00f9f984d052fb97f923c714e72909 3931fdb8ad126d29627240e2c6064b0b7a64ea01 Jia Xia <xiajia@vip.qq.com> 1781480745 +0800	commit: docs: 新增文章 — Loop Engineering 的 Memory 系统：四层架构与四类策略
+3931fdb8ad126d29627240e2c6064b0b7a64ea01 33f7ef06fd4357437a845c58dfbf7899f0481d75 Jia Xia <xiajia@vip.qq.com> 1781480745 +0800	commit: docs: 新增文章 — Multi-Loop 协调：从单 loop 到 loop 网（含导航更新）
+33f7ef06fd4357437a845c58dfbf7899f0481d75 0e260089a6a5255f115ba7902c72948bdf5718bd Jia Xia <xiajia@vip.qq.com> 1781484189 +0800	commit: docs: 新增文章 — Loop Engineering 的网关层：统一入口与三层解耦
+0e260089a6a5255f115ba7902c72948bdf5718bd 22fdc0d2683873d86b341b18232c0abdfd1a2fb6 Jia Xia <xiajia@vip.qq.com> 1781491752 +0800	commit: docs: 新增文章 — Loop 反衰减：对抗熵增的工程（含导航更新）
+22fdc0d2683873d86b341b18232c0abdfd1a2fb6 779522f278258136f54883fbcd13c55c945ec35d Jia Xia <xiajia@vip.qq.com> 1781491810 +0800	commit: docs: 新增文章 — Meta-Loop 自我演进：让 loop 自己改进 loop
+779522f278258136f54883fbcd13c55c945ec35d 11789e6afd72395819cc29017c5442410db5b487 Jia Xia <xiajia@vip.qq.com> 1781491810 +0800	commit: docs: 新增文章 — Loop 的韧性与评估：让 loop 不死、不坏、可证（含导航更新）
+11789e6afd72395819cc29017c5442410db5b487 01d68452e7e5602565aaf1b1a9b01d01b5ff78a1 Jia Xia <xiajia@vip.qq.com> 1781522191 +0800	commit: docs: Loop Engineering 系列扩篇 — 新增 16 篇（原语/模式/方法论/工程/组织），完整 25 部曲 + 总纲
+01d68452e7e5602565aaf1b1a9b01d01b5ff78a1 2c1755e576c9a4573505e05939fabb31dd104866 Jia Xia <xiajia@vip.qq.com> 1781549039 +0800	merge feat/harness-engineering-series: Merge made by the 'ort' strategy.
+2c1755e576c9a4573505e05939fabb31dd104866 c6b90d80dcc83945dc5a3f0cdae336a63b4233c5 Jia Xia <xiajia@vip.qq.com> 1781549890 +0800	commit: docs: 新增「读书笔记」栏目 — 七个习惯 / 富有的习惯 / 深度工作
+c6b90d80dcc83945dc5a3f0cdae336a63b4233c5 739781a6ed37a99e34e2a07cd23c1c6fef9496d4 Jia Xia <xiajia@vip.qq.com> 1781580752 +0800	commit: docs: 读书笔记栏目新增 5 篇 — 思考快与慢 / 金钱心理学 / 非暴力沟通 / 认知天性 / 活出生命的意义
+739781a6ed37a99e34e2a07cd23c1c6fef9496d4 05ea79a5b383ec3fc6c0a5338cb3756b8737d795 Jia Xia <xiajia@vip.qq.com> 1781587744 +0800	commit: docs: React 进阶系列（8 篇 + 总纲）— 现代视角重写，Hooks/TS/函数式优先
+05ea79a5b383ec3fc6c0a5338cb3756b8737d795 5e7d0eb32b9330b50444a753ee2d56f093b98152 Jia Xia <xiajia@vip.qq.com> 1781635421 +0800	commit: docs: 新增读书笔记 — 《原子习惯》
+5e7d0eb32b9330b50444a753ee2d56f093b98152 032f87c201341fb674175f50e7cd65ae67c6b459 Jia Xia <xiajia@vip.qq.com> 1781635752 +0800	merge chore/remove-github-links: Fast-forward
+032f87c201341fb674175f50e7cd65ae67c6b459 d71271884c82cde447cfabe5c0bc641e3cc36e4b Jia Xia <xiajia@vip.qq.com> 1781636067 +0800	merge fix/audit-esbuild: Fast-forward
+d71271884c82cde447cfabe5c0bc641e3cc36e4b f3e5facf8b8af67c21db8acc37915c445fca85e0 Jia Xia <xiajia@vip.qq.com> 1781640988 +0800	merge fix/build-vue-interpolation: Fast-forward
+f3e5facf8b8af67c21db8acc37915c445fca85e0 e0be9557c464d8a7999778b5fb57789bfc03bb8a Jia Xia <xiajia@vip.qq.com> 1781644642 +0800	merge feat/functional-programming-series: Fast-forward
+e0be9557c464d8a7999778b5fb57789bfc03bb8a 0bf98eaec2d846827ac033525dac09a162e34666 Jia Xia <xiajia@vip.qq.com> 1781654134 +0800	merge feat/english-daily-skill: Merge made by the 'ort' strategy.
+0bf98eaec2d846827ac033525dac09a162e34666 fe2876768cd492cc9df4758b26f63f7537d80997 Jia Xia <xiajia@vip.qq.com> 1781656103 +0800	merge english-daily/code-review-followup: Merge made by the 'ort' strategy.
+fe2876768cd492cc9df4758b26f63f7537d80997 c7974e708e208e264128ea2684cfc896d0da5238 Jia Xia <xiajia@vip.qq.com> 1781656214 +0800	commit: docs: 新增项目铁律 — master 直接开发，不受全局分支约束
+c7974e708e208e264128ea2684cfc896d0da5238 302e7df5c23baaeb2abaf4b6ac5005da6132533c Jia Xia <xiajia@vip.qq.com> 1781657285 +0800	commit: docs(english): 批量新增 8 个场景 — 数据库/测试/安全/结对/CI/架构/复盘/前端缓存
+302e7df5c23baaeb2abaf4b6ac5005da6132533c cc133bc8cb754931229ad4d1791980fa89938bee Jia Xia <xiajia@vip.qq.com> 1781659511 +0800	commit: feat(english): Vocabulary 单词加发音（有道 dictvoice 内联播放）+ 可点击跳有道词典
+cc133bc8cb754931229ad4d1791980fa89938bee 02baef115d9ca1bea9f36e29ae2cee45637835f3 Jia Xia <xiajia@vip.qq.com> 1781659716 +0800	commit: fix(english): transpile/stacktrace 复合词发音回退 Google TTS（有道无词条）
+02baef115d9ca1bea9f36e29ae2cee45637835f3 a916a3f5a97ad2e3177a33c4ec93c9924338c89a Jia Xia <xiajia@vip.qq.com> 1781661193 +0800	commit: feat(english): 调整顺序 Dialogue 前置 + 例句/对话加小字淡色中文翻译
+a916a3f5a97ad2e3177a33c4ec93c9924338c89a 2b2c8c13b6b594cd3628a9f93f4ebe6663a96a82 Jia Xia <xiajia@vip.qq.com> 1781664111 +0800	commit: fix(english): 词汇表单词发音改用自定义按钮，解决 Chrome 紧凑模式 bug
+2b2c8c13b6b594cd3628a9f93f4ebe6663a96a82 7bda192fbe385532dd3e981a0a4e790b20b0e8ba Jia Xia <xiajia@vip.qq.com> 1781734161 +0800	commit: docs(english): 新增5篇每日英语（standup/rollback/api/concurrency/migration）
+7bda192fbe385532dd3e981a0a4e790b20b0e8ba a94b9366c4c089ef39f050d5c0a96186b9b938f6 Jia Xia <xiajia@vip.qq.com> 1781734213 +0800	commit: docs(english-daily): SKILL补充TTS需先source .env的说明（process.env不自动load）
+a94b9366c4c089ef39f050d5c0a96186b9b938f6 250279742f2e43d25f5e0c1d9312a0196d19dbdf Jia Xia <xiajia@vip.qq.com> 1782021730 +0800	commit: english(code-review): swap hook for syntax/legacy in vocab
+250279742f2e43d25f5e0c1d9312a0196d19dbdf 1b3cf8ebb468d2afe22a1cd9bda416341b2ed13f Jia Xia <xiajia@vip.qq.com> 1782022012 +0800	commit: english: add Online Meeting Follow-ups article
+1b3cf8ebb468d2afe22a1cd9bda416341b2ed13f efbb03f86ccb5a6f34ace824b6511b2922f5a852 Jia Xia <xiajia@vip.qq.com> 1782022483 +0800	commit: english: add TTS audio + tighten follow-ups dialogue to 2 speakers
+efbb03f86ccb5a6f34ace824b6511b2922f5a852 a365932ccf2f5cba590523b9f8bfa8f9e1807b7e Jia Xia <xiajia@vip.qq.com> 1782024943 +0800	commit: docs(english): 新增 8 篇会议语用策略学习 — 礼貌打断/委婉异议/争取时间/总结行动项/引导发言/控场/寒暄/承认不知道
+a365932ccf2f5cba590523b9f8bfa8f9e1807b7e 8c360b41e6932f3a097d7067603d9862077e4eb7 Jia Xia <xiajia@vip.qq.com> 1782029251 +0800	commit: docs: 新增「说话」栏目 — Day 1 · 先练什么
+8c360b41e6932f3a097d7067603d9862077e4eb7 46edf928957f2a2486246aa27254afd8676f9496 Jia Xia <xiajia@vip.qq.com> 1782079395 +0800	commit: docs: English 板块分类整理 — 拆分为 4 个主题分组
+46edf928957f2a2486246aa27254afd8676f9496 6fafb1f01f43eee88bb51b2b2fe0e8d618f304e0 Jia Xia <xiajia@vip.qq.com> 1782080360 +0800	commit: docs: English 新增「工作沟通」分组 — 16 篇 100 词
+6fafb1f01f43eee88bb51b2b2fe0e8d618f304e0 40b62799a1123936c20638975fc3daac7fe6f249 Jia Xia <xiajia@vip.qq.com> 1782080424 +0800	commit: fix: running-meetings 将 wrap-up 替换为 debrief（避免与现有词重复）
+40b62799a1123936c20638975fc3daac7fe6f249 7304bcb1bab5073f4169910628fa9a5322cc7b92 Jia Xia <xiajia@vip.qq.com> 1782082460 +0800	commit: docs: 新增读书笔记 — 《一人公司》(Company of One)
+7304bcb1bab5073f4169910628fa9a5322cc7b92 92dda21b21043704742348e5583d92eb51f292aa Jia Xia <xiajia@vip.qq.com> 1782082527 +0800	commit: docs: 移动《一人公司》读书笔记到 reading 板块
+92dda21b21043704742348e5583d92eb51f292aa b6b13b02c4980228cadf199f7b518ef6afce1d89 Jia Xia <xiajia@vip.qq.com> 1782085535 +0800	commit: feat: 文章朗读功能 — Web Speech API 全局组件
+b6b13b02c4980228cadf199f7b518ef6afce1d89 5dfd77a00a22f766c74569fea92eb9bcfa33778e Jia Xia <xiajia@vip.qq.com> 1782166154 +0800	commit: feat: 读书笔记朗读升级 — edge-tts 神经音 + 双模式回退
+5dfd77a00a22f766c74569fea92eb9bcfa33778e 460e4c4bb66f054db7efd21e0cec65c4fd0ed6ba Jia Xia <xiajia@vip.qq.com> 1782166584 +0800	commit: docs: 新增说话练习 Day 2 — 卡住了怎么接
+460e4c4bb66f054db7efd21e0cec65c4fd0ed6ba d9111d2cf89ac665e27db0e92543d88d4736fe50 Jia Xia <xiajia@vip.qq.com> 1782166834 +0800	commit: refactor(english): Audio 与 Dialogue 段交换位置 — Audio 在前更符合使用习惯
+d9111d2cf89ac665e27db0e92543d88d4736fe50 bfc54ef495b763ec7718cc478e0d56adc132b3a8 Jia Xia <xiajia@vip.qq.com> 1782167654 +0800	commit: feat(read-aloud): 播放条 sticky 浮动吸顶
+bfc54ef495b763ec7718cc478e0d56adc132b3a8 bfed51ceec34630f8a79e1de2dc35c63ed544a91 Jia Xia <xiajia@vip.qq.com> 1782167671 +0800	commit (amend): feat(read-aloud): 播放条 sticky 浮动吸顶 + 修复切文章播旧内容
+bfed51ceec34630f8a79e1de2dc35c63ed544a91 51d022cdc44c1970561fafa40417c14a32497c1f Jia Xia <xiajia@vip.qq.com> 1782168262 +0800	commit: feat(tts): 文章朗读分段生成 + 章节时间戳
+51d022cdc44c1970561fafa40417c14a32497c1f da158d0cecf07ede3d0e1b6851976193e8b4f248 Jia Xia <xiajia@vip.qq.com> 1782168474 +0800	commit: feat(read-aloud): h2/h3 章节跳转按钮 — audio seek chapters.json / web-speech 跳 chunks
+da158d0cecf07ede3d0e1b6851976193e8b4f248 ca94a5a160a9451bc9f6370ab785dca3cbd7fb3b Jia Xia <xiajia@vip.qq.com> 1782172589 +0800	commit: chore(tts): 现存 12 篇朗读重生成（--chapters 分段 + 时间戳）
+ca94a5a160a9451bc9f6370ab785dca3cbd7fb3b 47ec30a8de04d897893c4fc52f17bb33d44eb6a2 Jia Xia <xiajia@vip.qq.com> 1782178064 +0800	commit: fix(read-aloud): 章节按钮未注入 — 定位 Content 容器再遍历
+47ec30a8de04d897893c4fc52f17bb33d44eb6a2 78d992239e80728d679edd81f9b78f9cb1739663 Jia Xia <xiajia@vip.qq.com> 1782178397 +0800	commit: style(read-aloud): 章节播放钮移到标题文字之后
+78d992239e80728d679edd81f9b78f9cb1739663 49487ab1bfd6e25f37bff3464c4e722fab32b51d Jia Xia <xiajia@vip.qq.com> 1782179594 +0800	commit: docs: 新增读书笔记 — 《随机漫步的傻瓜》《思考的辨析》
+49487ab1bfd6e25f37bff3464c4e722fab32b51d 0373124f493cf7afaa929ca04d4dd7c3ce0cd06c Jia Xia <xiajia@vip.qq.com> 1782184036 +0800	commit: feat(papers): 新增「论文研读」板块 — CORAL 多 Agent 自主进化精读
+0373124f493cf7afaa929ca04d4dd7c3ce0cd06c 5d1243ed405a5ba91ce192a1169da258858edfd7 Jia Xia <xiajia@vip.qq.com> 1782194354 +0800	commit: feat(tts): papers 板块朗读预生成 — CORAL(17章10m) + 栏目说明(5章1m)
+5d1243ed405a5ba91ce192a1169da258858edfd7 fe822e29a96c04110bf80134d48429130456b39b Jia Xia <xiajia@vip.qq.com> 1782345141 +0800	commit: docs: 新增文章 — 《非暴力沟通实践篇》读书笔记
+fe822e29a96c04110bf80134d48429130456b39b b900706b4c41f8e2cf538292b5c3af8fa80ff954 Jia Xia <xiajia@vip.qq.com> 1782348247 +0800	commit: 说话练习 Day 3：话变多了，怎么删
+b900706b4c41f8e2cf538292b5c3af8fa80ff954 caf6469281e3bc9f5fc66bbfb0f4ecf8004cc1ce Jia Xia <xiajia@vip.qq.com> 1782350409 +0800	commit: papers: 新增3篇精读 AOHP/EDV/MemGUI-Agent (Agent memory/context 工程层)
+caf6469281e3bc9f5fc66bbfb0f4ecf8004cc1ce bf6b75948b2d6335fe27c1614bd4d96632a1a994 Jia Xia <xiajia@vip.qq.com> 1782350445 +0800	commit: chore: gitignore 排除临时文件(progress/research/pyc), 移除误提交
+bf6b75948b2d6335fe27c1614bd4d96632a1a994 dda020387c904b200061ad0c119580eb62b64a46 Jia Xia <xiajia@vip.qq.com> 1782480013 +0800	commit: papers: 新增精读 Skill-MAS (编排能力抽成可迁移Meta-Skill)
+dda020387c904b200061ad0c119580eb62b64a46 021eed7a462827471e75bdad57890ac038f163cf Jia Xia <xiajia@vip.qq.com> 1782485482 +0800	commit: chore(nav): 重排顶级菜单，工具参考/说话收入「更多」二级隐藏
+021eed7a462827471e75bdad57890ac038f163cf 2b9e9addc2f3715f4a1bd193b8f5bc2901823bd3 Jia Xia <xiajia@vip.qq.com> 1782486531 +0800	commit: feat(papers): 论文研读4篇补齐朗读MP3+章节(aohp/edv/memgui/skill-mas)
+2b9e9addc2f3715f4a1bd193b8f5bc2901823bd3 d62487a50addcc43ae7e7abf11c37952a9ce5571 Jia Xia <xiajia@vip.qq.com> 1782501242 +0800	commit: docs(reading): 新增《论语》精读系列·仁（第2篇）
+d62487a50addcc43ae7e7abf11c37952a9ce5571 2cac14ec9e7574e0008711fa48e9f2676d866e50 Jia Xia <xiajia@vip.qq.com> 1782501277 +0800	commit: docs(reading): 新增《论语》精读系列第6篇·政
+2cac14ec9e7574e0008711fa48e9f2676d866e50 ae16f7e8e55704b71e19e76b2f4c76b9c86847b4 Jia Xia <xiajia@vip.qq.com> 1782502176 +0800	commit: feat(reading): 新增《论语》《毛选》精读系列(各7篇+总纲)及朗读音频
+ae16f7e8e55704b71e19e76b2f4c76b9c86847b4 6361470b2bc021a2e31c78f150751a5fe343c998 Jia Xia <xiajia@vip.qq.com> 1782952529 +0800	commit: speaking: Day 4 散句怎么排（排顺序、立骨架）
+6361470b2bc021a2e31c78f150751a5fe343c998 30df133246f43ff11df9eca0b9b07f36b81998e4 Jia Xia <xiajia@vip.qq.com> 1784006570 +0800	commit: speaking: Day 5 话不匀才有节奏（停顿/重音/变速）
+30df133246f43ff11df9eca0b9b07f36b81998e4 0913578e86f26015bf4d88b21f180b9ecd17e4f3 Jia Xia <xiajia@vip.qq.com> 1784107412 +0800	commit: docs: 新增文章 — 《纳瓦尔宝典》读书笔记 + 语音朗读
+0913578e86f26015bf4d88b21f180b9ecd17e4f3 f6d5be0a8760b957591ce80c6cf9e251021e9fbd Jia Xia <xiajia@vip.qq.com> 1784130786 +0800	commit: docs: 新增文章 — 《第一性原理》读书笔记 + 语音朗读
+f6d5be0a8760b957591ce80c6cf9e251021e9fbd 72f604c78118876eeefcd9d17359ba388ee56cb4 Jia Xia <xiajia@vip.qq.com> 1784131442 +0800	commit: docs: 新增文章 — 《低风险创业》读书笔记 + 语音朗读
+72f604c78118876eeefcd9d17359ba388ee56cb4 25894675c3985d09d5da1ba26d51b691700f0ac0 Jia Xia <xiajia@vip.qq.com> 1784131902 +0800	commit: docs: 补生成《随机漫步的傻瓜》语音朗读
+25894675c3985d09d5da1ba26d51b691700f0ac0 0fcc819bebc5dcd548ad8b7d0e33e34d019c5f9c Jia Xia <xiajia@vip.qq.com> 1784132242 +0800	commit: logo: X → J
+0fcc819bebc5dcd548ad8b7d0e33e34d019c5f9c 779f9e79955bdc52f3a04c763026faa2cd66172e Jia Xia <xiajia@vip.qq.com> 1784133113 +0800	commit: docs: 补生成《思考的辨析》语音朗读
+779f9e79955bdc52f3a04c763026faa2cd66172e e80ec65a1130c4cdfca32d0d22f8e6ba48b43b5c Jia Xia <xiajia@vip.qq.com> 1784175963 +0800	commit: feat(reading): 新增《道德经》精读系列(7篇+总纲)及朗读音频
+e80ec65a1130c4cdfca32d0d22f8e6ba48b43b5c 86975e082dbf4242347313139f2b2352bc2bd34a Jia Xia <xiajia@vip.qq.com> 1784244283 +0800	commit: chore: 移除页面 Last updated 显示
+86975e082dbf4242347313139f2b2352bc2bd34a 119740b1b3e50a2690f4aa87f7c2018bce3f94d4 Jia Xia <xiajia@vip.qq.com> 1784398268 +0800	commit: docs: 新增论文精读 — PolyWorkBench：多语言长程 Agent 战场
+119740b1b3e50a2690f4aa87f7c2018bce3f94d4 be3679802cbd0258426a292b95b3b0e6e5b98de6 Jia Xia <xiajia@vip.qq.com> 1784581517 +0800	commit: docs: 新增论文精读 — Good Vibrations：Vibe Coding 高手思维四件套
+be3679802cbd0258426a292b95b3b0e6e5b98de6 4cd2d5de020fd8bbf0fb4bd2b0d4d51760f2b391 Jia Xia <xiajia@vip.qq.com> 1784597274 +0800	commit: docs: 新增读书笔记 — 《富爸爸穷爸爸》《财务自由之路》
+4cd2d5de020fd8bbf0fb4bd2b0d4d51760f2b391 c768660c0e70e72050dc53ce9ad8c9c914e67f02 Jia Xia <xiajia@vip.qq.com> 1784620492 +0800	commit: docs: 补充朗读 MP3 — 《富爸爸穷爸爸》《财务自由之路》+ 2 篇论文研读
+c768660c0e70e72050dc53ce9ad8c9c914e67f02 87d3c0669c3e93f343c4eb0855c74167bb75e676 Jia Xia <xiajia@vip.qq.com> 1784620694 +0800	commit: docs: 补充朗读 — 《非暴力沟通实践篇》; write-blog skill 增加生成朗读步骤
+87d3c0669c3e93f343c4eb0855c74167bb75e676 60cb53932cfdd8aedfe2719cfe73d4ce4b101564 Jia Xia <xiajia@vip.qq.com> 1784666899 +0800	commit: docs: 新增读书笔记 — 《够了》（博格尔）
+60cb53932cfdd8aedfe2719cfe73d4ce4b101564 54b32670f53e4d95e780ba858acda490553e96e5 Jia Xia <xiajia@vip.qq.com> 1784870967 +0800	commit: docs: 新增「期权投资系列」4 篇 — Natenberg/McMillan/Taleb/Passarelli
+54b32670f53e4d95e780ba858acda490553e96e5 ff25ca6fcf1634315818fc42d620924271d565da Jia Xia <xiajia@vip.qq.com> 1784968046 +0800	commit: feat(calendar): 偏私有 ICS 订阅脚本
+ff25ca6fcf1634315818fc42d620924271d565da f0a99a2feedc006b90c12b7fbe6f65cd46c4b639 Jia Xia <xiajia@vip.qq.com> 1784972464 +0800	commit: fix(calendar): ICS + JSON 进 git，修复 CI 部署 404
+f0a99a2feedc006b90c12b7fbe6f65cd46c4b639 592ef4a010b5a6745c5d1c15313035e14717bdef Jia Xia <xiajia@vip.qq.com> 1784981670 +0800	commit: calendar: 加 ETH 期权滚仓提醒 (8/21, 8/28 到期前一周)
+592ef4a010b5a6745c5d1c15313035e14717bdef 60e4cbd8513c6c836d18dfbd1a3db37f49ffbbef Jia Xia <xiajia@vip.qq.com> 1785130366 +0800	commit: feat(reading): 新增 4 本读书笔记 + 侧边栏分类重组
+60e4cbd8513c6c836d18dfbd1a3db37f49ffbbef 22d15ba8393298f27d81a96ef197cae5cd151f5f Jia Xia <xiajia@vip.qq.com> 1785190027 +0800	commit: feat(reading): 朗读跟随滚动 + seek 跳转定位
+22d15ba8393298f27d81a96ef197cae5cd151f5f 18329863df6b7c1e2773fdca9baaae6dcf83fff2 Jia Xia <xiajia@vip.qq.com> 1785190786 +0800	commit: feat(reading): 浮动跟随开关 + 朗读段落高亮
+18329863df6b7c1e2773fdca9baaae6dcf83fff2 ba0e402e2d70d1bd5744912e6151c4f140f2c9e2 Jia Xia <xiajia@vip.qq.com> 1785191031 +0800	commit: refactor(reading): 跟随开关整合进工具条 + SVG 图标
+ba0e402e2d70d1bd5744912e6151c4f140f2c9e2 b5fc4c4ffcd1f449ce1bba4b4cf4ac0268a83c19 Jia Xia <xiajia@vip.qq.com> 1785297903 +0800	commit: docs: 新增「认知提升」栏目 — 4 篇逻辑谬误（稻草人/红鲱鱼/归因/滑坡）+ 朗读音频
+b5fc4c4ffcd1f449ce1bba4b4cf4ac0268a83c19 212a1ff3a10eeae8903ea1423d6d3bf4ad074f75 Jia Xia <xiajia@vip.qq.com> 1785300684 +0800	commit: docs: 认知提升新增「黑天鹅事件」「灰犀牛事件」— 风险与不确定性分组 + 朗读音频
+212a1ff3a10eeae8903ea1423d6d3bf4ad074f75 92db5e8f8590dbfab939a44ee9eb0b60993b5ebd Jia Xia <xiajia@vip.qq.com> 1785302013 +0800	commit: docs: 认知提升新增 6 篇 — 达克效应/幸存者偏差/锚定效应/沉没成本/回音室/旁观者（含自我认知·决策与判断·群体与社会三组）+ 朗读音频
+92db5e8f8590dbfab939a44ee9eb0b60993b5ebd 13f58d8e71888f4f76563132372ac2022b5ef3f5 Jia Xia <xiajia@vip.qq.com> 1785303233 +0800	commit: docs: 修正达克效应曲线图 — 补全第四段「平稳高原」，区分虚高与扎实的自信
+13f58d8e71888f4f76563132372ac2022b5ef3f5 beaaad8ca1035e3503a7dcc9615777ea2c41a894 Jia Xia <xiajia@vip.qq.com> 1785303439 +0800	commit: docs: 删除达克效应图注中「后人讽刺图」的冗余说明
+beaaad8ca1035e3503a7dcc9615777ea2c41a894 a06164f99cc3f094f7f3d5245ceedf4bb913d0a5 Jia Xia <xiajia@vip.qq.com> 1785313578 +0800	commit: chore: 升级 vue 3.5.38 → 3.5.40
+a06164f99cc3f094f7f3d5245ceedf4bb913d0a5 9346b96dc5c000ebcd063452fc6232990e26d35a Jia Xia <xiajia@vip.qq.com> 1785359454 +0800	commit: feat(theme): 阅读体验重优化 — 品牌色/排版/动效/工程师视角callout + 表格跟随聚焦明暗
+9346b96dc5c000ebcd063452fc6232990e26d35a d08a9e0804cc385b3454d01b43d81914482b022b Jia Xia <xiajia@vip.qq.com> 1785359606 +0800	commit: feat(theme): 代码块/图片跟随聚焦明暗 + 字体清晰度优化
+d08a9e0804cc385b3454d01b43d81914482b022b 7bc5ca4c20ed20348fd7494e1d6107fb2cc99c71 Jia Xia <xiajia@vip.qq.com> 1785359796 +0800	commit: feat(theme): 正文改用衬线体（方案A · 系统衬线栈 · 零加载）
+7bc5ca4c20ed20348fd7494e1d6107fb2cc99c71 f51d3d5ca7fcb79c47e9a63e968f5f3e74a7a822 Jia Xia <xiajia@vip.qq.com> 1785360078 +0800	commit: feat(theme): 中文正文改用思源宋体（方案B · Web 字体 · 动态分包）
+f51d3d5ca7fcb79c47e9a63e968f5f3e74a7a822 96ff426fa8a08407363df5c0d9473381664e249c Jia Xia <xiajia@vip.qq.com> 1785360245 +0800	commit: feat(theme): 中文正文换霞鹜文楷屏幕R版 + 微粗
+96ff426fa8a08407363df5c0d9473381664e249c 6d04fafd103e25a87613b117c2b4347c0a217193 Jia Xia <xiajia@vip.qq.com> 1785360493 +0800	commit: fix(theme): 补强 strong/b 视觉表达
+6d04fafd103e25a87613b117c2b4347c0a217193 154e08a3d58c8f7fd0aa4ba6b58a6a8ce0b469e0 Jia Xia <xiajia@vip.qq.com> 1785360765 +0800	commit: fix(theme): strong 强调色拉至纯黑 #000000
+154e08a3d58c8f7fd0aa4ba6b58a6a8ce0b469e0 26fe39aa25ef7ae17c59844caa84dc202dcb46cc Jia Xia <xiajia@vip.qq.com> 1785361021 +0800	commit: feat: 首页重构(7模块按体量排) + 阅读时长徽章
+26fe39aa25ef7ae17c59844caa84dc202dcb46cc 34fe1d0f3c47358a3c8dedf0318f21b18bff3b53 Jia Xia <xiajia@vip.qq.com> 1785361515 +0800	commit: feat: 首页卡片hover动效
+34fe1d0f3c47358a3c8dedf0318f21b18bff3b53 141701c4b01bbec725097c839f643949dbbe7c26 Jia Xia <xiajia@vip.qq.com> 1785363310 +0800	commit: feat: 首页卡片重设计 — 深色卡 + 左对齐文本 + 右下角彩色几何图案
+141701c4b01bbec725097c839f643949dbbe7c26 5d1415c2e805ed810b3f856a3ae852d373715530 Jia Xia <xiajia@vip.qq.com> 1785363596 +0800	commit: feat: 首页图标重设计(统一线性系统) + 右下图案放大至斜占半卡
+5d1415c2e805ed810b3f856a3ae852d373715530 89f4dd4b18d159c118d80e63d5c7f0d743b2e999 Jia Xia <xiajia@vip.qq.com> 1785363684 +0800	commit: fix: 修文字被图案遮挡 + 去掉卡片篇数标注
+89f4dd4b18d159c118d80e63d5c7f0d743b2e999 9895d9f00c73fb2ec7cedefe2f7b9ac533f57a34 Jia Xia <xiajia@vip.qq.com> 1785364069 +0800	commit: refactor: 去掉首页 hero 三按钮,卡片已承担导航
+9895d9f00c73fb2ec7cedefe2f7b9ac533f57a34 f7ff69ae94e872499219686ce0bd758511cde0f9 Jia Xia <xiajia@vip.qq.com> 1785371629 +0800	commit: chore: gitignore 过滤 pi 运行时产物(.pi-subagents/ .pi/skills/)
+f7ff69ae94e872499219686ce0bd758511cde0f9 590ee45f5baf3b40b01c58cc3f007818d6810ba7 Jia Xia <xiajia@vip.qq.com> 1785398798 +0800	commit: fix(reading): 移动端朗读条 icon 化压缩至严格 2 行
+590ee45f5baf3b40b01c58cc3f007818d6810ba7 65544ab3c61065dee6ac7369d15efaa7031cbf89 Jia Xia <xiajia@vip.qq.com> 1785399403 +0800	commit: fix(reading): 移动端朗读条压缩为 1 行
+65544ab3c61065dee6ac7369d15efaa7031cbf89 4b3571187a32ad54c5dddf569425125a411a067f Jia Xia <xiajia@vip.qq.com> 1785746248 +0800	commit: feat(reading): 接入检索自测 + 费曼反思框（认知天性理念落地）
+4b3571187a32ad54c5dddf569425125a411a067f 1814f798f8cec30185525b753a76ca95e70779f3 Jia Xia <xiajia@vip.qq.com> 1785746255 +0800	commit: docs(reading): 新增读书笔记 — 《费曼学习法》
+1814f798f8cec30185525b753a76ca95e70779f3 b774eb860a366641aa893113d694894bf66ddf4b Jia Xia <xiajia@vip.qq.com> 1785790190 +0800	commit: docs(speaking): 填充 Day 1 实录
+b774eb860a366641aa893113d694894bf66ddf4b 9f7e746429bfe23bb213594bc5cc39ebba4cd24b Jia Xia <xiajia@vip.qq.com> 1785791911 +0800	commit: feat(english): 英文句子点击弹打字练习 tip
+9f7e746429bfe23bb213594bc5cc39ebba4cd24b b13da7fb16c7011de8f8e011274d25fab2310c4f Jia Xia <xiajia@vip.qq.com> 1785792701 +0800	commit: feat(english): 打字练习实时 diff 对比 + 修两个体验问题
+b13da7fb16c7011de8f8e011274d25fab2310c4f 28e35a7fa8e201681d40dd1719c16cc6c90c46a9 Jia Xia <xiajia@vip.qq.com> 1785804886 +0800	commit: docs(radio): 新增无线电学习栏目 — A 类系列 01（第 1-10 题）含语音解读
+28e35a7fa8e201681d40dd1719c16cc6c90c46a9 a9a639a1bda754bc329c104788e3f1c8eb683fd9 Jia Xia <xiajia@vip.qq.com> 1785806823 +0800	commit: docs(radio): 系列01瘦身 — 方案B(正确答案主体+选项折叠) + 语音精简
+a9a639a1bda754bc329c104788e3f1c8eb683fd9 e7d4f599ad68e7b860cd7004551a52f4a124afee Jia Xia <xiajia@vip.qq.com> 1785807324 +0800	commit: docs(radio): 答案用 VitePress tip 容器高亮 — 视觉分层强化记忆锥点
+e7d4f599ad68e7b860cd7004551a52f4a124afee b693e394ccbb93c1fde88edccef1f705f78d2064 Jia Xia <xiajia@vip.qq.com> 1785808772 +0800	commit: docs(radio): A 类系列 1-10 批量生成（精炼题解+方案B+分章音频）
+b693e394ccbb93c1fde88edccef1f705f78d2064 20ad106e28876887a101c8880a8698db21641291 Jia Xia <xiajia@vip.qq.com> 1785809106 +0800	commit: docs(radio): A 类系列 11-20 批量生成（精炼题解+方案B+分章音频）
+20ad106e28876887a101c8880a8698db21641291 e5186ce6c4dd4b7d31e3478ddca0443d249ec7ff Jia Xia <xiajia@vip.qq.com> 1785809446 +0800	commit: docs(radio): A 类系列 21-30 批量生成（精炼题解+方案B+分章音频）
+e5186ce6c4dd4b7d31e3478ddca0443d249ec7ff 23da14490f4847df0db45c26b1fae766f5c3666a Jia Xia <xiajia@vip.qq.com> 1785809795 +0800	commit: docs(radio): A 类系列 31-40 批量生成（精炼题解+方案B+分章音频）
+23da14490f4847df0db45c26b1fae766f5c3666a 8ddcc7b02675580b9d71095a9a032c6c7b6a0b61 Jia Xia <xiajia@vip.qq.com> 1785810168 +0800	commit: docs(radio): A 类系列 41-50 批量生成（精炼题解+方案B+分章音频）
+8ddcc7b02675580b9d71095a9a032c6c7b6a0b61 b7af61e572f2cc5f05f58122c244331f2996ff7c Jia Xia <xiajia@vip.qq.com> 1785810569 +0800	commit: docs(radio): A 类系列 51-60 批量生成（精炼题解+方案B+分章音频）
+b7af61e572f2cc5f05f58122c244331f2996ff7c 1f1e6355f68fdd0ce436a2cdeadb93856a0e4cd0 Jia Xia <xiajia@vip.qq.com> 1785810939 +0800	commit: docs(radio): A 类全量完成（69系列/683题）— 侧边栏导航+索引更新
+1f1e6355f68fdd0ce436a2cdeadb93856a0e4cd0 59fbe7c569d8881b32b05188820a2b0b2ae9788e Jia Xia <xiajia@vip.qq.com> 1785828045 +0800	commit: docs(radio): 去类别进度(只做A类) + 补 CC BY-NC-SA 4.0 版权声明
+59fbe7c569d8881b32b05188820a2b0b2ae9788e 883528c8bbefdc1225e691f00a73f43bab415096 Jia Xia <xiajia@vip.qq.com> 1785828388 +0800	commit: docs(radio): 补 CC BY-NC-SA 4.0 署名合规（69系列）
+883528c8bbefdc1225e691f00a73f43bab415096 cfe072f852c1490331ce447f93d21d7da5e5fe1e Jia Xia <xiajia@vip.qq.com> 1785895146 +0800	commit: feat(english): 对话分句音频 + 隐藏板块全局朗读条
+cfe072f852c1490331ce447f93d21d7da5e5fe1e 5ee70e05a01d8d0d60c979c580d3709c8e2ba214 Jia Xia <xiajia@vip.qq.com> 1785901084 +0800	commit: feat(english): 回填剩余 24 篇对话分句音频
+5ee70e05a01d8d0d60c979c580d3709c8e2ba214 a0da1bb5dc5432a4674589afab11464e2581e1f6 Jia Xia <xiajia@vip.qq.com> 1785907384 +0800	commit: feat: 音频迁移至腾讯云COS，仓库瘦身811M
+a0da1bb5dc5432a4674589afab11464e2581e1f6 e9f8c148de0cfb0446db61ea5f1979bd3a95f0db Jia Xia <xiajia@vip.qq.com> 1785907744 +0800	commit: feat: TTS音频迁移至COS，ReadAloud.vue改读COS URL
+e9f8c148de0cfb0446db61ea5f1979bd3a95f0db a65309ac5793ef4933ae4f25478b7c3df9da3dd4 Jia Xia <xiajia@vip.qq.com> 1785907858 +0800	commit: feat: write-blog TTS流程接入COS上传

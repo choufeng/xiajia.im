@@ -1,0 +1,5 @@
+feat: write-blog TTS流程接入COS上传
+
+- tts-article.py 末尾提示上传COS命令(替代过时的前端引用相对路径)
+- write-blog SKILL.md 步骤5加上传命令,步骤6 git add 去掉tts文件
+- 音频不入库,生成后由 cos-audio.mjs 增量上传 xiajia.im/tts/
