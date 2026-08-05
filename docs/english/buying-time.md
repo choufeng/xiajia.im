@@ -121,26 +121,26 @@ scene: Buying Time
 
 ## 💬 Dialogue
 
-**A**: Quick one — how many concurrent users can the current API gateway handle before it falls over?
+**A**: Quick one — how many concurrent users can the current API gateway handle before it falls over? <button class="word-play-btn" onclick="new Audio('/audio/buying-time/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：问个快的——现在的 API 网关能扛多少并发用户才会崩？</span>
 
-**B**: Good question. **Let me think** for a second...
+**B**: Good question. **Let me think** for a second... <button class="word-play-btn" onclick="new Audio('/audio/buying-time/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好问题。让我想一下……</span>
 
-**A**: Take your time. Rough number is fine.
+**A**: Take your time. Rough number is fine. <button class="word-play-btn" onclick="new Audio('/audio/buying-time/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：慢慢来。大概数字就行。</span>
 
-**B**: **Off the cuff**, my **first instinct** says around two thousand, but I'd want to verify against the last load test.
+**B**: **Off the cuff**, my **first instinct** says around two thousand, but I'd want to verify against the last load test. <button class="word-play-btn" onclick="new Audio('/audio/buying-time/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：凭印象，第一感觉大概两千，但我想跟上次压测对一下。</span>
 
-**A**: Two thousand is a useful **ballpark**. Is that with the new rate limiter enabled?
+**A**: Two thousand is a useful **ballpark**. Is that with the new rate limiter enabled? <button class="word-play-btn" onclick="new Audio('/audio/buying-time/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：两千是有用的粗估。那是开了新限流器的情况吗？</span>
 
-**B**: **Roughly speaking**, yes — that was the configuration from last quarter's run. Things may have shifted.
+**B**: **Roughly speaking**, yes — that was the configuration from last quarter's run. Things may have shifted. <button class="word-play-btn" onclick="new Audio('/audio/buying-time/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：粗略说是的——那是上季度那次的配置。可能变了。</span>
 
-**A**: Makes sense. Can you confirm the exact number after this meeting?
+**A**: Makes sense. Can you confirm the exact number after this meeting? <button class="word-play-btn" onclick="new Audio('/audio/buying-time/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：合理。会后能确认准确数字吗？</span>
 
-**B**: Sure — I'll pull the latest report and give you a solid figure by end of day.
+**B**: Sure — I'll pull the latest report and give you a solid figure by end of day. <button class="word-play-btn" onclick="new Audio('/audio/buying-time/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：行——我拉最新报告，今天下班前给你准确数。</span>

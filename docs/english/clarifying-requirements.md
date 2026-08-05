@@ -53,20 +53,20 @@ scene: Clarifying Requirements
 
 ## 💬 Dialogue
 
-**A**: The stakeholder said "make it user-friendly." That's vague.
+**A**: The stakeholder said "make it user-friendly." That's vague. <button class="word-play-btn" onclick="new Audio('/audio/clarifying-requirements/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：干系人说"弄易用点"。太模糊。</span>
 
-**B**: Let's **unpack** that in the next call.
+**B**: Let's **unpack** that in the next call. <button class="word-play-btn" onclick="new Audio('/audio/clarifying-requirements/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：下次会拆解一下。</span>
 
-**A**: Can you **articulate** the success criteria first?
+**A**: Can you **articulate** the success criteria first? <button class="word-play-btn" onclick="new Audio('/audio/clarifying-requirements/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：你能先说清楚成功标准吗？</span>
 
-**B**: Sure. Let me **restate** what I heard, then we **reiterate** the must-haves.
+**B**: Sure. Let me **restate** what I heard, then we **reiterate** the must-haves. <button class="word-play-btn" onclick="new Audio('/audio/clarifying-requirements/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：行。我先重述听到的，再重申必备项。</span>
 
-**A**: Good. We must **nail down** the edge cases today.
+**A**: Good. We must **nail down** the edge cases today. <button class="word-play-btn" onclick="new Audio('/audio/clarifying-requirements/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好。今天必须敲定边界情况。</span>
 
-**B**: I'll **double-check** the numbers with data, then we're clear.
+**B**: I'll **double-check** the numbers with data, then we're clear. <button class="word-play-btn" onclick="new Audio('/audio/clarifying-requirements/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我和数据那边复核下数字，然后就清楚了。</span>

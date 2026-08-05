@@ -121,26 +121,26 @@ scene: Diplomatic Disagreement
 
 ## 💬 Dialogue
 
-**A**: I think we should just rewrite the auth service from scratch. The legacy code is a mess.
+**A**: I think we should just rewrite the auth service from scratch. The legacy code is a mess. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我觉得认证服务应该从头重写。老代码一团糟。</span>
 
-**B**: I want to **push back** on that a little. I **hesitate** to commit to a full rewrite right now.
+**B**: I want to **push back** on that a little. I **hesitate** to commit to a full rewrite right now. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我想稍微反对一下。现在不太敢承诺全面重写。</span>
 
-**A**: Why? The current state is unmaintainable.
+**A**: Why? The current state is unmaintainable. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：为什么？现在这状态没法维护了。</span>
 
-**B**: I partly agree — the code is rough. But my main **concern** is the timeline. We'd freeze shipping for weeks.
+**B**: I partly agree — the code is rough. But my main **concern** is the timeline. We'd freeze shipping for weeks. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：部分同意——代码是糙。但我主要顾虑时间线。会停发好几周。</span>
 
-**A**: Fair. But patching the old module isn't sustainable either.
+**A**: Fair. But patching the old module isn't sustainable either. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：有理。但修补老模块也不是长久之计。</span>
 
-**B**: **On the other hand**, we could do a strangler-fig migration — replace one endpoint at a time, with one **caveat**: we keep both services running briefly.
+**B**: **On the other hand**, we could do a strangler-fig migration — replace one endpoint at a time, with one **caveat**: we keep both services running briefly. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：另一方面，我们可以做绞杀者模式迁移——一次换一个接口，但有个条件：两个服务短暂并存。</span>
 
-**A**: That's actually a solid middle ground. Let me draft that approach.
+**A**: That's actually a solid middle ground. Let me draft that approach. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：这其实是不错的折中。我来起草这个方案。</span>
 
-**B**: Great. And we should validate the rollout plan with data before locking scope.
+**B**: Great. And we should validate the rollout plan with data before locking scope. <button class="word-play-btn" onclick="new Audio('/audio/diplomatic-disagreement/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。锁定范围前，应该用数据验证上线计划。</span>

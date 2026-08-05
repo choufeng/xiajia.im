@@ -48,26 +48,26 @@ scene: Daily Standup Sync
 
 ## 💬 Dialogue
 
-**A**: Good morning everyone. Let us start the standup.
+**A**: Good morning everyone. Let us start the standup. <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：大家早上好。我们开始站会吧。</span>
 
-**B**: Yesterday I finished the **refactor** of the auth module.
+**B**: Yesterday I finished the **refactor** of the auth module. <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：昨天我完成了认证模块的重构。</span>
 
-**A**: Nice. Did you hit any **conflict** during the **merge**?
+**A**: Nice. Did you hit any **conflict** during the **merge**? <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：不错。合并时遇到冲突了吗？</span>
 
-**B**: A few. I resolved them and pushed to the main **branch**.
+**B**: A few. I resolved them and pushed to the main **branch**. <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：有几个。我解决了，并推到了主分支。</span>
 
-**A**: Great. Today I will fix the failing **pipeline**.
+**A**: Great. Today I will fix the failing **pipeline**. <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：很好。今天我去修挂掉的流水线。</span>
 
-**B**: I can review your changes once the build turns green.
+**B**: I can review your changes once the build turns green. <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：构建变绿后我可以评审你的改动。</span>
 
-**A**: Sounds good. Any blockers on your side?
+**A**: Sounds good. Any blockers on your side? <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：听起来不错。你那边有阻碍吗？</span>
 
-**B**: None. I will pick up the API tests next.
+**B**: None. I will pick up the API tests next. <button class="word-play-btn" onclick="new Audio('/audio/daily-standup-sync/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没有。我接下来写 API 测试。</span>

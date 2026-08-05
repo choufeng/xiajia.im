@@ -53,20 +53,20 @@ scene: Delegating Tasks
 
 ## 💬 Dialogue
 
-**A**: I'm overloaded. I need to **delegate** the reporting module.
+**A**: I'm overloaded. I need to **delegate** the reporting module. <button class="word-play-btn" onclick="new Audio('/audio/delegating-tasks/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我超载了。报表模块得委派出去。</span>
 
-**B**: Who do you **entrust** it to?
+**B**: Who do you **entrust** it to? <button class="word-play-btn" onclick="new Audio('/audio/delegating-tasks/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：你托付给谁？</span>
 
-**A**: Lin. But I'll stay **accountable** for the outcome.
+**A**: Lin. But I'll stay **accountable** for the outcome. <button class="word-play-btn" onclick="new Audio('/audio/delegating-tasks/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：Lin。但结果仍由我负责。</span>
 
-**B**: Good. Make the **handoff** explicit — write down the context.
+**B**: Good. Make the **handoff** explicit — write down the context. <button class="word-play-btn" onclick="new Audio('/audio/delegating-tasks/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。交接要明确——把上下文写下来。</span>
 
-**A**: Will do. I'll **distribute** the smaller tasks to the juniors.
+**A**: Will do. I'll **distribute** the smaller tasks to the juniors. <button class="word-play-btn" onclick="new Audio('/audio/delegating-tasks/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：会的。小任务我分给新人。</span>
 
-**B**: And **reassign** the blocked ones so nothing stalls.
+**B**: And **reassign** the blocked ones so nothing stalls. <button class="word-play-btn" onclick="new Audio('/audio/delegating-tasks/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：卡住的任务改派，别让它们停摆。</span>

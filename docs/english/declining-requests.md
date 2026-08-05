@@ -53,20 +53,20 @@ scene: Declining Requests Politely
 
 ## 💬 Dialogue
 
-**A**: Can your team take on the reporting migration?
+**A**: Can your team take on the reporting migration? <button class="word-play-btn" onclick="new Audio('/audio/declining-requests/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：你们队能接报表迁移吗？</span>
 
-**B**: **Respectfully**, I have to **decline**. We have no **bandwidth** this quarter.
+**B**: **Respectfully**, I have to **decline**. We have no **bandwidth** this quarter. <button class="word-play-btn" onclick="new Audio('/audio/declining-requests/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：恕我直言，得婉拒。这季度我们没余力。</span>
 
-**A**: Not even a small piece?
+**A**: Not even a small piece? <button class="word-play-btn" onclick="new Audio('/audio/declining-requests/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：一小块也不行？</span>
 
-**B**: Our **capacity** is fully committed. I'm **unavailable** to lead it.
+**B**: Our **capacity** is fully committed. I'm **unavailable** to lead it. <button class="word-play-btn" onclick="new Audio('/audio/declining-requests/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：容量全占满了。我没法牵头。</span>
 
-**A**: What do you suggest?
+**A**: What do you suggest? <button class="word-play-btn" onclick="new Audio('/audio/declining-requests/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：那你建议？</span>
 
-**B**: **Deprioritize** it, or find another owner. Happy to advise though.
+**B**: **Deprioritize** it, or find another owner. Happy to advise though. <button class="word-play-btn" onclick="new Audio('/audio/declining-requests/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：降优先级，或另找人。我可以当顾问。</span>

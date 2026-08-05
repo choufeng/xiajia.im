@@ -170,7 +170,7 @@ async function synthStream(text, speaker) {
   return Buffer.concat(chunks);
 }
 
-/** 网络失败重试（指数退避 500/1000/2000ms） */
+/** 失败重试：429 限流长退避（3s/6s/12s）；网络瞬时错误短退避（500/1s/2s）；鉴权/参数 4xx 不重试 */
 async function fetchWithRetry(text, speaker, retries = 3) {
   let lastErr;
   for (let i = 0; i < retries; i++) {
@@ -178,11 +178,25 @@ async function fetchWithRetry(text, speaker, retries = 3) {
       return await synthStream(text, speaker);
     } catch (e) {
       lastErr = e;
-      // 鉴权/参数错误（非瞬时网络）不重试，直接抛
       const msg = String(e.message || e);
+      const is429 = /HTTP 429|code=429|rate.?limit/i.test(msg);
+      // 429 限流：长退避重试（不占用「不重试」分支）
+      if (is429) {
+        if (i < retries - 1) {
+          const wait = 3000 * 2 ** i;
+          process.stderr.write(
+            `[tts] 429 限流，${wait}ms 后重试 (${i + 1}/${retries})\n`,
+          );
+          await new Promise((r) => setTimeout(r, wait));
+          continue;
+        }
+        throw e;
+      }
+      // 其它 4xx（鉴权/权限/参数错误）不重试
       if (/HTTP 4\d\d|header.code=|TTS 失败 code|缺少环境变量|resource not granted/.test(msg)) {
         throw e;
       }
+      // 网络瞬时错误：短退避
       if (i < retries - 1) {
         await new Promise((r) => setTimeout(r, 500 * 2 ** i));
       }
@@ -208,6 +222,8 @@ function concatMp3(parts, outPath) {
     );
     execFileSync('ffmpeg', [
       '-y',
+      '-v',
+      'error',
       '-f',
       'concat',
       '-safe',
@@ -231,21 +247,33 @@ export async function main(argv = process.argv) {
   if (!Array.isArray(dialog) || dialog.length === 0) {
     throw new Error('dialog 必须是非空数组 [{speaker,text},...]');
   }
+  // 分句目录：<out 所在目录>/<slug>/NN.mp3（slug = out 文件名去 .mp3）
+  const slug = path.basename(args.out, '.mp3');
+  const lineDir = path.join(path.dirname(args.out), slug);
+  fs.mkdirSync(lineDir, { recursive: true });
+  const sleepMs = Number(process.env.TTS_SLEEP_MS ?? 1000);
   const parts = [];
-  for (const turn of dialog) {
+  for (let i = 0; i < dialog.length; i++) {
+    const turn = dialog[i];
     const speaker = turn.speaker === 'A' ? VOICE_A : VOICE_B;
     process.stderr.write(
       `[tts] 合成 ${turn.speaker}: ${String(turn.text).slice(0, 40)}...\n`,
     );
     const buf = await fetchWithRetry(turn.text, speaker);
     parts.push(buf);
+    const nn = String(i + 1).padStart(2, '0');
+    fs.writeFileSync(path.join(lineDir, `${nn}.mp3`), buf);
+    // 每句合成后简短休息，防 429（末句不睡）
+    if (sleepMs > 0 && i < dialog.length - 1) {
+      await new Promise((r) => setTimeout(r, sleepMs));
+    }
   }
   fs.mkdirSync(path.dirname(args.out), { recursive: true });
   concatMp3(parts, args.out);
   process.stderr.write(
-    `[tts] 完成 → ${args.out} (${parts.length} 段)\n`,
+    `[tts] 完成 → ${args.out} (${parts.length} 段) + 分句目录 ${lineDir}/\n`,
   );
-  return { out: args.out, parts: parts.length };
+  return { out: args.out, parts: parts.length, lineDir };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

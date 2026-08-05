@@ -121,26 +121,26 @@ scene: Admitting You Don't Know
 
 ## 💬 Dialogue
 
-**A**: What's the latency budget for the new edge function? Is fifty milliseconds realistic?
+**A**: What's the latency budget for the new edge function? Is fifty milliseconds realistic? <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：新边缘函数的延迟预算多少？50 毫秒现实吗？</span>
 
-**B**: **Off the top** of my head, I'm not entirely sure. **To be honest**, I haven't benchmarked that path yet.
+**B**: **Off the top** of my head, I'm not entirely sure. **To be honest**, I haven't benchmarked that path yet. <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：凭印象我不太确定。说实话那条路径我还没压测。</span>
 
-**A**: No worries. Do you have a rough sense, or is it genuinely unknown?
+**A**: No worries. Do you have a rough sense, or is it genuinely unknown? <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：没事。有大概感觉吗，还是真不知道？</span>
 
-**B**: I can give you a guess, but I'd rather **verify** it against real numbers before committing.
+**B**: I can give you a guess, but I'd rather **verify** it against real numbers before committing. <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：能给个猜，但承诺前我宁愿对照真实数字核实。</span>
 
-**A**: Fair enough. Who would know this offhand?
+**A**: Fair enough. Who would know this offhand? <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：合理。谁会马上知道？</span>
 
-**B**: Lena runs the perf lab — she'd have the latest data. I'll **look into** it with her.
+**B**: Lena runs the perf lab — she'd have the latest data. I'll **look into** it with her. <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：Lena 管性能实验室——她有最新数据。我跟她一起查。</span>
 
-**A**: Great. When can you **get back to** me with something concrete?
+**A**: Great. When can you **get back to** me with something concrete? <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好。什么时候能给我个具体的？</span>
 
-**B**: By tomorrow morning. I'll share the benchmark report in the channel.
+**B**: By tomorrow morning. I'll share the benchmark report in the channel. <button class="word-play-btn" onclick="new Audio('/audio/admitting-you-dont-know/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：明早。我把压测报告发频道。</span>

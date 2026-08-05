@@ -14,6 +14,11 @@ const audioPath = computed(() => {
   return `/tts/${rel.replace(/\.md$/, '.mp3')}`
 })
 
+// 英语学习板块自带分句音频 + 页内整段条，隐藏全局朗读条
+const isEnglishPage = computed(() =>
+  (page.value.relativePath || '').startsWith('english/'),
+)
+
 // ===== 公共状态 =====
 const status = ref('idle') // idle | playing | paused
 const rate = ref(1)
@@ -528,7 +533,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div
-    v-if="mode !== 'unsupported' && frontmatter.readAloud !== false"
+    v-if="mode !== 'unsupported' && frontmatter.readAloud !== false && !isEnglishPage"
     class="read-aloud"
   >
     <button

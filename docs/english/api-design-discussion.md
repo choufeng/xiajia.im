@@ -48,26 +48,26 @@ scene: API Design Discussion
 
 ## 💬 Dialogue
 
-**A**: Let's finalize the API design for the new user service.
+**A**: Let's finalize the API design for the new user service. <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：把新用户服务的 API 设计定下来吧。</span>
 
-**B**: Sure. I think we should expose one **endpoint** for fetching the user profile.
+**B**: Sure. I think we should expose one **endpoint** for fetching the user profile. <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好，我觉得应该暴露一个端点用来获取用户资料。</span>
 
-**A**: Agreed. What fields should we include in the response **payload**?
+**A**: Agreed. What fields should we include in the response **payload**? <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：同意。响应载荷里该包含哪些字段？</span>
 
-**B**: Keep it minimal. Just the id, email, and display name to avoid leaking sensitive data.
+**B**: Keep it minimal. Just the id, email, and display name to avoid leaking sensitive data. <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：保持精简。只放 id、邮箱和显示名，避免泄露敏感数据。</span>
 
-**A**: Good call. How are we handling **authorization** on these requests?
+**A**: Good call. How are we handling **authorization** on these requests? <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：说得好。这些请求的授权怎么处理？</span>
 
-**B**: We attach a signed **cookie** after login, and the gateway validates it on every call.
+**B**: We attach a signed **cookie** after login, and the gateway validates it on every call. <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：登录后写入一个签名 Cookie，网关在每次调用时校验它。</span>
 
-**A**: Nice. And when the client receives the JSON, how fast can it **deserialize** the body?
+**A**: Nice. And when the client receives the JSON, how fast can it **deserialize** the body? <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：不错。客户端收到 JSON 后，多快能反序列化请求体？</span>
 
-**B**: It parses in under a millisecond at that size, so performance is fine.
+**B**: It parses in under a millisecond at that size, so performance is fine. <button class="word-play-btn" onclick="new Audio('/audio/api-design-discussion/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：这个体量不到 1 毫秒就能解析完，性能没问题。</span>
