@@ -44,30 +44,30 @@ scene: Debugging a Production Incident
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/debugging-production-incident.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: The dashboard is showing a spike in 500 errors. Something just broke in production. <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: The dashboard is showing a spike in 500 errors. Something just broke in production. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：仪表盘显示 500 错误激增。生产环境刚出问题了。</span>
 
-**B**: Let me check the logs. It looks like the **session** store is timing out under load. <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Let me check the logs. It looks like the **session** store is timing out under load. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我看下日志。看起来是会话存储在高负载下超时。</span>
 
-**A**: Could be the new memory cache. Is the state **mutable** across worker threads? <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Could be the new memory cache. Is the state **mutable** across worker threads? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：可能是新内存缓存的问题。状态在工作线程间是可变的吗？</span>
 
-**B**: Yes, that is probably the race condition. We should switch to immutable snapshots. <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Yes, that is probably the race condition. We should switch to immutable snapshots. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：是的，那大概就是竞态条件。我们应该切换到不可变快照。</span>
 
-**A**: Agreed. Also, the retry **queue** is backing up because failed jobs are not draining. <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Agreed. Also, the retry **queue** is backing up because failed jobs are not draining. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：同意。另外，重试队列在积压，失败任务排不出去。</span>
 
-**B**: Right. Let us **throttle** incoming requests for now so the system can catch up. <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Right. Let us **throttle** incoming requests for now so the system can catch up. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。我们先对进来的请求限流，让系统缓一缓。</span>
 
-**A**: Good call. Do we need a **shim** for the older clients hitting the deprecated endpoint? <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Good call. Do we need a **shim** for the older clients hitting the deprecated endpoint? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好主意。需要为访问废弃接口的旧客户端加个垫片吗？</span>
 
-**B**: Only if they keep retrying. Let me deploy the rate limit first and watch the metrics. <button class="word-play-btn" onclick="new Audio('/audio/debugging-production-incident/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Only if they keep retrying. Let me deploy the rate limit first and watch the metrics. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/debugging-production-incident/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：只有它们一直重试才需要。我先部署限流，然后盯一下指标。</span>

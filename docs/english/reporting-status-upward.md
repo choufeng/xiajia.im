@@ -54,24 +54,24 @@ scene: Reporting Status Upward
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/reporting-status-upward.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/reporting-status-upward.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Quick status update — where do we stand? <button class="word-play-btn" onclick="new Audio('/audio/reporting-status-upward/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Quick status update — where do we stand? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/reporting-status-upward/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：快速同步——到哪了？</span>
 
-**B**: We hit the **milestone** on Tuesday. The core **deliverable** is on track. <button class="word-play-btn" onclick="new Audio('/audio/reporting-status-upward/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: We hit the **milestone** on Tuesday. The core **deliverable** is on track. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/reporting-status-upward/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：周二达成里程碑。核心交付物正常推进。</span>
 
-**A**: Any **blocker**? <button class="word-play-btn" onclick="new Audio('/audio/reporting-status-upward/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Any **blocker**? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/reporting-status-upward/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：有阻塞项吗？</span>
 
-**B**: One. The third-party API. Backend is **lagging** because of it. <button class="word-play-btn" onclick="new Audio('/audio/reporting-status-upward/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: One. The third-party API. Backend is **lagging** because of it. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/reporting-status-upward/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：一个。第三方 API。后端因此落后。</span>
 
-**A**: But frontend is **ahead**, right? <button class="word-play-btn" onclick="new Audio('/audio/reporting-status-upward/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: But frontend is **ahead**, right? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/reporting-status-upward/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：但前端领先，对吧？</span>
 
-**B**: Yes. Overall we made good **headway**, but the release might **slip** by a few days. <button class="word-play-btn" onclick="new Audio('/audio/reporting-status-upward/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Yes. Overall we made good **headway**, but the release might **slip** by a few days. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/reporting-status-upward/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。整体进展不错，但发布可能滑期几天。</span>

@@ -49,24 +49,24 @@ scene: Building Consensus
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/building-consensus.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/building-consensus.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Do we have **consensus** on the launch date? <button class="word-play-btn" onclick="new Audio('/audio/building-consensus/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Do we have **consensus** on the launch date? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/building-consensus/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：发布日期达成共识了吗？</span>
 
-**B**: Mostly. Marketing still has concerns. <button class="word-play-btn" onclick="new Audio('/audio/building-consensus/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Mostly. Marketing still has concerns. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/building-consensus/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：基本有。市场部还有顾虑。</span>
 
-**A**: Let's get **alignment** there before we ask for a **mandate**. <button class="word-play-btn" onclick="new Audio('/audio/building-consensus/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Let's get **alignment** there before we ask for a **mandate**. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/building-consensus/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：申请授权前先和他们把方向对齐。</span>
 
-**B**: Agreed. Can you **rally** the leads this afternoon? <button class="word-play-btn" onclick="new Audio('/audio/building-consensus/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Agreed. Can you **rally** the leads this afternoon? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/building-consensus/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：同意。你今天下午能把各位 lead 召集起来吗？</span>
 
-**A**: I will. If they agree, the committee can **ratify** it Thursday. <button class="word-play-btn" onclick="new Audio('/audio/building-consensus/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: I will. If they agree, the committee can **ratify** it Thursday. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/building-consensus/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好。他们同意的话，委员会周四就能正式批准。</span>
 
-**B**: Then we just need the VP's **sign-off**. <button class="word-play-btn" onclick="new Audio('/audio/building-consensus/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Then we just need the VP's **sign-off**. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/building-consensus/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：之后只要 VP 签字认可就行。</span>

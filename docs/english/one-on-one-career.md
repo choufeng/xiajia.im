@@ -54,21 +54,21 @@ scene: 1-on-1 & Career Growth
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/one-on-one-career.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/one-on-one-career.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Let's talk about your **trajectory**. Where do you want to grow? <button class="word-play-btn" onclick="new Audio('/audio/one-on-one-career/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Let's talk about your **trajectory**. Where do you want to grow? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/one-on-one-career/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：聊聊你的发展路径。想往哪成长？</span>
 
-**B**: I'd like to **transition** toward leadership eventually. <button class="word-play-btn" onclick="new Audio('/audio/one-on-one-career/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: I'd like to **transition** toward leadership eventually. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/one-on-one-career/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：最终想往领导方向转。</span>
 
-**A**: Good. First, **upskill** on cross-team work. Take a **stretch** project. <button class="word-play-btn" onclick="new Audio('/audio/one-on-one-career/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Good. First, **upskill** on cross-team work. Take a **stretch** project. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/one-on-one-career/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好。先提升跨团队技能。接个有挑战的项目。</span>
 
-**B**: Should I find a **mentor**? <button class="word-play-btn" onclick="new Audio('/audio/one-on-one-career/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Should I find a **mentor**? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/one-on-one-career/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要找导师吗？</span>
 
-**A**: Yes, and I can be your **sponsor** — I'll **advocate** for you in reviews. <button class="word-play-btn" onclick="new Audio('/audio/one-on-one-career/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Yes, and I can be your **sponsor** — I'll **advocate** for you in reviews. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/one-on-one-career/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：要，我可以做你的提携者——评审时支持你。</span>

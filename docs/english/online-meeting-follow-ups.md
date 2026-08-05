@@ -117,33 +117,33 @@ scene: Online Meeting Follow-ups
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/online-meeting-follow-ups.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Alright, that wraps up the Q3 roadmap. Any thoughts before we move on? <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Alright, that wraps up the Q3 roadmap. Any thoughts before we move on? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好，第三季度路线图就到这里。继续之前大家有什么想法？</span>
 
-**B**: Let me **paraphrase** to make sure I follow — we're shipping the auth refactor first, then the new dashboard? <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Let me **paraphrase** to make sure I follow — we're shipping the auth refactor first, then the new dashboard? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我复述一下确认理解——我们先发布认证重构，再做新仪表盘？</span>
 
-**A**: Exactly. The dashboard depends on those new endpoints anyway. <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Exactly. The dashboard depends on those new endpoints anyway. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：没错。仪表盘本来就要依赖那些新接口。</span>
 
-**B**: **Building on** that, the frontend team can start mocking the API in parallel. <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: **Building on** that, the frontend team can start mocking the API in parallel. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：在那基础上补充一句，前端团队可以并行先把 API mock 起来。</span>
 
-**A**: Good thinking. Anything else before we close out? <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Good thinking. Anything else before we close out? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：想法不错。结束之前还有别的吗？</span>
 
-**B**: Quick **clarification** — do we own the data migration, or does the platform team handle it? <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Quick **clarification** — do we own the data migration, or does the platform team handle it? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：澄清一下——数据迁移是我们做，还是平台团队负责？</span>
 
-**A**: Platform team owns it. Good catch. <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Platform team owns it. Good catch. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：平台团队负责。发现得好。</span>
 
-**B**: If I could **pivot** for a second — how does this affect the mobile release? <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: If I could **pivot** for a second — how does this affect the mobile release? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我能转个话题吗——这对移动端发布有什么影响？</span>
 
-**A**: Mobile stays on the current API until Q4. I'll **hand off** to Maria now — she owns the mobile roadmap. <button class="word-play-btn" onclick="new Audio('/audio/online-meeting-follow-ups/09.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Mobile stays on the current API until Q4. I'll **hand off** to Maria now — she owns the mobile roadmap. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/online-meeting-follow-ups/09.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：移动端到第四季度前继续用当前 API。我现在把话交给 Maria——移动端路线图是她负责。</span>

@@ -49,7 +49,7 @@ echo "$WORDS"   # JSON 数组，如 ["refactor","idempotent",...]
   { "speaker": "B", "text": "..." }
 ]
 ```
-- speaker 只能是 `"A"` 或 `"B"`（A=Tim 男声，B=Dacey 女声，已硬编码在 tts-volc.mjs）
+- speaker 只能是 `"A"` 或 `"B"`（A=Tim 男声固定；B=女声池随机，每次生成从 13 个 `zh_female_*_uranus_bigtts` 音色中随机选一个，含 Vivi）
 
 ### 3. 确定 slug
 
@@ -71,7 +71,8 @@ node .pi/skills/english-daily/scripts/tts-volc.mjs \
   --scene <slug>
 ```
 
-- 调用火山豆包大模型 2.0（v3 流式端点），A/B 各一音色；**每句独立合成** → 既 ffmpeg 拼接成整段 `<slug>.mp3`，又落盘分句目录 `docs/public/audio/<slug>/01.mp3`、`02.mp3`、…
+- 调用火山豆包大模型 2.0（v3 流式端点），A/B 各一音色；**每句独立合成** → 既 ffmpeg 拼接成整段 `<slug>.mp3`，又落盘分句目录 `docs/public/audio/<slug>/01.mp3`、`02.mp3`…
+- 合成后自动上传 COS（幂等），本地文件作为 ffmpeg 中间产物保留（不入库）
 - 每句合成后 sleep `TTS_SLEEP_MS`（默认 1000ms）防限流；遇 429 自动长退避重试（3s/6s/12s）
 - 失败（鉴权/网络/配额）→ 停止，**不写 MD，不回写 vocab**，清理 `/tmp/english-dialog.json`
 - 鉴权失败（401/Invalid）→ 检查 VOLC_TTS_APP_ID/VOLC_TTS_ACCESS_TOKEN 是否正确，本应用用旧版三件套鉴权
@@ -122,27 +123,29 @@ scene: <场景英文标题>
 
 ## 💬 Dialogue（在 Audio 之前）
 
-每句英文末尾加单句播放按钮（序号 01 起递增，对应 `docs/public/audio/<slug>/NN.mp3`），下一行跟小字淡色中文翻译：
+每句英文末尾加单句播放按钮（序号 01 起递增，对应 COS 上 `xiajia.im/audio/<slug>/NN.mp3`），下一行跟小字淡色中文翻译：
+
+COS 音频基址：`https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/`（由 `scripts/cos-audio.mjs` 的 `audioUrl()` 拼）。
 
 ```markdown
-**A**: English sentence. <button class="word-play-btn" onclick="new Audio('/audio/<slug>/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: English sentence. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：中文翻译。</span>
 
-**B**: English sentence with **target_word**. <button class="word-play-btn" onclick="new Audio('/audio/<slug>/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: English sentence with **target_word**. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：中文翻译。</span>
 ```
 
 - 目标词在英文里加粗，中文翻译保留词义
 - 英文行末、按钮后换行接中文 span；英文与对应中文之间不空行；两句之间空一行
-- 分句目录由步骤 4 的 tts-volc.mjs 自动生成，按钮序号与对话句序一一对应
+- 分句目录由步骤 4 的 tts-volc.mjs 自动生成并上传 COS，按钮序号与对话句序一一对应
 
 ## 🎧 Audio（在 Dialogue 之后）
 
-<audio controls preload="none" src="/audio/<slug>.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3"></audio>
 ```
 
 - 日期用当天日期（`date +%Y-%m-%d`）
-- `<audio>` 的 `src` 用 VitePress public 绝对路径 `/audio/<slug>.mp3`（不加 docs/public 前缀）
+- `<audio>` 的 `src` 用 COS 公网完整 URL（音频不进仓库，存 COS 桶 `yccim-1256669708` 的 `xiajia.im/audio/` 前缀下）
 
 ### 6. 回写 vocab
 
@@ -171,10 +174,12 @@ node .pi/skills/english-daily/scripts/mark-used.mjs \
 
 ```bash
 cd /Users/jia.xia/development/xiajia.im
-git add docs/english/<slug>.md docs/english/.vocab.json docs/public/audio/<slug>.mp3 docs/public/audio/<slug> docs/.vitepress/config.js
+git add docs/english/<slug>.md docs/english/.vocab.json docs/.vitepress/config.js
 git commit -m "docs(english): <场景英文标题> — 每日英语"
 git push
 ```
+
+- 音频 MP3 不入仓库（`.gitignore` 已排除 `docs/public/audio/`），由 tts-volc.mjs 自动上传 COS
 
 - push 失败 → 提示用户手动 push（本地 commit 已完成）
 
@@ -187,7 +192,7 @@ git push
 - 所有脚本路径相对项目根，与 cwd 无关（脚本内用 `import.meta.url` 推导）
 - `.vocab.json` 是运行时状态，勿手改 used 标记（除非排错）
 - 不要修改 skill 源码目录下的 `data/vocab.seed.json` 来记录已用状态（那是模板）
-- TTS 音色固定 A=Tim(`en_male_tim_uranus_bigtts`) B=Dacey(`en_female_dacey_uranus_bigtts`)，如需更换改 `tts-volc.mjs` 的 `VOICE_A`/`VOICE_B` 常量
+- TTS 音色 A=Tim(`en_male_tim_uranus_bigtts`) 固定；B=13 个 `zh_female_*_uranus_bigtts` 池随机（含 Vivi），整篇同一音色。改 `tts-volc.mjs` 的 `VOICE_A`/`VOICE_B_POOL` 常量
 - 词库耗尽（< 5 可用词）→ 扩充 `data/vocab.seed.json` 后，手动把新词补进 `docs/english/.vocab.json`（used=false）
 - 全局朗读条（`ReadAloud.vue`）已对 `english/` 路径自动隐藏（板块自带页内整段 `<audio>` + 分句按钮），新文章无需任何处理
 - 批量回填旧文章分句音频：`set -a; source ~/.pi/agent/.env; set +a; node .pi/skills/english-daily/scripts/backfill-lines.mjs`（幂等；支持 `--only <slug>`、`--dry`、`--sleep <ms>`）

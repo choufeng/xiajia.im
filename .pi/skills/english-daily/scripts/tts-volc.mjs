@@ -16,13 +16,30 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { randomUUID } from 'node:crypto';
+import { uploadAudio } from './cos-audio.mjs';
 
 const ENDPOINT = 'https://openspeech.bytedance.com/api/v3/tts/unidirectional';
 const RESOURCE_ID = 'seed-tts-2.0'; // 豆包语音合成大模型 2.0
 
 // 双人 dev 对话音色（美式英语，豆包2.0音色）
 const VOICE_A = 'en_male_tim_uranus_bigtts'; // Tim 男
-const VOICE_B = 'en_female_dacey_uranus_bigtts'; // Dacey 女
+// 女声池：每次生成整篇随机选一个（同篇不跳变，避免对话内声音切换）
+// ponytail: 整篇单一随机；想句级切换或加权再改这里
+const VOICE_B_POOL = [
+  'zh_female_vv_uranus_bigtts',          // Vivi
+  'zh_female_xiaohe_uranus_bigtts',
+  'zh_female_tiexinnvsheng_uranus_bigtts',
+  'zh_female_gujie_uranus_bigtts',
+  'zh_female_wenrouxiaoya_uranus_bigtts',
+  'zh_female_roumeinvyou_uranus_bigtts',
+  'zh_female_xinlingjitang_uranus_bigtts',
+  'zh_female_tianmeiyueyue_uranus_bigtts',
+  'zh_female_qingchezizi_uranus_bigtts',
+  'zh_female_wenjingmaomao_uranus_bigtts',
+  'zh_female_qinqienv_uranus_bigtts',
+  'zh_female_lingling_uranus_bigtts',
+  'zh_female_jiaochuannv_uranus_bigtts',
+];
 
 const AUDIO_PARAMS = { format: 'mp3', sample_rate: 24000 };
 
@@ -247,6 +264,8 @@ export async function main(argv = process.argv) {
   if (!Array.isArray(dialog) || dialog.length === 0) {
     throw new Error('dialog 必须是非空数组 [{speaker,text},...]');
   }
+  const voiceB = VOICE_B_POOL[Math.floor(Math.random() * VOICE_B_POOL.length)];
+  process.stderr.write(`[tts] 本次女声音色: ${voiceB}\n`);
   // 分句目录：<out 所在目录>/<slug>/NN.mp3（slug = out 文件名去 .mp3）
   const slug = path.basename(args.out, '.mp3');
   const lineDir = path.join(path.dirname(args.out), slug);
@@ -255,7 +274,7 @@ export async function main(argv = process.argv) {
   const parts = [];
   for (let i = 0; i < dialog.length; i++) {
     const turn = dialog[i];
-    const speaker = turn.speaker === 'A' ? VOICE_A : VOICE_B;
+    const speaker = turn.speaker === 'A' ? VOICE_A : voiceB;
     process.stderr.write(
       `[tts] 合成 ${turn.speaker}: ${String(turn.text).slice(0, 40)}...\n`,
     );
@@ -273,6 +292,14 @@ export async function main(argv = process.argv) {
   process.stderr.write(
     `[tts] 完成 → ${args.out} (${parts.length} 段) + 分句目录 ${lineDir}/\n`,
   );
+  // 上传 COS（幂等）。跳过则说明已存在
+  process.stderr.write(`[tts] 上传 COS...\n`);
+  await uploadAudio(args.out, `audio/${slug}.mp3`);
+  for (let i = 0; i < parts.length; i++) {
+    const nn = String(i + 1).padStart(2, '0');
+    await uploadAudio(path.join(lineDir, `${nn}.mp3`), `audio/${slug}/${nn}.mp3`);
+  }
+  process.stderr.write(`[tts] COS 上传完成\n`);
   return { out: args.out, parts: parts.length, lineDir };
 }
 

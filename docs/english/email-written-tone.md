@@ -49,24 +49,24 @@ scene: Email & Written Tone
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/email-written-tone.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/email-written-tone.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Can you **draft** the client update? <button class="word-play-btn" onclick="new Audio('/audio/email-written-tone/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Can you **draft** the client update? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/email-written-tone/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：你能起草给客户的更新吗？</span>
 
-**B**: Sure. Keep it **concise**? <button class="word-play-btn" onclick="new Audio('/audio/email-written-tone/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Sure. Keep it **concise**? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/email-written-tone/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：行。保持简洁？</span>
 
-**A**: Yes, three bullets. **Stipulate** the new deadline. <button class="word-play-btn" onclick="new Audio('/audio/email-written-tone/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Yes, three bullets. **Stipulate** the new deadline. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/email-written-tone/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：对，三条。明确写新截止期。</span>
 
-**B**: Then **circulate** it to the whole team? <button class="word-play-btn" onclick="new Audio('/audio/email-written-tone/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Then **circulate** it to the whole team? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/email-written-tone/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：然后传阅给全队？</span>
 
-**A**: Yes, and ask them to **acknowledge** receipt. <button class="word-play-btn" onclick="new Audio('/audio/email-written-tone/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Yes, and ask them to **acknowledge** receipt. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/email-written-tone/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：对，让他们确认收到。</span>
 
-**B**: As a **courtesy**, I'll cc their account manager too. <button class="word-play-btn" onclick="new Audio('/audio/email-written-tone/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: As a **courtesy**, I'll cc their account manager too. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/email-written-tone/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：出于礼貌，我也抄送他们的客户经理。</span>

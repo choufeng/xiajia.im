@@ -49,21 +49,21 @@ scene: Persuading Stakeholders
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/persuading-stakeholders.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/persuading-stakeholders.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: How do we **persuade** the stakeholders to fund this? <button class="word-play-btn" onclick="new Audio('/audio/persuading-stakeholders/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: How do we **persuade** the stakeholders to fund this? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/persuading-stakeholders/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：怎么说服干系人投钱？</span>
 
-**B**: **Justify** it with ROI, then **convince** them with a pilot. <button class="word-play-btn" onclick="new Audio('/audio/persuading-stakeholders/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: **Justify** it with ROI, then **convince** them with a pilot. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/persuading-stakeholders/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：用 ROI 论证，再用试点使他们信服。</span>
 
-**A**: And if they're still unsure? <button class="word-play-btn" onclick="new Audio('/audio/persuading-stakeholders/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: And if they're still unsure? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/persuading-stakeholders/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：还不确定呢？</span>
 
-**B**: One demo can **sway** them. I'll **underline** the cost of inaction. <button class="word-play-btn" onclick="new Audio('/audio/persuading-stakeholders/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: One demo can **sway** them. I'll **underline** the cost of inaction. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/persuading-stakeholders/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：一个演示能动摇他们。我会强调不作为的代价。</span>
 
-**A**: Make sure to **drive home** the deadline — that's the pressure point. <button class="word-play-btn" onclick="new Audio('/audio/persuading-stakeholders/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Make sure to **drive home** the deadline — that's the pressure point. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/persuading-stakeholders/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：务必讲透截止期——那是压力点。</span>

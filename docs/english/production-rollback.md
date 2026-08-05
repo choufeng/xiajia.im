@@ -44,30 +44,30 @@ scene: Production Rollback
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/production-rollback.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Paging you. Five hundred error rate just spiked right after the deploy. The dashboard is bleeding red. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Paging you. Five hundred error rate just spiked right after the deploy. The dashboard is bleeding red. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：呼叫你。部署后 500 错误率突然飙升，仪表盘一片血红。</span>
 
-**B**: I see it. Most of the failures are **timeout** errors calling the payment gateway. Latency is through the roof. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: I see it. Most of the failures are **timeout** errors calling the payment gateway. Latency is through the roof. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我看到了。大多数失败是调用支付网关时的超时错误，延迟爆表。</span>
 
-**A**: Gateway is overloaded. Clients are hammering it in a **retry** storm. We need a **rollback** to the previous release now. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Gateway is overloaded. Clients are hammering it in a **retry** storm. We need a **rollback** to the previous release now. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：网关过载了。客户端在重试风暴中猛击它。我们需要立刻回滚到上一个发布版本。</span>
 
-**B**: Agreed. But first let me enable the **fallback** to the cached response path so active users are not left hanging. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Agreed. But first let me enable the **fallback** to the cached response path so active users are not left hanging. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：同意。但先让我启用降级到缓存响应路径，别让活跃用户悬着。</span>
 
-**A**: Good call. Cache path will absorb the load. Meanwhile I will flip traffic back to the old version. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Good call. Cache path will absorb the load. Meanwhile I will flip traffic back to the old version. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好主意。缓存路径能吸收负载。同时我把流量切回旧版本。</span>
 
-**B**: Once we are stable, let us cap the retry count and add an exponential **backoff** so clients back off gracefully next time. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Once we are stable, let us cap the retry count and add an exponential **backoff** so clients back off gracefully next time. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：稳定后，我们限制重试次数并加上指数退避，下次客户端就能优雅退避。</span>
 
-**A**: Rollback is executing. Old pods are coming up and traffic is shifting over. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Rollback is executing. Old pods are coming up and traffic is shifting over. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：回滚执行中。旧 Pod 正在起来，流量正在切过去。</span>
 
-**B**: Error rate is dropping. Fallback is serving stale but valid data, and the timeout curve is flattening out. <button class="word-play-btn" onclick="new Audio('/audio/production-rollback/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Error rate is dropping. Fallback is serving stale but valid data, and the timeout curve is flattening out. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/production-rollback/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：错误率在降。降级在提供陈旧但有效的数据，超时曲线正在趋平。</span>

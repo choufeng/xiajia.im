@@ -49,36 +49,36 @@ scene: Code Review Discussion
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/code-review-discussion.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Hey, could you review my pull request for the API refactor before I merge it? <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Hey, could you review my pull request for the API refactor before I merge it? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：嘿，我合并前你能帮我 review 一下 API 重构的 PR 吗？</span>
 
-**B**: Sure. First thing, I noticed you're storing the database **credential** directly in the config file. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Sure. First thing, I noticed you're storing the database **credential** directly in the config file. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好啊。首先，我注意到你把数据库凭证直接存在配置文件里了。</span>
 
-**A**: Oh right, that should go into environment variables instead. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Oh right, that should go into environment variables instead. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：哦对，那应该放进环境变量里。</span>
 
-**B**: Exactly. Also, when you **serialize** the response payload, make sure dates are in ISO format. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Exactly. Also, when you **serialize** the response payload, make sure dates are in ISO format. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没错。另外，序列化响应体时，确保日期用 ISO 格式。</span>
 
-**A**: Got it. The frontend expects a consistent format anyway. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Got it. The frontend expects a consistent format anyway. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：明白了。前端本来就期望统一格式。</span>
 
-**B**: One more thing. We should **partition** the user table by region once traffic grows. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: One more thing. We should **partition** the user table by region once traffic grows. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：还有一件事。等流量上来后，我们应该按地区对用户表分区。</span>
 
-**A**: Good idea. I'll add a TODO for that. By the way, the build is failing on the CI. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Good idea. I'll add a TODO for that. By the way, the build is failing on the CI. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好主意。我加个 TODO。对了，CI 上构建失败了。</span>
 
-**B**: Probably because we need to **transpile** the optional chaining syntax for the legacy target. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Probably because we need to **transpile** the optional chaining syntax for the legacy target. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：可能是需要为旧目标转译可选链语法。</span>
 
-**A**: That was it. I'll enable the Babel plugin. Anything else? <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/09.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: That was it. I'll enable the Babel plugin. Anything else? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/09.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：就是这个。我开一下 Babel 插件。还有别的吗？</span>
 
-**B**: Just add a git **hook** to run tests before each commit. Then we're good to merge. <button class="word-play-btn" onclick="new Audio('/audio/code-review-discussion/10.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Just add a git **hook** to run tests before each commit. Then we're good to merge. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion/10.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：加个 git 钩子，每次提交前跑测试就行，然后就能合并了。</span>

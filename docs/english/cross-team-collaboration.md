@@ -49,21 +49,21 @@ scene: Cross-team Collaboration
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/cross-team-collaboration.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/cross-team-collaboration.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: We have a hard **dependency** on the platform team's new API. <button class="word-play-btn" onclick="new Audio('/audio/cross-team-collaboration/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: We have a hard **dependency** on the platform team's new API. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/cross-team-collaboration/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我们硬依赖平台团队的新 API。</span>
 
-**B**: Who's the **liaison** over there? <button class="word-play-btn" onclick="new Audio('/audio/cross-team-collaboration/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Who's the **liaison** over there? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/cross-team-collaboration/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：那边联络人是谁？</span>
 
-**A**: Mei. I'll **coordinate** with her to **synchronize** our timelines. <button class="word-play-btn" onclick="new Audio('/audio/cross-team-collaboration/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Mei. I'll **coordinate** with her to **synchronize** our timelines. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/cross-team-collaboration/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：Mei。我和她协调同步时间线。</span>
 
-**B**: Good. Also set **boundaries** — what's ours vs. theirs. <button class="word-play-btn" onclick="new Audio('/audio/cross-team-collaboration/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Good. Also set **boundaries** — what's ours vs. theirs. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/cross-team-collaboration/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。也划清边界——哪些是我们的，哪些是他们的。</span>
 
-**A**: Will do. We **integrate** the week after they ship. <button class="word-play-btn" onclick="new Audio('/audio/cross-team-collaboration/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Will do. We **integrate** the week after they ship. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/cross-team-collaboration/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：会的。他们发布后那周我们整合。</span>

@@ -14,7 +14,7 @@
 2. 生成表格：单词 + 中文解释 + dev 语境英文例句
 3. 基于这 5 个词生成一段**双人 dev 工作场景对话**
 4. 调用**火山引擎豆包 TTS** 把对话合成 **MP3**（多角色音色）
-5. MP3 落地到 `docs/public/audio/`，随 gh-pages 部署
+5. MP3 落地到 `docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/`，随 gh-pages 部署
 6. 生成一篇 MD（表格 + 对话 + HTML5 `<audio>` 播放器）写入 `docs/english/`
 7. 更新 VitePress 侧边栏 + git commit & push
 8. 回写词库标记这 5 个词已使用
@@ -54,7 +54,7 @@
    - 对话场景名（英文，转 kebab-case slug）
 4. 重名检测：ls docs/english/ 查 <slug>.md 冲突 → 冲突加序号 -2
 5. tts-volc.mjs：对话文本 → SSML 多角色 → MP3 bytes
-6. MP3 写 docs/public/audio/<slug>.mp3
+6. MP3 写 docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3
 7. 写 docs/english/<slug>.md（表格 + 对话 + <audio>）
 8. mark-used.mjs：vocab.json 这 5 词 used=true + usedDate + scene
 9. 编辑 config.js：sidebar '/english/' 分组追加条目
@@ -172,7 +172,7 @@ pi 当前模型在 skill 流程中负责：
 ### 6.3 输出
 
 - 格式：MP3
-- 落地：`docs/public/audio/<slug>.mp3`
+- 落地：`docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3`
 - 比特率：默认官方推荐（一般 128kbps 够用）
 
 ### 6.4 凭证（不入 git）
@@ -241,7 +241,7 @@ scene: Code Review Discussion
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/code-review-discussion.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/code-review-discussion.mp3"></audio>
 
 ## 💬 Dialogue
 
@@ -252,12 +252,12 @@ scene: Code Review Discussion
 **A**: ...
 ```
 
-- `src` 用 VitePress public 绝对路径 `/audio/<slug>.mp3`
+- `src` 用 VitePress public 绝对路径 `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3`
 - `preload="none"` 避免打开页面即下载
 
 ### 7.4 MP3 存放
 
-`docs/public/audio/<slug>.mp3` —— VitePress 会把 `docs/public/` 下文件映射到站点根，故 MD 引用 `/audio/<slug>.mp3`。
+`docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3` —— VitePress 会把 `docs/public/` 下文件映射到站点根，故 MD 引用 `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3`。
 
 ---
 
@@ -266,7 +266,7 @@ scene: Code Review Discussion
 - MD：`docs/english/<scene-slug>.md`，slug = 场景英文短语 kebab-case
   - 例：`Code Review Discussion` → `code-review-discussion.md`
   - `Daily Standup` → `daily-standup.md`
-- MP3：`docs/public/audio/<scene-slug>.mp3`（与 MD 同 slug）
+- MP3：`docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<scene-slug>.mp3`（与 MD 同 slug）
 - **重名处理**：写前 `ls docs/english/` 检测 `<slug>.md`，冲突则 slug 追加 `-2`、`-3`（MP3 同步）
 - 日期不进文件名，仅记 frontmatter `date`
 

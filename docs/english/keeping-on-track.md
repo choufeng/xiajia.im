@@ -117,30 +117,30 @@ scene: Keeping Discussion on Track
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/keeping-on-track.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: ...and honestly, this reminds me of that bug we hit last summer — remember the cache layer issue? We spent two weeks on it and— <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: ...and honestly, this reminds me of that bug we hit last summer — remember the cache layer issue? We spent two weeks on it and— <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：……说实话，这让我想起去年夏天那个 bug——记得缓存层那个问题吗？花了两周才……</span>
 
-**B**: Hold on, that's a bit of a **tangent**. Let's **table that** for now. <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Hold on, that's a bit of a **tangent**. Let's **table that** for now. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：停，这有点跑题了。先搁置吧。</span>
 
-**A**: Right, sorry. Where were we? <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Right, sorry. Where were we? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：对，抱歉。讲到哪了？</span>
 
-**B**: Back to the agenda — we're on the rollout plan. The **scope** here is just phase one. <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Back to the agenda — we're on the rollout plan. The **scope** here is just phase one. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：回议程——我们在讲上线计划。范围只有第一阶段。</span>
 
-**A**: Got it. So the failover config is the open question. <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Got it. So the failover config is the open question. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：明白。那故障转移配置是未决项。</span>
 
-**B**: Exactly. Let's **parking lot** the caching debate and **circle back** to it next week. <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Exactly. Let's **parking lot** the caching debate and **circle back** to it next week. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没错。缓存那个争论放搁置区，下周再回头聊。</span>
 
-**A**: Works for me. Quick time check — we've got eight minutes left. <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Works for me. Quick time check — we've got eight minutes left. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：行。提醒下时间——还剩八分钟。</span>
 
-**B**: Then let's refocus: decision on the failover config, then we close. <button class="word-play-btn" onclick="new Audio('/audio/keeping-on-track/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Then let's refocus: decision on the failover config, then we close. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/keeping-on-track/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：那就拉回重点：定故障转移配置，然后收尾。</span>

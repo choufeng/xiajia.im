@@ -3,6 +3,9 @@ docs/.vitepress/cache/
 docs/.vitepress/dist/
 .DS_Store
 
+# 音频存 COS，不入仓库
+docs/public/audio/
+
 # pi 运行时产物（子代理会话、临时 skill）
 .pi-subagents/
 .pi/skills/

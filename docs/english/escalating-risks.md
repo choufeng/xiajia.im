@@ -49,24 +49,24 @@ scene: Escalating Risks & Issues
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/escalating-risks.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/escalating-risks.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: I need to **flag** something — the deploy exposes a memory leak. <button class="word-play-btn" onclick="new Audio('/audio/escalating-risks/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: I need to **flag** something — the deploy exposes a memory leak. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/escalating-risks/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我得提个事——这次部署暴露了内存泄漏。</span>
 
-**B**: How bad? Do we **escalate**? <button class="word-play-btn" onclick="new Audio('/audio/escalating-risks/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: How bad? Do we **escalate**? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/escalating-risks/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：多严重？要上报吗？</span>
 
-**A**: Not yet. We didn't **anticipate** it, but it's contained. <button class="word-play-btn" onclick="new Audio('/audio/escalating-risks/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Not yet. We didn't **anticipate** it, but it's contained. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/escalating-risks/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：先不。我们没预判到，但已控制住。</span>
 
-**B**: Good. Let's **brace** for tonight's traffic anyway. <button class="word-play-btn" onclick="new Audio('/audio/escalating-risks/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Good. Let's **brace** for tonight's traffic anyway. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/escalating-risks/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。无论如何，为今晚流量做好准备。</span>
 
-**A**: Agreed. What's our **contingency** if it grows? <button class="word-play-btn" onclick="new Audio('/audio/escalating-risks/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Agreed. What's our **contingency** if it grows? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/escalating-risks/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：同意。恶化的话应急方案是什么？</span>
 
-**B**: Roll back to the last green build. Document it now. <button class="word-play-btn" onclick="new Audio('/audio/escalating-risks/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Roll back to the last green build. Document it now. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/escalating-risks/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：回滚到上次成功的构建。现在就写下来。</span>

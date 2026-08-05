@@ -49,24 +49,24 @@ scene: Giving Constructive Feedback
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/giving-feedback.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/giving-feedback.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: Can I give you some **constructive** feedback on the doc? <button class="word-play-btn" onclick="new Audio('/audio/giving-feedback/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Can I give you some **constructive** feedback on the doc? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/giving-feedback/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我给文档一些建设性反馈行吗？</span>
 
-**B**: Please. **Critique** away. <button class="word-play-btn" onclick="new Audio('/audio/giving-feedback/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Please. **Critique** away. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/giving-feedback/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：请。尽管评析。</span>
 
-**A**: First, let me **highlight** — the intro is really strong. <button class="word-play-btn" onclick="new Audio('/audio/giving-feedback/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: First, let me **highlight** — the intro is really strong. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/giving-feedback/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：先强调——开头很强。</span>
 
-**B**: Thanks. What needs work? <button class="word-play-btn" onclick="new Audio('/audio/giving-feedback/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Thanks. What needs work? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/giving-feedback/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：谢。哪里要改？</span>
 
-**A**: **Refine** section three; the example is weak. And don't **nitpick** typos yet. <button class="word-play-btn" onclick="new Audio('/audio/giving-feedback/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: **Refine** section three; the example is weak. And don't **nitpick** typos yet. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/giving-feedback/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：打磨第三节；例子弱。错别字先别纠结。</span>
 
-**B**: Got it. I'll **polish** it after the logic is solid. <button class="word-play-btn" onclick="new Audio('/audio/giving-feedback/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Got it. I'll **polish** it after the logic is solid. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/giving-feedback/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：明白。逻辑扎实后我再润色。</span>

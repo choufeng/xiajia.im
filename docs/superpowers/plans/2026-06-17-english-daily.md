@@ -4,7 +4,7 @@
 
 **Goal:** 在 XiaJia.IM 站点新增 `Learning English` 板块，配套 pi 项目级 skill `english-daily`，手动触发生成「5 个 dev 单词 + 对话 + 火山豆包 TTS 合成的 MP3」学习内容。
 
-**Architecture:** Skill 源码置于 `.pi/skills/english-daily/`（保持纯净），运行时数据写 `docs/english/.vocab.json`（词库 + used 标记，唯一去重事实源）。MP3 存 `docs/public/audio/` 随 gh-pages 部署。脚本用 Node ESM（.mjs）+ 内置 `node:test`，零运行时依赖。唯一外部 API = 火山引擎豆包 TTS。
+**Architecture:** Skill 源码置于 `.pi/skills/english-daily/`（保持纯净），运行时数据写 `docs/english/.vocab.json`（词库 + used 标记，唯一去重事实源）。MP3 存 `docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/` 随 gh-pages 部署。脚本用 Node ESM（.mjs）+ 内置 `node:test`，零运行时依赖。唯一外部 API = 火山引擎豆包 TTS。
 
 **Tech Stack:** Node.js v22 ESM、`node:test` + `node:assert`、火山引擎豆包 TTS（HTTP）、ffmpeg（MP3 拼接）、VitePress。
 
@@ -43,7 +43,7 @@
 
 - `docs/english/.vocab.json` — 词库状态
 - `docs/english/<slug>.md` — 每日文章
-- `docs/public/audio/<slug>.mp3` — 音频
+- `docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3` — 音频
 
 ### 路径约定
 
@@ -1022,7 +1022,7 @@ ls docs/english/*.md 2>/dev/null
 ```bash
 node .pi/skills/english-daily/scripts/tts-volc.mjs \
   --dialog /tmp/english-dialog.json \
-  --out docs/public/audio/<slug>.mp3 \
+  --out docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3 \
   --scene <slug>
 ```
 
@@ -1051,7 +1051,7 @@ scene: <场景英文标题>
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/<slug>.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3"></audio>
 
 ## 💬 Dialogue
 
@@ -1061,7 +1061,7 @@ scene: <场景英文标题>
 ```
 
 - 日期用当天日期
-- `<audio>` 的 `src` 用 VitePress public 绝对路径 `/audio/<slug>.mp3`
+- `<audio>` 的 `src` 用 VitePress public 绝对路径 `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3`
 
 ### 6. 回写 vocab
 
@@ -1093,7 +1093,7 @@ node .pi/skills/english-daily/scripts/mark-used.mjs \
 
 ```bash
 cd /Users/jia.xia/development/xiajia.im
-git add docs/english/<slug>.md docs/english/.vocab.json docs/public/audio/<slug>.mp3 docs/.vitepress/config.js
+git add docs/english/<slug>.md docs/english/.vocab.json docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3 docs/.vitepress/config.js
 # 首次还需: git add docs/english/index.md
 git commit -m "docs(english): <场景英文标题> — 每日英语"
 git push
@@ -1213,8 +1213,8 @@ Expected: 三个均 ✓。若 ✗ → 配置后重试。
 人工核验产出：
 - [ ] `docs/english/<slug>.md` 存在，含 frontmatter date/scene
 - [ ] 词表 5 行，每个词有中文意思 + 英文例句
-- [ ] `<audio>` 标签 src 指向 `/audio/<slug>.mp3`
-- [ ] `docs/public/audio/<slug>.mp3` 存在且可播放，A/B 两音色
+- [ ] `<audio>` 标签 src 指向 `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3`
+- [ ] `docs/publichttps://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/<slug>.mp3` 存在且可播放，A/B 两音色
 - [ ] 对话含全部 5 个词
 - [ ] `docs/english/.vocab.json` 中这 5 词 `used=true`，usedDate/scene 正确
 - [ ] `config.js` sidebar `/english/` 出现新条目

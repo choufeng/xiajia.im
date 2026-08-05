@@ -44,24 +44,24 @@ scene: Architecture Discussion
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/architecture-discussion.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/architecture-discussion.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: We are debating between cache aside and write through. <button class="word-play-btn" onclick="new Audio('/audio/architecture-discussion/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: We are debating between cache aside and write through. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/architecture-discussion/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我们在纠结用 cache aside 还是 write through。</span>
 
-**B**: With write through, we **invalidate** the stale key immediately. <button class="word-play-btn" onclick="new Audio('/audio/architecture-discussion/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: With write through, we **invalidate** the stale key immediately. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/architecture-discussion/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：用 write through 的话，我们能立刻让过期 key 失效。</span>
 
-**A**: But the **schema** change needs a migration plan. <button class="word-play-btn" onclick="new Audio('/audio/architecture-discussion/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: But the **schema** change needs a migration plan. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/architecture-discussion/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：但这次 schema 变更需要迁移方案。</span>
 
-**B**: Agreed. Also watch for **deadlock** on concurrent writes. <button class="word-play-btn" onclick="new Audio('/audio/architecture-discussion/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Agreed. Also watch for **deadlock** on concurrent writes. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/architecture-discussion/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：同意。还要注意并发写入时的死锁。</span>
 
-**A**: Should we **provision** more capacity first? <button class="word-play-btn" onclick="new Audio('/audio/architecture-discussion/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Should we **provision** more capacity first? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/architecture-discussion/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：要不要先多备点容量？</span>
 
-**B**: Yes, and build it as an **extension** point for future shards. <button class="word-play-btn" onclick="new Audio('/audio/architecture-discussion/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Yes, and build it as an **extension** point for future shards. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/architecture-discussion/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要，而且把它做成扩展点，方便以后分片。</span>

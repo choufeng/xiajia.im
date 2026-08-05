@@ -44,24 +44,24 @@ scene: Fixing a Flaky Test
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/fixing-a-flaky-test.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/fixing-a-flaky-test.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: The build failed again on the integration suite. <button class="word-play-btn" onclick="new Audio('/audio/fixing-a-flaky-test/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: The build failed again on the integration suite. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/fixing-a-flaky-test/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：集成测试套件又挂了。</span>
 
-**B**: Same **flaky** test. It depends on the **replica** being in sync. <button class="word-play-btn" onclick="new Audio('/audio/fixing-a-flaky-test/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Same **flaky** test. It depends on the **replica** being in sync. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/fixing-a-flaky-test/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：还是那个不稳定测试。它依赖副本同步。</span>
 
-**A**: How do we **mitigate** the timing issue? <button class="word-play-btn" onclick="new Audio('/audio/fixing-a-flaky-test/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: How do we **mitigate** the timing issue? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/fixing-a-flaky-test/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我们怎么缓解这个时序问题？</span>
 
-**B**: Make the setup **idempotent** so it can retry safely. <button class="word-play-btn" onclick="new Audio('/audio/fixing-a-flaky-test/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Make the setup **idempotent** so it can retry safely. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/fixing-a-flaky-test/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：把初始化做成幂等的，这样重试就安全了。</span>
 
-**A**: Good idea. Should we update the test **template** too? <button class="word-play-btn" onclick="new Audio('/audio/fixing-a-flaky-test/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Good idea. Should we update the test **template** too? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/fixing-a-flaky-test/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好主意。要不要也更新一下测试模板？</span>
 
-**B**: Yes, add an explicit wait before the assertion. <button class="word-play-btn" onclick="new Audio('/audio/fixing-a-flaky-test/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Yes, add an explicit wait before the assertion. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/fixing-a-flaky-test/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要，在断言前加个显式等待。</span>

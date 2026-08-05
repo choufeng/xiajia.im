@@ -44,24 +44,24 @@ scene: CI/CD Pipeline Setup
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/ci-cd-pipeline-setup.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/ci-cd-pipeline-setup.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: The new pipeline is missing the deploy stage. <button class="word-play-btn" onclick="new Audio('/audio/ci-cd-pipeline-setup/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: The new pipeline is missing the deploy stage. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/ci-cd-pipeline-setup/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：新流水线少了部署阶段。</span>
 
-**B**: Use the **scaffold** from the docs team as a template. <button class="word-play-btn" onclick="new Audio('/audio/ci-cd-pipeline-setup/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Use the **scaffold** from the docs team as a template. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/ci-cd-pipeline-setup/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：用文档团队那个脚手架当模板。</span>
 
-**A**: It needs an **artifact** to publish and a deploy **token**. <button class="word-play-btn" onclick="new Audio('/audio/ci-cd-pipeline-setup/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: It needs an **artifact** to publish and a deploy **token**. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/ci-cd-pipeline-setup/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：它需要一个产物来发布，还要一个部署令牌。</span>
 
-**B**: Correct. Keep the token in the secret store, not the repo. <button class="word-play-btn" onclick="new Audio('/audio/ci-cd-pipeline-setup/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Correct. Keep the token in the secret store, not the repo. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/ci-cd-pipeline-setup/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。令牌放密钥库里，别放仓库。</span>
 
-**A**: What if a step fails **silently**? <button class="word-play-btn" onclick="new Audio('/audio/ci-cd-pipeline-setup/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: What if a step fails **silently**? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/ci-cd-pipeline-setup/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：要是有步骤静默失败怎么办？</span>
 
-**B**: Good catch. Add a **dashboard** so we can spot regressions. <button class="word-play-btn" onclick="new Audio('/audio/ci-cd-pipeline-setup/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Good catch. Add a **dashboard** so we can spot regressions. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/ci-cd-pipeline-setup/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：问得好。加个仪表盘，这样能发现回归。</span>

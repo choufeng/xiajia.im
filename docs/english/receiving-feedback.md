@@ -49,21 +49,21 @@ scene: Receiving Feedback
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/receiving-feedback.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/receiving-feedback.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: The review came back rough. How are you holding up? <button class="word-play-btn" onclick="new Audio('/audio/receiving-feedback/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: The review came back rough. How are you holding up? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/receiving-feedback/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：评审反馈挺狠。你怎么样？</span>
 
-**B**: Trying to stay **receptive**. It's hard not to get **defensive**. <button class="word-play-btn" onclick="new Audio('/audio/receiving-feedback/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Trying to stay **receptive**. It's hard not to get **defensive**. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/receiving-feedback/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：努力保持乐于接受。不防御性反应很难。</span>
 
-**A**: Take a day to **absorb** it. Don't reply angry. <button class="word-play-btn" onclick="new Audio('/audio/receiving-feedback/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Take a day to **absorb** it. Don't reply angry. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/receiving-feedback/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：花一天消化。别带气回。</span>
 
-**B**: Right. I'll **reflect** tonight. They did point out a **blind spot**. <button class="word-play-btn" onclick="new Audio('/audio/receiving-feedback/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Right. I'll **reflect** tonight. They did point out a **blind spot**. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/receiving-feedback/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。我今晚反思。他们确实点出了我一个盲区。</span>
 
-**A**: That's the **takeaway** worth keeping. <button class="word-play-btn" onclick="new Audio('/audio/receiving-feedback/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: That's the **takeaway** worth keeping. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/receiving-feedback/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：那才是值得留下的收获。</span>

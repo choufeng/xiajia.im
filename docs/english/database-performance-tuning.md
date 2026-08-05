@@ -44,24 +44,24 @@ scene: Database Performance Tuning
 
 ## 🎧 Audio
 
-<audio controls preload="none" src="/audio/database-performance-tuning.mp3"></audio>
+<audio controls preload="none" src="https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/database-performance-tuning.mp3"></audio>
 
 ## 💬 Dialogue
 
-**A**: The dashboard **query** is taking twelve seconds to load. <button class="word-play-btn" onclick="new Audio('/audio/database-performance-tuning/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: The dashboard **query** is taking twelve seconds to load. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/database-performance-tuning/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：仪表盘查询要 12 秒才能加载完。</span>
 
-**B**: That is our **bottleneck** right now. The index is missing on the join. <button class="word-play-btn" onclick="new Audio('/audio/database-performance-tuning/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: That is our **bottleneck** right now. The index is missing on the join. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/database-performance-tuning/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：那是我们现在的瓶颈。join 上缺索引。</span>
 
-**A**: Should I run the **migration** during off-peak hours? <button class="word-play-btn" onclick="new Audio('/audio/database-performance-tuning/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Should I run the **migration** during off-peak hours? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/database-performance-tuning/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我该在低峰期跑迁移吗？</span>
 
-**B**: Yes, and **stash** your current branch first so the deploy is clean. <button class="word-play-btn" onclick="new Audio('/audio/database-performance-tuning/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Yes, and **stash** your current branch first so the deploy is clean. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/database-performance-tuning/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对，先暂存当前分支，让部署干净点。</span>
 
-**A**: Got it. After we **optimize** the index, will the cache need warming? <button class="word-play-btn" onclick="new Audio('/audio/database-performance-tuning/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**A**: Got it. After we **optimize** the index, will the cache need warming? <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/database-performance-tuning/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：明白。优化索引后，缓存需要预热吗？</span>
 
-**B**: Exactly. Run the query once after deploy to populate it. <button class="word-play-btn" onclick="new Audio('/audio/database-performance-tuning/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
+**B**: Exactly. Run the query once after deploy to populate it. <button class="word-play-btn" onclick="new Audio('https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/audio/database-performance-tuning/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没错。部署后跑一次查询把它填上。</span>
