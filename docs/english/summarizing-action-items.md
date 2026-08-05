@@ -121,26 +121,26 @@ scene: Summarizing & Action Items
 
 ## 💬 Dialogue
 
-**A**: Let me **recap** before we wrap. Three decisions: the feature flag ships Tuesday, the rollback doc is due Thursday, and we skip the EU rollout for now.
+**A**: Let me **recap** before we wrap. Three decisions: the feature flag ships Tuesday, the rollback doc is due Thursday, and we skip the EU rollout for now. <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：收尾前复述。三个决定：特性开关周二上线，回滚文档周四截止，欧盟暂不上。</span>
 
-**B**: Got it. And the **action item** for the rollback doc — who's the **owner**?
+**B**: Got it. And the **action item** for the rollback doc — who's the **owner**? <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：收到。那回滚文档的行动项——谁负责？</span>
 
-**A**: Good catch. Maria owns the doc. The **due date** is end of day Thursday.
+**A**: Good catch. Maria owns the doc. The **due date** is end of day Thursday. <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：问得好。文档归 Maria。截止周四下班前。</span>
 
-**B**: What about the monitoring dashboard concern someone raised earlier? That drifted off.
+**B**: What about the monitoring dashboard concern someone raised earlier? That drifted off. <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：那之前有人提的监控面板顾虑呢？跑题了。</span>
 
-**A**: Right — let's put that in the **parking lot** and **take it offline** after this meeting.
+**A**: Right — let's put that in the **parking lot** and **take it offline** after this meeting. <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：对——放搁置区，会后单独聊。</span>
 
-**B**: Makes sense. I'll sync with the platform team separately on the dashboard.
+**B**: Makes sense. I'll sync with the platform team separately on the dashboard. <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：合理。我单独跟平台团队对一下面板。</span>
 
-**A**: Perfect. Anything else, or are we good to close out?
+**A**: Perfect. Anything else, or are we good to close out? <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：完美。还有别的吗，可以散了吗？</span>
 
-**B**: All clear on my end. Thanks, good meeting.
+**B**: All clear on my end. Thanks, good meeting. <button class="word-play-btn" onclick="new Audio('/audio/summarizing-action-items/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我这没事了。谢谢，会开得好。</span>

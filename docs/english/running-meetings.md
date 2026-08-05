@@ -53,20 +53,20 @@ scene: Running Effective Meetings
 
 ## 💬 Dialogue
 
-**A**: I'll **facilitate** today. Here's the **agenda** — three items, thirty minutes.
+**A**: I'll **facilitate** today. Here's the **agenda** — three items, thirty minutes. <button class="word-play-btn" onclick="new Audio('/audio/running-meetings/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：今天我来主持。议程三项，三十分钟。</span>
 
-**B**: Can we **brainstorm** the naming before deciding?
+**B**: Can we **brainstorm** the naming before deciding? <button class="word-play-btn" onclick="new Audio('/audio/running-meetings/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：定之前能头脑风暴下命名吗？</span>
 
-**A**: Five minutes for that, then we move on.
+**A**: Five minutes for that, then we move on. <button class="word-play-btn" onclick="new Audio('/audio/running-meetings/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：五分钟，然后继续。</span>
 
-**B**: We're running over. Should we **regroup**?
+**B**: We're running over. Should we **regroup**? <button class="word-play-btn" onclick="new Audio('/audio/running-meetings/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：超时了。要重整吗？</span>
 
-**A**: Yes. Let's **adjourn** item three for tomorrow.
+**A**: Yes. Let's **adjourn** item three for tomorrow. <button class="word-play-btn" onclick="new Audio('/audio/running-meetings/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：对。第三项休会到明天。</span>
 
-**B**: Good. **Debrief** with the owners and due dates.
+**B**: Good. **Debrief** with the owners and due dates. <button class="word-play-btn" onclick="new Audio('/audio/running-meetings/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。用负责人和截止日复盘。</span>

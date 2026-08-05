@@ -121,26 +121,26 @@ scene: Polite Interruptions
 
 ## 💬 Dialogue
 
-**A**: ...and so the migration will roll out in three phases, starting with the read replicas next Monday.
+**A**: ...and so the migration will roll out in three phases, starting with the read replicas next Monday. <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：……所以迁移会分三阶段上线，从下周一只读副本开始。</span>
 
-**B**: Sorry to **cut in** — **before we move on**, I want to flag a risk on phase one.
+**B**: Sorry to **cut in** — **before we move on**, I want to flag a risk on phase one. <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：抱歉打断一下——继续之前，我想提个第一阶段的风险。</span>
 
-**A**: Sure, go ahead. What's the concern?
+**A**: Sure, go ahead. What's the concern? <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好的，说吧。什么顾虑？</span>
 
-**B**: If I **may interject** — the read replicas still don't have the new IAM role attached.
+**B**: If I **may interject** — the read replicas still don't have the new IAM role attached. <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：如果可以我插一句——只读副本还没挂上新的 IAM 角色。</span>
 
-**A**: Ah, good catch. I hadn't pushed that change yet.
+**A**: Ah, good catch. I hadn't pushed that change yet. <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：啊，发现得好。那个改动我还没推。</span>
 
-**B**: Mind if I **jump in** and own that piece? I can have it done by EOD.
+**B**: Mind if I **jump in** and own that piece? I can have it done by EOD. <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：介意我插手把这块揽下来吗？今天下班前能搞定。</span>
 
-**A**: That'd be great. So to recap: you handle IAM, I proceed with phase one cutover.
+**A**: That'd be great. So to recap: you handle IAM, I proceed with phase one cutover. <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：太好了。复述一下：你管 IAM，我继续第一阶段切换。</span>
 
-**B**: Exactly. Sorry for the interruption — I'll hand it back to you for the rest of the plan.
+**B**: Exactly. Sorry for the interruption — I'll hand it back to you for the rest of the plan. <button class="word-play-btn" onclick="new Audio('/audio/polite-interruptions/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没错。抱歉打断了——剩下的计划我把话还给你。</span>

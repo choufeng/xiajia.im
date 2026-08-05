@@ -48,20 +48,20 @@ scene: Pair Programming
 
 ## 💬 Dialogue
 
-**A**: Want to pair on the payment module?
+**A**: Want to pair on the payment module? <button class="word-play-btn" onclick="new Audio('/audio/pair-programming/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：要不要结对搞一下支付模块？</span>
 
-**B**: Sure. Let us wrap the update in a single **transaction**.
+**B**: Sure. Let us wrap the update in a single **transaction**. <button class="word-play-btn" onclick="new Audio('/audio/pair-programming/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好啊。我们把更新包在一个事务里。</span>
 
-**A**: Good. Each **commit** should be small and focused.
+**A**: Good. Each **commit** should be small and focused. <button class="word-play-btn" onclick="new Audio('/audio/pair-programming/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好。每次提交都要小而专注。</span>
 
-**B**: I will remove the **boilerplate** first.
+**B**: I will remove the **boilerplate** first. <button class="word-play-btn" onclick="new Audio('/audio/pair-programming/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我先把样板代码清掉。</span>
 
-**A**: Also, should we **shard** the table by user region?
+**A**: Also, should we **shard** the table by user region? <button class="word-play-btn" onclick="new Audio('/audio/pair-programming/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：另外，要不要按用户地区给表分片？</span>
 
-**B**: Later. First verify the **checksum** on every payload.
+**B**: Later. First verify the **checksum** on every payload. <button class="word-play-btn" onclick="new Audio('/audio/pair-programming/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：等等。先校验每个负载的校验和。</span>

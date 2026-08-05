@@ -48,20 +48,20 @@ scene: Frontend Caching Strategy
 
 ## 💬 Dialogue
 
-**A**: The bundle size grew again after the upgrade.
+**A**: The bundle size grew again after the upgrade. <button class="word-play-btn" onclick="new Audio('/audio/frontend-caching-strategy/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：升级后打包体积又变大了。</span>
 
-**B**: We need better **bundling** and code splitting.
+**B**: We need better **bundling** and code splitting. <button class="word-play-btn" onclick="new Audio('/audio/frontend-caching-strategy/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我们需要更好的打包和代码分割。</span>
 
-**A**: Also add a **polyfill** only for the legacy chunk.
+**A**: Also add a **polyfill** only for the legacy chunk. <button class="word-play-btn" onclick="new Audio('/audio/frontend-caching-strategy/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：另外只给旧代码块加垫片。</span>
 
-**B**: Right. And set a clear **eviction** policy on the cache.
+**B**: Right. And set a clear **eviction** policy on the cache. <button class="word-play-btn" onclick="new Audio('/audio/frontend-caching-strategy/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。还要给缓存定个明确的淘汰策略。</span>
 
-**A**: Should we **encrypt** the cached user **snapshot**?
+**A**: Should we **encrypt** the cached user **snapshot**? <button class="word-play-btn" onclick="new Audio('/audio/frontend-caching-strategy/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：要不要加密缓存的用户快照？</span>
 
-**B**: Yes, especially the tokens stored in local storage.
+**B**: Yes, especially the tokens stored in local storage. <button class="word-play-btn" onclick="new Audio('/audio/frontend-caching-strategy/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要，尤其是存在 local storage 里的令牌。</span>

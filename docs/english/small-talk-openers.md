@@ -121,26 +121,26 @@ scene: Small Talk & Openers
 
 ## 💬 Dialogue
 
-**A**: Hey everyone, **how's it going**? Glad you could all make it.
+**A**: Hey everyone, **how's it going**? Glad you could all make it. <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：大家嘿，最近咋样？谢谢都能来。</span>
 
-**B**: Hey! Good. Did you manage to **wrap up** that migration PR over the weekend?
+**B**: Hey! Good. Did you manage to **wrap up** that migration PR over the weekend? <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：嘿！挺好。周末那个迁移 PR 收尾了吗？</span>
 
-**A**: Finally merged it Sunday night. How about you — **settling in** okay after the move?
+**A**: Finally merged it Sunday night. How about you — **settling in** okay after the move? <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：周日晚上终于合了。你呢——搬完家适应得还好吗？</span>
 
-**B**: Mostly. Still finding where the new office put the coffee machine.
+**B**: Mostly. Still finding where the new office put the coffee machine. <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：差不多。还在找新办公室咖啡机放哪了。</span>
 
-**A**: Ha, classic. Alright, before we **dive in**, thanks for jumping on short notice.
+**A**: Ha, classic. Alright, before we **dive in**, thanks for jumping on short notice. <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：哈，经典。好了，开始之前，谢谢临时被拉来。</span>
 
-**B**: No problem. **Before we start**, anyone heard from Sam? He's usually early.
+**B**: No problem. **Before we start**, anyone heard from Sam? He's usually early. <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：没事。开始前，有人收到 Sam 消息吗？他平时早的。</span>
 
-**A**: He pinged — running five minutes late. Let's kick off and loop him in.
+**A**: He pinged — running five minutes late. Let's kick off and loop him in. <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：他发消息了——晚五分钟。我们先开始，进来再带他。</span>
 
-**B**: Sounds good. Lead the way.
+**B**: Sounds good. Lead the way. <button class="word-play-btn" onclick="new Audio('/audio/small-talk-openers/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：行。你带。</span>

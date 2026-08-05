@@ -121,26 +121,26 @@ scene: Inviting Quiet Voices
 
 ## 💬 Dialogue
 
-**A**: So that's the backend plan. I think we've covered the main pieces. Thoughts, everyone?
+**A**: So that's the backend plan. I think we've covered the main pieces. Thoughts, everyone? <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：后端计划就这样。主要内容都过了。大家怎么看？</span>
 
-**B**: Before we move on — Priya, want to **weigh in** on the mobile side? You've been quiet.
+**B**: Before we move on — Priya, want to **weigh in** on the mobile side? You've been quiet. <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：继续之前——Priya，移动端这边想说吗？你一直没吭声。</span>
 
-**A**: Yeah, I'd love to **pull** you **in** here. This affects the iOS launch directly.
+**A**: Yeah, I'd love to **pull** you **in** here. This affects the iOS launch directly. <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：对，我想把你拉进来。这直接影响 iOS 上线。</span>
 
-**B**: And Sam, feel free to **chime in** on the API contract — it's your area of expertise.
+**B**: And Sam, feel free to **chime in** on the API contract — it's your area of expertise. <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：还有 Sam，API 契约这块随时补充——那是你的专长。</span>
 
-**A**: We'll wait — take your time. What are your **thoughts**, Priya?
+**A**: We'll wait — take your time. What are your **thoughts**, Priya? <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我们等——慢慢来。Priya 你怎么看？</span>
 
-**B**: Let's also **bring in** the QA lead. They've spotted edge cases we haven't discussed.
+**B**: Let's also **bring in** the QA lead. They've spotted edge cases we haven't discussed. <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：也把 QA 负责人拉进来吧。他们发现了我们没讨论的边界情况。</span>
 
-**A**: Good idea. Priya, over to you first.
+**A**: Good idea. Priya, over to you first. <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：好主意。Priya，先听你的。</span>
 
-**B**: Thanks. I think the main risk is the offline cache invalidation...
+**B**: Thanks. I think the main risk is the offline cache invalidation... <button class="word-play-btn" onclick="new Audio('/audio/inviting-quiet-voices/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：谢谢。我觉得主要风险是离线缓存失效……</span>

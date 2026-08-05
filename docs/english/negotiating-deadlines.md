@@ -58,20 +58,20 @@ scene: Negotiating Deadlines & Scope
 
 ## 💬 Dialogue
 
-**A**: The client wants it by Friday. Can we do it?
+**A**: The client wants it by Friday. Can we do it? <button class="word-play-btn" onclick="new Audio('/audio/negotiating-deadlines/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：客户要周五交付，行吗？</span>
 
-**B**: Friday isn't **feasible**. We need to **negotiate**.
+**B**: Friday isn't **feasible**. We need to **negotiate**. <button class="word-play-btn" onclick="new Audio('/audio/negotiating-deadlines/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：周五实现不了，得谈。</span>
 
-**A**: I can **compromise** on one feature if they extend the date.
+**A**: I can **compromise** on one feature if they extend the date. <button class="word-play-btn" onclick="new Audio('/audio/negotiating-deadlines/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：他们延日期的话，我可以在一个功能上妥协。</span>
 
-**B**: Good. We should also **concede** the dashboard but keep the API solid.
+**B**: Good. We should also **concede** the dashboard but keep the API solid. <button class="word-play-btn" onclick="new Audio('/audio/negotiating-deadlines/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。仪表盘可以让步，但 API 不能松。</span>
 
-**A**: What's the **tradeoff** they'll accept?
+**A**: What's the **tradeoff** they'll accept? <button class="word-play-btn" onclick="new Audio('/audio/negotiating-deadlines/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：他们能接受什么权衡？</span>
 
-**B**: We have **leverage** — they launch after us. So we **defer** the nice-to-haves.
+**B**: We have **leverage** — they launch after us. So we **defer** the nice-to-haves. <button class="word-play-btn" onclick="new Audio('/audio/negotiating-deadlines/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我们有筹码——他们比我们晚发布。所以把锦上添花的推迟。</span>

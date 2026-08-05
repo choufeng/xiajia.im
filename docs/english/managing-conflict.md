@@ -53,17 +53,17 @@ scene: Managing Team Conflict
 
 ## 💬 Dialogue
 
-**A**: There's real **friction** between the two leads. I felt the **tension** today.
+**A**: There's real **friction** between the two leads. I felt the **tension** today. <button class="word-play-btn" onclick="new Audio('/audio/managing-conflict/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：两个 lead 之间真有摩擦。今天那种紧张我都感觉到了。</span>
 
-**B**: Should we **mediate**?
+**B**: Should we **mediate**? <button class="word-play-btn" onclick="new Audio('/audio/managing-conflict/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：要调解吗？</span>
 
-**A**: Not yet. Let me **defuse** it one-on-one first.
+**A**: Not yet. Let me **defuse** it one-on-one first. <button class="word-play-btn" onclick="new Audio('/audio/managing-conflict/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：先不。我先一对一缓和。</span>
 
-**B**: Good. Then we can **iron out** the small stuff in a group.
+**B**: Good. Then we can **iron out** the small stuff in a group. <button class="word-play-btn" onclick="new Audio('/audio/managing-conflict/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。然后小组里理顺小事。</span>
 
-**A**: The goal is to **reconcile** their roadmaps before the kickoff.
+**A**: The goal is to **reconcile** their roadmaps before the kickoff. <button class="word-play-btn" onclick="new Audio('/audio/managing-conflict/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：目标是启动前把他们路线图调和好。</span>

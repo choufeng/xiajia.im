@@ -48,20 +48,20 @@ scene: Security Review
 
 ## 💬 Dialogue
 
-**A**: The security audit flagged our login endpoint.
+**A**: The security audit flagged our login endpoint. <button class="word-play-btn" onclick="new Audio('/audio/security-review/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：安全审计标记了我们的登录接口。</span>
 
-**B**: **Authentication** is logging too much in **verbose** mode.
+**B**: **Authentication** is logging too much in **verbose** mode. <button class="word-play-btn" onclick="new Audio('/audio/security-review/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：认证在详细模式下日志打得太多了。</span>
 
-**A**: That leaks the token in plain text. We need a stronger **cipher** too.
+**A**: That leaks the token in plain text. We need a stronger **cipher** too. <button class="word-play-btn" onclick="new Audio('/audio/security-review/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：那会把 token 明文泄露。我们也需要更强的加密算法。</span>
 
-**B**: Agreed. Let us add **redundancy** with a second factor.
+**B**: Agreed. Let us add **redundancy** with a second factor. <button class="word-play-btn" onclick="new Audio('/audio/security-review/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：同意。再加个第二因素做冗余。</span>
 
-**A**: And fail in a **graceful** way if the session is invalid.
+**A**: And fail in a **graceful** way if the session is invalid. <button class="word-play-btn" onclick="new Audio('/audio/security-review/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：还有，会话无效时要优雅地失败。</span>
 
-**B**: Right. Never reveal whether the username exists.
+**B**: Right. Never reveal whether the username exists. <button class="word-play-btn" onclick="new Audio('/audio/security-review/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。永远不要透露用户名是否存在。</span>

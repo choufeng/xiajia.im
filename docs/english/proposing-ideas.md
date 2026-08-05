@@ -58,20 +58,20 @@ scene: Proposing Ideas & Pitching
 
 ## 💬 Dialogue
 
-**A**: I want to **pitch** a new onboarding flow. Can I grab ten minutes?
+**A**: I want to **pitch** a new onboarding flow. Can I grab ten minutes? <button class="word-play-btn" onclick="new Audio('/audio/proposing-ideas/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我想推介一个新的引导流程，能借我十分钟吗？</span>
 
-**B**: Sure. Start with the **premise** — why does it matter?
+**B**: Sure. Start with the **premise** — why does it matter? <button class="word-play-btn" onclick="new Audio('/audio/proposing-ideas/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：行。先说前提——为什么这事重要？</span>
 
-**A**: Users drop off at step three. I'll **outline** a three-step **framework** to fix it.
+**A**: Users drop off at step three. I'll **outline** a three-step **framework** to fix it. <button class="word-play-btn" onclick="new Audio('/audio/proposing-ideas/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：用户在第三步流失。我概述一个三步框架来修复。</span>
 
-**B**: Sounds **viable**. But have you built a **prototype** yet?
+**B**: Sounds **viable**. But have you built a **prototype** yet? <button class="word-play-btn" onclick="new Audio('/audio/proposing-ideas/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：听着可行。但你做原型了吗？</span>
 
-**A**: Not yet. I wanted your buy-in first.
+**A**: Not yet. I wanted your buy-in first. <button class="word-play-btn" onclick="new Audio('/audio/proposing-ideas/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：还没。先想要你点头。</span>
 
-**B**: Be **pragmatic** — build it small, prove it, then we scale.
+**B**: Be **pragmatic** — build it small, prove it, then we scale. <button class="word-play-btn" onclick="new Audio('/audio/proposing-ideas/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：务实点——小步做，验证了再放大。</span>

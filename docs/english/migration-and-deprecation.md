@@ -48,26 +48,26 @@ scene: Migration and Deprecation
 
 ## 💬 Dialogue
 
-**A**: The v2 API has been **deprecated** for six months now.
+**A**: The v2 API has been **deprecated** for six months now. <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：v2 接口已经废弃六个月了。</span>
 
-**B**: Right. We need to finish the migration before the shutdown date.
+**B**: Right. We need to finish the migration before the shutdown date. <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：对。我们得在关停日期前完成迁移。</span>
 
-**A**: The auth **middleware** changed a lot in version three.
+**A**: The auth **middleware** changed a lot in version three. <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：鉴权中间件在第三版里改动很大。</span>
 
-**B**: Yes, we moved it into its own **namespace**.
+**B**: Yes, we moved it into its own **namespace**. <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：是的，我们把它移到了独立的命名空间里。</span>
 
-**A**: Should the config stay **immutable** during the rollout?
+**A**: Should the config stay **immutable** during the rollout? <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：发布期间配置是否应该保持不可变？</span>
 
-**B**: Good idea. Freeze it until all clients migrate.
+**B**: Good idea. Freeze it until all clients migrate. <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好主意。冻结它，直到所有客户端都迁移完。</span>
 
-**A**: Who handles the **orchestration** of the background jobs?
+**A**: Who handles the **orchestration** of the background jobs? <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/07.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：后台任务的编排由谁负责？</span>
 
-**B**: The new scheduler does. It also retries failed tasks.
+**B**: The new scheduler does. It also retries failed tasks. <button class="word-play-btn" onclick="new Audio('/audio/migration-and-deprecation/08.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：新的调度器负责。它还会重试失败的任务。</span>

@@ -48,20 +48,20 @@ scene: Incident Postmortem
 
 ## 💬 Dialogue
 
-**A**: Let us write the postmortem for last night's **incident**.
+**A**: Let us write the postmortem for last night's **incident**. <button class="word-play-btn" onclick="new Audio('/audio/incident-postmortem/01.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：我们写一下昨晚事件的复盘吧。</span>
 
-**B**: The root cause was a null pointer hidden by minification.
+**B**: The root cause was a null pointer hidden by minification. <button class="word-play-btn" onclick="new Audio('/audio/incident-postmortem/02.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：根因是被压缩隐藏的一个空指针。</span>
 
-**A**: The **stacktrace** was unreadable until we added source maps.
+**A**: The **stacktrace** was unreadable until we added source maps. <button class="word-play-btn" onclick="new Audio('/audio/incident-postmortem/03.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：堆栈跟踪在加 source map 之前根本没法看。</span>
 
-**B**: We should not **obfuscate** the error handler at all.
+**B**: We should not **obfuscate** the error handler at all. <button class="word-play-btn" onclick="new Audio('/audio/incident-postmortem/04.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：我们根本不该混淆错误处理器。</span>
 
-**A**: Agreed. I will add a **fixture** that reproduces the crash.
+**A**: Agreed. I will add a **fixture** that reproduces the crash. <button class="word-play-btn" onclick="new Audio('/audio/incident-postmortem/05.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">A：同意。我加个能复现崩溃的夹具。</span>
 
-**B**: Good. Then **hash** the repro steps into the test suite.
+**B**: Good. Then **hash** the repro steps into the test suite. <button class="word-play-btn" onclick="new Audio('/audio/incident-postmortem/06.mp3').play()" title="Play this line" aria-label="Play this line">🔊</button>
 <span style="font-size:0.85em;color:var(--vp-c-text-2)">B：好。然后把复现步骤哈希进测试套件。</span>
