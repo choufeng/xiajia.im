@@ -182,6 +182,8 @@ cd /Users/jia.xia/development/xiajia.im
 node .pi/skills/english-daily/scripts/cos-audio.mjs docs/public/tts tts
 ```
 
+> **无需手动 source**：`cos-audio.mjs` 启动时自动加载 `~/.pi/agent/.env` 里的 `COS_*` 凭证（不覆盖已有环境变量）。fish / bash / zsh 任一 shell 直接跑即可，密钥不进 shell 全局。若 HEAD 全 FAIL，查该 .env 是否存在且含 5 个 `COS_` 键。
+
 - `--chapters`：按 h2/h3 分段生成 + 章节时间戳，与站点其他文章一致（强烈推荐，缺失会导致段内跳转失效）
 - 输出：`docs/public/tts/{板块}/{文件名}.mp3` + `docs/public/tts/{板块}/{文件名}.chapters.json`（本地中间产物，不入库，需上传 COS `xiajia.im/tts/...`）
 - 前端 `ReadAloud.vue` 按页面路径拼 COS 公网 URL `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/tts/{rel}.mp3`，无需改代码

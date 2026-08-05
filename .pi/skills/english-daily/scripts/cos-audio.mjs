@@ -2,8 +2,25 @@
 // 支持 audio/ 和 tts/ 两类资源，对象级 public-read ACL。
 // Env: COS_SECRET_ID / COS_SECRET_KEY / COS_BUCKET / COS_REGION / COS_APPID
 import { createRequire } from 'node:module';
-import { statSync, readdirSync } from 'node:fs';
+import { readFileSync, statSync, readdirSync } from 'node:fs';
+import { homedir } from 'node:os';
 import { join, relative, basename } from 'node:path';
+
+// 自动加载 ~/.pi/agent/.env（无依赖 dotenv）——不覆盖已存在的环境变量
+// ponytail: 让任何 shell/cwd 直接跑，密钥不进 shell 全局
+try {
+  for (const line of readFileSync(`${homedir()}/.pi/agent/.env`, 'utf8').split('\n')) {
+    const t = line.trim();
+    if (!t || t.startsWith('#')) continue;
+    const i = t.indexOf('=');
+    if (i < 0) continue;
+    const k = t.slice(0, i).trim();
+    let v = t.slice(i + 1).trim();
+    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1, -1);
+    if (!(k in process.env)) process.env[k] = v;
+  }
+} catch { /* .env 不存在则跳过，沿用真实环境变量 */ }
+
 const require = createRequire(import.meta.url);
 const COS = require('cos-nodejs-sdk-v5');
 
