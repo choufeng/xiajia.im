@@ -171,8 +171,15 @@ sidebar: {
 文章写完后，用 `scripts/tts-article.py` 生成朗读音频（Edge 神经音，免费无 key）。**站点每篇文章都配朗读，此步不可省。**
 
 ```bash
-c /Users/jia.xia/development/xiajia.im
+cd /Users/jia.xia/development/xiajia.im
 ~/.local/pipx/venvs/edge-tts/bin/python scripts/tts-article.py docs/{板块}/{文件名}.md --chapters
+```
+
+生成后上传 COS（幂等，仅传新增文件）：
+
+```bash
+cd /Users/jia.xia/development/xiajia.im
+node .pi/skills/english-daily/scripts/cos-audio.mjs docs/public/tts tts
 ```
 
 - `--chapters`：按 h2/h3 分段生成 + 章节时间戳，与站点其他文章一致（强烈推荐，缺失会导致段内跳转失效）
@@ -201,9 +208,8 @@ cd /Users/jia.xia/development/xiajia.im
 git status
 git diff docs/.vitepress/config.js
 
-# 添加并提交（含 md + 侧边栏 + 朗读 mp3 + chapters.json）
-git add docs/板块/文件名.md docs/.vitepress/config.js \
-        docs/public/tts/板块/文件名.mp3 docs/public/tts/板块/文件名.chapters.json
+# 添加并提交（音频不入库，存 COS；仅提交 md + 侧边栏）
+git add docs/板块/文件名.md docs/.vitepress/config.js
 git commit -m "docs: 新增文章 — 文章标题"
 
 # 推送

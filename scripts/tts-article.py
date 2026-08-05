@@ -293,8 +293,6 @@ def main():
     if out_path.exists() and not args.force:
         print(f"✓ 已存在: {out_path}")
         print(f"  覆盖请加 --force")
-        rel_url = "/" + str(out_path.relative_to(DOCS / "public"))
-        print(f"  前端引用: {rel_url}")
         return
 
     print(f"生成中: {md_path.relative_to(ROOT)}")
@@ -323,9 +321,8 @@ def main():
         size_kb = out_path.stat().st_size / 1024
         print(f"\n✓ 完成（{size_kb:.1f} KB）")
 
-    rel_url = "/" + str(out_path.relative_to(DOCS / "public"))
     print(f"  试听: open {out_path}")
-    print(f"  前端引用: {rel_url}")
+    print(f"  ⚠ 上传 COS: node .pi/skills/english-daily/scripts/cos-audio.mjs docs/public/tts tts")
 
 
 if __name__ == "__main__":
