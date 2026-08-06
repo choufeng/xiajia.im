@@ -128,6 +128,7 @@ export default defineConfig({
           text: '心智与思维',
           items: [
             { text: '《思考，快与慢》', link: '/reading/thinking-fast-slow' },
+            { text: '《对赌》', link: '/reading/thinking-in-bets' },
             { text: '《认知天性》', link: '/reading/make-it-stick' },
             { text: '《费曼学习法》', link: '/reading/feynman-technique' },
             { text: '《刻意练习》', link: '/reading/peak' },
