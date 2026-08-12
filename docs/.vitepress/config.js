@@ -136,6 +136,7 @@ export default defineConfig({
             { text: '《深度工作》', link: '/reading/deep-work' },
             { text: '《第一性原理》', link: '/reading/first-principles' },
             { text: '《乌合之众》', link: '/reading/the-crowd' },
+            { text: '《黑匣子思维》', link: '/reading/black-box-thinking' },
           ],
         },
         {
