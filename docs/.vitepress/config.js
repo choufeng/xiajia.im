@@ -137,6 +137,7 @@ export default defineConfig({
             { text: '《第一性原理》', link: '/reading/first-principles' },
             { text: '《乌合之众》', link: '/reading/the-crowd' },
             { text: '《黑匣子思维》', link: '/reading/black-box-thinking' },
+            { text: '《故事》', link: '/reading/story-mckee' },
           ],
         },
         {
