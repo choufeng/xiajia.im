@@ -250,6 +250,7 @@ export default defineConfig({
           items: [
             { text: '黑天鹅事件', link: '/cognition/black-swan' },
             { text: '灰犀牛事件', link: '/cognition/grey-rhino' },
+            { text: '林迪效应', link: '/cognition/lindy-effect' },
           ],
         },
         {
