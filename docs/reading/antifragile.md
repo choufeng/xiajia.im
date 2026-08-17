@@ -185,4 +185,4 @@
 - **《低风险创业》**（站内 [./low-risk-entrepreneurship](./low-risk-entrepreneurship)）：樊登把反脆弱翻译成创业语言——能力有下限、机会无上限的非对称交易。
 - **《系统之美》**（站内 [./thinking-in-systems](./thinking-in-systems)）：反脆弱本质上是一种系统结构设计，梅多斯讲怎么找结构的杠杆点。
 - **《金钱心理学》**（站内 [./psychology-of-money](./psychology-of-money)）：留足冗余、活得够久，是一切复利的前提。
-- **《非对称风险》**（塔勒布）：切身利益的专书——本文最后一节的完整展开。
+- **《非对称风险》**（站内 [./skin-in-the-game](./skin-in-the-game)）：切身利益的专书——本文最后一节的完整展开。

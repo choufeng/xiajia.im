@@ -161,6 +161,7 @@ export default defineConfig({
             { text: '《够了》', link: '/reading/enough' },
             { text: '《随机漫步的傻瓜》', link: '/reading/fooled-by-randomness' },
             { text: '《反脆弱》', link: '/reading/antifragile' },
+            { text: '《非对称风险》', link: '/reading/skin-in-the-game' },
           ],
         },
         {
