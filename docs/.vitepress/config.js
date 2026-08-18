@@ -146,6 +146,7 @@ export default defineConfig({
             { text: '《高效能人士的七个习惯》', link: '/reading/seven-habits' },
             { text: '《富有的习惯》', link: '/reading/rich-habits' },
             { text: '《原子习惯》', link: '/reading/atomic-habits' },
+            { text: '《意志力》', link: '/reading/willpower' },
             { text: '《运动改造大脑》', link: '/reading/spark-exercise' },
           ],
         },
