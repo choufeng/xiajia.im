@@ -52,6 +52,7 @@
 
 - [锚定效应](./anchoring-effect) — 第一个数字，绑架了你后面所有的判断
 - [沉没成本谬误](./sunk-cost-fallacy) — 都投这么多了，不是停的理由
+- [禁果效应](./forbidden-fruit-effect) — 越说不行，越想要：禁令本身就是广告
 
 ### 群体与社会
 
