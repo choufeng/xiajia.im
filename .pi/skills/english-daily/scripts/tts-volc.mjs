@@ -41,7 +41,7 @@ export const VOICE_B_POOL = [
   'zh_female_jiaochuannv_uranus_bigtts',
 ];
 
-const AUDIO_PARAMS = { format: 'mp3', sample_rate: 24000 };
+const AUDIO_PARAMS = { format: 'mp3', sample_rate: 24000, speed_ratio: 0.85 }; // ponytail: 0.85 适配影子跟读；要回正常语速改回 1.0
 
 function requireEnv(name) {
   const v = process.env[name];

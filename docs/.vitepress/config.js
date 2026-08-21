@@ -527,6 +527,12 @@ export default defineConfig({
       // Learning English
       '/english/': [
         {
+          text: '主题讲解',
+          items: [
+            { text: 'What is an AI Agent', link: '/english/what-is-an-ai-agent' },
+          ],
+        },
+        {
           text: '工程实战',
           items: [
             { text: 'Code Review Discussion', link: '/english/code-review-discussion' },
