@@ -527,6 +527,12 @@ export default defineConfig({
       // Learning English
       '/english/': [
         {
+          text: '训练营工具',
+          items: [
+            { text: '🎯 21 天成人英语训练营', link: '/english/training/' },
+          ],
+        },
+        {
           text: '主题讲解',
           items: [
             { text: 'What is an AI Agent', link: '/english/what-is-an-ai-agent' },
