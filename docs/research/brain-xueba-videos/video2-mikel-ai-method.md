@@ -1,7 +1,6 @@
-# 视频 2 方法论整理：西班牙 Polyglot Mikel Telleria 的 AI 学习法
+# Mikel Telleria 方法论：本人博客与原片体系（nll.coach 主源整理）
 
-> 来源：[西班牙 polyglot 用 AI 學 12 語言，我試了他的絕招](https://www.youtube.com/watch?v=_j_Sbp_6Os4)（brain 學霸）
-> 状态说明：中文视频逐字稿暂缺（YouTube 对本机出口 IP 全面封锁，补全路径见[方案 §3.3](./feasibility-plan.md)）。但视频所拆解的**方法论本体**已通过 Mikel 本人的署名文章与其原始英文视频的结构化摘要 100% 还原，本文即其完整整理。brain 學霸 的实测框架（亲测 + 踩坑 + 数据）可参照其视频 1 的自测协议推测，拿到逐字稿后补全。
+> 用途说明：视频 2（brain 學霸 拆解版）的**全文逐字稿已完成**，见 [video2-transcript.txt](./video2-transcript.txt) 与逐段整理 [video2-transcript-notes.md](./video2-transcript-notes.md)（含三个谎言、四步+加速器、Week 1-6 时间表、discomfort 心理学、brain 學霸 改良）。本文是**补充材料**：从 Mikel 本人署名博客与其原始英文视频结构化摘要还原的完整自有体系（45 分钟例程、三个月路线图、1 分钟独白等），与视频 2 内容互为印证。
 
 ## 1. Mikel Telleria 是谁
 
@@ -131,9 +130,9 @@
 
 ## 6. 待办（Phase 1）
 
-- [ ] 拿到中文视频逐字稿（钥匙串授权 / B 站搬运出现 / cookies.txt），补全 brain 學霸 本人的实测数据与踩坑细节；
+- [x] ~~拿到中文视频逐字稿~~ **已完成**（Chrome cookies + deno + 音频下载 + whisper 转录，2026-08-25），整理见 [video2-transcript-notes.md](./video2-transcript-notes.md)
 - [ ] 核对「四道并行法」人物归属（视频 1 口播「林宇棠」疑为林语堂）；
-- [ ] Mikel 原始视频清单整理（YouTube 恢复访问后补全其频道视频列表）。
+- [ ] 下集（brain 學霸 7 天完整实测）发布后跟进其数据。
 
 ## 7. 来源
 

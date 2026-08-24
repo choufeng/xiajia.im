@@ -10,10 +10,10 @@
 
 ## 0. 结论摘要（TL;DR）
 
-**完全可行，且今天已经跑通了最难的部分。**
+**完全可行，且最难的部分今天已全部跑通——两个视频的全文逐字稿都拿到了。**
 
-1. **内容总结（文字化）**：视频 1 已完成**全文逐字转录**（本地 whisper.cpp + Apple Metal，26 分钟音频仅用 2.2 分钟转完），方法论已完整提取，见 [video1-21day-method.md](./video1-21day-method.md)。视频 2 的核心方法论（西班牙 hyperpolyglot **Mikel Telleria** 的 AI 学习法）已通过其本人博客原文 + 原始英文视频结构化摘要**完整还原**，见 [video2-mikel-ai-method.md](./video2-mikel-ai-method.md)；其中文视频本体的逐字稿因 YouTube 对本机出口 IP 的全面封锁暂缺，有 3 条明确的补全路径（见 §3.3）。
-2. **工具体系（Web）**：两个视频的方法论高度互补——视频 1 给出「**21 天成人路线四步法**」（场景→AI 语句库→四道并行→AI 强制开口），视频 2 给出「**语言岛 + TTS 音频健身房 + AI 纠错回环**」。两者合并正好是一套完整的可产品化训练系统，且与本站现有的 `english-daily` skill（火山 TTS 管线）、`docs/english/` 场景库天然衔接。MVP 嵌入现有 VitePress 站点即可，无需新基础设施。分 4 个 Phase，MVP 约 1～2 个工作日（agent 辅助）。
+1. **内容总结（文字化）✅ 完成**：视频 1（26 分钟）与视频 2（17 分钟）均已完成**全文逐字转录**（本地 whisper.cpp + Apple Metal，26 分钟音频 2 分 13 秒、17 分钟音频 85 秒转完）。方法论整理见 [video1-21day-method.md](./video1-21day-method.md) 与 [video2-transcript-notes.md](./video2-transcript-notes.md)（后者含 Week 1-6 时间表、discomfort 心理学、brain 學霸 的 Excel 错题库改良）。Mikel 本人的博客体系作为补充材料见 [video2-mikel-ai-method.md](./video2-mikel-ai-method.md)。
+2. **工具体系（Web）**：两个视频的方法论高度互补——视频 1 给出「**21 天成人路线四步法**」（场景→AI 语句库→四道并行→AI 强制开口），视频 2 给出「**语言岛 + TTS 音频健身房 + 听预测跟读 + Excel 错题库 + 预习加速器**」。两者合并正好是一套完整的可产品化训练系统，且与本站现有的 `english-daily` skill（火山 TTS 管线）、`docs/english/` 场景库天然衔接。MVP 嵌入现有 VitePress 站点即可，无需新基础设施。分 4 个 Phase，Phase 0+1 已完成，MVP 约 1～2 个工作日（agent 辅助）。
 
 ---
 
@@ -65,49 +65,41 @@
 
 > 完整逐字稿：[video1-transcript.srt](./video1-transcript.srt)（带时间戳）/ [video1-transcript.txt](./video1-transcript.txt)；方法论整理：[video1-21day-method.md](./video1-21day-method.md)
 
-### 2.2 视频 2：Mikel Telleria 的 AI 学习法（方法论已完整还原 ✅，中文视频逐字稿待补）
+### 2.2 视频 2：Mikel Telleria 的 AI 学习法（已完整转录 ✅）
 
-视频 2 是 brain 學霸 对 Mikel Telleria（西班牙 hyperpolyglot，12 门语言，在 Deusto 大学创新中心开发过语言学习系统）AI 方法的拆解与实测。Mikel 的方法我已从其**本人署名博客原文**（nll.coach，2025-12-03）与其原始英文视频的结构化摘要完整还原：
+视频 2 是 brain 學霸 对 **Mikel Telleria**（巴斯克 hyperpolyglot，12 门语言，在巴斯克的大学创新中心工作，方法已商业化为 App + 一对一教练）AI 方法的拆解 + 7 天实测。**结构 = 三个谎言 + 四个步骤 + 一个加速器 + Week 1-6 时间表**：
 
-**第一步：语言岛（Language Islands）——数千句而不是几十句**
-- 收集你真实生活会用到的句子：自我介绍、谈工作、争论、道歉、点菜、聊爱好……每个场景 20-30 句，构成一个个「说得出口的安全区」，岛连成大陆；
-- 生成方式：自述日常（语音转文字）→ AI 翻译/生成 → 入库；配合高频词表，每句重复 20-30 次（摊到全天碎片时间）；
-- 反常识点：**不要孤立背单词**——单词在句子里才是锚点；目标 30-100 句/天（含句子式词汇）。
+- **三个谎言**：① 学文法（文法是副作用不是前提）；② 用 App 会流利（本质是选答案，句子不是自己生成的）；③ 泡在语言里就会了（听懂的早就懂，听不懂的永远听不懂）。
+- **Step 1 语言岛**：手机录音把真实想说的话全录下（分场景：工作/朋友/餐厅/看医生/兴趣/观点）→ AI 翻译（强调「最口语、不要 textbook 英文」）→ 几千句覆盖日常；
+- **Step 2 AI 变音频**：TTS（ElevenLabs 等）转音频，**音色关键——你听什么音色，跟读后就输出什么口音**；手机变随身播放器，全部死时间可听；
+- **Step 3 听→预测→跟读**：先只听不跟，听到某一遍能**预测**下文才开始 shadowing（顺序不能反，否则鹦鹉学舌）；跟到第 3-6 遍能脱口而出；
+- **Step 4 Excel 错题库**：三栏（中文/英文/音频链接），遮英文看中文说出，说错/卡住→**标红**，标红句明天优先（"Mark the ones that hard, move on, come back tomorrow"）。brain 學霸 改良：标红句让 AI 生成 **5 个变体句**防机械重复；
+- **加速器 Pre-Input Comprehension（预习）**：看影片/听播客前先过 Transcript，理解率从 10-20% 拉到 80-90%——**「不是在猜，是在验证」**，整体提速 ≥50%；晚上预习、次日碎片时间听；
+- **30 分钟真相**："use your dead time intelligently"——30 分钟只是盯 Excel 的专注时间，其余全发生在本就要花的通勤/家务里；
+- **Week 1-6 时间表**：W1 everything very hard（Excel 全红）→ W2 recall 20-30% → W3 clicking（刷牙时句子突然脱口而出，吓自己一跳）→ W4 basic conversation → W6 genuinely conversational。**90% 的人死在第一周**（零成果+自我怀疑）；解药是 **discomfort 心理学**（卡住说不出 = 学习正在发生 = 突触重连）+ **降摩擦**（Week 1 最大杀手是中途查词打断节奏，预习做足可免疫）。
 
-**第二步：TTS 音频健身房——把语句库变成随身音频**
-- 用 TTS（TTS Maker / ElevenLabs / 火山引擎）把句子库转成音频列表；
-- 通勤/健身/家务时**听 + 跟读 + shadowing（与音频同时说）**；新句 5 遍、复习 1 遍；
-- 本质：用自己的材料做定向重复，远胜被动泡美剧。
-
-**第三步：AI 口语实战——两种模式 + 纠错回环**
-- **模式 A 全对话**：与 AI 正常对话（AI 不打断、最后统一反馈）：主要错误 + 修正版 + 「你刚才想说的话的正确版」——**这份纠正句列表是金子**，直接回流进语言岛，变成音频继续磨；
-- **模式 B 一分钟独白**：任意话题说 1 分钟 → 发录音/转写稿给 AI → 返回全文修正版 → 跟读正确句 → 再来一轮；每天 20-30 条 = 每周数小时真实口语量；
-- **流利度飞轮**：造句（AI）→ 转音频（TTS）→ 听/跟读（碎片时间）→ AI 实战（口语）→ 纠错回流入库 → 循环加速。
-
-**45 分钟日常例程**（Mikel 版）：精听 shadowing 15 min（新句×5）+ 快速复习 15 min（×1）+ 主动回忆 15 min（看中文说英文 / 反向翻译）。进阶版加入 15 条 × 1 分钟自由独白。
-
-> 详细整理与来源：[video2-mikel-ai-method.md](./video2-mikel-ai-method.md)
+详细整理（含章节时间戳、今天就做的三件事、对工具设计的 8 条直接输入）：[video2-transcript-notes.md](./video2-transcript-notes.md)
 
 ### 2.3 两个视频方法论的合并视图（工具体系的直接蓝图）
 
 ```
 目的性动机 ──► ① 选场景（战场） ──────────────────────────┐
                                                             ▼
-成人显性学习力 ─► ② AI 语句库（万用模板 / 语言岛）◄──── 纠错回流（视频2飞轮）
+成人显性学习力 ─► ② AI 语句库（万用模板 / 语言岛录音）◄──── 标红错题回流（视频2·Excel）
                         │                                     ▲
                         ▼                                     │
               ③ 磨句子：四道并行×15（视频1）                  │
-                 + TTS 音频健身房 shadowing（视频2）           │
+                 + TTS 音频 + 听→预测→跟读（视频2）           │
                         │                                     │
                         ▼                                     │
-              ④ AI 强制开口（视频1）──► 修正句列表 ───────────┘
+              ④ AI 强制开口（视频1）+ AI 变体句改良（视频2）──┘
                         │
                         ▼
-              ⑤ 间隔复习 D2/D7/D30（视频1 备忘录法）
+              ⑤ 间隔复习 D2/D7/D30（视频1）+ 标红句明日优先（视频2）
                         │
                         ▼
-              ⑥ 21 天仪表盘：起点测试 → 第7天 → 第21天（口说速度 / 卡顿）
-              场景库横向轮换（坑2）；真实口语 prompt 开关（坑3）；走路语音模式（坑1）
+              ⑥ 度量：21 天仪表盘（视频1）/ Week 1-6 里程碑（视频2）
+                 预习加速器（视频2）；场景横向轮换（视频1坑2）
 ```
 
 ---
@@ -119,30 +111,31 @@
 | 环节 | 工具 | 实测结果 |
 |---|---|---|
 | YouTube 元数据 | oEmbed API | ✅ 两视频标题/频道均取得 |
-| YouTube 字幕/播放器 API | yt-dlp（7 种 player client）、youtube-transcript-api、Invidious/Piped 公共实例、TransParrot、tactiq、youtubetotranscript、r.jina.ai | ❌ **全部被 YouTube 「Sign in to confirm you're not a bot」IP 封锁拦截**（本机出口 IP 已被标记；连第三方服务的后端也被封） |
-| Chrome 登录 cookies | `yt-dlp --cookies-from-browser chrome` | ⏸ 卡在 macOS 钥匙串授权弹窗（需要你手动点「始终允许」，见 §3.3） |
-| **B 站搬运版兜底** | bilibili 搜索 API | ✅ **视频 1 搬运版命中**（BV1yW9rBxEXY，无 CC 字幕但有完整音轨） |
-| 音频获取 | yt-dlp bestaudio | ✅ 15MB m4a |
+| YouTube 字幕 | yt-dlp（7 种 player client）、youtube-transcript-api、Invidious/Piped 公共实例、TransParrot、tactiq、youtubetotranscript、r.jina.ai | ❌ 全部被「Sign in to confirm you're not a bot」拦截；且最终确认**视频 2 根本没有任何字幕**（人工/自动皆无）——字幕路线对该视频从源头不可行 |
+| **最终方案：登录态 + 音频下载** | `yt-dlp --cookies-from-browser chrome` + **deno**（新版 yt-dlp 必须的 JS 运行时，已装 `~/.local/bin/deno`） | ✅ **两视频音频均可下载**。要点：① Chrome cookies 早期报「已轮换失效」，装 deno 后配合 cookies 即通过；② webm/opus 无法用 afconvert，改拉 **140 号 m4a 格式**即可本地转码 |
 | 音频转码 | macOS 自带 `afconvert`（免 ffmpeg） | ✅ 16kHz 单声道 WAV |
-| **本地语音转录** | whisper.cpp 1.9.3 + ggml-large-v3-turbo（1.6GB）+ Apple Metal（M4） | ✅ **26 分钟视频 → 2 分 13 秒转完**，中文识别质量高（人名/个别术语有偏差，可人工校对） |
-| 方法论溯源 | web_search + 全文抓取 | ✅ Snow 1978 / Marinova-Todd 2000 / Hartshorne 2018 原文；Mikel 本人博客 3 篇 + 原始视频结构化摘要 |
+| **本地语音转录** | whisper.cpp 1.9.3 + ggml-large-v3-turbo（1.6GB）+ Apple Metal（M4） | ✅ 视频 1（26 min）2 分 13 秒；视频 2（17 min）85 秒。中文识别质量高（专有名词需校正，已在文档中修正） |
+| 方法论溯源 | web_search + 全文抓取 | ✅ Snow 1978 / Marinova-Todd 2000 / Hartshorne 2018 原文；Mikel 本人博客 3 篇 + 原片结构化摘要 |
+
+> 工具链已持久化：`~/tools/whispercpp`（模型 + `whisper.sh` 包装脚本，内置 rpath 修复）、`~/tools/yt-research`（全部原始素材与中间产物）。
 
 ### 3.2 本次产出的全部工件
 
 ```
 docs/research/brain-xueba-videos/
-├── feasibility-plan.md        # 本文档
-├── video1-21day-method.md     # 视频 1 方法论完整整理（含章节时间戳）
-├── video2-mikel-ai-method.md  # 视频 2 / Mikel 方法论 + 全部来源
-├── video1-transcript.srt      # 视频 1 全文逐字稿（带时间戳）
-└── video1-transcript.txt      # 视频 1 纯文本逐字稿
+├── feasibility-plan.md           # 本文档
+├── video1-21day-method.md        # 视频 1 方法论完整整理（含章节时间戳）
+├── video2-transcript-notes.md    # 视频 2 逐段整理（三谎言/四步+加速器/Week1-6/discomfort/工具设计输入）
+├── video2-mikel-ai-method.md     # Mikel 本人博客体系补充（45min例程/三个月路线/1分钟独白）
+├── video1-transcript.srt/.txt    # 视频 1 全文逐字稿
+└── video2-transcript.srt/.txt    # 视频 2 全文逐字稿
 ```
 
-### 3.3 视频 2 逐字稿的三条补全路径（按推荐顺序）
+### 3.3 记录：视频 2 逐字稿的攻坚过程（已解决，留档备查）
 
-1. **钥匙串授权（最快，1 分钟）**：后台仍挂着一个 `yt-dlp --cookies-from-browser chrome` 任务，等你在 macOS 弹窗（「yt-dlp/安全工具想访问钥匙串 "Chrome Safe Storage"」）上点**「始终允许」**。一旦放行，用你 Chrome 的登录态即可直接拉两个视频的 YouTube 官方中文字幕（质量最高）。若不想用 Chrome 凭据，也可在浏览器装 「Get cookies.txt」 扩展导出 youtube.com 的 cookies.txt 给我。
-2. **等 B 站搬运 + whisper 复用**：视频 1 的搬运版是搜到的（关键词「brain 學霸 + 标题片段」）；视频 2 尚无搬运，可每隔几天重搜一次，出现后 5 分钟内即可出全文（管线已就绪）。
-3. **Mikel 原始视频侧写**：即使永远拿不到中文版逐字稿，视频 2 的**实质内容**（Mikel 方法 + brain 學霸实测框架）已 100% 还原——brain 學霸 的实测部分（他的踩坑与数据）结构大概率与其视频 1 的自测报告和 Mikel 的公开例程一致，且方法论本身有本人原文背书。
+1. 字幕路线全部失败的原因有二：本机出口 IP 被 YouTube 风控 + **该视频本身无任何字幕**；
+2. 破局组合拳：**deno（JS 运行时）+ Chrome 登录 cookies** → yt-dlp 直接拉到 m4a 音频（format 140）→ afconvert 转码 → whisper.cpp 转录；
+3. 复用价值：这套管线对**任何**能下载音轨的中文视频通用（B 站搬运版亦已验证），5 分钟内出全文稿。
 
 ---
 
@@ -191,17 +184,17 @@ docs/research/brain-xueba-videos/
 
 | Phase | 内容 | 工作量（agent 辅助） | 交付物 |
 |---|---|---|---|
-| **0（已完成 ✅）** | 内容提取管线 + 方法论研究 + 本方案 | 0.5 天（今日） | 本目录 5 个文件 |
-| **1** | 视频 2 逐字稿补全（§3.3 三选一）；方法论文档终稿 | 0.5 小时～1 天（取决于路径） | video2 transcript + 方法论合并终稿 |
-| **2：MVP** | 模块 2+3+6（语句库生成器、四道并行练习器、间隔复习）+ 简单场景选择 | **1～2 天** | 可日常使用的纯前端训练页（嵌入 VitePress） |
-| **3：语音化** | 模块 4（TTS 健身房，接火山管线）+ 模块 5（AI 对话陪练 + 修正句回流） | 2 天 | 完整方法论闭环（视频1+2 全功能） |
-| **4：训练营** | 模块 7（21 天仪表盘 + 基线/复测协议 + 录音存档）+ 移动端打磨 + 数据导入导出 | 1～2 天 | 「21 天训练营」完整产品体验 |
+| **0（已完成 ✅）** | 内容提取管线 + 方法论研究 + 本方案 | 0.5 天（2026-08-25） | 本目录文档 |
+| **1（已完成 ✅）** | 视频 2 逐字稿（deno + Chrome cookies + 音频下载 + whisper）；方法论文档终稿 | 0.5 天（同日） | video2-transcript.* + video2-transcript-notes.md |
+| **2：MVP** | 模块 2+3+6（语句库生成器、四道并行/听预测跟读练习器、间隔复习+标红错题库）+ 简单场景选择 | **1～2 天** | 可日常使用的纯前端训练页（嵌入 VitePress） |
+| **3：语音化** | 模块 4（TTS 健身房，接火山管线，锁定音色）+ 模块 5（AI 对话陪练 + 变体句/纠错回流）+ Transcript 预习器 | 2 天 | 完整方法论闭环（视频1+2 全功能） |
+| **4：训练营** | 模块 7（21 天仪表盘 + Week 1-6 里程碑 + 基线/复测协议 + 录音存档）+ 移动端打磨 + 数据导入导出 | 1～2 天 | 「21 天训练营」完整产品体验 |
 
 ### 4.6 风险与对策
 
 | 风险 | 影响 | 对策 |
 |---|---|---|
-| YouTube IP 封锁持续 | 拿不到视频 2 官方字幕 | 已有三条兜底路径（§3.3）；whisper 管线已验证，任何能下载到音轨的渠道 5 分钟出稿 |
+| ~~YouTube IP 封锁持续~~ **已解决** | ~~拿不到视频 2 官方字幕~~ | 根因有二：IP 风控 + 该视频本就无字幕。破局：deno + Chrome cookies 拉音频 + whisper 本地转录，管线已固化可复用 |
 | LLM API 费用/密钥管理 | 工具不可用 | BYOK（用户自填 key，前端直连）；句子生成每次仅数百 token，成本忽略不计 |
 | Web Speech API 浏览器差异 | 语音功能不可用 | 桌面 Chrome/Safari 优先；降级方案：打字对话 + 服务端 TTS 音频包 |
 | 坚持使用（人性风险，最大） | 工具闲置 | 方法论本身已给答案：具体场景 + 21 天协议 + streak + 与 english-daily 例程合并成一个入口 |
@@ -229,6 +222,8 @@ docs/research/brain-xueba-videos/
 - [My Latin Life Podcast #93: Mikel the Hyperpolyglot](https://zencastr.com/z/D8qEjPSc)
 
 **工具链**
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp)（已装 `~/.local/bin/yt-dlp`）
-- [whisper.cpp](https://github.com/ggml-org/whisper.cpp)（已编译于 `/tmp/whispercpp`，模型 large-v3-turbo；建议后续移至 `~/tools/whispercpp` 持久化）
-- macOS `afconvert`（音频转码，免 ffmpeg）
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)（`~/.local/bin/yt-dlp`，2026.08.19 版；配合 `--cookies-from-browser chrome`）
+- [deno](https://deno.com)（`~/.local/bin/deno`，2.9.5——新版 yt-dlp 解 YouTube 签名挑战的必备 JS 运行时）
+- [whisper.cpp](https://github.com/ggml-org/whisper.cpp)（`~/tools/whispercpp`，模型 large-v3-turbo 1.6GB；入口 `~/tools/whispercpp/whisper.sh <wav> <out-prefix> [lang]`）
+- macOS `afconvert`（音频转码，免 ffmpeg；YouTube 记得拉 140 号 m4a 格式而非 webm）
+- 原始素材与中间产物：`~/tools/yt-research/`（音频、info.json、页面快照）
