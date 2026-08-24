@@ -44,7 +44,7 @@ function defaultState() {
     settings: {
       apiBase: 'https://api.deepseek.com/v1',
       apiKey: '',
-      model: 'deepseek-chat',
+      model: 'deepseek-v4-flash',
       voiceName: '',        // 音色锁定（视频2：你听什么音色，跟读后就输出什么口音）
       rate: 0.9,
     },
@@ -72,15 +72,24 @@ function defaultState() {
 //   source: 'generated' | 'manual',
 // }
 
+// 过期模型名 → 当前可用模型的迁移表
+const MODEL_MIGRATIONS = {
+  'deepseek-chat': 'deepseek-v4-flash', // 2026-08: deepseek-chat 已下线
+}
+
 function load() {
   if (typeof window === 'undefined') return defaultState()
   try {
     const raw = window.localStorage.getItem(KEY)
     if (!raw) return defaultState()
     const parsed = JSON.parse(raw)
-    return Object.assign(defaultState(), parsed, {
+    const state = Object.assign(defaultState(), parsed, {
       settings: Object.assign(defaultState().settings, parsed.settings || {}),
     })
+    if (MODEL_MIGRATIONS[state.settings.model]) {
+      state.settings.model = MODEL_MIGRATIONS[state.settings.model]
+    }
+    return state
   } catch {
     return defaultState()
   }

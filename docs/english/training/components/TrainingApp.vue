@@ -63,7 +63,7 @@ const tabs = [
           <input v-model="store.settings.apiKey" type="password" placeholder="sk-…" />
         </label>
         <label>模型
-          <input v-model="store.settings.model" placeholder="deepseek-chat" />
+          <input v-model="store.settings.model" placeholder="deepseek-v4-flash" />
         </label>
         <label>朗读音色（视频2：你听什么音色，跟读后就输出什么口音——选定后不要常换）
           <select v-model="store.settings.voiceName">
