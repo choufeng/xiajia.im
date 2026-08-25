@@ -245,6 +245,7 @@ export default defineConfig({
             { text: '红鲱鱼谬误', link: '/cognition/red-herring-fallacy' },
             { text: '归因谬误', link: '/cognition/attribution-fallacy' },
             { text: '滑坡谬误', link: '/cognition/slippery-slope-fallacy' },
+            { text: '诉诸人身谬误', link: '/cognition/ad-hominem' },
           ],
         },
         {

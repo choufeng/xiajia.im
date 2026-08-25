@@ -36,6 +36,7 @@
 - [红鲱鱼谬误](./red-herring-fallacy) — 别被无关话题带偏了主线
 - [归因谬误](./attribution-fallacy) — 别急着找「就是因为他这人」
 - [滑坡谬误](./slippery-slope-fallacy) — 别把「可能」说成「必然」的一连串灾难
+- [诉诸人身谬误](./ad-hominem) — 「他不行」推不出「他错」，先拆论证再看人
 
 ### 风险与不确定性
 
