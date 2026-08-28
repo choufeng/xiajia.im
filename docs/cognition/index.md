@@ -53,6 +53,7 @@
 
 - [锚定效应](./anchoring-effect) — 第一个数字，绑架了你后面所有的判断
 - [代表性启发](./representativeness-heuristic) — 用「像不像」判断「是不是」，忘了先问基数
+- [前景理论](./prospect-theory) — 输赢不在账上，在参照点上；亏的痛是赚的乐的两倍
 - [沉没成本谬误](./sunk-cost-fallacy) — 都投这么多了，不是停的理由
 - [禁果效应](./forbidden-fruit-effect) — 越说不行，越想要：禁令本身就是广告
 
