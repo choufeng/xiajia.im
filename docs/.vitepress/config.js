@@ -267,6 +267,7 @@ export default defineConfig({
           text: '决策与判断',
           items: [
             { text: '锚定效应', link: '/cognition/anchoring-effect' },
+            { text: '代表性启发', link: '/cognition/representativeness-heuristic' },
             { text: '沉没成本谬误', link: '/cognition/sunk-cost-fallacy' },
             { text: '禁果效应', link: '/cognition/forbidden-fruit-effect' },
           ],
