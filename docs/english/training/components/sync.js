@@ -13,7 +13,7 @@ import { store } from './store.js'
 
 const META_KEY = 'xji-english-training-sync-v1'   // { key } —— 配对码
 const DEVICE_KEY = 'xji-english-training-device-v1'
-const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{4}-[0-9a-f]{12}$/i
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 const CONVEX_URL = (import.meta.env && import.meta.env.VITE_CONVEX_URL) || ''
 
 export const syncState = reactive({
@@ -84,10 +84,15 @@ export function enableSync(existingKey) {
     return false
   }
   let key = existingKey || ''
-  if (key && !UUID_RE.test(key)) {
-    syncState.status = 'error'
-    syncState.error = '配对码格式不正确（应为 UUID）。'
-    return false
+  if (key) {
+    // 粘贴容错：从输入中提取 UUID（容忍前后空格/换行/零宽字符/附带文字）
+    const m = String(key).match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i)
+    key = m ? m[0].toLowerCase() : ''
+    if (!key) {
+      syncState.status = 'error'
+      syncState.error = '未识别到有效配对码（应为 UUID，可直接整段粘贴）。'
+      return false
+    }
   }
   if (!key) key = uid()
   if (!UUID_RE.test(key)) { // fallback uid 不是 uuid 的极端情况

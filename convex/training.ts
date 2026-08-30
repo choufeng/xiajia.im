@@ -4,8 +4,8 @@
 import { query, mutation, internalMutation } from "./_generated/server";
 import { v } from "convex/values";
 
-const UUID_V4 =
-  /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{4}-[0-9a-f]{12}$/i;
+const UUID_RE =
+  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 const LIMITS = {
@@ -19,7 +19,7 @@ const LIMITS = {
 };
 
 function assertKey(key: string) {
-  if (typeof key !== "string" || !UUID_V4.test(key)) {
+  if (typeof key !== "string" || !UUID_RE.test(key)) {
     throw new Error("invalid workspaceKey");
   }
 }
