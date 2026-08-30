@@ -30,17 +30,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 配置了 CONVEX_DEPLOY_KEY secret 时：部署 Convex 函数并用其 URL 构建前端
-      # （npx convex deploy 会把 deployment URL 写入 VITE_CONVEX_URL 再执行 --cmd）
-      - name: Deploy Convex backend and build frontend
-        if: ${{ secrets.CONVEX_DEPLOY_KEY != '' }}
+      # 配置了 CONVEX_DEPLOY_KEY secret 时：先部署 Convex 函数，并用其 deployment URL
+      # 构建前端（npx convex deploy 会把 URL 写入 VITE_CONVEX_URL 再执行 --cmd）；
+      # 未配置时退回纯前端构建（页面同步入口显示"未启用后端"）。
+      # 注意：GitHub Actions 不允许在 step 的 if 里引用 secrets 上下文，故用 bash 分支。
+      - name: Build (with Convex backend if configured)
         env:
           CONVEX_DEPLOY_KEY: ${{ secrets.CONVEX_DEPLOY_KEY }}
-        run: npx convex deploy --cmd "npm run build" --cmd-url-env-var-name VITE_CONVEX_URL
-
-      - name: Build frontend (no Convex configured)
-        if: ${{ secrets.CONVEX_DEPLOY_KEY == '' }}
-        run: npm run build
+        run: |
+          if [ -n "$CONVEX_DEPLOY_KEY" ]; then
+            npx convex deploy --cmd "npm run build" --cmd-url-env-var-name VITE_CONVEX_URL
+          else
+            npm run build
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
