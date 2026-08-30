@@ -1,8 +1,9 @@
 <script setup>
 // 21 天成人英语训练营 · 主壳
 // 方法论：docs/research/brain-xueba-videos/（视频1 21天四步法 × 视频2 Mikel AI 法）
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { store, refreshVoices, enVoices } from './store.js'
+import { syncState, enableSync, disableSync, resumeSync } from './sync.js'
 import Generator from './Generator.vue'
 import Practice from './Practice.vue'
 import Review from './Review.vue'
@@ -12,6 +13,30 @@ const showSettings = ref(false)
 const showGuide = ref(false)
 const voicesReady = ref(false)
 
+// 多端同步（配对码模式，详见 docs/research/convex-backend-feasibility.md）
+const pairInput = ref('')
+const STATUS_TEXT = {
+  off: '未开启',
+  connecting: '连接中…',
+  online: '已同步',
+  offline: '离线（本地可用，恢复网络后自动续传）',
+  error: '异常',
+}
+const syncStatusText = computed(() => STATUS_TEXT[syncState.status] || syncState.status)
+function startSync() {
+  const ok = enableSync()
+  if (ok) pairInput.value = ''
+}
+function joinSync() {
+  const key = pairInput.value.trim()
+  if (!key) return
+  enableSync(key)
+  pairInput.value = ''
+}
+async function copyPairKey() {
+  try { await navigator.clipboard.writeText(syncState.key) } catch {}
+}
+
 onMounted(() => {
   refreshVoices()
   if (typeof window !== 'undefined' && window.speechSynthesis) {
@@ -19,6 +44,7 @@ onMounted(() => {
   }
   voicesReady.value = enVoices().length > 0
   if (!store.onboarded) { showGuide.value = true; store.onboarded = true }
+  resumeSync() // 之前开过同步的设备自动恢复
 })
 
 const tabs = [
@@ -74,6 +100,32 @@ const tabs = [
         <label>朗读速度 <b>{{ store.settings.rate }}x</b>
           <input v-model.number="store.settings.rate" type="range" min="0.5" max="1.2" step="0.05" />
         </label>
+
+        <!-- 多端同步（实验性） -->
+        <div class="sync-box">
+          <h4>☁ 多端同步（实验性）</h4>
+          <template v-if="!syncState.enabled">
+            <button class="ghost wide" @click="startSync">生成配对码，开启同步</button>
+            <div class="pair-row">
+              <input v-model="pairInput" placeholder="或粘贴其他设备的配对码加入" />
+              <button class="ghost" @click="joinSync">加入</button>
+            </div>
+            <p v-if="syncState.error" class="sync-err">{{ syncState.error }}</p>
+            <p class="sync-tip">数据仍以本机 localStorage 为主，联网时双向同步；API Key 永不上传。</p>
+          </template>
+          <template v-else>
+            <p class="pair-code" title="点击复制配对码，在其他设备粘贴即可加入" @click="copyPairKey">
+              配对码：<code>{{ syncState.key }}</code>
+            </p>
+            <p class="sync-status">
+              <span :class="['dot', syncState.status]"></span>
+              {{ syncStatusText }} · {{ syncState.deviceCount }} 台设备
+              <span v-if="syncState.error" class="sync-err">（{{ syncState.error }}）</span>
+            </p>
+            <button class="ghost wide" @click="disableSync">停止同步（数据保留在本机）</button>
+          </template>
+        </div>
+
         <button class="primary" @click="showSettings = false">完成</button>
       </div>
     </div>
@@ -155,6 +207,28 @@ h2 { margin: 0 0 4px; font-size: 22px; }
 .guide h4 { margin: 0 0 6px; font-size: 14px; }
 .guide ol, .guide p { margin: 0 0 4px; padding-left: 4px; }
 .src { font-size: 12px; color: var(--vp-c-text-3); }
+
+/* 多端同步 */
+.sync-box {
+  border: 1px dashed var(--vp-c-border); border-radius: 10px;
+  padding: 12px; display: grid; gap: 8px; font-size: 13px;
+}
+.sync-box h4 { margin: 0; font-size: 13px; }
+.sync-box .wide { width: 100%; }
+.pair-row { display: flex; gap: 6px; }
+.pair-row input { flex: 1; min-width: 0; font-size: 12px; }
+.pair-code { margin: 0; cursor: pointer; word-break: break-all; }
+.pair-code code { font-size: 11px; padding: 2px 6px; border-radius: 6px; background: var(--vp-c-bg-alt); border: 1px solid var(--vp-c-border); }
+.sync-status { margin: 0; color: var(--vp-c-text-2); }
+.sync-tip { margin: 0; font-size: 11.5px; color: var(--vp-c-text-3); }
+.sync-err { margin: 0; font-size: 12px; color: var(--vp-c-danger-1, #e5484d); }
+.dot {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  margin-right: 4px; vertical-align: middle; background: var(--vp-c-text-3);
+}
+.dot.online { background: var(--vp-button-brand-bg, #3c8772); }
+.dot.offline, .dot.connecting { background: #e0a03c; }
+.dot.error { background: var(--vp-c-danger-1, #e5484d); }
 @media (max-width: 640px) {
   .tabs { grid-template-columns: 1fr; }
   .head { flex-direction: column; }

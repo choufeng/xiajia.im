@@ -27,7 +27,7 @@ import TrainingApp from './components/TrainingApp.vue'
 2. **练习**：新句走「听→预测→跟读」，然后「四道并行」念满 15 遍（眼看/口念/耳听/手写默写）；
 3. **复习**：每天打开看「今日队列」——标红错题优先，然后是 D2 / D7 / D30 到期句。卡住就标红，明天它还会回来。
 
-数据全部存在你浏览器本地（localStorage），可用「全部句子 → 导出/导入」备份。API Key 只存本机、直连你填的服务。
+数据默认存在你浏览器本地（localStorage），可用「全部句子 → 导出/导入」备份；需要多台设备同步练习进度时，可在「⚙ 设置」开启**多端同步**（实验性，基于 [Convex](https://convex.dev)，配对码加入，详见[可行性分析](/research/convex-backend-feasibility)）。API Key 只存本机、直连你填的服务，**永不上传**。
 
 </div>
 

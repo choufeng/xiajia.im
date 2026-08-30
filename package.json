@@ -20,12 +20,15 @@
   },
   "homepage": "https://xiajia.im",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vitepress": "^1.6.4",
-    "vue": "^3.5.13",
-    "gh-pages": "^6.3.0"
+    "vue": "^3.5.13"
   },
   "overrides": {
     "vite": "^7.0.0",
     "esbuild": "^0.28.1"
+  },
+  "dependencies": {
+    "convex": "^1.45.0"
   }
 }

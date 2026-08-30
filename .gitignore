@@ -3,6 +3,12 @@ docs/.vitepress/cache/
 docs/.vitepress/dist/
 .DS_Store
 
+# Convex 生成代码（npx convex dev / deploy 时自动再生）
+convex/_generated/
+# 本地开发时的 Convex deployment 地址（含 dev 部署 URL）
+.env.local
+.env.*.local
+
 # 音频存 COS，不入仓库
 docs/public/audio/
 docs/public/tts/

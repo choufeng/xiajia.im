@@ -1,0 +1,18 @@
+{
+  /* Convex 函数目录的 TypeScript 配置（与 npx convex init 生成的模板一致） */
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "lib": ["ES2021", "dom"],
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "isolatedModules": true
+  },
+  "include": ["./**/*"],
+  "exclude": ["./_generated"]
+}

@@ -30,7 +30,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      # 配置了 CONVEX_DEPLOY_KEY secret 时：部署 Convex 函数并用其 URL 构建前端
+      # （npx convex deploy 会把 deployment URL 写入 VITE_CONVEX_URL 再执行 --cmd）
+      - name: Deploy Convex backend and build frontend
+        if: ${{ secrets.CONVEX_DEPLOY_KEY != '' }}
+        env:
+          CONVEX_DEPLOY_KEY: ${{ secrets.CONVEX_DEPLOY_KEY }}
+        run: npx convex deploy --cmd "npm run build" --cmd-url-env-var-name VITE_CONVEX_URL
+
+      - name: Build frontend (no Convex configured)
+        if: ${{ secrets.CONVEX_DEPLOY_KEY == '' }}
         run: npm run build
 
       - name: Upload artifact

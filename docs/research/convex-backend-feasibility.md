@@ -223,7 +223,20 @@ export function logRep() {
 
 ---
 
-## 9. 参考来源
+## 10. 上线步骤（一次性，2026-08-31 已按此实现）
+
+代码已全部就位（`convex/` 后端 + `components/sync.js` 同步层 + 设置页 UI + CI 接线）。剩余一次性操作：
+
+1. **初始化 Convex 项目**（本机执行一次）：`npx convex dev`——首次会打开浏览器登录 convex.dev（GitHub 账号即可），自动创建部署并生成 `convex/_generated/` 与 `.env.local`（含 dev 的 `VITE_CONVEX_URL`）。本地 `npm run dev` 即可联调同步。
+2. **拿生产 Deploy Key**：Convex Dashboard → Settings → Deploy Keys → 生成 prod key。
+3. **配置 GitHub secret**：仓库 Settings → Secrets and variables → Actions → 新增 `CONVEX_DEPLOY_KEY`。此后每次 push master，CI 会先 `npx convex deploy`（用该 key 部署函数）再以生产 URL 构建前端。
+4. **验证**：部署完成后打开 /english/training/ → ⚙ 设置 → 生成配对码；在另一台设备粘贴加入，两端加句/练习，数秒内互相同步。
+
+> 未配置 `CONVEX_DEPLOY_KEY` 时，CI 自动退回纯前端构建，页面同步入口显示"未启用后端"，其余功能不受影响。
+
+---
+
+## 11. 参考来源
 
 - Convex Auth FAQ（SPA-on-CDN 支持、React-only 客户端）：<https://labs.convex.dev/auth/faq>
 - Convex Limits（免费额度）：<https://docs.convex.dev/production/state/limits>
