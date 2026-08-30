@@ -1,10 +1,14 @@
 // 定时任务：每日清理过期墓碑与远古日计数
-import { cronManager } from "convex/server";
-import { internal } from "./_generated/server";
+// 注意：convex 1.x 新 API —— cronJobs() 工厂函数；internal 引用自 _generated/api
+import { cronJobs } from "convex/server";
+import { internal } from "./_generated/api";
 
-export default cronManager.defineCrons({
-  dailyCleanup: cronManager.daily(internal.training.cleanupStale, {
-    hourUTC: 3,
-    minuteUTC: 17,
-  }),
-});
+const crons = cronJobs();
+
+crons.daily(
+  "training-daily-cleanup",
+  { hourUTC: 3, minuteUTC: 17 },
+  internal.training.cleanupStale,
+);
+
+export default crons;
