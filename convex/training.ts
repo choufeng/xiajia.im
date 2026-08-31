@@ -43,7 +43,11 @@ function optStr(x: unknown, max: number, field: string): string | undefined {
   return str(x, max, field);
 }
 function stamp(x: unknown): number {
-  return num(x, "updatedAt");
+  // 毫秒时间戳：Date.now() ≈ 1.7e12，允许 0 ～ 1e14（约公元 5138 年）
+  if (typeof x !== "number" || !Number.isFinite(x) || x < 0 || x > 1e14) {
+    throw new Error("bad timestamp");
+  }
+  return x;
 }
 // 去掉服务端内部字段，只回传业务字段
 function pub<T extends { _id: unknown; _creationTime: number }>(d: T) {
@@ -114,7 +118,7 @@ async function upsertScenario(ctx: any, key: string, r: Record<string, unknown>)
     note: typeof r.note === "string" ? str(r.note, LIMITS.textLen, "note") : "",
     createdAt: str(r.createdAt ?? "", 32, "createdAt"),
     updatedAt: stamp(r.updatedAt),
-    deletedAt: r.deletedAt == null ? undefined : num(r.deletedAt, "deletedAt"),
+    deletedAt: r.deletedAt == null ? undefined : stamp(r.deletedAt),
   };
   const existing = await ctx.db
     .query("scenarios")
@@ -157,7 +161,7 @@ async function upsertSentence(ctx: any, key: string, r: Record<string, unknown>)
     lastPracticed: optStr(r.lastPracticed, 32, "lastPracticed"),
     source: str(r.source ?? "manual", 32, "source"),
     updatedAt: stamp(r.updatedAt),
-    deletedAt: r.deletedAt == null ? undefined : num(r.deletedAt, "deletedAt"),
+    deletedAt: r.deletedAt == null ? undefined : stamp(r.deletedAt),
   };
   const existing = await ctx.db
     .query("sentences")

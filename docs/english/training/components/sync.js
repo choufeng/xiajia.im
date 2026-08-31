@@ -331,6 +331,7 @@ async function flush() {
     syncState.lastSyncAt = Date.now()
     syncState.error = ''
   } catch {
-    // 单条失败已在上面的 catch 里记录；快照未更新 → 自动重试
+    // 单条失败已在上面的 catch 里记录；快照未更新 → 15 秒后自动重试
+    scheduleFlush(15000)
   }
 }
