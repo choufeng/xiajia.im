@@ -160,6 +160,7 @@ export async function disableSync() {
   ownReps = {}
   othersReps = {}
   settingsStamp = 0
+  gotFirstRemote = false
   syncState.enabled = false
   syncState.status = 'off'
   syncState.key = ''
@@ -168,6 +169,8 @@ export async function disableSync() {
 }
 
 // ---- 远端 → 本地（LWW 合并）----
+let gotFirstRemote = false
+
 function onRemote(remote) {
   if (!syncState.enabled || !remote) return
   try {
@@ -180,6 +183,30 @@ function onRemote(remote) {
     // 订阅数据到达 = 连接必然可用（比连接回调更可靠的状态信号）
     if (syncState.status !== 'online') syncState.status = 'online'
   }
+  if (!gotFirstRemote) {
+    gotFirstRemote = true
+    seedLocalOnlyRows(remote)
+  }
+}
+
+// 首次拉取后：本地有而远端没有的行 → 打上"现在"，作为新内容上传。
+// 覆盖场景：带着本地数据加入一个 workspace；同步后行已有时间戳、
+// 但目标部署是空的（例如将来切换 production 部署）→ 自动全量重建。
+function seedLocalOnlyRows(remote) {
+  const remoteIds = new Set(
+    ((remote.scenarios || []).concat(remote.sentences || [])).map((r) => r.id),
+  )
+  let dirty = false
+  const now = Date.now()
+  applying = true
+  for (const arr of [store.scenarios, store.sentences]) {
+    for (const row of arr) {
+      if (!remoteIds.has(row.id)) { row.updatedAt = now; dirty = true }
+    }
+  }
+  applying = false
+  if (!remote.settings && store.settings.model) { snap.settings = ''; dirty = true } // 播种 settings
+  if (dirty) scheduleFlush(0)
 }
 
 function mergeWorkspace(r) {
@@ -259,11 +286,12 @@ async function flush() {
     sends.push(p)
   }
 
-  // scenarios / sentences：内容有差异的行
+  // scenarios / sentences：内容有差异的行（每次上行都刷新时间戳——
+  // 否则已同步过的行再编辑后时间戳不变，另一端 LWW 判定"不新"而跳过，增量永远传不过去）
   for (const s of store.scenarios) {
     if (snap.scenarios.get(s.id) !== rowJson(s)) {
       applying = true
-      if (!s.updatedAt) s.updatedAt = now
+      s.updatedAt = now
       applying = false
       const sent = Object.assign({}, s)
       pushRow('scenario', sent, () => { snap.scenarios.set(s.id, rowJson(sent)) })
@@ -272,7 +300,7 @@ async function flush() {
   for (const s of store.sentences) {
     if (snap.sentences.get(s.id) !== rowJson(s)) {
       applying = true
-      if (!s.updatedAt) s.updatedAt = now
+      s.updatedAt = now
       applying = false
       const sent = Object.assign({}, s)
       pushRow('sentence', sent, () => { snap.sentences.set(s.id, rowJson(sent)) })
