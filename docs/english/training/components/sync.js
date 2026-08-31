@@ -177,6 +177,8 @@ function onRemote(remote) {
     applying = false
     rebuildSnap()
     syncState.lastSyncAt = Date.now()
+    // 订阅数据到达 = 连接必然可用（比连接回调更可靠的状态信号）
+    if (syncState.status !== 'online') syncState.status = 'online'
   }
 }
 
