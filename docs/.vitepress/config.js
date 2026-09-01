@@ -173,6 +173,8 @@ export default defineConfig({
             { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
             { text: '《禅与摩托车维修艺术》', link: '/reading/zen-motorcycle' },
             { text: '《系统之美》', link: '/reading/thinking-in-systems' },
+            { text: '《失控》', link: '/reading/out-of-control' },
+            { text: '《复杂》', link: '/reading/complexity' },
             { text: '《人类简史》', link: '/reading/sapiens' },
           ],
         },
