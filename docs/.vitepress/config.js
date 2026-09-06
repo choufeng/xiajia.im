@@ -163,6 +163,9 @@ export default defineConfig({
             { text: '《随机漫步的傻瓜》', link: '/reading/fooled-by-randomness' },
             { text: '《反脆弱》', link: '/reading/antifragile' },
             { text: '《非对称风险》', link: '/reading/skin-in-the-game' },
+            { text: '《投资者的未来》', link: '/reading/future-for-investors' },
+            { text: '《投资中最简单的事》', link: '/reading/simple-things-in-investing' },
+            { text: '《经济学原理》', link: '/reading/principles-of-economics' },
           ],
         },
         {
