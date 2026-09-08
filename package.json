@@ -7,7 +7,7 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "deploy": "npm run build && gh-pages -d docs/.vitepress/dist"
+    "deploy": "npm run build && wrangler deploy"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,10 @@
+# Cloudflare Workers 静态资产部署
+# 域名 DNS 已在 Cloudflare → custom_domain 自动建 DNS 记录 + 证书
+name = "xiajia-im"
+compatibility_date = "2025-09-01"
+routes = [{ pattern = "xiajia.im", custom_domain = true }]
+
+[assets]
+directory = "./docs/.vitepress/dist"
+# 404.html 由 VitePress 生成
+not_found_handling = "404-page"

@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to Cloudflare Workers
 
 on:
   push:
@@ -7,15 +7,13 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: deploy
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,18 +42,11 @@ jobs:
             npm run build
           fi
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # 需要 repo secrets：CLOUDFLARE_API_TOKEN（模板 Edit Cloudflare Workers + DNS Edit）
+      # 和 CLOUDFLARE_ACCOUNT_ID
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: docs/.vitepress/dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4"
