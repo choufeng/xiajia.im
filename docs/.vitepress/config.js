@@ -165,6 +165,7 @@ export default defineConfig({
             { text: '《非对称风险》', link: '/reading/skin-in-the-game' },
             { text: '《投资者的未来》', link: '/reading/future-for-investors' },
             { text: '《投资中最简单的事》', link: '/reading/simple-things-in-investing' },
+            { text: '《简单致富》', link: '/reading/simple-path-to-wealth' },
             { text: '《经济学原理》', link: '/reading/principles-of-economics' },
           ],
         },
