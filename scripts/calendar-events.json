@@ -31,6 +31,56 @@
       "rrule": null,
       "location": "",
       "description": "ETH-260828-2050-C 到期前一周，平仓滚动，避免最后周 gamma 爆炸。wheel-strategy 铁律。"
+    },
+    {
+      "uid": "clarity-0916",
+      "summary": "CLARITY Act 参院 cloture 表决",
+      "date": "2026-09-16",
+      "time": "02:00",
+      "durationMin": 60,
+      "rrule": null,
+      "location": "",
+      "description": "需60票；通过赔率~26%；加密监管主节点"
+    },
+    {
+      "uid": "fomc-0917",
+      "summary": "FOMC 决议 + SEP 点阵图",
+      "date": "2026-09-17",
+      "time": "02:00",
+      "durationMin": 90,
+      "rrule": null,
+      "location": "",
+      "description": "9月加息定价66%；02:30 鲍威尔发布会；北京9/17凌晨"
+    },
+    {
+      "uid": "boj-0918",
+      "summary": "BOJ 议息决议",
+      "date": "2026-09-18",
+      "time": "11:00",
+      "durationMin": 60,
+      "rrule": null,
+      "location": "",
+      "description": "加息概率~80%；落在9/25期权到期窗口内，carry平仓尾部=put侧凸性"
+    },
+    {
+      "uid": "eth-coverage-0918",
+      "summary": "ETH 覆盖率月度复查",
+      "date": "2026-09-18",
+      "time": null,
+      "durationMin": null,
+      "rrule": null,
+      "location": "",
+      "description": "VA周投稀释1.17覆盖率→定9/25补保量"
+    },
+    {
+      "uid": "eth-roll-0925",
+      "summary": "ETH 备兑roll缩量+领口合成+深尾复议",
+      "date": "2026-09-25",
+      "time": null,
+      "durationMin": null,
+      "rrule": null,
+      "location": "",
+      "description": "短call 1.5→1.0-1.2；领口[2300,~3000]；A2/B深尾复议（若FOMC后走弱优先重评A2）"
     }
   ]
 }
