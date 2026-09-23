@@ -168,7 +168,7 @@ sidebar: {
 
 ### 步骤 5：生成朗读 MP3
 
-文章写完后，用 `scripts/tts-article.mjs` 生成朗读音频（火山豆包语音合成大模型 2.0，女声池随机 13 选 1）。**站点每篇文章都配朗读，此步不可省。**
+文章写完后，用 `scripts/tts-article.mjs` 生成朗读音频（火山豆包语音合成大模型 2.0，女声池随机 4 选 1）。**站点每篇文章都配朗读，此步不可省。**
 
 ```bash
 cd /Users/jia.xia/development/xiajia.im
@@ -185,7 +185,7 @@ node .pi/skills/english-daily/scripts/cos-audio.mjs docs/public/tts tts
 > **无需手动 source**：`cos-audio.mjs` 启动时自动加载 `~/.pi/agent/.env` 里的 `COS_*` 凭证（不覆盖已有环境变量）。fish / bash / zsh 任一 shell 直接跑即可，密钥不进 shell 全局。若 HEAD 全 FAIL，查该 .env 是否存在且含 5 个 `COS_` 键。
 
 - 默认按 h2/h3 分段生成 + 章节时间戳 chapters.json（前端段内跳转用，无需 flag）
-- `--voice <id>`：指定音色；不传则从 13 个中文女声池随机选一（同篇固定不跳变）；`--force` 覆盖重建
+- `--voice <id>`：指定音色；不传则从 4 个中文女声池随机选一（同篇固定不跳变）；`--force` 覆盖重建
 - 输出：`docs/public/tts/{板块}/{文件名}.mp3` + `docs/public/tts/{板块}/{文件名}.chapters.json`（本地中间产物，不入库，需上传 COS `xiajia.im/tts/...`）
 - 前端 `ReadAloud.vue` 按页面路径拼 COS 公网 URL `https://yccim-1256669708.cos.ap-guangzhou.myqcloud.com/xiajia.im/tts/{rel}.mp3`，无需改代码
 - 已存在不覆盖；需重建加 `--force`

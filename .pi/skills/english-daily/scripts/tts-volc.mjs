@@ -27,18 +27,9 @@ const VOICE_A = 'en_male_tim_uranus_bigtts'; // Tim 男
 // ponytail: 整篇单一随机；想句级切换或加权再改这里
 export const VOICE_B_POOL = [
   'zh_female_vv_uranus_bigtts',          // Vivi
-  'zh_female_xiaohe_uranus_bigtts',
   'zh_female_tiexinnvsheng_uranus_bigtts',
-  'zh_female_gujie_uranus_bigtts',
-  'zh_female_wenrouxiaoya_uranus_bigtts',
-  'zh_female_roumeinvyou_uranus_bigtts',
-  'zh_female_xinlingjitang_uranus_bigtts',
   'zh_female_tianmeiyueyue_uranus_bigtts',
   'zh_female_qingchezizi_uranus_bigtts',
-  'zh_female_wenjingmaomao_uranus_bigtts',
-  'zh_female_qinqienv_uranus_bigtts',
-  'zh_female_lingling_uranus_bigtts',
-  'zh_female_jiaochuannv_uranus_bigtts',
 ];
 
 const AUDIO_PARAMS = { format: 'mp3', sample_rate: 24000, speed_ratio: 0.85 }; // ponytail: 0.85 适配影子跟读；要回正常语速改回 1.0
