@@ -138,6 +138,7 @@ export default defineConfig({
             { text: '《乌合之众》', link: '/reading/the-crowd' },
             { text: '《黑匣子思维》', link: '/reading/black-box-thinking' },
             { text: '《故事》', link: '/reading/story-mckee' },
+            { text: '《原则》', link: '/reading/principles' },
           ],
         },
         {
@@ -166,6 +167,8 @@ export default defineConfig({
             { text: '《投资者的未来》', link: '/reading/future-for-investors' },
             { text: '《投资中最简单的事》', link: '/reading/simple-things-in-investing' },
             { text: '《简单致富》', link: '/reading/simple-path-to-wealth' },
+            { text: '《穷查理宝典》', link: '/reading/poor-charlies-almanack' },
+            { text: '《投资最重要的事》', link: '/reading/the-most-important-thing' },
             { text: '《经济学原理》', link: '/reading/principles-of-economics' },
           ],
         },
