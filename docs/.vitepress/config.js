@@ -177,6 +177,7 @@ export default defineConfig({
           items: [
             { text: '《非暴力沟通》', link: '/reading/nonviolent-communication' },
             { text: '《非暴力沟通实践篇》', link: '/reading/nonviolent-communication-practice' },
+            { text: '《我为什么要听你的》', link: '/reading/manipulators-among-us' },
             { text: '《活出生命的意义》', link: '/reading/mans-search-for-meaning' },
             { text: '《禅与摩托车维修艺术》', link: '/reading/zen-motorcycle' },
             { text: '《系统之美》', link: '/reading/thinking-in-systems' },
