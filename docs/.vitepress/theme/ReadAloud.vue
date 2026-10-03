@@ -1,8 +1,9 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, computed, watch, nextTick } from 'vue'
-import { useData } from 'vitepress'
+import { useData, useRouter } from 'vitepress'
 
 const { frontmatter, page } = useData()
+const router = useRouter()
 
 // ===== 模式：detecting | audio | web-speech =====
 const mode = ref('detecting')
@@ -43,6 +44,85 @@ let voices = []
 const synth = typeof window !== 'undefined' ? window.speechSynthesis : null
 let audioEl = null
 let detectTimer = null
+
+// ===== 连续播放（连播）：播完当前篇 → 随机抽一篇有 TTS 音频的文章跳转续播 =====
+const queueOn = ref(false)       // 连播开关
+const queueTotal = ref(5)        // 计划篇数（0 = 不限）
+const queuePlayed = ref(1)       // 当前是第几篇
+const queuePanel = ref(false)    // 设置面板
+let queueAutoPlay = false        // 跳转后待自动开播
+let ttsPoolCache = null          // 文章池（hashmap.json keys）
+const noAudioSet = new Set()     // 已验证无 TTS 音频的路径（HEAD 404 缓存）
+let recentPaths = []             // 最近播过，避免立刻重复
+
+async function loadPool() {
+  if (ttsPoolCache) return ttsPoolCache
+  try {
+    const r = await fetch('/hashmap.json')
+    const map = await r.json()
+    ttsPoolCache = Object.keys(map)
+      // hashmap key 扁平化用 _ 代 /（全站文件名不含 _，可安全还原）
+      .map(k => k.replace(/_/g, '/'))
+      // 排除首页 / 板块目录首页 / 英语板块（自带播放器）
+      .filter(k => k !== 'index.md' && !k.startsWith('english/') && !k.endsWith('index.md'))
+  } catch { ttsPoolCache = [] }
+  return ttsPoolCache
+}
+
+async function hasTtsAudio(rel) {
+  if (noAudioSet.has(rel)) return false
+  try {
+    const r = await fetch(`${COS_BASE}/tts/${rel.replace(/\.md$/, '.mp3')}`, { method: 'HEAD' })
+    if (!r.ok) noAudioSet.add(rel)
+    return r.ok
+  } catch { return false }
+}
+
+async function playNextRandom() {
+  const pool = (await loadPool()).filter(p => !recentPaths.includes(p))
+  for (let i = 0; i < 12 && pool.length; i++) {
+    const pick = pool.splice(Math.floor(Math.random() * pool.length), 1)[0]
+    if (await hasTtsAudio(pick)) {
+      recentPaths.push(pick)
+      recentPaths = recentPaths.slice(-6)
+      queueAutoPlay = true
+      router.go('/' + pick.replace(/\.md$/, '.html'))
+      return
+    }
+  }
+  // 抽不到有音频的文章（池耗尽/全 404）→ 结束连播
+  queueOn.value = false
+  stop()
+}
+
+// 播放结束统一出口：连播开启 → 计数并跳下一篇；否则常规停止
+function onEnded() {
+  if (!queueOn.value) { stop(); return }
+  queuePlayed.value++
+  if (queueTotal.value > 0 && queuePlayed.value > queueTotal.value) {
+    queueOn.value = false
+    stop()
+    return
+  }
+  playNextRandom()
+}
+
+function startQueue(n) {
+  queueTotal.value = n
+  queuePlayed.value = 1
+  queueOn.value = true
+  queuePanel.value = false
+  recentPaths = [page.value.relativePath]
+  if (status.value === 'idle') play()
+}
+
+function stopQueue() {
+  queueOn.value = false
+  queueAutoPlay = false
+  queuePanel.value = false
+}
+
+function stopAll() { stopQueue(); stop() }
 
 // ===== 文本分片 =====
 function splitChunks(text) {
@@ -196,7 +276,7 @@ function injectJumpButton(headingEl, sectionIdx) {
 
 // ===== Web Speech 播放 =====
 function playFrom(index) {
-  if (!synth || index >= chunks.length) { stop(); return }
+  if (!synth || index >= chunks.length) { onEnded(); return }
   curIdx.value = index
   const u = new SpeechSynthesisUtterance(chunks[index])
   const v = pickVoice()
@@ -211,7 +291,7 @@ function playFrom(index) {
 // ===== 统一控制接口 =====
 function play() {
   if (mode.value === 'audio') {
-    audioEl.play()
+    audioEl.play().catch(() => {})
     status.value = 'playing'
   } else if (mode.value === 'web-speech') {
     if (chunks.length === 0) buildSections()
@@ -475,6 +555,11 @@ function detect() {
       audioDuration.value = audioEl.duration || 0
       voiceName.value = 'Edge 神经音'
       clearTimeout(detectTimer)
+      // 连播跳转到位 → 自动开播
+      if (queueAutoPlay && queueOn.value) {
+        queueAutoPlay = false
+        play()
+      }
     }
     audioEl.ontimeupdate = () => {
       audioCurrent.value = audioEl.currentTime
@@ -487,7 +572,7 @@ function detect() {
         if (idx >= 0) setActiveSection(idx)
       }
     }
-    audioEl.onended = () => { stop() }
+    audioEl.onended = () => onEnded()
     audioEl.onerror = () => {
       if (mode.value === 'detecting') initWebSpeech()
     }
@@ -507,10 +592,16 @@ function detect() {
 // 切页（SPA 路由变化）时重置：避免播上一篇文章内容
 watch(() => page.value.relativePath, () => detect())
 
+// 面板外点击关闭
+function onDocClick(e) {
+  if (queuePanel.value && !e.target.closest('.read-aloud')) queuePanel.value = false
+}
+
 onMounted(() => {
   window.addEventListener('wheel', onUserScrollEvent, { passive: true })
   window.addEventListener('touchmove', onUserScrollEvent, { passive: true })
   window.addEventListener('keydown', onUserScrollEvent)
+  document.addEventListener('click', onDocClick)
   detect()
 })
 
@@ -520,6 +611,14 @@ function initWebSpeech() {
   mode.value = 'web-speech'
   loadVoices()
   synth.onvoiceschanged = loadVoices
+  // 连播跳转后回退到系统语音：照样自动开播（兜底，HEAD 已验证过基本不走这）
+  if (queueAutoPlay && queueOn.value && chunks.length === 0) {
+    buildSections()
+  }
+  if (queueAutoPlay && queueOn.value) {
+    queueAutoPlay = false
+    play()
+  }
 }
 
 onBeforeUnmount(() => {
@@ -529,6 +628,7 @@ onBeforeUnmount(() => {
   window.removeEventListener('wheel', onUserScrollEvent)
   window.removeEventListener('touchmove', onUserScrollEvent)
   window.removeEventListener('keydown', onUserScrollEvent)
+  document.removeEventListener('click', onDocClick)
   if (audioEl) audioEl.src = ''
 })
 </script>
@@ -558,8 +658,8 @@ onBeforeUnmount(() => {
     <button
       v-if="status !== 'idle'"
       class="ra-btn ra-stop"
-      @click="stop"
-      title="停止"
+      @click="stopAll"
+      title="停止（同时结束连播）"
     >⏹</button>
 
     <span class="ra-mode" :class="{ 'is-hq': mode === 'audio' }">{{ modeLabel }}</span>
@@ -601,6 +701,35 @@ onBeforeUnmount(() => {
       </svg>
       <span class="ra-follow-label">{{ autoFollow ? '跟随' : '已停' }}</span>
     </button>
+
+    <!-- 连播：播完随机抽下一篇续播，可设定计划篇数 -->
+    <div class="ra-queue-wrap">
+      <button
+        class="ra-btn ra-queue"
+        :class="{ 'is-on': queueOn }"
+        @click="queuePanel = !queuePanel"
+        :title="queueOn ? '连播中（点击调整/停止）' : '连续播放：播完随机跳下一篇'"
+      >
+        <span class="ra-icon">🔁</span>
+        <span v-if="queueOn" class="ra-queue-count">
+          {{ queueTotal ? `${queuePlayed}/${queueTotal}` : `${queuePlayed}/∞` }}
+        </span>
+        <span v-else class="ra-label">连播</span>
+      </button>
+      <div v-if="queuePanel" class="ra-queue-panel">
+        <div class="ra-qp-title">连播计划（篇数）</div>
+        <div class="ra-qp-row">
+          <button
+            v-for="n in [3, 5, 10, 0]" :key="n"
+            class="ra-qp-opt"
+            :class="{ 'is-cur': queueOn && queueTotal === n }"
+            @click="startQueue(n)"
+          >{{ n || '∞' }}</button>
+        </div>
+        <p class="ra-qp-hint">每篇播完随机抽下一篇续播，播满计划自动结束</p>
+        <button v-if="queueOn" class="ra-qp-stop" @click="stopAll">停止连播</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -711,6 +840,87 @@ onBeforeUnmount(() => {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
+
+/* 连播按钮 + 设置面板 */
+.ra-queue-wrap {
+  position: relative;
+  display: inline-flex;
+}
+.ra-queue {
+  background: transparent;
+  color: var(--vp-c-text-2);
+  border-color: var(--vp-c-divider);
+}
+.ra-queue:hover { color: var(--vp-c-text-1); border-color: var(--vp-c-text-3); }
+.ra-queue.is-on {
+  color: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+  background: var(--vp-c-brand-dim, rgba(85, 133, 247, 0.14));
+}
+.ra-queue-count {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.ra-queue-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 220px;
+  padding: 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+  text-align: left;
+}
+.ra-qp-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+.ra-qp-row {
+  display: flex;
+  gap: 6px;
+}
+.ra-qp-opt {
+  flex: 1;
+  padding: 5px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  font-size: 13px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.ra-qp-opt:hover { color: var(--vp-c-text-1); border-color: var(--vp-c-text-3); }
+.ra-qp-opt.is-cur {
+  color: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+  background: var(--vp-c-brand-dim, rgba(85, 133, 247, 0.14));
+  font-weight: 600;
+}
+.ra-qp-hint {
+  margin: 0;
+  font-size: 11px;
+  color: var(--vp-c-text-3);
+  line-height: 1.5;
+}
+.ra-qp-stop {
+  padding: 5px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  font-size: 12px;
+}
+.ra-qp-stop:hover { color: var(--vp-c-text-1); border-color: var(--vp-c-text-3); }
 
 /* 移动端：icon 化，压缩为严格 1 行 */
 @media (max-width: 640px) {
