@@ -24,3 +24,6 @@ __pycache__/
 *.pyc
 
 # 偏私有日历订阅：ICS + JSON 进 git（CI 部署需要）。token 是 unlisted 防线
+
+# fabric 运行时状态
+.pi/fabric/
