@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "revisionFormat": 2,
+  "entries": {
+    "topology/peer-seq": {
+      "key": "topology/peer-seq",
+      "value": {
+        "format": 1,
+        "next": 1
+      },
+      "version": 1,
+      "updatedAt": 1791368253523,
+      "updatedBy": {
+        "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a1026e-98b1-773c-bd31-6419ce78288c"
+      }
+    },
+    "sessions/01a1026e-98b1-773c-bd31-6419ce78288c": {
+      "key": "sessions/01a1026e-98b1-773c-bd31-6419ce78288c",
+      "value": {
+        "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "name": "XI-1",
+        "label": "XI-1",
+        "kind": "peer",
+        "status": "running",
+        "runner": "pi",
+        "transport": "host",
+        "cwd": "/Users/jia.xia/development/xiajia.im",
+        "sessionId": "01a1026e-98b1-773c-bd31-6419ce78288c",
+        "model": "zai/glm-5.3",
+        "thinking": "high",
+        "startedAt": 1791368253501,
+        "updatedAt": 1791370759055,
+        "pendingMessages": false,
+        "local": false
+      },
+      "version": 648,
+      "updatedAt": 1791370759057,
+      "updatedBy": {
+        "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a1026e-98b1-773c-bd31-6419ce78288c"
+      }
+    },
+    "topology/participants/7de494da974b078390005840a60b5385c00eeffe0b247edb31b9b4dfa79f8709": {
+      "key": "topology/participants/7de494da974b078390005840a60b5385c00eeffe0b247edb31b9b4dfa79f8709",
+      "value": {
+        "format": 1,
+        "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "kind": "root",
+        "rootId": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "ownerHostId": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "ownerIdentityId": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "name": "main",
+        "status": "running",
+        "runner": "pi",
+        "transport": "host",
+        "capabilities": [
+          "steer",
+          "followUp",
+          "fabric"
+        ],
+        "cwd": "/Users/jia.xia/development/xiajia.im",
+        "sessionId": "01a1026e-98b1-773c-bd31-6419ce78288c",
+        "model": "zai/glm-5.3",
+        "thinking": "high",
+        "startedAt": 1791368253501,
+        "updatedAt": 1791370759055,
+        "pendingMessages": false,
+        "controlProtocol": "v1",
+        "ownerIncarnation": "b13def76-b295-4778-ab4a-1f18b50efad6",
+        "label": "XI-1"
+      },
+      "version": 649,
+      "updatedAt": 1791370759059,
+      "updatedBy": {
+        "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a1026e-98b1-773c-bd31-6419ce78288c"
+      }
+    },
+    "topology/hosts/7de494da974b078390005840a60b5385c00eeffe0b247edb31b9b4dfa79f8709": {
+      "key": "topology/hosts/7de494da974b078390005840a60b5385c00eeffe0b247edb31b9b4dfa79f8709",
+      "value": {
+        "format": 1,
+        "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "rootId": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "identity": {
+          "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+          "name": "main",
+          "kind": "main",
+          "sessionId": "01a1026e-98b1-773c-bd31-6419ce78288c"
+        },
+        "startedAt": 1791368253502,
+        "updatedAt": 1791370759060,
+        "expiresAt": 1791370774060
+      },
+      "version": 650,
+      "updatedAt": 1791370759061,
+      "updatedBy": {
+        "id": "session:01a1026e-98b1-773c-bd31-6419ce78288c",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a1026e-98b1-773c-bd31-6419ce78288c"
+      }
+    }
+  },
+  "highWater": 1942,
+  "versions": {
+    "topology/peer-seq": 1,
+    "sessions/01a1026e-98b1-773c-bd31-6419ce78288c": 648,
+    "topology/participants/7de494da974b078390005840a60b5385c00eeffe0b247edb31b9b4dfa79f8709": 649,
+    "topology/hosts/7de494da974b078390005840a60b5385c00eeffe0b247edb31b9b4dfa79f8709": 650
+  },
+  "tombstoneOrder": []
+}

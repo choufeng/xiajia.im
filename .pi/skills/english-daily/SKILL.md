@@ -49,7 +49,7 @@ echo "$WORDS"   # JSON 数组，如 ["refactor","idempotent",...]
   { "speaker": "B", "text": "..." }
 ]
 ```
-- speaker 只能是 `"A"` 或 `"B"`（A=Tim 男声固定；B=女声池随机，每次生成从 13 个 `zh_female_*_uranus_bigtts` 音色中随机选一个，含 Vivi）
+- speaker 只能是 `"A"` 或 `"B"`（A=Tim 男声固定；B=女声池随机，每次生成从 4 个 `zh_female_*_uranus_bigtts` 音色中随机选一个：Vivi、贴心女生、甜美悦悦、清澈子子）
 
 ### 3. 确定 slug
 
@@ -183,6 +183,17 @@ git push
 
 - push 失败 → 提示用户手动 push（本地 commit 已完成）
 
+## 主题讲解（explainer）模式
+
+基于专业概念生成 1-3 段中等长度英文短文（如 What is an AI Agent），向他人讲解。难度：12-13 岁孩子能听懂的简单词汇，每篇技术词 ≤5 个。
+
+1. LLM 写 3 段讲解文：简单词汇为主，技术词 ≤5，每段 3-6 句
+2. 保存 /tmp/english-passage.json：全部句子 speaker 均为 `"A"`（Tim 单人讲解），复用 --dialog 格式
+3. 跑既有 tts-volc.mjs（整段 + 分句 + COS 全复用）；语速已全局 speed_ratio 0.85 适配影子跟读
+4. MD：frontmatter（date / type: explainer / topic）→ 📖 Key Terms 表（≤5 技术词）→ 🎧 Audio → 📝 Passage 段落正文（每句末内嵌单句🔊按钮，技术词加粗，每段后淡色中文整译）
+5. 跳过 pick-words / mark-used；slug = 主题名 kebab-case
+6. sidebar `/english/` 的「主题讲解」分组（在「工程实战」之前）追加条目
+
 ## 原子性原则
 
 步骤 4-7 任一失败 → **不 commit**，不产生半成品。已生成的 MP3/MD 若后续步骤失败，手动清理或丢弃本次（vocab 未回写，词不会被标记，下次可重选）。
@@ -192,7 +203,7 @@ git push
 - 所有脚本路径相对项目根，与 cwd 无关（脚本内用 `import.meta.url` 推导）
 - `.vocab.json` 是运行时状态，勿手改 used 标记（除非排错）
 - 不要修改 skill 源码目录下的 `data/vocab.seed.json` 来记录已用状态（那是模板）
-- TTS 音色 A=Tim(`en_male_tim_uranus_bigtts`) 固定；B=13 个 `zh_female_*_uranus_bigtts` 池随机（含 Vivi），整篇同一音色。改 `tts-volc.mjs` 的 `VOICE_A`/`VOICE_B_POOL` 常量
+- TTS 音色 A=Tim(`en_male_tim_uranus_bigtts`) 固定；B=4 个 `zh_female_*_uranus_bigtts` 池随机（Vivi、贴心女生、甜美悦悦、清澈子子），整篇同一音色。改 `tts-volc.mjs` 的 `VOICE_A`/`VOICE_B_POOL` 常量
 - 词库耗尽（< 5 可用词）→ 扩充 `data/vocab.seed.json` 后，手动把新词补进 `docs/english/.vocab.json`（used=false）
 - 全局朗读条（`ReadAloud.vue`）已对 `english/` 路径自动隐藏（板块自带页内整段 `<audio>` + 分句按钮），新文章无需任何处理
 - 批量回填旧文章分句音频：`set -a; source ~/.pi/agent/.env; set +a; node .pi/skills/english-daily/scripts/backfill-lines.mjs`（幂等；支持 `--only <slug>`、`--dry`、`--sleep <ms>`）
